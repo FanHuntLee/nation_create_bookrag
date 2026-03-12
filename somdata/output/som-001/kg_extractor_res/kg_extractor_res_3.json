@@ -1,0 +1,429 @@
+{
+  "entities": [
+    {
+      "entity_name": "table: node 3...",
+      "entity_type": "TABLE",
+      "description": "A table with no available description.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "revsionhistory",
+      "entity_type": "SECTION_TITLE",
+      "description": "A section title indicating a column header for tracking revision history.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "创龙科",
+      "entity_type": "ORGANIZATION",
+      "description": "一家科技公司，负责硬件设计和文档更新，涉及多个产品版本的修订。",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "利龙科技",
+      "entity_type": "ORGANIZATION",
+      "description": "一家科技公司，参与硬件文档的修订和更新工作。",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "rom",
+      "entity_type": "DATASET_OR_CORPUS",
+      "description": "硬件文档中的一个章节，涉及存储芯片兼容性和使用寿命说明。",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "ram",
+      "entity_type": "DATASET_OR_CORPUS",
+      "description": "硬件文档中的一个章节，涉及内存芯片兼容型号的更新。",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "emmc",
+      "entity_type": "PRODUCT",
+      "description": "一种嵌入式多媒体卡，用于存储和数据传输，被提及在多个文档修订中。",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "lpddr4x",
+      "entity_type": "PRODUCT",
+      "description": "一种低功耗双倍数据速率内存，被提及在硬件文档修订中。",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "rk3588",
+      "entity_type": "PRODUCT",
+      "description": "一种处理器芯片，被提及在硬件文档修订中，涉及宽温级工作温度的更新。",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "cortex-mo(mcu)",
+      "entity_type": "PRODUCT",
+      "description": "一种微控制器单元，被提及在硬件文档修订中，涉及硬件参数说明。",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "b2b连接器",
+      "entity_type": "PRODUCT",
+      "description": "一种用于设备间连接的硬件组件，被提及在文档修订中，涉及型号变更。",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "pcle 接口",
+      "entity_type": "PRODUCT",
+      "description": "一种高速数据传输接口，被提及在硬件文档修订中，新增设计说明。",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "video in",
+      "entity_type": "PRODUCT",
+      "description": "视频输入接口，被提及在硬件文档修订中，涉及性能参数描述。",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "video out",
+      "entity_type": "PRODUCT",
+      "description": "视频输出接口，被提及在硬件文档修订中，涉及性能参数描述。",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "usb3.1otg",
+      "entity_type": "PRODUCT",
+      "description": "一种通用串行总线接口，被提及在硬件文档修订中，新增小节内容。",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "can",
+      "entity_type": "PRODUCT",
+      "description": "控制器局域网接口，被提及在硬件文档修订中，涉及功能描述的删除。",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "宽温级",
+      "entity_type": "PRODUCT",
+      "description": "一种温度适应性等级，被提及在硬件文档修订中，涉及工作温度的更新。",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "商业级",
+      "entity_type": "PRODUCT",
+      "description": "一种温度适应性等级，被提及在硬件文档修订中，被修改为宽温级。",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "外设资源",
+      "entity_type": "DATASET_OR_CORPUS",
+      "description": "硬件文档中的一个章节，涉及多个接口和性能参数的更新。",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "引脚定义",
+      "entity_type": "DATASET_OR_CORPUS",
+      "description": "硬件文档中的一个章节，涉及芯片引脚名称的更新。",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "功耗测试数据",
+      "entity_type": "DATASET_OR_CORPUS",
+      "description": "硬件文档中的一个部分，涉及功耗测试数据的更新。",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "保留 usb3.1otg",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "文档修订中新增的一个小节，涉及USB3.1OTG接口的保留说明。",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "内容勘误",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "文档修订中涉及的内容优化和错误修正。",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "entity_name": "初始版本",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "文档修订中的初始版本说明，涉及产品发布。",
+      "source_ids": [
+        3
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "revsionhistory",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about 'RevsionHistory'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "创龙科",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about '创龙科'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "利龙科技",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about '利龙科技'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "rom",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about 'ROM'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "ram",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about 'RAM'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "emmc",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about 'eMMC'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "lpddr4x",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about 'LPDDR4X'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "rk3588",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about 'RK3588'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "cortex-mo(mcu)",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about 'Cortex-MO(MCU)'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "b2b连接器",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about 'B2B连接器'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "pcle 接口",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about 'PCle 接口'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "video in",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about 'Video IN'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "video out",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about 'Video OUT'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "usb3.1otg",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about 'USB3.1OTG'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "can",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about 'CAN'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "宽温级",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about '宽温级'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "商业级",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about '商业级'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "外设资源",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about '外设资源'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "引脚定义",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about '引脚定义'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "功耗测试数据",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about '功耗测试数据'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "保留 usb3.1otg",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about '保留 USB3.1OTG'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "内容勘误",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about '内容勘误'.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "src_entity_name": "table: node 3...",
+      "tgt_entity_name": "初始版本",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 3...' contains data about '初始版本'.",
+      "source_ids": [
+        3
+      ]
+    }
+  ],
+  "node_idx": 3
+}

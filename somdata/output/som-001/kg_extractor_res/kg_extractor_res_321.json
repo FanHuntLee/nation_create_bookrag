@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "5.2.2保留 usb3.1otg 接口",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of 'Other Design Considerations', this section discusses the retention of the USB3.1OTG interface, which is a hardware design feature relevant to the SOM-TL3588 industrial core board.",
+      "source_ids": [
+        321
+      ]
+    },
+    {
+      "entity_name": "usb3.1otg 接口",
+      "entity_type": "HARDWARE",
+      "description": "Refers to the Universal Serial Bus 3.1 On-The-Go (OTG) interface, a hardware component retained as per the design considerations in section 5.2.2.",
+      "source_ids": [
+        321
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "usb3.1otg 接口",
+      "tgt_entity_name": "5.2.2保留 usb3.1otg 接口",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The hardware component 'USB3.1OTG 接口' is the primary focus of section 5.2.2.",
+      "source_ids": [
+        321
+      ]
+    }
+  ],
+  "node_idx": 321
+}

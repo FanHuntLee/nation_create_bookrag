@@ -1,0 +1,159 @@
+{
+  "entities": [
+    {
+      "entity_name": "表1",
+      "entity_type": "TABLE",
+      "description": "A table containing information about broker addresses, TCP ports, WebSocket configurations, and server names.",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "entity_name": "broker地址",
+      "entity_type": "LOCATION",
+      "description": "The address of the broker, listed as a column header in the table.",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "entity_name": "tcp 端口",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "The TCP port number, listed as a column header in the table.",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "entity_name": "websocket",
+      "entity_type": "TECHNOLOGY",
+      "description": "A communication protocol used for real-time data exchange, listed as a column header in the table.",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "entity_name": "服务器名称",
+      "entity_type": "LOCATION",
+      "description": "The name of the server, listed as a column header in the table.",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "entity_name": "hivemq",
+      "entity_type": "ORGANIZATION",
+      "description": "A MQTT broker used for messaging and communication over the internet.",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "entity_name": "mosquitto",
+      "entity_type": "ORGANIZATION",
+      "description": "An open-source MQTT broker used for lightweight messaging protocols.",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "entity_name": "eclipse",
+      "entity_type": "ORGANIZATION",
+      "description": "An open-source project that includes the Eclipse Paho MQTT client and broker.",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "entity_name": "emqx（国内）",
+      "entity_type": "ORGANIZATION",
+      "description": "A domestic MQTT broker used for scalable and high-performance messaging.",
+      "source_ids": [
+        64
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "表1",
+      "tgt_entity_name": "broker地址",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表1' contains data about 'Broker地址'.",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "表1",
+      "tgt_entity_name": "tcp 端口",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表1' contains data about 'TCP 端口'.",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "表1",
+      "tgt_entity_name": "websocket",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表1' contains data about 'WebSocket'.",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "表1",
+      "tgt_entity_name": "服务器名称",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表1' contains data about '服务器名称'.",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "表1",
+      "tgt_entity_name": "hivemq",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表1' contains data about 'HiveMQ'.",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "表1",
+      "tgt_entity_name": "mosquitto",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表1' contains data about 'Mosquitto'.",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "表1",
+      "tgt_entity_name": "eclipse",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表1' contains data about 'Eclipse'.",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "表1",
+      "tgt_entity_name": "emqx（国内）",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表1' contains data about 'EMQX（国内）'.",
+      "source_ids": [
+        64
+      ]
+    }
+  ],
+  "node_idx": 64
+}

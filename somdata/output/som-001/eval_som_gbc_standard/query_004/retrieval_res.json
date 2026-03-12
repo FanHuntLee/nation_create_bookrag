@@ -1,0 +1,224 @@
+{
+  "query": "系统上电后且SPL启动后，将优先从哪里引导U-Boot镜像？",
+  "used_sec_ids": [],
+  "all_sec_ids": [],
+  "plan": {
+    "query_type": "simple",
+    "original_query": "系统上电后且SPL启动后，将优先从哪里引导U-Boot镜像？",
+    "sub_questions": null,
+    "filters": null,
+    "operation": null
+  },
+  "iterations": [
+    {
+      "sub_query": "系统上电后且SPL启动后，将优先从哪里引导U-Boot镜像？",
+      "sub_number": 1,
+      "gbc_entity_map": {
+        "Name: u-boot\nType: SOFTWARE": [
+          "Name: u boot\nType: SOFTWARE"
+        ],
+        "Name: spl\nType: SOFTWARE": [
+          "Name: spl\nType: SOFTWARE"
+        ],
+        "Name: 系统上电\nType: TASK_OR_PROBLEM": [
+          "Name: 工作电压\nType: TASK_OR_PROBLEM"
+        ],
+        "Name: 引导\nType: TASK_OR_PROBLEM": [
+          "Name: 初始版本\nType: TASK_OR_PROBLEM"
+        ]
+      },
+      "linked_tree_nodes": [
+        {
+          "index_id": 300,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: u boot\nType: SOFTWARE"
+          ]
+        },
+        {
+          "index_id": 3,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: 初始版本\nType: TASK_OR_PROBLEM"
+          ]
+        },
+        {
+          "index_id": 296,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: spl\nType: SOFTWARE"
+          ]
+        },
+        {
+          "index_id": 224,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: 工作电压\nType: TASK_OR_PROBLEM"
+          ]
+        }
+      ],
+      "linked_section_ids": [
+        266,
+        3,
+        222
+      ],
+      "supplementary_ids": [
+        350
+      ],
+      "selected_explanation": "Section 350 titled '6附图最小系统设计' is relevant because it likely contains information about the system's boot process and hardware design, which could provide context on where the U-Boot image is loaded from after SPL starts.",
+      "retrieval_sec_ids": [
+        350,
+        266,
+        3,
+        222
+      ],
+      "retrieval_nodes": [
+        {
+          "index_id": 224,
+          "type": "table",
+          "content": "Caption: 表11\nThis table contains the following columns:\n - 典型值\n - 最大值\n - 最小值\n - 环境参数\n\nTable Body:\n环境参数 | 最小值 | 典型值 | 最大值\n工作温度(工业级) | 包 -40℃ | / | 85℃\n工作温度(宽温级) | 0℃ | 1 | 80℃\n存储温度 | -50°℃ | / | 90°C\n工作湿度 | 35%（无凝露） | / | 75%（无凝露）\n存储湿度 | 35%（无凝露） | 1 | 75%（无凝露）\n工作电压 | / | 4.0V | /",
+          "page": 46,
+          "img_path": "/root/autodl-fs/bookrag/BookRAG/somdata/output/som-001/auto/images/6de58eb87e3a90fe20b82c369a8acb141b80e08974ab2f3c091d2f07c8dbd797.jpg",
+          "table_body": "<table><tr><td rowspan=1 colspan=1>环境参数</td><td rowspan=1 colspan=1>最小值 </td><td rowspan=1 colspan=1>典型值</td><td rowspan=1 colspan=1>最大值</td></tr><tr><td rowspan=1 colspan=1>工作温度(工业级)</td><td rowspan=1 colspan=1>包 -40℃</td><td rowspan=1 colspan=1>/</td><td rowspan=1 colspan=1>85℃</td></tr><tr><td rowspan=1 colspan=1>工作温度(宽温级)</td><td rowspan=1 colspan=1>0℃</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>80℃</td></tr><tr><td rowspan=1 colspan=1>存储温度</td><td rowspan=1 colspan=1>-50°℃</td><td rowspan=1 colspan=1>/</td><td rowspan=1 colspan=1>90°C</td></tr><tr><td rowspan=1 colspan=1>工作湿度</td><td rowspan=1 colspan=1>35%（无凝露）</td><td rowspan=1 colspan=1>/</td><td rowspan=1 colspan=1>75%（无凝露）</td></tr><tr><td rowspan=1 colspan=1>存储湿度</td><td rowspan=1 colspan=1>35%（无凝露）</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>75%（无凝露）</td></tr><tr><td rowspan=1 colspan=1>工作电压</td><td rowspan=1 colspan=1>/</td><td rowspan=1 colspan=1>4.0V</td><td rowspan=1 colspan=1>/</td></tr></table>",
+          "caption": "表11",
+          "footnote": ""
+        },
+        {
+          "index_id": 3,
+          "type": "table",
+          "content": "This table contains the following columns:\n - RevsionHistory\n\nTable Body:\nRevsionHistory | RevsionHistory | RevsionHistory\nDraft Date | Revision No. | Description 更新“ROM”章节，新增 eMMC 芯片兼容 1.\n2025/09/30 | V1.9 创龙科 | 型号。 更新 B2B连接器型号，由 LXW242-4180P-B 3R-01变更为 LXW242-4180P-B3R-05。 1.\n2025/03/19 | 2. V1.8 3. 4. 5. | 更新“硬件资源”的\"CPU\"小节，新增 CPU 主频配置说明。 更新\"硬件资源\"的\"ROM\"小节，新增 eMMC 使用寿命说明。 更新“底板设计注意事项”，新增“PCle 接口设计说明”小节。 更新功耗测试数据。 创龙科\n利龙科技 2025/01/22 | V1.7 | 描述优化。 1. 更新“RAM”章节，新增 LPDDR4X芯片兼 容型号。 2. 更新“ROM”章节，新增eMMC芯片兼容 型号。\n2024/11/27 | V1.6 2. 创龙科技 | 更新“CPU”章节，新增 Cortex-MO(MCU) 硬件参数说明。 更新RK3588处理器的宽温级工作温度。\n2024/09/30 | 1. V1.5 | 更新“外设资源”小节Video IN、Video OUT 性能参数描述。\n2024/08/16 | 1. V1.4 | 更新“引脚定义”小节的芯片引脚名称，删 除 CPU 原生 CAN 功能描述。\n2024/07/09 | 1. V1.3 2. | 将“商业级”修改为“宽温级”。 更新“外设资源”小节。\n2024/03/08 | 1. V1.2 2. | 新增“保留 USB3.1OTG”小节。 创 内容勘误。\n2024/01/12 | 1. V1.1 2. | 更新 ROM、RAM 小节。 内容优化与勘误。\n2023/12/01 | V1.0 龙 | 1. 初始版本。",
+          "page": 1,
+          "img_path": "/root/autodl-fs/bookrag/BookRAG/somdata/output/som-001/auto/images/f60ca866be12fa40557b3ede592886c5dbbf76ac602161271f46725868dc3eae.jpg",
+          "table_body": "<table><tr><td colspan=\"3\">RevsionHistory</td></tr><tr><td>Draft Date</td><td>Revision No.</td><td>Description 更新“ROM”章节，新增 eMMC 芯片兼容 1.</td></tr><tr><td>2025/09/30</td><td>V1.9 创龙科</td><td>型号。 更新 B2B连接器型号，由 LXW242-4180P-B 3R-01变更为 LXW242-4180P-B3R-05。 1.</td></tr><tr><td>2025/03/19</td><td>2. V1.8 3. 4. 5.</td><td>更新“硬件资源”的&quot;CPU&quot;小节，新增 CPU 主频配置说明。 更新&quot;硬件资源&quot;的&quot;ROM&quot;小节，新增 eMMC 使用寿命说明。 更新“底板设计注意事项”，新增“PCle 接口设计说明”小节。 更新功耗测试数据。 创龙科</td></tr><tr><td>利龙科技 2025/01/22</td><td>V1.7</td><td>描述优化。 1. 更新“RAM”章节，新增 LPDDR4X芯片兼 容型号。 2. 更新“ROM”章节，新增eMMC芯片兼容 型号。</td></tr><tr><td>2024/11/27</td><td>V1.6 2. 创龙科技</td><td>更新“CPU”章节，新增 Cortex-MO(MCU) 硬件参数说明。 更新RK3588处理器的宽温级工作温度。</td></tr><tr><td>2024/09/30</td><td>1. V1.5</td><td>更新“外设资源”小节Video IN、Video OUT 性能参数描述。</td></tr><tr><td>2024/08/16</td><td>1. V1.4</td><td>更新“引脚定义”小节的芯片引脚名称，删 除 CPU 原生 CAN 功能描述。</td></tr><tr><td>2024/07/09</td><td>1. V1.3 2.</td><td>将“商业级”修改为“宽温级”。 更新“外设资源”小节。</td></tr><tr><td>2024/03/08</td><td>1. V1.2 2.</td><td>新增“保留 USB3.1OTG”小节。 创 内容勘误。</td></tr><tr><td>2024/01/12</td><td>1. V1.1 2.</td><td>更新 ROM、RAM 小节。 内容优化与勘误。</td></tr><tr><td>2023/12/01</td><td>V1.0 龙</td><td>1. 初始版本。</td></tr></table>",
+          "caption": "",
+          "footnote": ""
+        },
+        {
+          "index_id": 295,
+          "type": "text",
+          "content": "5.1.2 系统启动说明",
+          "page": 54
+        },
+        {
+          "index_id": 296,
+          "type": "text",
+          "content": "系统上电后，由 CPU 内部 BootRom 的引导代码依次从eMMC FLASH、SD卡、USB 接口检测 SPL启动程序，从第一个包含 SPL启动程序的设备开始启动。SPL启动后，将优先",
+          "page": 54
+        },
+        {
+          "index_id": 297,
+          "type": "text",
+          "content": "因我们的存在，让嵌入式应用更简单",
+          "page": 54
+        },
+        {
+          "index_id": 300,
+          "type": "text",
+          "content": "从 SD 系统卡（非常规 SD卡）引导U-Boot 镜像，否则，将从原启动设备引导U-Boot 镜像。",
+          "page": 55
+        },
+        {
+          "index_id": 308,
+          "type": "text",
+          "content": "因我们的存在，让嵌入式应用更简单",
+          "page": 55
+        },
+        {
+          "index_id": 286,
+          "type": "text",
+          "content": "公司官网：www.tronlong.com 销售邮箱：sales@tronlong.com 公司总机：020-8998-6280 53/62  \n技术论坛：www.51ele.net 技术邮箱：support@tronlong.com 技术热线：020-3893-9734 备注：请在底板增加如下图所示快速下电电路，以满足快速上电、掉电应用场景下及时泄放底板的电源，确保系统下一次上电符合CPU 和底板器件的上电时序要求。",
+          "page": 53
+        }
+      ],
+      "iteration_text_nodes": [
+        {
+          "index_id": 224,
+          "type": "table",
+          "content": "Caption: 表11\nThis table contains the following columns:\n - 典型值\n - 最大值\n - 最小值\n - 环境参数\n\nTable Body:\n环境参数 | 最小值 | 典型值 | 最大值\n工作温度(工业级) | 包 -40℃ | / | 85℃\n工作温度(宽温级) | 0℃ | 1 | 80℃\n存储温度 | -50°℃ | / | 90°C\n工作湿度 | 35%（无凝露） | / | 75%（无凝露）\n存储湿度 | 35%（无凝露） | 1 | 75%（无凝露）\n工作电压 | / | 4.0V | /",
+          "page": 46,
+          "img_path": "/root/autodl-fs/bookrag/BookRAG/somdata/output/som-001/auto/images/6de58eb87e3a90fe20b82c369a8acb141b80e08974ab2f3c091d2f07c8dbd797.jpg",
+          "table_body": "<table><tr><td rowspan=1 colspan=1>环境参数</td><td rowspan=1 colspan=1>最小值 </td><td rowspan=1 colspan=1>典型值</td><td rowspan=1 colspan=1>最大值</td></tr><tr><td rowspan=1 colspan=1>工作温度(工业级)</td><td rowspan=1 colspan=1>包 -40℃</td><td rowspan=1 colspan=1>/</td><td rowspan=1 colspan=1>85℃</td></tr><tr><td rowspan=1 colspan=1>工作温度(宽温级)</td><td rowspan=1 colspan=1>0℃</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>80℃</td></tr><tr><td rowspan=1 colspan=1>存储温度</td><td rowspan=1 colspan=1>-50°℃</td><td rowspan=1 colspan=1>/</td><td rowspan=1 colspan=1>90°C</td></tr><tr><td rowspan=1 colspan=1>工作湿度</td><td rowspan=1 colspan=1>35%（无凝露）</td><td rowspan=1 colspan=1>/</td><td rowspan=1 colspan=1>75%（无凝露）</td></tr><tr><td rowspan=1 colspan=1>存储湿度</td><td rowspan=1 colspan=1>35%（无凝露）</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>75%（无凝露）</td></tr><tr><td rowspan=1 colspan=1>工作电压</td><td rowspan=1 colspan=1>/</td><td rowspan=1 colspan=1>4.0V</td><td rowspan=1 colspan=1>/</td></tr></table>",
+          "caption": "表11",
+          "footnote": ""
+        },
+        {
+          "index_id": 3,
+          "type": "table",
+          "content": "This table contains the following columns:\n - RevsionHistory\n\nTable Body:\nRevsionHistory | RevsionHistory | RevsionHistory\nDraft Date | Revision No. | Description 更新“ROM”章节，新增 eMMC 芯片兼容 1.\n2025/09/30 | V1.9 创龙科 | 型号。 更新 B2B连接器型号，由 LXW242-4180P-B 3R-01变更为 LXW242-4180P-B3R-05。 1.\n2025/03/19 | 2. V1.8 3. 4. 5. | 更新“硬件资源”的\"CPU\"小节，新增 CPU 主频配置说明。 更新\"硬件资源\"的\"ROM\"小节，新增 eMMC 使用寿命说明。 更新“底板设计注意事项”，新增“PCle 接口设计说明”小节。 更新功耗测试数据。 创龙科\n利龙科技 2025/01/22 | V1.7 | 描述优化。 1. 更新“RAM”章节，新增 LPDDR4X芯片兼 容型号。 2. 更新“ROM”章节，新增eMMC芯片兼容 型号。\n2024/11/27 | V1.6 2. 创龙科技 | 更新“CPU”章节，新增 Cortex-MO(MCU) 硬件参数说明。 更新RK3588处理器的宽温级工作温度。\n2024/09/30 | 1. V1.5 | 更新“外设资源”小节Video IN、Video OUT 性能参数描述。\n2024/08/16 | 1. V1.4 | 更新“引脚定义”小节的芯片引脚名称，删 除 CPU 原生 CAN 功能描述。\n2024/07/09 | 1. V1.3 2. | 将“商业级”修改为“宽温级”。 更新“外设资源”小节。\n2024/03/08 | 1. V1.2 2. | 新增“保留 USB3.1OTG”小节。 创 内容勘误。\n2024/01/12 | 1. V1.1 2. | 更新 ROM、RAM 小节。 内容优化与勘误。\n2023/12/01 | V1.0 龙 | 1. 初始版本。",
+          "page": 1,
+          "img_path": "/root/autodl-fs/bookrag/BookRAG/somdata/output/som-001/auto/images/f60ca866be12fa40557b3ede592886c5dbbf76ac602161271f46725868dc3eae.jpg",
+          "table_body": "<table><tr><td colspan=\"3\">RevsionHistory</td></tr><tr><td>Draft Date</td><td>Revision No.</td><td>Description 更新“ROM”章节，新增 eMMC 芯片兼容 1.</td></tr><tr><td>2025/09/30</td><td>V1.9 创龙科</td><td>型号。 更新 B2B连接器型号，由 LXW242-4180P-B 3R-01变更为 LXW242-4180P-B3R-05。 1.</td></tr><tr><td>2025/03/19</td><td>2. V1.8 3. 4. 5.</td><td>更新“硬件资源”的&quot;CPU&quot;小节，新增 CPU 主频配置说明。 更新&quot;硬件资源&quot;的&quot;ROM&quot;小节，新增 eMMC 使用寿命说明。 更新“底板设计注意事项”，新增“PCle 接口设计说明”小节。 更新功耗测试数据。 创龙科</td></tr><tr><td>利龙科技 2025/01/22</td><td>V1.7</td><td>描述优化。 1. 更新“RAM”章节，新增 LPDDR4X芯片兼 容型号。 2. 更新“ROM”章节，新增eMMC芯片兼容 型号。</td></tr><tr><td>2024/11/27</td><td>V1.6 2. 创龙科技</td><td>更新“CPU”章节，新增 Cortex-MO(MCU) 硬件参数说明。 更新RK3588处理器的宽温级工作温度。</td></tr><tr><td>2024/09/30</td><td>1. V1.5</td><td>更新“外设资源”小节Video IN、Video OUT 性能参数描述。</td></tr><tr><td>2024/08/16</td><td>1. V1.4</td><td>更新“引脚定义”小节的芯片引脚名称，删 除 CPU 原生 CAN 功能描述。</td></tr><tr><td>2024/07/09</td><td>1. V1.3 2.</td><td>将“商业级”修改为“宽温级”。 更新“外设资源”小节。</td></tr><tr><td>2024/03/08</td><td>1. V1.2 2.</td><td>新增“保留 USB3.1OTG”小节。 创 内容勘误。</td></tr><tr><td>2024/01/12</td><td>1. V1.1 2.</td><td>更新 ROM、RAM 小节。 内容优化与勘误。</td></tr><tr><td>2023/12/01</td><td>V1.0 龙</td><td>1. 初始版本。</td></tr></table>",
+          "caption": "",
+          "footnote": ""
+        },
+        {
+          "index_id": 295,
+          "type": "text",
+          "content": "5.1.2 系统启动说明",
+          "page": 54
+        },
+        {
+          "index_id": 296,
+          "type": "text",
+          "content": "系统上电后，由 CPU 内部 BootRom 的引导代码依次从eMMC FLASH、SD卡、USB 接口检测 SPL启动程序，从第一个包含 SPL启动程序的设备开始启动。SPL启动后，将优先",
+          "page": 54
+        },
+        {
+          "index_id": 297,
+          "type": "text",
+          "content": "因我们的存在，让嵌入式应用更简单",
+          "page": 54
+        },
+        {
+          "index_id": 300,
+          "type": "text",
+          "content": "从 SD 系统卡（非常规 SD卡）引导U-Boot 镜像，否则，将从原启动设备引导U-Boot 镜像。",
+          "page": 55
+        },
+        {
+          "index_id": 308,
+          "type": "text",
+          "content": "因我们的存在，让嵌入式应用更简单",
+          "page": 55
+        },
+        {
+          "index_id": 286,
+          "type": "text",
+          "content": "公司官网：www.tronlong.com 销售邮箱：sales@tronlong.com 公司总机：020-8998-6280 53/62  \n技术论坛：www.51ele.net 技术邮箱：support@tronlong.com 技术热线：020-3893-9734 备注：请在底板增加如下图所示快速下电电路，以满足快速上电、掉电应用场景下及时泄放底板的电源，确保系统下一次上电符合CPU 和底板器件的上电时序要求。",
+          "page": 53
+        }
+      ],
+      "iteration_image_nodes": [],
+      "iteration_graph_nodes": [
+        {
+          "entity_name": "u boot",
+          "entity_type": "SOFTWARE"
+        },
+        {
+          "entity_name": "初始版本",
+          "entity_type": "TASK_OR_PROBLEM"
+        },
+        {
+          "entity_name": "bootrom",
+          "entity_type": "SOFTWARE"
+        },
+        {
+          "entity_name": "spl",
+          "entity_type": "SOFTWARE"
+        },
+        {
+          "entity_name": "工作电压",
+          "entity_type": "TASK_OR_PROBLEM"
+        }
+      ],
+      "partial_answers": [
+        {
+          "source": "Text Chunk 1",
+          "content": "系统上电后且SPL启动后，将优先从 **SD系统卡（非常规SD卡）** 引导U-Boot镜像。如果SD系统卡中没有U-Boot镜像，则会从原启动设备引导U-Boot镜像。"
+        }
+      ],
+      "generated_answer": "系统上电后且SPL启动后，将优先从 **SD系统卡（非常规SD卡）** 引导U-Boot镜像。如果SD系统卡中没有U-Boot镜像，则会从原启动设备引导U-Boot镜像。"
+    }
+  ],
+  "final_answer": "系统上电后且SPL启动后，将优先从 **SD系统卡（非常规SD卡）** 引导U-Boot镜像。如果SD系统卡中没有U-Boot镜像，则会从原启动设备引导U-Boot镜像。"
+}

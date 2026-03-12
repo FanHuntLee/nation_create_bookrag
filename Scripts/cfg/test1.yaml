@@ -1,0 +1,3 @@
+dataset_path: /root/autodl-fs/bookrag/BookRAG/test1data/test1_dataset.json
+working_dir: /root/autodl-fs/bookrag/BookRAG/test1data/output
+dataset_name: test1

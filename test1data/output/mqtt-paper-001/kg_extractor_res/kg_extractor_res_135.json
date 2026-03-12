@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "mqtt sinewave pub",
+      "entity_type": "SOFTWARE",
+      "description": "mqtt sinewave pub is a software application used to publish messages to an mqtt broker",
+      "source_ids": [
+        135
+      ]
+    },
+    {
+      "entity_name": "broker hivemq com",
+      "entity_type": "LOCATION",
+      "description": "broker hivemq com is a location where an mqtt broker is hosted  allowing message publishing",
+      "source_ids": [
+        135
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "mqtt sinewave pub",
+      "tgt_entity_name": "broker hivemq com",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "mqtt sinewave pub publishes messages to the mqtt broker hosted at broker hivemq com",
+      "source_ids": [
+        135
+      ]
+    }
+  ],
+  "node_idx": 135
+}

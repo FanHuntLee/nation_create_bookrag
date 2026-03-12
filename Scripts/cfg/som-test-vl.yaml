@@ -1,0 +1,4 @@
+# 测试数据集配置
+dataset_path: /root/autodl-fs/bookrag/BookRAG/somdata-vl/som-testdata.json
+working_dir: /root/autodl-fs/bookrag/BookRAG/somdata-vl/output
+dataset_name: som

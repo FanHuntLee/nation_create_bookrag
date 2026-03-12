@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "entity_name": "mqtt",
+      "entity_type": "TECHNOLOGY",
+      "description": "mqtt is a protocol used for messaging that the evaluation board receives messages from",
+      "source_ids": [
+        88
+      ]
+    },
+    {
+      "entity_name": "broker hivemq com",
+      "entity_type": "LOCATION",
+      "description": "broker hivemq com is a location where the mqtt server is hosted  allowing messages to be published and received",
+      "source_ids": [
+        88
+      ]
+    },
+    {
+      "entity_name": "test data",
+      "entity_type": "TOPIC",
+      "description": "test data is a topic used in the mqtt protocol for publishing and receiving messages",
+      "source_ids": [
+        88
+      ]
+    },
+    {
+      "entity_name": "www tronlong com",
+      "entity_type": "LOCATION",
+      "description": "www tronlong com is a location associated with the message being published through the mqtt protocol",
+      "source_ids": [
+        88
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "mqtt",
+      "tgt_entity_name": "broker hivemq com",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "mqtt uses broker hivemq com as the server location for message publishing and receiving",
+      "source_ids": [
+        88
+      ]
+    },
+    {
+      "src_entity_name": "mqtt",
+      "tgt_entity_name": "test data",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "mqtt uses test data as a topic for message publishing and receiving",
+      "source_ids": [
+        88
+      ]
+    },
+    {
+      "src_entity_name": "mqtt",
+      "tgt_entity_name": "www tronlong com",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "mqtt is used to publish messages to www tronlong com",
+      "source_ids": [
+        88
+      ]
+    },
+    {
+      "src_entity_name": "broker hivemq com",
+      "tgt_entity_name": "test data",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "broker hivemq com hosts the mqtt server that uses test data as a topic for message publishing",
+      "source_ids": [
+        88
+      ]
+    },
+    {
+      "src_entity_name": "broker hivemq com",
+      "tgt_entity_name": "www tronlong com",
+      "relation_name": "",
+      "weight": 7.0,
+      "description": "broker hivemq com is the server that facilitates message publishing to www tronlong com",
+      "source_ids": [
+        88
+      ]
+    },
+    {
+      "src_entity_name": "test data",
+      "tgt_entity_name": "www tronlong com",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "test data is the topic used to publish messages to www tronlong com",
+      "source_ids": [
+        88
+      ]
+    }
+  ],
+  "node_idx": 88
+}

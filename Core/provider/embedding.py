@@ -57,7 +57,7 @@ class GmeEmbeddingProvider(BaseEmbedder):
         model_name: str = "Alibaba-NLP/gme-Qwen2-VL-2B-Instruct",
         device: str = "auto",
     ):
-        if hasattr(self, "_initialized") and self._initialized:
+        if hasattr(self, "_initialized") and self._initialized and hasattr(self, "model"):
             return
 
         os.environ["TOKENIZERS_PARALLELISM"] = "false"

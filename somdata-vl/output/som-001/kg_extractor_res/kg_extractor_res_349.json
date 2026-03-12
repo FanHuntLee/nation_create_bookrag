@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "entity_name": "30",
+      "entity_type": "IMAGE",
+      "description": "30 is a figure or image referenced in the text  indicating a visual element present in the document",
+      "source_ids": [
+        349
+      ]
+    }
+  ],
+  "relations": [],
+  "node_idx": 349
+}

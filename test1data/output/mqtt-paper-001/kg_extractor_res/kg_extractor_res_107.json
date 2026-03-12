@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "2.4关键代码",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of '2mqtt_client 案例', this section provides the core implementation details and critical code segments that demonstrate the functionality of the MQTT client in the MQTT communication protocol case study.",
+      "source_ids": [
+        107
+      ]
+    },
+    {
+      "entity_name": "关键代码",
+      "entity_type": "SECTION_TITLE",
+      "description": "Refers to the essential code components that are analyzed and explained in this section.",
+      "source_ids": [
+        107
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "关键代码",
+      "tgt_entity_name": "2.4关键代码",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '关键代码' is the primary focus of section 2.4.",
+      "source_ids": [
+        107
+      ]
+    }
+  ],
+  "node_idx": 107
+}

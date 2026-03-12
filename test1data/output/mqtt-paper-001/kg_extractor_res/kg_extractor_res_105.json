@@ -1,0 +1,51 @@
+{
+  "entities": [
+    {
+      "entity_name": "sdk path",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "sdk path is a parameter or variable representing the path to the linux sdk source code",
+      "source_ids": [
+        105
+      ]
+    },
+    {
+      "entity_name": "rk3588",
+      "entity_type": "PRODUCT",
+      "description": "rk3588 is a product mentioned as the target platform for the linux sdk",
+      "source_ids": [
+        105
+      ]
+    },
+    {
+      "entity_name": "linux",
+      "entity_type": "OPERATING_SYSTEM",
+      "description": "linux is an operating system for which the sdk is being set up",
+      "source_ids": [
+        105
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "sdk path",
+      "tgt_entity_name": "rk3588",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "sdk path points to the linux sdk source code for the rk3588 product",
+      "source_ids": [
+        105
+      ]
+    },
+    {
+      "src_entity_name": "sdk path",
+      "tgt_entity_name": "linux",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "sdk path is the path to the linux sdk source code",
+      "source_ids": [
+        105
+      ]
+    }
+  ],
+  "node_idx": 105
+}

@@ -1,0 +1,121 @@
+{
+  "entities": [
+    {
+      "entity_name": "ubuntu",
+      "entity_type": "LOCATION",
+      "description": "ubuntu is a location where the source files need to be copied to  indicating it is the target directory for the files",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "entity_name": "debian",
+      "entity_type": "BOOK",
+      "description": "debian        is a document that needs to be referenced before compiling the linuxsdk  indicating it provides necessary instructions for the process",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "entity_name": "linuxsdk",
+      "entity_type": "PRODUCT",
+      "description": "linuxsdk is a software product that needs to be compiled before proceeding with the case setup  indicating it is a key component of the process",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "entity_name": "src",
+      "entity_type": "DIRECTORY",
+      "description": "src is a directory containing the case files that need to be copied to the ubuntu working directory  indicating it is the source location of the files",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "entity_name": "rk3588 linux release v1 2 1",
+      "entity_type": "SOFTWARE",
+      "description": "rk3588 linux release v1 2 1 is a software release version that contains the necessary tools for cross compilation  indicating it is a key component of the setup process",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "entity_name": "gcc linaro 10 2 1 2021 01 x86 64 aarch64 linux gnu",
+      "entity_type": "SOFTWARE",
+      "description": "gcc  linaro 10 2 1 2021 01 x86 64 aarch64 linux gnu is a specific compiler tool used for cross compilation  indicating it is part of the toolchain environment",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "entity_name": "makefile",
+      "entity_type": "FILE",
+      "description": "makefile is a configuration file that needs to be modified to set up the cross compilation environment  indicating it is a key file in the process",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "entity_name": "cross compilation",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        95
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "src",
+      "tgt_entity_name": "ubuntu",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the src directory needs to be copied to the ubuntu working directory  indicating a direct transfer of files between these locations",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "src_entity_name": "debian",
+      "tgt_entity_name": "linuxsdk",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "the debian        needs to be referenced before compiling the linuxsdk  indicating a prerequisite relationship between the document and the software product",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "src_entity_name": "src",
+      "tgt_entity_name": "makefile",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the src directory contains the makefile that needs to be modified  indicating a direct association between the directory and the configuration file",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "src_entity_name": "rk3588 linux release v1 2 1",
+      "tgt_entity_name": "gcc linaro 10 2 1 2021 01 x86 64 aarch64 linux gnu",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the rk3588 linux release v1 2 1 contains the gcc  linaro 10 2 1 2021 01 x86 64 aarch64 linux gnu compiler tool  indicating it is part of the software release",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "src_entity_name": "makefile",
+      "tgt_entity_name": "cross compilation",
+      "relation_name": "",
+      "weight": 7.0,
+      "description": "the makefile is used to configure the cross compilation environment  indicating its role in the setup process",
+      "source_ids": [
+        95
+      ]
+    }
+  ],
+  "node_idx": 95
+}

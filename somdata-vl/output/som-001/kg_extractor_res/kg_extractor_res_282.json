@@ -1,0 +1,357 @@
+{
+  "entities": [
+    {
+      "entity_name": "图 18vdd_5v0_main 电源设计",
+      "entity_type": "IMAGE",
+      "description": "一张电源电路设计图，标题为“图 18VDD_5V0_MAIN 电源设计”，展示了一个基于EC2232E芯片的开关电源电路，用于将输入电压转换为输出电压。",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "entity_name": "ec2232e",
+      "entity_type": "PRODUCT",
+      "description": "电路中的核心电源管理芯片，用于电压转换和稳压。",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "entity_name": "vdd_12v0_main",
+      "entity_type": "ELECTRICAL_VOLTAGE",
+      "description": "电路的输入电源电压，为12V。",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "entity_name": "vdd_3v3_som_output",
+      "entity_type": "ELECTRICAL_VOLTAGE",
+      "description": "电路的一个输出电压，为3.3V，用于SOM（System on Module）模块。",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "entity_name": "vdd_5v0_main",
+      "entity_type": "ELECTRICAL_VOLTAGE",
+      "description": "电路的主要输出电压，为5V，最大电流为3A。",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "entity_name": "csab0518-2r2m",
+      "entity_type": "PRODUCT",
+      "description": "电路中的电感器，型号为CSAB0518-2R2M，用于储能和滤波。",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "entity_name": "r40",
+      "entity_type": "PRODUCT",
+      "description": "一个10KΩ的电阻，用于电路中的分压或限流。",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "entity_name": "r44",
+      "entity_type": "PRODUCT",
+      "description": "一个10KΩ的电阻，用于电路中的分压或限流。",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "entity_name": "r41",
+      "entity_type": "PRODUCT",
+      "description": "一个56KΩ的电阻，用于电路中的分压或限流。",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "entity_name": "r2",
+      "entity_type": "PRODUCT",
+      "description": "一个7.5KΩ的电阻，用于电路中的分压或限流。",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "entity_name": "c20",
+      "entity_type": "PRODUCT",
+      "description": "一个22uF的电容，用于滤波和稳定电压。",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "entity_name": "c21",
+      "entity_type": "PRODUCT",
+      "description": "一个4.7uF的电容，用于滤波和稳定电压。",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "entity_name": "c22",
+      "entity_type": "PRODUCT",
+      "description": "一个100uF的电容，用于滤波和稳定电压。",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "entity_name": "c12",
+      "entity_type": "PRODUCT",
+      "description": "一个100nF的电容，用于滤波和稳定电压。",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "entity_name": "c23",
+      "entity_type": "PRODUCT",
+      "description": "一个47uF的电容，用于滤波和稳定电压。",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "entity_name": "c24",
+      "entity_type": "PRODUCT",
+      "description": "一个22uF的电容，用于滤波和稳定电压。",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "entity_name": "c25",
+      "entity_type": "PRODUCT",
+      "description": "一个100uF的电容，用于滤波和稳定电压。",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "entity_name": "vin = 3.3*10/(10+10) = 1.65v",
+      "entity_type": "EQUATION_OR_FORMULA",
+      "description": "一个计算公式，用于计算输入电压Vin的值，结果为1.65V。",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "entity_name": "vout = vfb*(1+r1/r2) = 0.6*(1+56/7.5) = 5.02v",
+      "entity_type": "EQUATION_OR_FORMULA",
+      "description": "一个计算公式，用于计算输出电压Vout的值，结果为5.02V。",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "entity_name": "创龙科技",
+      "entity_type": "ORGANIZATION",
+      "description": "电路图上的水印，可能代表设计或提供该电路图的公司或机构。",
+      "source_ids": [
+        282
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "图 18vdd_5v0_main 电源设计",
+      "tgt_entity_name": "ec2232e",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 18VDD_5V0_MAIN 电源设计 related to EC2232E",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "src_entity_name": "图 18vdd_5v0_main 电源设计",
+      "tgt_entity_name": "vdd_12v0_main",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 18VDD_5V0_MAIN 电源设计 related to VDD_12V0_MAIN",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "src_entity_name": "图 18vdd_5v0_main 电源设计",
+      "tgt_entity_name": "vdd_3v3_som_output",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 18VDD_5V0_MAIN 电源设计 related to VDD_3V3_SOM_OUTPUT",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "src_entity_name": "图 18vdd_5v0_main 电源设计",
+      "tgt_entity_name": "vdd_5v0_main",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 18VDD_5V0_MAIN 电源设计 related to VDD_5V0_MAIN",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "src_entity_name": "图 18vdd_5v0_main 电源设计",
+      "tgt_entity_name": "csab0518-2r2m",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 18VDD_5V0_MAIN 电源设计 related to CSAB0518-2R2M",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "src_entity_name": "图 18vdd_5v0_main 电源设计",
+      "tgt_entity_name": "r40",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 18VDD_5V0_MAIN 电源设计 related to R40",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "src_entity_name": "图 18vdd_5v0_main 电源设计",
+      "tgt_entity_name": "r44",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 18VDD_5V0_MAIN 电源设计 related to R44",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "src_entity_name": "图 18vdd_5v0_main 电源设计",
+      "tgt_entity_name": "r41",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 18VDD_5V0_MAIN 电源设计 related to R41",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "src_entity_name": "图 18vdd_5v0_main 电源设计",
+      "tgt_entity_name": "r2",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 18VDD_5V0_MAIN 电源设计 related to R2",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "src_entity_name": "图 18vdd_5v0_main 电源设计",
+      "tgt_entity_name": "c20",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 18VDD_5V0_MAIN 电源设计 related to C20",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "src_entity_name": "图 18vdd_5v0_main 电源设计",
+      "tgt_entity_name": "c21",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 18VDD_5V0_MAIN 电源设计 related to C21",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "src_entity_name": "图 18vdd_5v0_main 电源设计",
+      "tgt_entity_name": "c22",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 18VDD_5V0_MAIN 电源设计 related to C22",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "src_entity_name": "图 18vdd_5v0_main 电源设计",
+      "tgt_entity_name": "c12",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 18VDD_5V0_MAIN 电源设计 related to C12",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "src_entity_name": "图 18vdd_5v0_main 电源设计",
+      "tgt_entity_name": "c23",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 18VDD_5V0_MAIN 电源设计 related to C23",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "src_entity_name": "图 18vdd_5v0_main 电源设计",
+      "tgt_entity_name": "c24",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 18VDD_5V0_MAIN 电源设计 related to C24",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "src_entity_name": "图 18vdd_5v0_main 电源设计",
+      "tgt_entity_name": "c25",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 18VDD_5V0_MAIN 电源设计 related to C25",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "src_entity_name": "图 18vdd_5v0_main 电源设计",
+      "tgt_entity_name": "vin = 3.3*10/(10+10) = 1.65v",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 18VDD_5V0_MAIN 电源设计 related to Vin = 3.3*10/(10+10) = 1.65V",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "src_entity_name": "图 18vdd_5v0_main 电源设计",
+      "tgt_entity_name": "vout = vfb*(1+r1/r2) = 0.6*(1+56/7.5) = 5.02v",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 18VDD_5V0_MAIN 电源设计 related to Vout = Vfb*(1+R1/R2) = 0.6*(1+56/7.5) = 5.02V",
+      "source_ids": [
+        282
+      ]
+    },
+    {
+      "src_entity_name": "图 18vdd_5v0_main 电源设计",
+      "tgt_entity_name": "创龙科技",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 18VDD_5V0_MAIN 电源设计 related to 创龙科技",
+      "source_ids": [
+        282
+      ]
+    }
+  ],
+  "node_idx": 282
+}

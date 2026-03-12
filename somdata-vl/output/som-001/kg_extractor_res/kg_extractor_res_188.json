@@ -1,0 +1,267 @@
+{
+  "entities": [
+    {
+      "entity_name": "table 1",
+      "entity_type": "TABLE",
+      "description": "A table with column headers indicating electronic components or circuit configurations.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "entity_name": "a67",
+      "entity_type": "DATASET_OR_CORPUS",
+      "description": "A column header representing an electronic component or circuit configuration.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "entity_name": "am17",
+      "entity_type": "DATASET_OR_CORPUS",
+      "description": "A column header representing an electronic component or circuit configuration.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "entity_name": "saradc_in4",
+      "entity_type": "DATASET_OR_CORPUS",
+      "description": "A column header representing an electronic component or circuit configuration.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "entity_name": "并联1nf电容至gnd",
+      "entity_type": "DATASET_OR_CORPUS",
+      "description": "A column header representing an electronic component or circuit configuration, indicating a parallel 1nF capacitor connected to GND.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "entity_name": "a71",
+      "entity_type": "MODEL_OR_ARCHITECTURE",
+      "description": "A hardware component or model identifier used in circuit design or electronic systems.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "entity_name": "al17",
+      "entity_type": "MODEL_OR_ARCHITECTURE",
+      "description": "A hardware component or model identifier used in circuit design or electronic systems.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "entity_name": "saradc_in6",
+      "entity_type": "MODEL_OR_ARCHITECTURE",
+      "description": "A hardware component or model identifier used in circuit design or electronic systems.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "entity_name": "a73",
+      "entity_type": "MODEL_OR_ARCHITECTURE",
+      "description": "A hardware component or model identifier used in circuit design or electronic systems.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "entity_name": "ak17",
+      "entity_type": "MODEL_OR_ARCHITECTURE",
+      "description": "A hardware component or model identifier used in circuit design or electronic systems.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "entity_name": "saradc_in7",
+      "entity_type": "MODEL_OR_ARCHITECTURE",
+      "description": "A hardware component or model identifier used in circuit design or electronic systems.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "entity_name": "b48",
+      "entity_type": "MODEL_OR_ARCHITECTURE",
+      "description": "A hardware component or model identifier used in circuit design or electronic systems.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "entity_name": "ae29",
+      "entity_type": "MODEL_OR_ARCHITECTURE",
+      "description": "A hardware component or model identifier used in circuit design or electronic systems.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "entity_name": "gmac1_mclkinout/i2s2_lrck_m1/uart3_rx_m1/pwm13_m0/gpio3_b6_d",
+      "entity_type": "MODEL_OR_ARCHITECTURE",
+      "description": "A hardware component or model identifier used in circuit design or electronic systems.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "entity_name": "串联0ω电阻",
+      "entity_type": "METHOD_OR_TECHNIQUE",
+      "description": "A circuit design technique involving series connection of a 0Ω resistor.",
+      "source_ids": [
+        188
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "table 1",
+      "tgt_entity_name": "a67",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table 1' contains data about 'A67'.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "src_entity_name": "table 1",
+      "tgt_entity_name": "am17",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table 1' contains data about 'AM17'.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "src_entity_name": "table 1",
+      "tgt_entity_name": "saradc_in4",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table 1' contains data about 'SARADC_IN4'.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "src_entity_name": "table 1",
+      "tgt_entity_name": "并联1nf电容至gnd",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table 1' contains data about '并联1nF电容至GND'.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "src_entity_name": "table 1",
+      "tgt_entity_name": "a71",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table 1' contains data about 'A71'.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "src_entity_name": "table 1",
+      "tgt_entity_name": "al17",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table 1' contains data about 'AL17'.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "src_entity_name": "table 1",
+      "tgt_entity_name": "saradc_in6",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table 1' contains data about 'SARADC_IN6'.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "src_entity_name": "table 1",
+      "tgt_entity_name": "a73",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table 1' contains data about 'A73'.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "src_entity_name": "table 1",
+      "tgt_entity_name": "ak17",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table 1' contains data about 'AK17'.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "src_entity_name": "table 1",
+      "tgt_entity_name": "saradc_in7",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table 1' contains data about 'SARADC_IN7'.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "src_entity_name": "table 1",
+      "tgt_entity_name": "b48",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table 1' contains data about 'B48'.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "src_entity_name": "table 1",
+      "tgt_entity_name": "ae29",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table 1' contains data about 'AE29'.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "src_entity_name": "table 1",
+      "tgt_entity_name": "gmac1_mclkinout/i2s2_lrck_m1/uart3_rx_m1/pwm13_m0/gpio3_b6_d",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table 1' contains data about 'GMAC1_MCLKINOUT/I2S2_LRCK_M1/UART3_RX_M1/PWM13_M0/GPIO3_B6_d'.",
+      "source_ids": [
+        188
+      ]
+    },
+    {
+      "src_entity_name": "table 1",
+      "tgt_entity_name": "串联0ω电阻",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table 1' contains data about '串联0Ω电阻'.",
+      "source_ids": [
+        188
+      ]
+    }
+  ],
+  "node_idx": 188
+}

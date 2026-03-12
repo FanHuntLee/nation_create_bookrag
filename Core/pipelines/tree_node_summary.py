@@ -248,9 +248,14 @@ def generate_tree_node_summary(
             log.info(
                 f"Generating summaries for {len(vlm_prompt_list)} nodes using VLM."
             )
-            vlm_summaries = vlm.batch_generate(
-                query=vlm_prompt_list, images=vlm_images_list
-            )
+            vlm_summaries: List[str] = []
+            for prompt_text, image_path in zip(vlm_prompt_list, vlm_images_list):
+                try:
+                    summary = vlm.generate(prompt_or_memory=prompt_text, images=[image_path])
+                except Exception as e:
+                    log.error(f"VLM error when generating summary for image '{image_path}': {e}")
+                    summary = ""
+                vlm_summaries.append(summary)
             for idx, summary in zip(vlm_node_idx_list, vlm_summaries):
                 node = tree_index.get_node_by_index_id(idx)
                 if node:

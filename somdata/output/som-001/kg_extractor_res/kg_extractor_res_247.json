@@ -1,0 +1,69 @@
+{
+  "entities": [
+    {
+      "entity_name": "3.3.2 宽温级核心板热成像",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of '3.3 热成像图', this section presents the thermal imaging results of the wide-temperature core board under different operating conditions, including temperature measurement points and their corresponding thermal distribution.",
+      "source_ids": [
+        247
+      ]
+    },
+    {
+      "entity_name": "宽温级核心板",
+      "entity_type": "PRODUCT",
+      "description": "Refers to the industrial core board designed for wide-temperature operation, which is the subject of the thermal imaging analysis in this section.",
+      "source_ids": [
+        247
+      ]
+    },
+    {
+      "entity_name": "热成像",
+      "entity_type": "TECHNOLOGY",
+      "description": "Refers to the thermal imaging technique used to visualize temperature distribution on the core board, as described in this section.",
+      "source_ids": [
+        247
+      ]
+    },
+    {
+      "entity_name": "温度测量点",
+      "entity_type": "MEASUREMENT",
+      "description": "Refers to specific points on the core board where temperature readings are taken, as indicated in the thermal imaging results.",
+      "source_ids": [
+        247
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "宽温级核心板",
+      "tgt_entity_name": "3.3.2 宽温级核心板热成像",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The '宽温级核心板' is the primary subject of this section, which focuses on its thermal imaging analysis.",
+      "source_ids": [
+        247
+      ]
+    },
+    {
+      "src_entity_name": "热成像",
+      "tgt_entity_name": "3.3.2 宽温级核心板热成像",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The '热成像' technique is the method used to analyze the thermal behavior of the core board in this section.",
+      "source_ids": [
+        247
+      ]
+    },
+    {
+      "src_entity_name": "温度测量点",
+      "tgt_entity_name": "3.3.2 宽温级核心板热成像",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The '温度测量点' are the specific locations on the core board where thermal data is collected and visualized.",
+      "source_ids": [
+        247
+      ]
+    }
+  ],
+  "node_idx": 247
+}

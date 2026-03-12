@@ -1,0 +1,1149 @@
+{
+  "entities": [
+    {
+      "entity_name": "图 4",
+      "entity_type": "IMAGE",
+      "description": "处理器功能框图，展示了RK3588J芯片的内部架构和各模块功能。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "rk3588j",
+      "entity_type": "PRODUCT",
+      "description": "一款处理器芯片，其功能框图展示了其内部架构和各模块的详细信息。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "system peripheral",
+      "entity_type": "SECTION_TITLE",
+      "description": "系统外设模块，包含时钟与复位、电源管理单元、定时器、看门狗、加密模块等。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "clock & reset",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "系统时钟与复位模块，负责为处理器提供时钟信号和复位功能。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "pmu",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "电源管理单元，用于管理处理器的电源供应和功耗。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "18x pll",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "18个锁相环，用于生成系统所需的多种时钟频率。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "system register",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "系统寄存器，用于存储和管理处理器的系统状态信息。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "30x timer",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "30个定时器，用于实现精确的时间控制和中断管理。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "16x pwm",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "16个脉宽调制器，用于控制电机、LED等设备的输出。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "5x watchdog",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "5个看门狗定时器，用于监控系统运行状态并进行复位。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "2x crypto",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "2个加密模块，用于数据加密和解密。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "sar-adc",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "逐次逼近型模数转换器，用于将模拟信号转换为数字信号。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "ts-adc",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "触摸屏模数转换器，用于处理触摸屏输入。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "interrupt controller",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "中断控制器，用于管理处理器的中断请求。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "3x dmac",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "3个直接内存访问控制器，用于在内存之间高效传输数据。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "6x pvtm",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "6个物理电压转换模块，用于管理芯片内部的电压转换。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "3x mailbox",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "3个邮箱模块，用于处理器间或处理器与外设间的通信。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "multi-media interface",
+      "entity_type": "SECTION_TITLE",
+      "description": "多媒体接口模块，包含MIPI-CSI、MIPI-DSI、HDMI、Display Controller等。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "2x mipi-csi dphy 4l/cphy 3l",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "2个MIPI CSI接口，支持4线DPHY和3线CPHY，用于连接摄像头。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "4x mipi-csi dphy 2l",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "4个MIPI CSI接口，支持2线DPHY，用于连接摄像头。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "2x mipi-dsi dphy 4 lane",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "2个MIPI DSI接口，支持4线DPHY，用于连接显示屏。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "2x dp1.4 4 lane with hdcp2.3 (combo with usb3)",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "2个DisplayPort 1.4接口，支持4线，带HDCP2.3保护，可与USB3组合使用。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "hdmi rx 2.0",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "HDMI接收器2.0，用于接收高清视频信号。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "display controller (support video hdr output)",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "显示控制器，支持视频HDR输出。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "dual-cluster core",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "双集群核心，包含Cortex-A76四核和Cortex-A55四核。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "cortex-a76 quad-core",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "Cortex-A76四核处理器，具有64K/64K L1缓存和64K/64K L2缓存。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "cortex-a55 quad-core",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "Cortex-A55四核处理器，具有32K/32K L1缓存和512KB L2缓存。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "2mb l2 cache",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "2MB二级缓存，用于加速处理器的数据访问。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "3mb l3 cache",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "3MB三级缓存，用于加速处理器的数据访问。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "mcu (cortex-m0) x3",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "3个微控制器单元，基于Cortex-M0内核，用于低功耗控制。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "high performance npu",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "高性能神经网络处理器，用于加速AI计算。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "1mb share memory",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "1MB共享内存，用于处理器间的数据交换。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "multi-media processor",
+      "entity_type": "SECTION_TITLE",
+      "description": "多媒体处理器模块，包含GPU、图形引擎、图像增强处理器、视频编码器和解码器。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "gpu mali-g610 mp4",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "Mali-G610四核GPU，具有4x256KB L2缓存，用于图形渲染。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "2d graphics engine",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "2D图形引擎，用于处理2D图形渲染。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "image enhancement processor",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "图像增强处理器，用于提升图像质量。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "dual pipe isp (support camera hdr input)",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "双管道图像信号处理器，支持相机HDR输入。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "8k video encoder (h265/h264...)",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "8K视频编码器，支持H265/H264等编码格式。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "8k 10-bits video decoder (h265/h264/vp9...)",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "8K 10位视频解码器，支持H265/H264/VP9等解码格式。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "jpeg encoder/decoder",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "JPEG编码器/解码器，用于图像的压缩和解压缩。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "external memory interface",
+      "entity_type": "SECTION_TITLE",
+      "description": "外部存储接口模块，包含eMMC、SD卡、LPDDR内存等。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "emmc5.1",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "eMMC 5.1存储接口，用于连接嵌入式多媒体卡。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "sd3.0/mmc4.5",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "SD 3.0/MMC 4.5存储接口，用于连接SD卡或MMC卡。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "lpddr4/lpddr4x/lpddr5 quad-channel x16bit",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "LPDDR4/LPDDR4X/LPDDR5四通道16位内存接口，用于连接低功耗内存。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "connectivity",
+      "entity_type": "SECTION_TITLE",
+      "description": "连接性模块，包含USB、SATA、PCIe、音频、网络等接口。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "usb otg 3.1/2.0/typec",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "USB OTG 3.1/2.0/TypeC接口，用于设备间的数据传输。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "usb otg1 3.1/2.0/typec",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "USB OTG1 3.1/2.0/TypeC接口，用于设备间的数据传输。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "2x usb host 2.0",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "2个USB 2.0主机接口，用于连接USB设备。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "sata3/pcie2.1/usb3host",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "SATA3/PCIe 2.1/USB 3.0主机接口，用于连接存储设备。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "2x sata3/pcie2.1",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "2个SATA3/PCIe 2.1接口，用于连接存储设备。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "pcie3.0 (2x2,1x4,4x1)",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "PCIe 3.0接口，支持2x2、1x4、4x1配置，用于高速数据传输。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "pdm/audio pwm",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "PDM音频PWM接口，用于音频输入输出。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "4x i2s/pcm/tdm",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "4个I2S/PCM/TDM接口，用于音频数据传输。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "2x spdif(8ch)",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "2个SPDIF接口，支持8声道音频传输。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "10x uart",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "10个UART接口，用于串行通信。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "5x spi",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "5个SPI接口，用于串行外设通信。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "9x i2c",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "9个I2C接口，用于串行通信。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "2x giga-ethernet",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "2个千兆以太网接口，用于高速网络连接。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "sdio 3.0",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "SDIO 3.0接口，用于连接SDIO设备。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "gpio",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "通用输入/输出接口，用于连接各种外设。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "embedded memory",
+      "entity_type": "SECTION_TITLE",
+      "description": "嵌入式存储模块，包含SRAM、ROM、OTP等。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "sram",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "静态随机存取存储器，用于高速数据存储。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "rom",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "只读存储器，用于存储固件和程序。",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "otp",
+      "entity_type": "SYSTEM_COMPONENT",
+      "description": "一次性可编程存储器，用于存储不可更改的数据。",
+      "source_ids": [
+        63
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "rk3588j",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to RK3588J",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "system peripheral",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to System Peripheral",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "clock & reset",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to Clock & Reset",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "pmu",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to PMU",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "18x pll",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 18x PLL",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "system register",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to System register",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "30x timer",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 30x Timer",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "16x pwm",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 16x PWM",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "5x watchdog",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 5x Watchdog",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "2x crypto",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 2x Crypto",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "sar-adc",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to SAR-ADC",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "ts-adc",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to TS-ADC",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "interrupt controller",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to Interrupt Controller",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "3x dmac",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 3x DMAC",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "6x pvtm",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 6x PVTM",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "3x mailbox",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 3x Mailbox",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "multi-media interface",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to Multi-Media Interface",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "2x mipi-csi dphy 4l/cphy 3l",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 2x MIPI-CSI DPHY 4L/CPHY 3L",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "4x mipi-csi dphy 2l",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 4x MIPI-CSI DPHY 2L",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "2x mipi-dsi dphy 4 lane",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 2x MIPI-DSI DPHY 4 Lane",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "2x dp1.4 4 lane with hdcp2.3 (combo with usb3)",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 2x DP1.4 4 Lane with HDCP2.3 (Combo with USB3)",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "hdmi rx 2.0",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to HDMI RX 2.0",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "display controller (support video hdr output)",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to Display Controller (Support video HDR output)",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "dual-cluster core",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to Dual-cluster Core",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "cortex-a76 quad-core",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to Cortex-A76 Quad-Core",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "cortex-a55 quad-core",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to Cortex-A55 Quad-Core",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "2mb l2 cache",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 2MB L2 Cache",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "3mb l3 cache",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 3MB L3 Cache",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "mcu (cortex-m0) x3",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to MCU (Cortex-M0) x3",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "high performance npu",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to High Performance NPU",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "1mb share memory",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 1MB Share Memory",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "multi-media processor",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to Multi-Media Processor",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "gpu mali-g610 mp4",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to GPU Mali-G610 MP4",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "2d graphics engine",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 2D Graphics Engine",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "image enhancement processor",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to Image Enhancement Processor",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "dual pipe isp (support camera hdr input)",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to Dual pipe ISP (Support camera HDR input)",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "8k video encoder (h265/h264...)",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 8K Video Encoder (H265/H264...)",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "8k 10-bits video decoder (h265/h264/vp9...)",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 8K 10-bits Video Decoder (H265/H264/VP9...)",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "jpeg encoder/decoder",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to JPEG Encoder/Decoder",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "external memory interface",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to External Memory Interface",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "emmc5.1",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to eMMC5.1",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "sd3.0/mmc4.5",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to SD3.0/MMC4.5",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "lpddr4/lpddr4x/lpddr5 quad-channel x16bit",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to LPDDR4/LPDDR4X/LPDDR5 Quad-channel x16bit",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "connectivity",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to Connectivity",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "usb otg 3.1/2.0/typec",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to USB OTG 3.1/2.0/TypeC",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "usb otg1 3.1/2.0/typec",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to USB OTG1 3.1/2.0/TypeC",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "2x usb host 2.0",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 2x USB Host 2.0",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "sata3/pcie2.1/usb3host",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to SATA3/PcIe2.1/USB3Host",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "2x sata3/pcie2.1",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 2x SATA3/PCIe2.1",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "pcie3.0 (2x2,1x4,4x1)",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to PCIe3.0 (2x2,1x4,4x1)",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "pdm/audio pwm",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to PDM/Audio PWM",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "4x i2s/pcm/tdm",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 4x I2S/PCM/TDM",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "2x spdif(8ch)",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 2x SPDIF(8ch)",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "10x uart",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 10x UART",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "5x spi",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 5x SPI",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "9x i2c",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 9x I2C",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "2x giga-ethernet",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to 2x Giga-Ethernet",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "sdio 3.0",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to SDIO 3.0",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "gpio",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to GPIO",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "embedded memory",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to Embedded Memory",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "sram",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to SRAM",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "rom",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to ROM",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "src_entity_name": "图 4",
+      "tgt_entity_name": "otp",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图 4 related to OTP",
+      "source_ids": [
+        63
+      ]
+    }
+  ],
+  "node_idx": 63
+}

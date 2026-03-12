@@ -1,0 +1,351 @@
+{
+  "entities": [
+    {
+      "entity_name": "tronlong com",
+      "entity_type": "WEBSITE",
+      "description": "tronlong com is the official website of the company  indicating it is the primary online presence for the organization",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "entity_name": "www tronlong com",
+      "entity_type": "WEBSITE",
+      "description": "www tronlong com is the official website of the company  indicating it is the primary online presence for the organization",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "entity_name": "sales tronlong com",
+      "entity_type": "EMAIL_ADDRESS",
+      "description": "sales tronlong com is the sales email address for the company  indicating it is used for business inquiries and customer interactions",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "entity_name": "020 8998 6280",
+      "entity_type": "PHONE_NUMBER",
+      "description": "020 8998 6280 is the company s main phone number  indicating it is used for general business communication",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "entity_name": "8 62",
+      "entity_type": "ADDRESS",
+      "description": "8 62 is a location reference  likely indicating a specific address or building number associated with the company",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "entity_name": "www 51ele net",
+      "entity_type": "WEBSITE",
+      "description": "www 51ele net is a technical forum website associated with the company  indicating it is used for technical discussions and support",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "entity_name": "support tronlong com",
+      "entity_type": "EMAIL_ADDRESS",
+      "description": "support tronlong com is the technical support email address for the company  indicating it is used for technical inquiries and assistance",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "entity_name": "020 3893 9734",
+      "entity_type": "PHONE_NUMBER",
+      "description": "020 3893 9734 is the technical hotline phone number for the company  indicating it is used for technical support and assistance",
+      "source_ids": [
+        64
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "tronlong com",
+      "tgt_entity_name": "www tronlong com",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "tronlong com and www tronlong com are the same website  representing the official online presence of the company",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "tronlong com",
+      "tgt_entity_name": "sales tronlong com",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "tronlong com is the domain associated with the sales email address  indicating it is the company s official email domain",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "tronlong com",
+      "tgt_entity_name": "020 8998 6280",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "tronlong com is the domain associated with the main phone number  indicating it is the company s official phone number",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "tronlong com",
+      "tgt_entity_name": "8 62",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "tronlong com is the domain associated with the address reference  indicating it is the company s physical location",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "tronlong com",
+      "tgt_entity_name": "www 51ele net",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "tronlong com is the domain associated with the technical forum website  indicating it is the company s related online platform",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "tronlong com",
+      "tgt_entity_name": "support tronlong com",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "tronlong com is the domain associated with the technical support email address  indicating it is the company s official email domain",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "tronlong com",
+      "tgt_entity_name": "020 3893 9734",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "tronlong com is the domain associated with the technical hotline phone number  indicating it is the company s official phone number",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "www tronlong com",
+      "tgt_entity_name": "sales tronlong com",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "www tronlong com is the domain associated with the sales email address  indicating it is the company s official email domain",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "www tronlong com",
+      "tgt_entity_name": "020 8998 6280",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "www tronlong com is the domain associated with the main phone number  indicating it is the company s official phone number",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "www tronlong com",
+      "tgt_entity_name": "8 62",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "www tronlong com is the domain associated with the address reference  indicating it is the company s physical location",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "www tronlong com",
+      "tgt_entity_name": "www 51ele net",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "www tronlong com is the domain associated with the technical forum website  indicating it is the company s related online platform",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "www tronlong com",
+      "tgt_entity_name": "support tronlong com",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "www tronlong com is the domain associated with the technical support email address  indicating it is the company s official email domain",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "www tronlong com",
+      "tgt_entity_name": "020 3893 9734",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "www tronlong com is the domain associated with the technical hotline phone number  indicating it is the company s official phone number",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "sales tronlong com",
+      "tgt_entity_name": "020 8998 6280",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "sales tronlong com is the email address associated with the main phone number  indicating it is the company s contact information",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "sales tronlong com",
+      "tgt_entity_name": "8 62",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "sales tronlong com is the email address associated with the address reference  indicating it is the company s contact information",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "sales tronlong com",
+      "tgt_entity_name": "www 51ele net",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "sales tronlong com is the email address associated with the technical forum website  indicating it is the company s contact information",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "sales tronlong com",
+      "tgt_entity_name": "support tronlong com",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "sales tronlong com is the email address associated with the technical support email address  indicating it is the company s contact information",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "sales tronlong com",
+      "tgt_entity_name": "020 3893 9734",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "sales tronlong com is the email address associated with the technical hotline phone number  indicating it is the company s contact information",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "020 8998 6280",
+      "tgt_entity_name": "8 62",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "020 8998 6280 is the phone number associated with the address reference  indicating it is the company s contact information",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "020 8998 6280",
+      "tgt_entity_name": "www 51ele net",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "020 8998 6280 is the phone number associated with the technical forum website  indicating it is the company s contact information",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "020 8998 6280",
+      "tgt_entity_name": "support tronlong com",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "020 8998 6280 is the phone number associated with the technical support email address  indicating it is the company s contact information",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "020 8998 6280",
+      "tgt_entity_name": "020 3893 9734",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "020 8998 6280 is the phone number associated with the technical hotline phone number  indicating it is the company s contact information",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "8 62",
+      "tgt_entity_name": "www 51ele net",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "8 62 is the address reference associated with the technical forum website  indicating it is the company s physical location",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "8 62",
+      "tgt_entity_name": "support tronlong com",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "8 62 is the address reference associated with the technical support email address  indicating it is the company s physical location",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "8 62",
+      "tgt_entity_name": "020 3893 9734",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "8 62 is the address reference associated with the technical hotline phone number  indicating it is the company s physical location",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "www 51ele net",
+      "tgt_entity_name": "support tronlong com",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "www 51ele net is the technical forum website associated with the technical support email address  indicating it is the company s related online platform",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "www 51ele net",
+      "tgt_entity_name": "020 3893 9734",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "www 51ele net is the technical forum website associated with the technical hotline phone number  indicating it is the company s related online platform",
+      "source_ids": [
+        64
+      ]
+    },
+    {
+      "src_entity_name": "support tronlong com",
+      "tgt_entity_name": "020 3893 9734",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "support tronlong com is the email address associated with the technical hotline phone number  indicating it is the company s contact information",
+      "source_ids": [
+        64
+      ]
+    }
+  ],
+  "node_idx": 64
+}

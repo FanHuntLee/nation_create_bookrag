@@ -1,0 +1,159 @@
+{
+  "entities": [
+    {
+      "entity_name": "lxw242 4180p b3r 05",
+      "entity_type": "PRODUCT",
+      "description": "lxw242 4180p b3r 05 is a b2b connector model produced by      with specific pin count  spacing  and height dimensions",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "entity_name": "b2b",
+      "entity_type": "PRODUCT",
+      "description": "b2b     is a type of connector used for communication  with specified single ended and differential communication rates",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "entity_name": "15gbps",
+      "entity_type": "MEASUREMENT",
+      "description": "15gbps is a measurement of the maximum single ended communication rate of the b2b connector",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "entity_name": "25gbps",
+      "entity_type": "MEASUREMENT",
+      "description": "25gbps is a measurement of the maximum differential communication rate of the b2b connector",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "entity_name": "0 5mm",
+      "entity_type": "MEASUREMENT",
+      "description": "0 5mm is the pin spacing of the lxw242 4180p b3r 05 connector",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "entity_name": "5 0mm",
+      "entity_type": "MEASUREMENT",
+      "description": "5 0mm is the height of the lxw242 4180p b3r 05 connector",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "entity_name": "6 b2b",
+      "entity_type": "DIRECTORY",
+      "description": "6             b2b      is a directory containing documentation about the b2b connector  including the test report",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "entity_name": "btbconnector high speed test report",
+      "entity_type": "DOCUMENT",
+      "description": "btbconnector high speed test report  is a document providing detailed information about the performance of the b2b connector",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        95
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "uses b2b connectors produced by",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "lxw242 4180p b3r 05",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "uses the lxw242 4180p b3r 05 connector model",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "src_entity_name": "lxw242 4180p b3r 05",
+      "tgt_entity_name": "b2b",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "lxw242 4180p b3r 05 is a specific model of b2b connector",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "src_entity_name": "b2b",
+      "tgt_entity_name": "15gbps",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "b2b     has a single ended communication rate of approximately 15gbps",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "src_entity_name": "b2b",
+      "tgt_entity_name": "25gbps",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "b2b     has a differential communication rate of approximately 25gbps",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "src_entity_name": "lxw242 4180p b3r 05",
+      "tgt_entity_name": "0 5mm",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "lxw242 4180p b3r 05 has a pin spacing of 0 5mm",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "src_entity_name": "lxw242 4180p b3r 05",
+      "tgt_entity_name": "5 0mm",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "lxw242 4180p b3r 05 has a height of 5 0mm",
+      "source_ids": [
+        95
+      ]
+    },
+    {
+      "src_entity_name": "6 b2b",
+      "tgt_entity_name": "btbconnector high speed test report",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the directory 6             b2b      contains the document         btbconnector high speed test report",
+      "source_ids": [
+        95
+      ]
+    }
+  ],
+  "node_idx": 95
+}

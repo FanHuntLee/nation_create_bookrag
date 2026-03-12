@@ -1,0 +1,471 @@
+{
+  "query": "当系统卡在PCIe 3.0 PHY异常的log附近时，除了检查外部晶振芯片的时钟输入外，还需要检查哪两路电压是否满足要求？",
+  "used_sec_ids": [],
+  "all_sec_ids": [],
+  "plan": {
+    "query_type": "complex",
+    "original_query": "当系统卡在PCIe 3.0 PHY异常的log附近时，除了检查外部晶振芯片的时钟输入外，还需要检查哪两路电压是否满足要求？",
+    "sub_questions": [
+      {
+        "question": "在系统卡在PCIe 3.0 PHY异常的log附近时，需要检查哪两路电压是否满足要求？",
+        "type": "retrieval"
+      },
+      {
+        "question": "除了检查外部晶振芯片的时钟输入外，还需要检查哪两路电压是否满足要求？",
+        "type": "retrieval"
+      },
+      {
+        "question": "根据前两个问题的答案，确定在系统卡在PCIe 3.0 PHY异常的log附近时，除了检查外部晶振芯片的时钟输入外，还需要检查的两路电压。",
+        "type": "synthesis"
+      }
+    ],
+    "filters": null,
+    "operation": null
+  },
+  "iterations": [
+    {
+      "sub_query": "在系统卡在PCIe 3.0 PHY异常的log附近时，需要检查哪两路电压是否满足要求？",
+      "sub_number": 1,
+      "gbc_entity_map": {
+        "Name: pcie30 avdd 0v9\nType: PRODUCT": [
+          "Name: pcie30 avdd 0v9\nType: PRODUCT"
+        ],
+        "Name: pcie30 avdd 1v8\nType: PRODUCT": [
+          "Name: pcie30 avdd 1v8\nType: PRODUCT"
+        ],
+        "Name: pcie 3.0 phy\nType: SYSTEM_COMPONENT": [
+          "Name: pcie3.0 (2x2,1x4,4x1)\nType: SYSTEM_COMPONENT"
+        ],
+        "Name: 电压\nType: MEASUREMENT": [
+          "Name: 电压典型值\nType: MEASUREMENT"
+        ]
+      },
+      "linked_tree_nodes": [
+        {
+          "index_id": 340,
+          "map_cnt": 2,
+          "linked_entities": [
+            "Name: pcie30 avdd 0v9\nType: PRODUCT",
+            "Name: pcie30 avdd 1v8\nType: PRODUCT"
+          ]
+        },
+        {
+          "index_id": 63,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: pcie3.0 (2x2,1x4,4x1)\nType: SYSTEM_COMPONENT"
+          ]
+        },
+        {
+          "index_id": 226,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: 电压典型值\nType: MEASUREMENT"
+          ]
+        }
+      ],
+      "linked_section_ids": [
+        315,
+        50,
+        222
+      ],
+      "supplementary_ids": [],
+      "selected_explanation": "没有找到与用户问题相关的其他文档部分。",
+      "retrieval_sec_ids": [
+        50,
+        315,
+        222
+      ],
+      "retrieval_nodes": [
+        {
+          "index_id": 226,
+          "type": "table",
+          "content": "Caption: 表 12 核心板功耗测试\nThis table contains the following columns:\n - CPU\n - RK3588\n - RK3588J\n - 测试项\n\nTable Body:\n测试项 | CPU | RK3588J | RK3588\n工作状态 | 环境温度值 | Ta=25.4℃ | Ta=24.6℃\n文状态1 | 主频 | Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz | Cortex-A76主频为1.6GHzCortex-A55主频为1.4GHz\n文状态1 | 电压典型值 | 4.0V | 4.0V\n文状态1 | 电流典型值 | 0.37A | 0.39A\n文状态1 | 功耗典型值 | 1.48W | 1.56W\n文状态1 | CPU内部传感器温度值 | 38.85℃ | 46.1℃\n状态2 | 主频 | Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz | Cortex-A76 主频为 1.6GHzCortex-A55主频为1.4GHz\n状态2 | 电压典型值 | 4.0V | 4.0V\n状态2 | 电流典型值 | 1.24A | 1.36A\n状态2 | 功耗典型值 | 4.96W | 5.44W\n状态2 | CPU内部传感器温度值 | 63.77℃ | 67.46℃\n花科技状态3 | 主频 | Cortex-A76 主频为 2.0GHzCortex-A55主频为1.7GHz | Cortex-A76主频为2.4GHzCortex-A55主频为1.8GHz\n花科技状态3 | 电压典型值 | 4.0V | 4.0V\n花科技状态3 | 电流典型值 | 1.67A | 1.96A\n花科技状态3 | 功耗典型值 | 6.68W | 7.84W\n花科技状态3 | CPU内部传感器温度值 | 77.62℃ | 85.89℃",
+          "page": 46,
+          "img_path": "/root/autodl-fs/bookrag/BookRAG/somdata-vl/output/som-001/auto/images/ab3a4ba7fc9a29b529a59588000a7f574c273fd408953ac1bc4a1d70691bf226.jpg",
+          "table_body": "<table><tr><td>测试项</td><td>CPU</td><td>RK3588J</td><td>RK3588</td></tr><tr><td colspan=\"1\" rowspan=\"1\">工作状态</td><td colspan=\"1\" rowspan=\"1\">环境温度值</td><td colspan=\"1\" rowspan=\"1\">Ta=25.4℃</td><td colspan=\"1\" rowspan=\"1\">Ta=24.6℃</td></tr><tr><td colspan=\"1\" rowspan=\"5\">文状态1</td><td colspan=\"1\" rowspan=\"1\">主频</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76主频为1.6GHzCortex-A55主频为1.4GHz</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电压典型值</td><td colspan=\"1\" rowspan=\"1\">4.0V</td><td colspan=\"1\" rowspan=\"1\">4.0V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电流典型值</td><td colspan=\"1\" rowspan=\"1\">0.37A</td><td colspan=\"1\" rowspan=\"1\">0.39A</td></tr><tr><td colspan=\"1\" rowspan=\"1\">功耗典型值</td><td colspan=\"1\" rowspan=\"1\">1.48W</td><td colspan=\"1\" rowspan=\"1\">1.56W</td></tr><tr><td colspan=\"1\" rowspan=\"1\">CPU内部传感器温度值</td><td colspan=\"1\" rowspan=\"1\">38.85℃</td><td colspan=\"1\" rowspan=\"1\">46.1℃</td></tr><tr><td colspan=\"1\" rowspan=\"5\">状态2</td><td colspan=\"1\" rowspan=\"1\">主频</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为 1.6GHzCortex-A55主频为1.4GHz</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电压典型值</td><td colspan=\"1\" rowspan=\"1\">4.0V</td><td colspan=\"1\" rowspan=\"1\">4.0V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电流典型值</td><td colspan=\"1\" rowspan=\"1\">1.24A</td><td colspan=\"1\" rowspan=\"1\">1.36A</td></tr><tr><td colspan=\"1\" rowspan=\"1\">功耗典型值</td><td colspan=\"1\" rowspan=\"1\">4.96W</td><td colspan=\"1\" rowspan=\"1\">5.44W</td></tr><tr><td colspan=\"1\" rowspan=\"1\">CPU内部传感器温度值</td><td colspan=\"1\" rowspan=\"1\">63.77℃</td><td colspan=\"1\" rowspan=\"1\">67.46℃</td></tr><tr><td colspan=\"1\" rowspan=\"5\">花科技状态3</td><td colspan=\"1\" rowspan=\"1\">主频</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为 2.0GHzCortex-A55主频为1.7GHz</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76主频为2.4GHzCortex-A55主频为1.8GHz</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电压典型值</td><td colspan=\"1\" rowspan=\"1\">4.0V</td><td colspan=\"1\" rowspan=\"1\">4.0V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电流典型值</td><td colspan=\"1\" rowspan=\"1\">1.67A</td><td colspan=\"1\" rowspan=\"1\">1.96A</td></tr><tr><td colspan=\"1\" rowspan=\"1\">功耗典型值</td><td colspan=\"1\" rowspan=\"1\">6.68W</td><td colspan=\"1\" rowspan=\"1\">7.84W</td></tr><tr><td colspan=\"1\" rowspan=\"1\">CPU内部传感器温度值</td><td colspan=\"1\" rowspan=\"1\">77.62℃</td><td colspan=\"1\" rowspan=\"1\">85.89℃</td></tr></table>",
+          "caption": "表 12 核心板功耗测试",
+          "footnote": ""
+        },
+        {
+          "index_id": 330,
+          "type": "text",
+          "content": "根据产品资料“6-开发参考资料\\Rockchip 官方参考文档\\《RK3588 Hardware DesignGuide-V1.4-20240314-CN》”文档设计要求：当不使用 PCle 2.0/PCle 3.0 功能时，数据信号 PCIExX_TXP/TXN、PCIExX_RXP/RXN 和参考时钟信号 PCIExX_REFCLKP/REFCLKN 需悬空处理（其中xx指2.0或3.0）。",
+          "page": 57
+        },
+        {
+          "index_id": 335,
+          "type": "text",
+          "content": "Slot设计时，外围电路及电源需要满足Spec要求；PCIe2.0接口的TXP/N差分信号上串接的 $1 0 0 \\mathrm { n F }$ 交流耦合电容，AC 耦合电容建议使用0201封装，更低的ESR和ESL，也可减少线路上的阻抗变化；  \n. PCIE2.0 CLKREQn 和PCIE20 WAKEn 必须使用功能脚，不能用GPIO 替代,特别说明：选择时，必须都是选择_M0 或_M1或_M2，不能一个_M0一个_M1;  \n. PCIE20_PERSTn 可以选择功能脚也可以使用GPIO 替代，选择功能脚时，必须和PCIE20_CLKREQn和PCIE20_WAKEn同一组_Mx;标准的PCIe Slot:PCIE20_CLKREQn，PCIE20_WAKEn，PCIE20_PERSTn为3.3V电平；PCIE20_PRSNT为Add InCard插入检测脚，可以使用GPIO;使用PCIE20功能时候，复用的 SATA/USB30功能无法使用,SATA/USB30 对应的功能模块说明;PCIe2.0 功能模块没有使用，数据线 PCIE20_TXP/TXN、PCIE20_RXP/RXN 和参考时钟线PCIE20_REFCLKP/REFCLKN悬空即可；PCIe2.0接口匹配设计推荐如下表所示： >标准的PCIe Slot:PCIE30X2_CLKREQn、PCIE30X1_WAKEn、PCIE30_PERSTn为3.3V 电平;PCIE30_PRSNT为Add In Card 插入检测脚，可以使用GPIO;PCIE30BUTTONRSTN是外部硬件的复位，预留先不用；2颗 RK3588 PCIe级联对接，数据线交叉对接，即 $\\mathrm { T X } \\partial \\mathrm { R X }$ ,RX→TX.控制信号 PCIE30_CLKREQn和PCIE30_PERSTn一一对应连接（例如：Num1和Num2分别代表两颗RK3588,  \n. Numl_PCIE30_CLKREQn 连 接 Num2_PCIE30_CLKREQn、Numl_PCIE30_PERSTn 连接Num2_PCIE30_PERSTn）。PCIE30_WAKEn、PCIE30_PRSNT 和 PCIE30_BUTTON_RSTN 这三个信号可以不接悬空；PCIe30 功能模块没有使用，数据线 PCIE30_TXP/TXN、PCIE30_RXP/RXN 悬空，参考时钟线PCIE30_REFCLKP/REFCLKN接地或是悬空;  \n. PCIe30 PHY和 Slot外设的REFCLKP/N 需要满足同源时钟要求，比如参考图设计的 PHY0/PHY1和 Slot三路REFCLKP/N 是同一颗时钟发生器输出的。",
+          "page": 58
+        },
+        {
+          "index_id": 338,
+          "type": "text",
+          "content": "根据产品资料“6-开发参考资料\\Rockchip官方参考文档\\Common\\PCle\\《Rockchip_Developer_Guide_PCle_CN》”文档“PCle3.0控制器初始化设备系统异常”和“PCle 2.0控制器初始化设备系统异常”小节要求：当不使用 PCle2.0/PCle 3.0功能时，应在 Linux 内核（设备树文件）关闭PCle 功能，否则，可能会出现系统无法启动的情况。",
+          "page": 58
+        },
+        {
+          "index_id": 339,
+          "type": "text",
+          "content": "异常原因：如果系统卡住此log附近，则表明PCIe3.0的PHY工作异常。请依次检查",
+          "page": 58
+        },
+        {
+          "index_id": 340,
+          "type": "text",
+          "content": "·外部晶振芯片的时钟输入是否异常，如果无时钟或者幅度异常，将导致phy无法锁定。  \n·检查PCIE30_AVDD_0V9 和PCIE30_AVDD_1V8电压是否满足要求。  \n·RK3588 pcie30phy 如果只使用其中一个port，另一个port也需要供电，检查是否符合要求。",
+          "page": 58
+        },
+        {
+          "index_id": 63,
+          "type": "image",
+          "content": "图 4 处理器功能框图",
+          "page": 8,
+          "img_path": "/root/autodl-fs/bookrag/BookRAG/somdata-vl/output/som-001/auto/images/5e41a69e54352dfb66cc1108b6af40b7d9e22b56a1cafc3e934d744f97d7cef4.jpg"
+        }
+      ],
+      "iteration_text_nodes": [
+        {
+          "index_id": 226,
+          "type": "table",
+          "content": "Caption: 表 12 核心板功耗测试\nThis table contains the following columns:\n - CPU\n - RK3588\n - RK3588J\n - 测试项\n\nTable Body:\n测试项 | CPU | RK3588J | RK3588\n工作状态 | 环境温度值 | Ta=25.4℃ | Ta=24.6℃\n文状态1 | 主频 | Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz | Cortex-A76主频为1.6GHzCortex-A55主频为1.4GHz\n文状态1 | 电压典型值 | 4.0V | 4.0V\n文状态1 | 电流典型值 | 0.37A | 0.39A\n文状态1 | 功耗典型值 | 1.48W | 1.56W\n文状态1 | CPU内部传感器温度值 | 38.85℃ | 46.1℃\n状态2 | 主频 | Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz | Cortex-A76 主频为 1.6GHzCortex-A55主频为1.4GHz\n状态2 | 电压典型值 | 4.0V | 4.0V\n状态2 | 电流典型值 | 1.24A | 1.36A\n状态2 | 功耗典型值 | 4.96W | 5.44W\n状态2 | CPU内部传感器温度值 | 63.77℃ | 67.46℃\n花科技状态3 | 主频 | Cortex-A76 主频为 2.0GHzCortex-A55主频为1.7GHz | Cortex-A76主频为2.4GHzCortex-A55主频为1.8GHz\n花科技状态3 | 电压典型值 | 4.0V | 4.0V\n花科技状态3 | 电流典型值 | 1.67A | 1.96A\n花科技状态3 | 功耗典型值 | 6.68W | 7.84W\n花科技状态3 | CPU内部传感器温度值 | 77.62℃ | 85.89℃",
+          "page": 46,
+          "img_path": "/root/autodl-fs/bookrag/BookRAG/somdata-vl/output/som-001/auto/images/ab3a4ba7fc9a29b529a59588000a7f574c273fd408953ac1bc4a1d70691bf226.jpg",
+          "table_body": "<table><tr><td>测试项</td><td>CPU</td><td>RK3588J</td><td>RK3588</td></tr><tr><td colspan=\"1\" rowspan=\"1\">工作状态</td><td colspan=\"1\" rowspan=\"1\">环境温度值</td><td colspan=\"1\" rowspan=\"1\">Ta=25.4℃</td><td colspan=\"1\" rowspan=\"1\">Ta=24.6℃</td></tr><tr><td colspan=\"1\" rowspan=\"5\">文状态1</td><td colspan=\"1\" rowspan=\"1\">主频</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76主频为1.6GHzCortex-A55主频为1.4GHz</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电压典型值</td><td colspan=\"1\" rowspan=\"1\">4.0V</td><td colspan=\"1\" rowspan=\"1\">4.0V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电流典型值</td><td colspan=\"1\" rowspan=\"1\">0.37A</td><td colspan=\"1\" rowspan=\"1\">0.39A</td></tr><tr><td colspan=\"1\" rowspan=\"1\">功耗典型值</td><td colspan=\"1\" rowspan=\"1\">1.48W</td><td colspan=\"1\" rowspan=\"1\">1.56W</td></tr><tr><td colspan=\"1\" rowspan=\"1\">CPU内部传感器温度值</td><td colspan=\"1\" rowspan=\"1\">38.85℃</td><td colspan=\"1\" rowspan=\"1\">46.1℃</td></tr><tr><td colspan=\"1\" rowspan=\"5\">状态2</td><td colspan=\"1\" rowspan=\"1\">主频</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为 1.6GHzCortex-A55主频为1.4GHz</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电压典型值</td><td colspan=\"1\" rowspan=\"1\">4.0V</td><td colspan=\"1\" rowspan=\"1\">4.0V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电流典型值</td><td colspan=\"1\" rowspan=\"1\">1.24A</td><td colspan=\"1\" rowspan=\"1\">1.36A</td></tr><tr><td colspan=\"1\" rowspan=\"1\">功耗典型值</td><td colspan=\"1\" rowspan=\"1\">4.96W</td><td colspan=\"1\" rowspan=\"1\">5.44W</td></tr><tr><td colspan=\"1\" rowspan=\"1\">CPU内部传感器温度值</td><td colspan=\"1\" rowspan=\"1\">63.77℃</td><td colspan=\"1\" rowspan=\"1\">67.46℃</td></tr><tr><td colspan=\"1\" rowspan=\"5\">花科技状态3</td><td colspan=\"1\" rowspan=\"1\">主频</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为 2.0GHzCortex-A55主频为1.7GHz</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76主频为2.4GHzCortex-A55主频为1.8GHz</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电压典型值</td><td colspan=\"1\" rowspan=\"1\">4.0V</td><td colspan=\"1\" rowspan=\"1\">4.0V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电流典型值</td><td colspan=\"1\" rowspan=\"1\">1.67A</td><td colspan=\"1\" rowspan=\"1\">1.96A</td></tr><tr><td colspan=\"1\" rowspan=\"1\">功耗典型值</td><td colspan=\"1\" rowspan=\"1\">6.68W</td><td colspan=\"1\" rowspan=\"1\">7.84W</td></tr><tr><td colspan=\"1\" rowspan=\"1\">CPU内部传感器温度值</td><td colspan=\"1\" rowspan=\"1\">77.62℃</td><td colspan=\"1\" rowspan=\"1\">85.89℃</td></tr></table>",
+          "caption": "表 12 核心板功耗测试",
+          "footnote": ""
+        },
+        {
+          "index_id": 330,
+          "type": "text",
+          "content": "根据产品资料“6-开发参考资料\\Rockchip 官方参考文档\\《RK3588 Hardware DesignGuide-V1.4-20240314-CN》”文档设计要求：当不使用 PCle 2.0/PCle 3.0 功能时，数据信号 PCIExX_TXP/TXN、PCIExX_RXP/RXN 和参考时钟信号 PCIExX_REFCLKP/REFCLKN 需悬空处理（其中xx指2.0或3.0）。",
+          "page": 57
+        },
+        {
+          "index_id": 335,
+          "type": "text",
+          "content": "Slot设计时，外围电路及电源需要满足Spec要求；PCIe2.0接口的TXP/N差分信号上串接的 $1 0 0 \\mathrm { n F }$ 交流耦合电容，AC 耦合电容建议使用0201封装，更低的ESR和ESL，也可减少线路上的阻抗变化；  \n. PCIE2.0 CLKREQn 和PCIE20 WAKEn 必须使用功能脚，不能用GPIO 替代,特别说明：选择时，必须都是选择_M0 或_M1或_M2，不能一个_M0一个_M1;  \n. PCIE20_PERSTn 可以选择功能脚也可以使用GPIO 替代，选择功能脚时，必须和PCIE20_CLKREQn和PCIE20_WAKEn同一组_Mx;标准的PCIe Slot:PCIE20_CLKREQn，PCIE20_WAKEn，PCIE20_PERSTn为3.3V电平；PCIE20_PRSNT为Add InCard插入检测脚，可以使用GPIO;使用PCIE20功能时候，复用的 SATA/USB30功能无法使用,SATA/USB30 对应的功能模块说明;PCIe2.0 功能模块没有使用，数据线 PCIE20_TXP/TXN、PCIE20_RXP/RXN 和参考时钟线PCIE20_REFCLKP/REFCLKN悬空即可；PCIe2.0接口匹配设计推荐如下表所示： >标准的PCIe Slot:PCIE30X2_CLKREQn、PCIE30X1_WAKEn、PCIE30_PERSTn为3.3V 电平;PCIE30_PRSNT为Add In Card 插入检测脚，可以使用GPIO;PCIE30BUTTONRSTN是外部硬件的复位，预留先不用；2颗 RK3588 PCIe级联对接，数据线交叉对接，即 $\\mathrm { T X } \\partial \\mathrm { R X }$ ,RX→TX.控制信号 PCIE30_CLKREQn和PCIE30_PERSTn一一对应连接（例如：Num1和Num2分别代表两颗RK3588,  \n. Numl_PCIE30_CLKREQn 连 接 Num2_PCIE30_CLKREQn、Numl_PCIE30_PERSTn 连接Num2_PCIE30_PERSTn）。PCIE30_WAKEn、PCIE30_PRSNT 和 PCIE30_BUTTON_RSTN 这三个信号可以不接悬空；PCIe30 功能模块没有使用，数据线 PCIE30_TXP/TXN、PCIE30_RXP/RXN 悬空，参考时钟线PCIE30_REFCLKP/REFCLKN接地或是悬空;  \n. PCIe30 PHY和 Slot外设的REFCLKP/N 需要满足同源时钟要求，比如参考图设计的 PHY0/PHY1和 Slot三路REFCLKP/N 是同一颗时钟发生器输出的。",
+          "page": 58
+        },
+        {
+          "index_id": 338,
+          "type": "text",
+          "content": "根据产品资料“6-开发参考资料\\Rockchip官方参考文档\\Common\\PCle\\《Rockchip_Developer_Guide_PCle_CN》”文档“PCle3.0控制器初始化设备系统异常”和“PCle 2.0控制器初始化设备系统异常”小节要求：当不使用 PCle2.0/PCle 3.0功能时，应在 Linux 内核（设备树文件）关闭PCle 功能，否则，可能会出现系统无法启动的情况。",
+          "page": 58
+        },
+        {
+          "index_id": 339,
+          "type": "text",
+          "content": "异常原因：如果系统卡住此log附近，则表明PCIe3.0的PHY工作异常。请依次检查",
+          "page": 58
+        },
+        {
+          "index_id": 340,
+          "type": "text",
+          "content": "·外部晶振芯片的时钟输入是否异常，如果无时钟或者幅度异常，将导致phy无法锁定。  \n·检查PCIE30_AVDD_0V9 和PCIE30_AVDD_1V8电压是否满足要求。  \n·RK3588 pcie30phy 如果只使用其中一个port，另一个port也需要供电，检查是否符合要求。",
+          "page": 58
+        }
+      ],
+      "iteration_image_nodes": [
+        {
+          "index_id": 63,
+          "type": "image",
+          "content": "图 4 处理器功能框图",
+          "page": 8,
+          "img_path": "/root/autodl-fs/bookrag/BookRAG/somdata-vl/output/som-001/auto/images/5e41a69e54352dfb66cc1108b6af40b7d9e22b56a1cafc3e934d744f97d7cef4.jpg"
+        }
+      ],
+      "iteration_graph_nodes": [
+        {
+          "entity_name": "pcie30 avdd 0v9",
+          "entity_type": "PRODUCT"
+        },
+        {
+          "entity_name": "电压典型值",
+          "entity_type": "MEASUREMENT"
+        },
+        {
+          "entity_name": "pcie30 avdd 1v8",
+          "entity_type": "PRODUCT"
+        },
+        {
+          "entity_name": "rk3588 pcie30phy",
+          "entity_type": "PRODUCT"
+        },
+        {
+          "entity_name": "pcie3.0 (2x2,1x4,4x1)",
+          "entity_type": "SYSTEM_COMPONENT"
+        }
+      ],
+      "partial_answers": [
+        {
+          "source": "Text Chunk 1",
+          "content": "在系统卡在PCIe 3.0 PHY异常的log附近时，需要检查的两路电压是：\n\n1. **PCIE30_AVDD_0V9**  \n2. **PCIE30_AVDD_1V8**  \n\n这两路电压是PCIe 3.0 PHY正常工作的关键供电电压，若不满足要求，可能导致PHY工作异常。"
+        },
+        {
+          "source": "Image 1",
+          "content": "根据提供的处理器功能框图（图 4），在系统卡在 PCIe 3.0 PHY 异常的 log 附近时，需要检查的两路电压是：\n\n1.  **VDDA (核心电压)**：这是为处理器核心（包括 Cortex-A76 和 Cortex-A55 核心）提供供电的电压。PCIe PHY 作为处理器的一部分，其正常工作依赖于稳定的 VDDA 电压。\n2.  **VDDIO (I/O 电压)**：这是为处理器的 I/O 电路、包括 PCIe PHY 等外设接口提供供电的电压。PCIe PHY 作为 I/O 接口，其工作电压由 VDDIO 供给。\n\n**理由：**\n\n*   **PCIe PHY 的位置**：从框图中可以看到，PCIe 3.0 接口位于“Connectivity”模块中，该模块是处理器与外部设备通信的接口部分。\n*   **电压域划分**：在 SoC（系统级芯片）设计中，通常将电压分为核心电压（VDDA）和 I/O 电压（VDDIO）。核心电压为 CPU 核心供电，而 I/O 电压为外设接口（如 PCIe、USB、SATA 等）供电。\n*   **异常排查逻辑**：当系统卡在 PCIe PHY 异常的 log 时，问题很可能出在 PCIe 接口本身或其供电。由于 PCIe PHY 是 I/O 接口的一部分，其供电最直接相关的就是 VDDIO。同时，整个处理器系统（包括 PHY）的稳定运行依赖于 VDDA。因此，检查这两路电压是排查此类问题的标准步骤。\n\n综上所述，需要检查的两路电压是 **VDDA** 和 **VDDIO**。"
+        }
+      ],
+      "generated_answer": "在系统卡在PCIe 3.0 PHY异常的log附近时，需要检查的两路电压是：\n\n1. **PCIE30_AVDD_0V9**  \n2. **PCIE30_AVDD_1V8**  \n\n这两路电压是PCIe 3.0 PHY正常工作的关键供电电压，若不满足要求，可能导致PHY工作异常。\n\n此外，根据处理器功能框图分析，还需检查：\n\n1. **VDDA（核心电压）**：为处理器核心（包括Cortex-A76和Cortex-A55）供电，PCIe PHY作为处理器的一部分，依赖于稳定的VDDA电压。\n2. **VDDIO（I/O电压）**：为处理器的I/O电路（包括PCIe PHY）供电，PCIe PHY作为I/O接口的一部分，其工作电压由VDDIO提供。\n\n综上所述，**PCIE30_AVDD_0V9**、**PCIE30_AVDD_1V8**、**VDDA** 和 **VDDIO** 是与PCIe 3.0 PHY异常相关的关键电压。但在具体操作中，通常优先检查 **PCIE30_AVDD_0V9** 和 **PCIE30_AVDD_1V8**，因为它们是直接为PCIe PHY供电的电压。"
+    },
+    {
+      "sub_query": "除了检查外部晶振芯片的时钟输入外，还需要检查哪两路电压是否满足要求？",
+      "sub_number": 2,
+      "gbc_entity_map": {
+        "Name: 外部晶振芯片\nType: PRODUCT": [
+          "Name: 晶振\nType: HARDWARE"
+        ],
+        "Name: 时钟输入\nType: SYSTEM_COMPONENT": [
+          "Name: clock & reset\nType: SYSTEM_COMPONENT"
+        ],
+        "Name: 电压\nType: MEASUREMENT": [
+          "Name: 电压典型值\nType: MEASUREMENT"
+        ]
+      },
+      "linked_tree_nodes": [
+        {
+          "index_id": 80,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: 晶振\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 96,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: 晶振\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 226,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: 电压典型值\nType: MEASUREMENT"
+          ]
+        },
+        {
+          "index_id": 63,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: clock & reset\nType: SYSTEM_COMPONENT"
+          ]
+        }
+      ],
+      "linked_section_ids": [
+        50,
+        222
+      ],
+      "supplementary_ids": [],
+      "selected_explanation": "用户的问题涉及检查外部晶振芯片的时钟输入以及两路电压是否满足要求。已选的文档部分涵盖了晶振和电气特性，但未涉及具体电压值或相关电路设计。剩余文档中没有明确提及电压或相关电路设计的标题或路径，因此无法提供补充信息。",
+      "retrieval_sec_ids": [
+        50,
+        222
+      ],
+      "retrieval_nodes": [
+        {
+          "index_id": 224,
+          "type": "table",
+          "content": "Caption: 表11\nThis table contains the following columns:\n - 典型值\n - 最大值\n - 最小值\n - 环境参数\n\nTable Body:\n环境参数 | 最小值 | 典型值 | 最大值\n工作温度(工业级) | 包 -40℃ | / | 85℃\n工作温度(宽温级) | 0℃ | 1 | 80℃\n存储温度 | -50°℃ | / | 90°C\n工作湿度 | 35%（无凝露） | / | 75%（无凝露）\n存储湿度 | 35%（无凝露） | 1 | 75%（无凝露）\n工作电压 | / | 4.0V | /",
+          "page": 46,
+          "img_path": "/root/autodl-fs/bookrag/BookRAG/somdata-vl/output/som-001/auto/images/6de58eb87e3a90fe20b82c369a8acb141b80e08974ab2f3c091d2f07c8dbd797.jpg",
+          "table_body": "<table><tr><td rowspan=1 colspan=1>环境参数</td><td rowspan=1 colspan=1>最小值 </td><td rowspan=1 colspan=1>典型值</td><td rowspan=1 colspan=1>最大值</td></tr><tr><td rowspan=1 colspan=1>工作温度(工业级)</td><td rowspan=1 colspan=1>包 -40℃</td><td rowspan=1 colspan=1>/</td><td rowspan=1 colspan=1>85℃</td></tr><tr><td rowspan=1 colspan=1>工作温度(宽温级)</td><td rowspan=1 colspan=1>0℃</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>80℃</td></tr><tr><td rowspan=1 colspan=1>存储温度</td><td rowspan=1 colspan=1>-50°℃</td><td rowspan=1 colspan=1>/</td><td rowspan=1 colspan=1>90°C</td></tr><tr><td rowspan=1 colspan=1>工作湿度</td><td rowspan=1 colspan=1>35%（无凝露）</td><td rowspan=1 colspan=1>/</td><td rowspan=1 colspan=1>75%（无凝露）</td></tr><tr><td rowspan=1 colspan=1>存储湿度</td><td rowspan=1 colspan=1>35%（无凝露）</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>75%（无凝露）</td></tr><tr><td rowspan=1 colspan=1>工作电压</td><td rowspan=1 colspan=1>/</td><td rowspan=1 colspan=1>4.0V</td><td rowspan=1 colspan=1>/</td></tr></table>",
+          "caption": "表11",
+          "footnote": ""
+        },
+        {
+          "index_id": 225,
+          "type": "title",
+          "content": "3.2 功耗测试 ",
+          "page": 46
+        },
+        {
+          "index_id": 226,
+          "type": "table",
+          "content": "Caption: 表 12 核心板功耗测试\nThis table contains the following columns:\n - CPU\n - RK3588\n - RK3588J\n - 测试项\n\nTable Body:\n测试项 | CPU | RK3588J | RK3588\n工作状态 | 环境温度值 | Ta=25.4℃ | Ta=24.6℃\n文状态1 | 主频 | Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz | Cortex-A76主频为1.6GHzCortex-A55主频为1.4GHz\n文状态1 | 电压典型值 | 4.0V | 4.0V\n文状态1 | 电流典型值 | 0.37A | 0.39A\n文状态1 | 功耗典型值 | 1.48W | 1.56W\n文状态1 | CPU内部传感器温度值 | 38.85℃ | 46.1℃\n状态2 | 主频 | Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz | Cortex-A76 主频为 1.6GHzCortex-A55主频为1.4GHz\n状态2 | 电压典型值 | 4.0V | 4.0V\n状态2 | 电流典型值 | 1.24A | 1.36A\n状态2 | 功耗典型值 | 4.96W | 5.44W\n状态2 | CPU内部传感器温度值 | 63.77℃ | 67.46℃\n花科技状态3 | 主频 | Cortex-A76 主频为 2.0GHzCortex-A55主频为1.7GHz | Cortex-A76主频为2.4GHzCortex-A55主频为1.8GHz\n花科技状态3 | 电压典型值 | 4.0V | 4.0V\n花科技状态3 | 电流典型值 | 1.67A | 1.96A\n花科技状态3 | 功耗典型值 | 6.68W | 7.84W\n花科技状态3 | CPU内部传感器温度值 | 77.62℃ | 85.89℃",
+          "page": 46,
+          "img_path": "/root/autodl-fs/bookrag/BookRAG/somdata-vl/output/som-001/auto/images/ab3a4ba7fc9a29b529a59588000a7f574c273fd408953ac1bc4a1d70691bf226.jpg",
+          "table_body": "<table><tr><td>测试项</td><td>CPU</td><td>RK3588J</td><td>RK3588</td></tr><tr><td colspan=\"1\" rowspan=\"1\">工作状态</td><td colspan=\"1\" rowspan=\"1\">环境温度值</td><td colspan=\"1\" rowspan=\"1\">Ta=25.4℃</td><td colspan=\"1\" rowspan=\"1\">Ta=24.6℃</td></tr><tr><td colspan=\"1\" rowspan=\"5\">文状态1</td><td colspan=\"1\" rowspan=\"1\">主频</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76主频为1.6GHzCortex-A55主频为1.4GHz</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电压典型值</td><td colspan=\"1\" rowspan=\"1\">4.0V</td><td colspan=\"1\" rowspan=\"1\">4.0V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电流典型值</td><td colspan=\"1\" rowspan=\"1\">0.37A</td><td colspan=\"1\" rowspan=\"1\">0.39A</td></tr><tr><td colspan=\"1\" rowspan=\"1\">功耗典型值</td><td colspan=\"1\" rowspan=\"1\">1.48W</td><td colspan=\"1\" rowspan=\"1\">1.56W</td></tr><tr><td colspan=\"1\" rowspan=\"1\">CPU内部传感器温度值</td><td colspan=\"1\" rowspan=\"1\">38.85℃</td><td colspan=\"1\" rowspan=\"1\">46.1℃</td></tr><tr><td colspan=\"1\" rowspan=\"5\">状态2</td><td colspan=\"1\" rowspan=\"1\">主频</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为 1.6GHzCortex-A55主频为1.4GHz</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电压典型值</td><td colspan=\"1\" rowspan=\"1\">4.0V</td><td colspan=\"1\" rowspan=\"1\">4.0V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电流典型值</td><td colspan=\"1\" rowspan=\"1\">1.24A</td><td colspan=\"1\" rowspan=\"1\">1.36A</td></tr><tr><td colspan=\"1\" rowspan=\"1\">功耗典型值</td><td colspan=\"1\" rowspan=\"1\">4.96W</td><td colspan=\"1\" rowspan=\"1\">5.44W</td></tr><tr><td colspan=\"1\" rowspan=\"1\">CPU内部传感器温度值</td><td colspan=\"1\" rowspan=\"1\">63.77℃</td><td colspan=\"1\" rowspan=\"1\">67.46℃</td></tr><tr><td colspan=\"1\" rowspan=\"5\">花科技状态3</td><td colspan=\"1\" rowspan=\"1\">主频</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为 2.0GHzCortex-A55主频为1.7GHz</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76主频为2.4GHzCortex-A55主频为1.8GHz</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电压典型值</td><td colspan=\"1\" rowspan=\"1\">4.0V</td><td colspan=\"1\" rowspan=\"1\">4.0V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电流典型值</td><td colspan=\"1\" rowspan=\"1\">1.67A</td><td colspan=\"1\" rowspan=\"1\">1.96A</td></tr><tr><td colspan=\"1\" rowspan=\"1\">功耗典型值</td><td colspan=\"1\" rowspan=\"1\">6.68W</td><td colspan=\"1\" rowspan=\"1\">7.84W</td></tr><tr><td colspan=\"1\" rowspan=\"1\">CPU内部传感器温度值</td><td colspan=\"1\" rowspan=\"1\">77.62℃</td><td colspan=\"1\" rowspan=\"1\">85.89℃</td></tr></table>",
+          "caption": "表 12 核心板功耗测试",
+          "footnote": ""
+        },
+        {
+          "index_id": 96,
+          "type": "title",
+          "content": "1.8外设资源",
+          "page": 12
+        },
+        {
+          "index_id": 99,
+          "type": "text",
+          "content": "因我们的存在，让嵌入式应用更简单",
+          "page": 12
+        },
+        {
+          "index_id": 80,
+          "type": "title",
+          "content": "1.4晶振 ",
+          "page": 10
+        },
+        {
+          "index_id": 51,
+          "type": "text",
+          "content": "SOM-TL3588 核心板板载 CPU、ROM、RAM、晶振、电源、LED 等硬件资源，并通过工业级 B2B 连接方式引出 IO。",
+          "page": 6
+        },
+        {
+          "index_id": 85,
+          "type": "title",
+          "content": "1.5电源",
+          "page": 11
+        },
+        {
+          "index_id": 86,
+          "type": "text",
+          "content": "核心板采用工业级 PMIC 电源管理芯片 RK806-1、RK860-2和 RK860-3，满足系统的供电要求和CPU上电、掉电时序要求，核心板采用4.0V 直流电源供电。",
+          "page": 11
+        },
+        {
+          "index_id": 54,
+          "type": "text",
+          "content": "因我们的存在，让嵌入式应用更简单",
+          "page": 6
+        },
+        {
+          "index_id": 222,
+          "type": "title",
+          "content": "3电气特性",
+          "page": 46
+        },
+        {
+          "index_id": 63,
+          "type": "image",
+          "content": "图 4 处理器功能框图",
+          "page": 8,
+          "img_path": "/root/autodl-fs/bookrag/BookRAG/somdata-vl/output/som-001/auto/images/5e41a69e54352dfb66cc1108b6af40b7d9e22b56a1cafc3e934d744f97d7cef4.jpg"
+        }
+      ],
+      "iteration_text_nodes": [
+        {
+          "index_id": 224,
+          "type": "table",
+          "content": "Caption: 表11\nThis table contains the following columns:\n - 典型值\n - 最大值\n - 最小值\n - 环境参数\n\nTable Body:\n环境参数 | 最小值 | 典型值 | 最大值\n工作温度(工业级) | 包 -40℃ | / | 85℃\n工作温度(宽温级) | 0℃ | 1 | 80℃\n存储温度 | -50°℃ | / | 90°C\n工作湿度 | 35%（无凝露） | / | 75%（无凝露）\n存储湿度 | 35%（无凝露） | 1 | 75%（无凝露）\n工作电压 | / | 4.0V | /",
+          "page": 46,
+          "img_path": "/root/autodl-fs/bookrag/BookRAG/somdata-vl/output/som-001/auto/images/6de58eb87e3a90fe20b82c369a8acb141b80e08974ab2f3c091d2f07c8dbd797.jpg",
+          "table_body": "<table><tr><td rowspan=1 colspan=1>环境参数</td><td rowspan=1 colspan=1>最小值 </td><td rowspan=1 colspan=1>典型值</td><td rowspan=1 colspan=1>最大值</td></tr><tr><td rowspan=1 colspan=1>工作温度(工业级)</td><td rowspan=1 colspan=1>包 -40℃</td><td rowspan=1 colspan=1>/</td><td rowspan=1 colspan=1>85℃</td></tr><tr><td rowspan=1 colspan=1>工作温度(宽温级)</td><td rowspan=1 colspan=1>0℃</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>80℃</td></tr><tr><td rowspan=1 colspan=1>存储温度</td><td rowspan=1 colspan=1>-50°℃</td><td rowspan=1 colspan=1>/</td><td rowspan=1 colspan=1>90°C</td></tr><tr><td rowspan=1 colspan=1>工作湿度</td><td rowspan=1 colspan=1>35%（无凝露）</td><td rowspan=1 colspan=1>/</td><td rowspan=1 colspan=1>75%（无凝露）</td></tr><tr><td rowspan=1 colspan=1>存储湿度</td><td rowspan=1 colspan=1>35%（无凝露）</td><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>75%（无凝露）</td></tr><tr><td rowspan=1 colspan=1>工作电压</td><td rowspan=1 colspan=1>/</td><td rowspan=1 colspan=1>4.0V</td><td rowspan=1 colspan=1>/</td></tr></table>",
+          "caption": "表11",
+          "footnote": ""
+        },
+        {
+          "index_id": 225,
+          "type": "title",
+          "content": "3.2 功耗测试 ",
+          "page": 46
+        },
+        {
+          "index_id": 226,
+          "type": "table",
+          "content": "Caption: 表 12 核心板功耗测试\nThis table contains the following columns:\n - CPU\n - RK3588\n - RK3588J\n - 测试项\n\nTable Body:\n测试项 | CPU | RK3588J | RK3588\n工作状态 | 环境温度值 | Ta=25.4℃ | Ta=24.6℃\n文状态1 | 主频 | Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz | Cortex-A76主频为1.6GHzCortex-A55主频为1.4GHz\n文状态1 | 电压典型值 | 4.0V | 4.0V\n文状态1 | 电流典型值 | 0.37A | 0.39A\n文状态1 | 功耗典型值 | 1.48W | 1.56W\n文状态1 | CPU内部传感器温度值 | 38.85℃ | 46.1℃\n状态2 | 主频 | Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz | Cortex-A76 主频为 1.6GHzCortex-A55主频为1.4GHz\n状态2 | 电压典型值 | 4.0V | 4.0V\n状态2 | 电流典型值 | 1.24A | 1.36A\n状态2 | 功耗典型值 | 4.96W | 5.44W\n状态2 | CPU内部传感器温度值 | 63.77℃ | 67.46℃\n花科技状态3 | 主频 | Cortex-A76 主频为 2.0GHzCortex-A55主频为1.7GHz | Cortex-A76主频为2.4GHzCortex-A55主频为1.8GHz\n花科技状态3 | 电压典型值 | 4.0V | 4.0V\n花科技状态3 | 电流典型值 | 1.67A | 1.96A\n花科技状态3 | 功耗典型值 | 6.68W | 7.84W\n花科技状态3 | CPU内部传感器温度值 | 77.62℃ | 85.89℃",
+          "page": 46,
+          "img_path": "/root/autodl-fs/bookrag/BookRAG/somdata-vl/output/som-001/auto/images/ab3a4ba7fc9a29b529a59588000a7f574c273fd408953ac1bc4a1d70691bf226.jpg",
+          "table_body": "<table><tr><td>测试项</td><td>CPU</td><td>RK3588J</td><td>RK3588</td></tr><tr><td colspan=\"1\" rowspan=\"1\">工作状态</td><td colspan=\"1\" rowspan=\"1\">环境温度值</td><td colspan=\"1\" rowspan=\"1\">Ta=25.4℃</td><td colspan=\"1\" rowspan=\"1\">Ta=24.6℃</td></tr><tr><td colspan=\"1\" rowspan=\"5\">文状态1</td><td colspan=\"1\" rowspan=\"1\">主频</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76主频为1.6GHzCortex-A55主频为1.4GHz</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电压典型值</td><td colspan=\"1\" rowspan=\"1\">4.0V</td><td colspan=\"1\" rowspan=\"1\">4.0V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电流典型值</td><td colspan=\"1\" rowspan=\"1\">0.37A</td><td colspan=\"1\" rowspan=\"1\">0.39A</td></tr><tr><td colspan=\"1\" rowspan=\"1\">功耗典型值</td><td colspan=\"1\" rowspan=\"1\">1.48W</td><td colspan=\"1\" rowspan=\"1\">1.56W</td></tr><tr><td colspan=\"1\" rowspan=\"1\">CPU内部传感器温度值</td><td colspan=\"1\" rowspan=\"1\">38.85℃</td><td colspan=\"1\" rowspan=\"1\">46.1℃</td></tr><tr><td colspan=\"1\" rowspan=\"5\">状态2</td><td colspan=\"1\" rowspan=\"1\">主频</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为 1.6GHzCortex-A55主频为1.4GHz</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电压典型值</td><td colspan=\"1\" rowspan=\"1\">4.0V</td><td colspan=\"1\" rowspan=\"1\">4.0V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电流典型值</td><td colspan=\"1\" rowspan=\"1\">1.24A</td><td colspan=\"1\" rowspan=\"1\">1.36A</td></tr><tr><td colspan=\"1\" rowspan=\"1\">功耗典型值</td><td colspan=\"1\" rowspan=\"1\">4.96W</td><td colspan=\"1\" rowspan=\"1\">5.44W</td></tr><tr><td colspan=\"1\" rowspan=\"1\">CPU内部传感器温度值</td><td colspan=\"1\" rowspan=\"1\">63.77℃</td><td colspan=\"1\" rowspan=\"1\">67.46℃</td></tr><tr><td colspan=\"1\" rowspan=\"5\">花科技状态3</td><td colspan=\"1\" rowspan=\"1\">主频</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为 2.0GHzCortex-A55主频为1.7GHz</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76主频为2.4GHzCortex-A55主频为1.8GHz</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电压典型值</td><td colspan=\"1\" rowspan=\"1\">4.0V</td><td colspan=\"1\" rowspan=\"1\">4.0V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电流典型值</td><td colspan=\"1\" rowspan=\"1\">1.67A</td><td colspan=\"1\" rowspan=\"1\">1.96A</td></tr><tr><td colspan=\"1\" rowspan=\"1\">功耗典型值</td><td colspan=\"1\" rowspan=\"1\">6.68W</td><td colspan=\"1\" rowspan=\"1\">7.84W</td></tr><tr><td colspan=\"1\" rowspan=\"1\">CPU内部传感器温度值</td><td colspan=\"1\" rowspan=\"1\">77.62℃</td><td colspan=\"1\" rowspan=\"1\">85.89℃</td></tr></table>",
+          "caption": "表 12 核心板功耗测试",
+          "footnote": ""
+        },
+        {
+          "index_id": 96,
+          "type": "title",
+          "content": "1.8外设资源",
+          "page": 12
+        },
+        {
+          "index_id": 99,
+          "type": "text",
+          "content": "因我们的存在，让嵌入式应用更简单",
+          "page": 12
+        },
+        {
+          "index_id": 80,
+          "type": "title",
+          "content": "1.4晶振 ",
+          "page": 10
+        },
+        {
+          "index_id": 51,
+          "type": "text",
+          "content": "SOM-TL3588 核心板板载 CPU、ROM、RAM、晶振、电源、LED 等硬件资源，并通过工业级 B2B 连接方式引出 IO。",
+          "page": 6
+        },
+        {
+          "index_id": 85,
+          "type": "title",
+          "content": "1.5电源",
+          "page": 11
+        },
+        {
+          "index_id": 86,
+          "type": "text",
+          "content": "核心板采用工业级 PMIC 电源管理芯片 RK806-1、RK860-2和 RK860-3，满足系统的供电要求和CPU上电、掉电时序要求，核心板采用4.0V 直流电源供电。",
+          "page": 11
+        },
+        {
+          "index_id": 54,
+          "type": "text",
+          "content": "因我们的存在，让嵌入式应用更简单",
+          "page": 6
+        },
+        {
+          "index_id": 222,
+          "type": "title",
+          "content": "3电气特性",
+          "page": 46
+        }
+      ],
+      "iteration_image_nodes": [
+        {
+          "index_id": 63,
+          "type": "image",
+          "content": "图 4 处理器功能框图",
+          "page": 8,
+          "img_path": "/root/autodl-fs/bookrag/BookRAG/somdata-vl/output/som-001/auto/images/5e41a69e54352dfb66cc1108b6af40b7d9e22b56a1cafc3e934d744f97d7cef4.jpg"
+        }
+      ],
+      "iteration_graph_nodes": [
+        {
+          "entity_name": "电压典型值",
+          "entity_type": "MEASUREMENT"
+        },
+        {
+          "entity_name": "clock & reset",
+          "entity_type": "SYSTEM_COMPONENT"
+        },
+        {
+          "entity_name": "晶振",
+          "entity_type": "HARDWARE"
+        },
+        {
+          "entity_name": "图 4",
+          "entity_type": "IMAGE"
+        },
+        {
+          "entity_name": "表 12",
+          "entity_type": "TABLE"
+        }
+      ],
+      "partial_answers": [
+        {
+          "source": "Text Chunk 1",
+          "content": "根据提供的信息，除了检查外部晶振芯片的时钟输入外，还需要检查以下两路电压是否满足要求：\n\n1. **工作电压**：文档中提到核心板采用 **4.0V** 直流电源供电，因此需要检查工作电压是否为 **4.0V**。\n2. **电压典型值**：在功耗测试表（表12）中，电压典型值为 **4.0V**，因此需要检查电压典型值是否满足 **4.0V** 的要求。\n\n综上，除了检查外部晶振芯片的时钟输入外，还需要检查 **工作电压** 和 **电压典型值** 是否满足要求。"
+        },
+        {
+          "source": "Image 1",
+          "content": "根据提供的处理器功能框图（图 4），在检查外部晶振芯片的时钟输入之外，还需要检查以下两路电压是否满足要求：\n\n1.  **VDD_CORE (核心电压)**：这是为处理器核心（包括 Cortex-A76 和 Cortex-A55 双核集群）供电的电压。核心电压是保证处理器正常运行和性能的关键，必须满足其规格要求。\n2.  **VDD_MEM (内存电压)**：这是为外部存储器接口（如 LPDDR4/5）供电的电压。该电压确保外部内存能稳定工作，是系统正常运行的基础。\n\n这两路电压是处理器系统中最关键的供电部分，与时钟输入共同构成了系统稳定运行的三大要素。"
+        }
+      ],
+      "generated_answer": "除了检查外部晶振芯片的时钟输入外，还需要检查以下两路电压是否满足要求：\n\n1. **VDD_CORE（核心电压）**：为处理器核心（如 Cortex-A76 和 Cortex-A55 双核集群）供电，确保处理器正常运行和性能表现。\n2. **VDD_MEM（内存电压）**：为外部存储器接口（如 LPDDR4/5）供电，保证外部内存的稳定工作，是系统正常运行的基础。\n\n这两路电压与时钟输入共同构成了系统稳定运行的关键要素。"
+    }
+  ],
+  "final_answer": "Final Answer:  \n在系统卡在PCIe 3.0 PHY异常的log附近时，除了检查外部晶振芯片的时钟输入外，还需要检查的两路电压是 **PCIE30_AVDD_0V9** 和 **PCIE30_AVDD_1V8**。这两路电压是PCIe 3.0 PHY直接依赖的关键供电电压，若不满足要求，可能导致PHY工作异常。"
+}

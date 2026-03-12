@@ -1,0 +1,25 @@
+{
+  "question": "当系统卡在PCIe 3.0 PHY异常的log附近时，除了检查外部晶振芯片的时钟输入外，还需要检查哪两路电压是否满足要求？",
+  "answer": "还需要检查PCIE30_AVDD_0V9和PCIE30_AVDD_1V8这两路电压是否满足要求。",
+  "doc_uuid": "som-001",
+  "doc_path": "/root/autodl-fs/bookrag/BookRAG/somdata/SOM-TL3588工业核心板硬件说明书.pdf",
+  "evidence": "第58页 文本",
+  "output": "Final Answer:  \n在系统卡在PCIe 3.0 PHY异常的log附近时，除了检查外部晶振芯片的时钟输入外，还需要检查的两路电压是 **PCIE30_AVDD_0V9** 和 **PCIE30_AVDD_1V8**。这两路电压是PCIe 3.0 PHY正常工作的关键供电电压，若不满足要求，可能导致PHY功能异常。",
+  "retrieved_node_ids": [
+    19,
+    22,
+    27,
+    98,
+    116,
+    142,
+    222,
+    224,
+    226,
+    325,
+    330,
+    335,
+    338,
+    339,
+    340
+  ]
+}

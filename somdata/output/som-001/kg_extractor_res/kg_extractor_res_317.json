@@ -1,0 +1,69 @@
+{
+  "entities": [
+    {
+      "entity_name": "sdmmc",
+      "entity_type": "TECHNOLOGY",
+      "description": "sdmmc            micro sd",
+      "source_ids": [
+        317
+      ]
+    },
+    {
+      "entity_name": "micro sd",
+      "entity_type": "PRODUCT",
+      "description": "micro sd",
+      "source_ids": [
+        317
+      ]
+    },
+    {
+      "entity_name": "emmc",
+      "entity_type": "PRODUCT",
+      "description": "emmc",
+      "source_ids": [
+        317
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        317
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "sdmmc",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "sdmmc     micro sd",
+      "source_ids": [
+        317
+      ]
+    },
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "micro sd",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "micro sd",
+      "source_ids": [
+        317
+      ]
+    },
+    {
+      "src_entity_name": "micro sd",
+      "tgt_entity_name": "emmc",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "micro sd            emmc",
+      "source_ids": [
+        317
+      ]
+    }
+  ],
+  "node_idx": 317
+}

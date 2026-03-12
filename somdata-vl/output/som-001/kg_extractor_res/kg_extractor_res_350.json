@@ -1,0 +1,51 @@
+{
+  "entities": [
+    {
+      "entity_name": "6附图最小系统设计",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of '6附图最小系统设计', this section provides the design details of the minimal system, which is part of the hardware manual for the SOM-TL3588 industrial core board.",
+      "source_ids": [
+        350
+      ]
+    },
+    {
+      "entity_name": "最小系统设计",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "Refers to the design of the minimal system, which is the core focus of this section.",
+      "source_ids": [
+        350
+      ]
+    },
+    {
+      "entity_name": "附图",
+      "entity_type": "IMAGE",
+      "description": "Refers to the accompanying diagrams or figures that illustrate the minimal system design, as described in this section.",
+      "source_ids": [
+        350
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "最小系统设计",
+      "tgt_entity_name": "6附图最小系统设计",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '最小系统设计' is the primary topic of section 6附图最小系统设计.",
+      "source_ids": [
+        350
+      ]
+    },
+    {
+      "src_entity_name": "附图",
+      "tgt_entity_name": "6附图最小系统设计",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '附图' is a supporting element of section 6附图最小系统设计.",
+      "source_ids": [
+        350
+      ]
+    }
+  ],
+  "node_idx": 350
+}

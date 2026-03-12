@@ -1,0 +1,43 @@
+{
+  "entities": [
+    {
+      "entity_name": "qos",
+      "entity_type": "TECHNOLOGY",
+      "description": "qos     is a technology feature that defines the quality of service levels for data transmission in an internet of things system",
+      "source_ids": [
+        41
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        41
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "includes the heartbeat mechanism as one of its comprehensive application features",
+      "source_ids": [
+        41
+      ]
+    },
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "qos",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "includes the qos quality level feature as one of its comprehensive application features",
+      "source_ids": [
+        41
+      ]
+    }
+  ],
+  "node_idx": 41
+}

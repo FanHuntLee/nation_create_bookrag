@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "entity_name": "tronlong",
+      "entity_type": "ORGANIZATION",
+      "description": "tronlong is an organization specializing in the production of industrial core boards",
+      "source_ids": [
+        93
+      ]
+    }
+  ],
+  "relations": [],
+  "node_idx": 93
+}

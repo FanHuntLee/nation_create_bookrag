@@ -1,0 +1,61 @@
+{
+  "entities": [
+    {
+      "entity_name": "jtag",
+      "entity_type": "TECHNOLOGY",
+      "description": "jtag is a technology function mentioned in the text that requires specific power domain settings",
+      "source_ids": [
+        363
+      ]
+    },
+    {
+      "entity_name": "micro sd",
+      "entity_type": "PRODUCT",
+      "description": "micro sd is a product mentioned in the text that is referenced in relation to power domain settings",
+      "source_ids": [
+        363
+      ]
+    },
+    {
+      "entity_name": "3 3v",
+      "entity_type": "MEASUREMENT",
+      "description": "3 3v is a voltage measurement mentioned in the text as a required setting for the power domain when using the jtag function",
+      "source_ids": [
+        363
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "jtag",
+      "tgt_entity_name": "micro sd",
+      "relation_name": "",
+      "weight": 6.0,
+      "description": "jtag and micro sd are both mentioned in the context of power domain settings  suggesting they are related technologies or components",
+      "source_ids": [
+        363
+      ]
+    },
+    {
+      "src_entity_name": "jtag",
+      "tgt_entity_name": "3 3v",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "jtag requires the power domain to be set to 3 3v  indicating a direct technical relationship between the jtag function and the voltage measurement",
+      "source_ids": [
+        363
+      ]
+    },
+    {
+      "src_entity_name": "micro sd",
+      "tgt_entity_name": "3 3v",
+      "relation_name": "",
+      "weight": 7.0,
+      "description": "micro sd is mentioned in the context of power domain settings  which are set to 3 3v  suggesting a potential relationship between the product and the voltage measurement",
+      "source_ids": [
+        363
+      ]
+    }
+  ],
+  "node_idx": 363
+}

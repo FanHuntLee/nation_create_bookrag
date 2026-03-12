@@ -1,0 +1,339 @@
+{
+  "entities": [
+    {
+      "entity_name": "the image",
+      "entity_type": "IMAGE",
+      "description": "A schematic diagram illustrating an electronic circuit, likely a microcontroller-based system with SD card interface and power management components.",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "entity_name": "vdd_3v3_main",
+      "entity_type": "MEASUREMENT",
+      "description": "The main 3.3-volt power supply rail for the circuit, providing power to various components.",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "entity_name": "c50",
+      "entity_type": "CAPACITOR",
+      "description": "A capacitor labeled C50, likely used for decoupling or filtering power supply noise.",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "entity_name": "u10",
+      "entity_type": "HARDWARE",
+      "description": "An integrated circuit (IC) labeled U10, likely a microcontroller or processor, serving as the central processing unit of the circuit.",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "entity_name": "vcc",
+      "entity_type": "MEASUREMENT",
+      "description": "The positive power supply voltage rail connected to the microcontroller (U10).",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "entity_name": "gnd",
+      "entity_type": "MEASUREMENT",
+      "description": "The ground (reference) voltage rail for the circuit.",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "entity_name": "sd_det",
+      "entity_type": "SENSOR",
+      "description": "A signal line for SD card detection, indicating when an SD card is inserted or removed.",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "entity_name": "af1/sdmmc_d3/tag_tms_m0/3v3",
+      "entity_type": "PIN",
+      "description": "A multi-function pin on the microcontroller, serving as SDMMC data line 3, TAG TMS, and 3.3V power.",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "entity_name": "af2/sdmmc_d2/tag_tck_m0/3v3",
+      "entity_type": "PIN",
+      "description": "A multi-function pin on the microcontroller, serving as SDMMC data line 2, TAG TCK, and 3.3V power.",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "entity_name": "r86",
+      "entity_type": "RESISTOR",
+      "description": "A resistor labeled R86, likely used for pull-up or pull-down purposes on the SD card detection line.",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "entity_name": "sd_d2",
+      "entity_type": "PIN",
+      "description": "A pin designated for SD card data line 2.",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "entity_name": "sd_d1",
+      "entity_type": "PIN",
+      "description": "A pin designated for SD card data line 1.",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "entity_name": "sd_d0",
+      "entity_type": "PIN",
+      "description": "A pin designated for SD card data line 0.",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "entity_name": "tck",
+      "entity_type": "PIN",
+      "description": "A pin designated for Test Clock (TCK), likely part of a JTAG interface.",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "entity_name": "tms",
+      "entity_type": "PIN",
+      "description": "A pin designated for Test Mode Select (TMS), likely part of a JTAG interface.",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "entity_name": "ts516",
+      "entity_type": "HARDWARE",
+      "description": "The model or part number of the microcontroller (U10), indicating it is an STMicroelectronics STM32F103C8T6 or similar device.",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "entity_name": "100nf",
+      "entity_type": "CAPACITOR",
+      "description": "A capacitor with a capacitance value of 100 nanofarads, likely used for decoupling or filtering.",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "entity_name": "1k",
+      "entity_type": "RESISTOR",
+      "description": "A resistor with a resistance value of 1 kilohm, likely used for pull-up or pull-down purposes.",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "entity_name": "image",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        361
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "image",
+      "tgt_entity_name": "the image",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image  related to The Image",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "src_entity_name": "image",
+      "tgt_entity_name": "vdd_3v3_main",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image  related to VDD_3V3_MAIN",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "src_entity_name": "image",
+      "tgt_entity_name": "c50",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image  related to C50",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "src_entity_name": "image",
+      "tgt_entity_name": "u10",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image  related to U10",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "src_entity_name": "image",
+      "tgt_entity_name": "vcc",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image  related to VCC",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "src_entity_name": "image",
+      "tgt_entity_name": "gnd",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image  related to GND",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "src_entity_name": "image",
+      "tgt_entity_name": "sd_det",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image  related to SD_DET",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "src_entity_name": "image",
+      "tgt_entity_name": "af1/sdmmc_d3/tag_tms_m0/3v3",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image  related to AF1/SDMMC_D3/TAG_TMS_M0/3V3",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "src_entity_name": "image",
+      "tgt_entity_name": "af2/sdmmc_d2/tag_tck_m0/3v3",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image  related to AF2/SDMMC_D2/TAG_TCK_M0/3V3",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "src_entity_name": "image",
+      "tgt_entity_name": "r86",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image  related to R86",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "src_entity_name": "image",
+      "tgt_entity_name": "sd_d2",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image  related to SD_D2",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "src_entity_name": "image",
+      "tgt_entity_name": "sd_d1",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image  related to SD_D1",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "src_entity_name": "image",
+      "tgt_entity_name": "sd_d0",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image  related to SD_D0",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "src_entity_name": "image",
+      "tgt_entity_name": "tck",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image  related to TCK",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "src_entity_name": "image",
+      "tgt_entity_name": "tms",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image  related to TMS",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "src_entity_name": "image",
+      "tgt_entity_name": "ts516",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image  related to TS516",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "src_entity_name": "image",
+      "tgt_entity_name": "100nf",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image  related to 100nF",
+      "source_ids": [
+        361
+      ]
+    },
+    {
+      "src_entity_name": "image",
+      "tgt_entity_name": "1k",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image  related to 1K",
+      "source_ids": [
+        361
+      ]
+    }
+  ],
+  "node_idx": 361
+}

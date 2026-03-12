@@ -1,0 +1,26 @@
+{
+    "build_tree_time": 75.45,
+    "token_stage_history": {
+        "tree_index_construction": {
+            "prompt_tokens": 22367,
+            "completion_tokens": 2203,
+            "total_tokens": 24570
+        },
+        "tree_node_summary": {
+            "prompt_tokens": 35030,
+            "completion_tokens": 5439,
+            "total_tokens": 40469
+        },
+        "kg_extraction": {
+            "prompt_tokens": 314257,
+            "completion_tokens": 38084,
+            "total_tokens": 352341
+        },
+        "kg_refinement": {
+            "prompt_tokens": 135359,
+            "completion_tokens": 5871,
+            "total_tokens": 141230
+        }
+    },
+    "build_kg_time": 341.53
+}

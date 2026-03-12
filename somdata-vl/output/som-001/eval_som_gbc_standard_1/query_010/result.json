@@ -1,0 +1,18 @@
+{
+  "question": "在核心板4.0V电源输入的设计电路原理图中，标示的理论输出电压(Vout)具体计算结果是多少伏特？",
+  "answer": "理论输出电压(Vout)的计算结果为4.04V。",
+  "doc_uuid": "som-001",
+  "doc_path": "/root/autodl-fs/bookrag/BookRAG/somdata/SOM-TL3588工业核心板硬件说明书.pdf",
+  "evidence": "第52页 图16",
+  "output": "根据计算公式和输入电压值，理论输出电压 $ V_{out} $ 的具体数值为 **4.04伏特**。",
+  "retrieved_node_ids": [
+    116,
+    142,
+    272,
+    275,
+    282,
+    283,
+    314,
+    357
+  ]
+}

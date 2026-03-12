@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "aarch64 linux gnu gcc",
+      "entity_type": "SOFTWARE",
+      "description": "aarch64 linux gnu gcc is a compiler tool used in the build process  indicating it is a specific software tool for compiling code",
+      "source_ids": [
+        100
+      ]
+    },
+    {
+      "entity_name": "host",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        100
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "host",
+      "tgt_entity_name": "aarch64 linux gnu gcc",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the host is using aarch64 linux gnu gcc as the compiler in the build process",
+      "source_ids": [
+        100
+      ]
+    }
+  ],
+  "node_idx": 100
+}

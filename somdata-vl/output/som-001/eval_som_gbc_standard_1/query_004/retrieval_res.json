@@ -1,0 +1,181 @@
+{
+  "query": "系统上电后且SPL启动后，将优先从哪里引导U-Boot镜像？",
+  "used_sec_ids": [],
+  "all_sec_ids": [],
+  "plan": {
+    "query_type": "simple",
+    "original_query": "系统上电后且SPL启动后，将优先从哪里引导U-Boot镜像？",
+    "sub_questions": null,
+    "filters": null,
+    "operation": null
+  },
+  "iterations": [
+    {
+      "sub_query": "系统上电后且SPL启动后，将优先从哪里引导U-Boot镜像？",
+      "sub_number": 1,
+      "gbc_entity_map": {
+        "Name: spl\nType: SOFTWARE": [
+          "Name: spl\nType: SOFTWARE"
+        ],
+        "Name: u-boot\nType: SOFTWARE": [
+          "Name: u boot\nType: SOFTWARE"
+        ]
+      },
+      "linked_tree_nodes": [
+        {
+          "index_id": 300,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: u boot\nType: SOFTWARE"
+          ]
+        },
+        {
+          "index_id": 296,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: spl\nType: SOFTWARE"
+          ]
+        }
+      ],
+      "linked_section_ids": [
+        266
+      ],
+      "supplementary_ids": [],
+      "selected_explanation": "没有找到与用户问题相关的剩余部分。用户的问题涉及U-Boot镜像的引导位置，而剩余部分的标题和路径未提及与引导过程、启动流程或相关硬件资源相关的具体内容。",
+      "retrieval_sec_ids": [
+        266
+      ],
+      "retrieval_nodes": [
+        {
+          "index_id": 295,
+          "type": "text",
+          "content": "5.1.2 系统启动说明",
+          "page": 54
+        },
+        {
+          "index_id": 296,
+          "type": "text",
+          "content": "系统上电后，由 CPU 内部 BootRom 的引导代码依次从eMMC FLASH、SD卡、USB 接口检测 SPL启动程序，从第一个包含 SPL启动程序的设备开始启动。SPL启动后，将优先",
+          "page": 54
+        },
+        {
+          "index_id": 297,
+          "type": "text",
+          "content": "因我们的存在，让嵌入式应用更简单",
+          "page": 54
+        },
+        {
+          "index_id": 300,
+          "type": "text",
+          "content": "从 SD 系统卡（非常规 SD卡）引导U-Boot 镜像，否则，将从原启动设备引导U-Boot 镜像。",
+          "page": 55
+        },
+        {
+          "index_id": 272,
+          "type": "text",
+          "content": "公司官网：www.tronlong.com 销售邮箱：sales@tronlong.com 公司总机：020-8998-6280 51/62  \n技术论坛：www.51ele.net 技术邮箱：support@tronlong.com 技术热线：020-3893-9734 VDD_4V0_SOM_INPUT 在核心板内部未预留总电源输入的储能大电容。底板设计时，请在靠近 B2B 连接器焊盘位置放置总容值约为50uF 左右的储能电容。 备注：为保证核心板长期稳定可靠工作，请按我司提供的工作电压典型值(4.0V)要求为核心板供电。",
+          "page": 51
+        },
+        {
+          "index_id": 308,
+          "type": "text",
+          "content": "因我们的存在，让嵌入式应用更简单",
+          "page": 55
+        },
+        {
+          "index_id": 309,
+          "type": "text",
+          "content": "公司官网：www.tronlong.com 销售邮箱：sales@tronlong.com 公司总机：020-8998-6280 55/62  \n技术论坛：www.51ele.net 技术邮箱：support@tronlong.com 技术热线：020-3893-9734 Tronlong@ 专业打造工业核心板",
+          "page": 55
+        },
+        {
+          "index_id": 286,
+          "type": "text",
+          "content": "公司官网：www.tronlong.com 销售邮箱：sales@tronlong.com 公司总机：020-8998-6280 53/62  \n技术论坛：www.51ele.net 技术邮箱：support@tronlong.com 技术热线：020-3893-9734 备注：请在底板增加如下图所示快速下电电路，以满足快速上电、掉电应用场景下及时泄放底板的电源，确保系统下一次上电符合CPU 和底板器件的上电时序要求。",
+          "page": 53
+        }
+      ],
+      "iteration_text_nodes": [
+        {
+          "index_id": 295,
+          "type": "text",
+          "content": "5.1.2 系统启动说明",
+          "page": 54
+        },
+        {
+          "index_id": 296,
+          "type": "text",
+          "content": "系统上电后，由 CPU 内部 BootRom 的引导代码依次从eMMC FLASH、SD卡、USB 接口检测 SPL启动程序，从第一个包含 SPL启动程序的设备开始启动。SPL启动后，将优先",
+          "page": 54
+        },
+        {
+          "index_id": 297,
+          "type": "text",
+          "content": "因我们的存在，让嵌入式应用更简单",
+          "page": 54
+        },
+        {
+          "index_id": 300,
+          "type": "text",
+          "content": "从 SD 系统卡（非常规 SD卡）引导U-Boot 镜像，否则，将从原启动设备引导U-Boot 镜像。",
+          "page": 55
+        },
+        {
+          "index_id": 272,
+          "type": "text",
+          "content": "公司官网：www.tronlong.com 销售邮箱：sales@tronlong.com 公司总机：020-8998-6280 51/62  \n技术论坛：www.51ele.net 技术邮箱：support@tronlong.com 技术热线：020-3893-9734 VDD_4V0_SOM_INPUT 在核心板内部未预留总电源输入的储能大电容。底板设计时，请在靠近 B2B 连接器焊盘位置放置总容值约为50uF 左右的储能电容。 备注：为保证核心板长期稳定可靠工作，请按我司提供的工作电压典型值(4.0V)要求为核心板供电。",
+          "page": 51
+        },
+        {
+          "index_id": 308,
+          "type": "text",
+          "content": "因我们的存在，让嵌入式应用更简单",
+          "page": 55
+        },
+        {
+          "index_id": 309,
+          "type": "text",
+          "content": "公司官网：www.tronlong.com 销售邮箱：sales@tronlong.com 公司总机：020-8998-6280 55/62  \n技术论坛：www.51ele.net 技术邮箱：support@tronlong.com 技术热线：020-3893-9734 Tronlong@ 专业打造工业核心板",
+          "page": 55
+        },
+        {
+          "index_id": 286,
+          "type": "text",
+          "content": "公司官网：www.tronlong.com 销售邮箱：sales@tronlong.com 公司总机：020-8998-6280 53/62  \n技术论坛：www.51ele.net 技术邮箱：support@tronlong.com 技术热线：020-3893-9734 备注：请在底板增加如下图所示快速下电电路，以满足快速上电、掉电应用场景下及时泄放底板的电源，确保系统下一次上电符合CPU 和底板器件的上电时序要求。",
+          "page": 53
+        }
+      ],
+      "iteration_image_nodes": [],
+      "iteration_graph_nodes": [
+        {
+          "entity_name": "sd",
+          "entity_type": "PRODUCT"
+        },
+        {
+          "entity_name": "u boot",
+          "entity_type": "SOFTWARE"
+        },
+        {
+          "entity_name": "",
+          "entity_type": "UNKNOWN"
+        },
+        {
+          "entity_name": "bootrom",
+          "entity_type": "SOFTWARE"
+        },
+        {
+          "entity_name": "spl",
+          "entity_type": "SOFTWARE"
+        }
+      ],
+      "partial_answers": [
+        {
+          "source": "Text Chunk 1",
+          "content": "系统上电后且SPL启动后，将**优先从 SD 系统卡（非常规 SD 卡）引导 U-Boot 镜像**，否则将从原启动设备引导 U-Boot 镜像。"
+        }
+      ],
+      "generated_answer": "系统上电后且SPL启动后，将**优先从 SD 系统卡（非常规 SD 卡）引导 U-Boot 镜像**，否则将从原启动设备引导 U-Boot 镜像。"
+    }
+  ],
+  "final_answer": "系统上电后且SPL启动后，将**优先从 SD 系统卡（非常规 SD 卡）引导 U-Boot 镜像**，否则将从原启动设备引导 U-Boot 镜像。"
+}

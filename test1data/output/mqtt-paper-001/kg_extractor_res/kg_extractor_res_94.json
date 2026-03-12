@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "2.3案例编译",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of '2mqtt_client 案例', this section provides instructions and details on how to compile the MQTT client case, likely including setup steps, dependencies, and build processes.",
+      "source_ids": [
+        94
+      ]
+    },
+    {
+      "entity_name": "案例编译",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "Refers to the process of compiling the MQTT client case, which is the focus of section 2.3.",
+      "source_ids": [
+        94
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "案例编译",
+      "tgt_entity_name": "2.3案例编译",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '案例编译' is a primary topic of section 2.3.",
+      "source_ids": [
+        94
+      ]
+    }
+  ],
+  "node_idx": 94
+}

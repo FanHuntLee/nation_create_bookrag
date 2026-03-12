@@ -1,0 +1,25 @@
+{
+  "entities": [
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        17
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 7.0,
+      "description": "both are products related to thermal imaging  with the latter designed for wide temperature range applications",
+      "source_ids": [
+        17
+      ]
+    }
+  ],
+  "node_idx": 17
+}

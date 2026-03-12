@@ -1,0 +1,141 @@
+{
+  "entities": [
+    {
+      "entity_name": "saradc",
+      "entity_type": "TECHNOLOGY",
+      "description": "saradc is a technology that is designed with 1 8v power supply and uses its own power as a reference voltage for operation",
+      "source_ids": [
+        290
+      ]
+    },
+    {
+      "entity_name": "sar",
+      "entity_type": "TECHNOLOGY",
+      "description": "sar is a technology that refers to the successive approximation register used in the saradc for analog to digital conversion",
+      "source_ids": [
+        290
+      ]
+    },
+    {
+      "entity_name": "adc",
+      "entity_type": "TECHNOLOGY",
+      "description": "adc is a technology that refers to the analog to digital converter used in the saradc for converting analog signals to digital codes",
+      "source_ids": [
+        290
+      ]
+    },
+    {
+      "entity_name": "1 8v",
+      "entity_type": "MEASUREMENT",
+      "description": "1 8v is a voltage measurement used as the power supply and reference voltage for the saradc",
+      "source_ids": [
+        290
+      ]
+    },
+    {
+      "entity_name": "12 bit",
+      "entity_type": "MEASUREMENT",
+      "description": "12 bit is a measurement of resolution used in the saradc for converting analog signals to digital codes",
+      "source_ids": [
+        290
+      ]
+    },
+    {
+      "entity_name": "1msps",
+      "entity_type": "MEASUREMENT",
+      "description": "1msps is a measurement of the maximum conversion rate of the saradc",
+      "source_ids": [
+        290
+      ]
+    },
+    {
+      "entity_name": "20mhz",
+      "entity_type": "MEASUREMENT",
+      "description": "20mhz is a measurement of the clock frequency used in the saradc for analog to digital conversion",
+      "source_ids": [
+        290
+      ]
+    },
+    {
+      "entity_name": "ov",
+      "entity_type": "MEASUREMENT",
+      "description": "ov is a measurement of the input range for the saradc  typically from 0v to 1 8v",
+      "source_ids": [
+        290
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "saradc",
+      "tgt_entity_name": "sar",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "saradc uses sar technology as its core component for analog to digital conversion",
+      "source_ids": [
+        290
+      ]
+    },
+    {
+      "src_entity_name": "saradc",
+      "tgt_entity_name": "adc",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "saradc is a type of adc that uses the successive approximation register for conversion",
+      "source_ids": [
+        290
+      ]
+    },
+    {
+      "src_entity_name": "saradc",
+      "tgt_entity_name": "1 8v",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "saradc is powered by and uses 1 8v as its reference voltage",
+      "source_ids": [
+        290
+      ]
+    },
+    {
+      "src_entity_name": "saradc",
+      "tgt_entity_name": "12 bit",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "saradc produces 12 bit binary digital codes from analog inputs",
+      "source_ids": [
+        290
+      ]
+    },
+    {
+      "src_entity_name": "saradc",
+      "tgt_entity_name": "1msps",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "saradc has a maximum conversion rate of 1msps",
+      "source_ids": [
+        290
+      ]
+    },
+    {
+      "src_entity_name": "saradc",
+      "tgt_entity_name": "20mhz",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "saradc operates with a 20mhz clock frequency for conversion",
+      "source_ids": [
+        290
+      ]
+    },
+    {
+      "src_entity_name": "saradc",
+      "tgt_entity_name": "ov",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "saradc has an input range from 0v to 1 8v",
+      "source_ids": [
+        290
+      ]
+    }
+  ],
+  "node_idx": 290
+}

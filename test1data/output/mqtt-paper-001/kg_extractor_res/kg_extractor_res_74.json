@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "mqtt client",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        74
+      ]
+    },
+    {
+      "entity_name": "www tronlong com",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        74
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "mqtt client",
+      "tgt_entity_name": "www tronlong com",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "mqtt client sends a message containing the content www tronlong com",
+      "source_ids": [
+        74
+      ]
+    }
+  ],
+  "node_idx": 74
+}

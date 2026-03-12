@@ -1,0 +1,51 @@
+{
+  "entities": [
+    {
+      "entity_name": "vdd 4v0 som input",
+      "entity_type": "PRODUCT",
+      "description": "vdd 4v0 som input is a power supply input for the core board  serving as the main power source",
+      "source_ids": [
+        274
+      ]
+    },
+    {
+      "entity_name": "12w",
+      "entity_type": "MONEY",
+      "description": "12w is a power rating suggested for the power supply design",
+      "source_ids": [
+        274
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        274
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "vdd 4v0 som input",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "vdd 4v0 som input is the main power input for the core board  and the power supply design is referenced from the evaluation board",
+      "source_ids": [
+        274
+      ]
+    },
+    {
+      "src_entity_name": "vdd 4v0 som input",
+      "tgt_entity_name": "12w",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "the power supply design for vdd 4v0 som input is suggested to be no more than 12w",
+      "source_ids": [
+        274
+      ]
+    }
+  ],
+  "node_idx": 274
+}

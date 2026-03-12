@@ -1,0 +1,79 @@
+{
+  "entities": [
+    {
+      "entity_name": "tcp ip",
+      "entity_type": "TECHNOLOGY",
+      "description": "tcp ip is a protocol suite that mqtt is built upon  enabling communication over networks",
+      "source_ids": [
+        36
+      ]
+    },
+    {
+      "entity_name": "ibm",
+      "entity_type": "ORGANIZATION",
+      "description": "ibm is the organization that released the mqtt protocol in 1999",
+      "source_ids": [
+        36
+      ]
+    },
+    {
+      "entity_name": "1999",
+      "entity_type": "DATE",
+      "description": "1999 is the year when the mqtt protocol was released by ibm",
+      "source_ids": [
+        36
+      ]
+    },
+    {
+      "entity_name": "mqtt",
+      "entity_type": "TECHNOLOGY",
+      "description": "mqtt is a lightweight  simple  open  and easy to implement protocol with low overhead and bandwidth usage  suitable for iot and small devices",
+      "source_ids": [
+        36
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "mqtt",
+      "tgt_entity_name": "tcp ip",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "mqtt is built on top of the tcp ip protocol  allowing it to function over networks",
+      "source_ids": [
+        36
+      ]
+    },
+    {
+      "src_entity_name": "mqtt",
+      "tgt_entity_name": "ibm",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "mqtt was developed and released by ibm in 1999",
+      "source_ids": [
+        36
+      ]
+    },
+    {
+      "src_entity_name": "mqtt",
+      "tgt_entity_name": "1999",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "mqtt was released in the year 1999",
+      "source_ids": [
+        36
+      ]
+    },
+    {
+      "src_entity_name": "mqtt",
+      "tgt_entity_name": "mqtt",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "mqtt is described as a lightweight  simple  open  and easy to implement protocol with low overhead and bandwidth usage  suitable for iot and small devices",
+      "source_ids": [
+        36
+      ]
+    }
+  ],
+  "node_idx": 36
+}

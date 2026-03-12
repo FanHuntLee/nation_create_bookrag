@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "entity_name": "emmc",
+      "entity_type": "PRODUCT",
+      "description": "emmc is a product mentioned in the text as a subject for extending its lifespan",
+      "source_ids": [
+        71
+      ]
+    }
+  ],
+  "relations": [],
+  "node_idx": 71
+}

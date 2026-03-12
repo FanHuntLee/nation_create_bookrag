@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "conoa",
+      "entity_type": "PRODUCT",
+      "description": "conoa is a product mentioned in the text  likely related to pin definitions or hardware specifications",
+      "source_ids": [
+        12
+      ]
+    },
+    {
+      "entity_name": "conob",
+      "entity_type": "PRODUCT",
+      "description": "conob is a product mentioned in the text  likely related to pin definitions or hardware specifications",
+      "source_ids": [
+        12
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "conoa",
+      "tgt_entity_name": "conob",
+      "relation_name": "",
+      "weight": 6.0,
+      "description": "conoa and conob are both products mentioned in the text  possibly related to hardware or electronic components",
+      "source_ids": [
+        12
+      ]
+    }
+  ],
+  "node_idx": 12
+}

@@ -1,0 +1,19 @@
+{
+  "question": "根据“功能引脚信号走线长度与阻抗说明”长表，核心板内部信号“PCIE30_PORT1_TX1P”的PCB走线长度和对应的阻抗要求分别是什么？",
+  "answer": "该信号的PCB走线长度为1289.062 mil，对应的阻抗要求为85ohm。",
+  "doc_uuid": "som-001",
+  "doc_path": "/root/autodl-fs/bookrag/BookRAG/somdata/SOM-TL3588工业核心板硬件说明书.pdf",
+  "evidence": "第43页 表10",
+  "output": "根据“功能引脚信号走线长度与阻抗说明”长表，核心板内部信号“PCIE30_PORT1_TX1P”的PCB走线长度是 **1289.062 mil**，对应的阻抗要求是 **差分100ohm**。",
+  "retrieved_node_ids": [
+    98,
+    142,
+    189,
+    190,
+    191,
+    195,
+    330,
+    339,
+    340
+  ]
+}

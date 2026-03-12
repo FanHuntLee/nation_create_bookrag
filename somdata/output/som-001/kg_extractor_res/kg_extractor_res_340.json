@@ -1,0 +1,69 @@
+{
+  "entities": [
+    {
+      "entity_name": "pcie30 avdd 0v9",
+      "entity_type": "VOLTAGE",
+      "description": "pcie30 avdd 0v9 is a voltage supply that needs to meet specific requirements for the pcie30phy to function properly",
+      "source_ids": [
+        340
+      ]
+    },
+    {
+      "entity_name": "pcie30 avdd 1v8",
+      "entity_type": "VOLTAGE",
+      "description": "pcie30 avdd 1v8 is a voltage supply that needs to meet specific requirements for the pcie30phy to function properly",
+      "source_ids": [
+        340
+      ]
+    },
+    {
+      "entity_name": "rk3588 pcie30phy",
+      "entity_type": "HARDWARE",
+      "description": "rk3588 pcie30phy is a hardware component that requires proper power supply and clock input to function correctly",
+      "source_ids": [
+        340
+      ]
+    },
+    {
+      "entity_name": "external crystal oscillator chip",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        340
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "rk3588 pcie30phy",
+      "tgt_entity_name": "pcie30 avdd 0v9",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the rk3588 pcie30phy requires the pcie30 avdd 0v9 voltage supply to function properly",
+      "source_ids": [
+        340
+      ]
+    },
+    {
+      "src_entity_name": "rk3588 pcie30phy",
+      "tgt_entity_name": "pcie30 avdd 1v8",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the rk3588 pcie30phy requires the pcie30 avdd 1v8 voltage supply to function properly",
+      "source_ids": [
+        340
+      ]
+    },
+    {
+      "src_entity_name": "rk3588 pcie30phy",
+      "tgt_entity_name": "external crystal oscillator chip",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "the rk3588 pcie30phy relies on the external crystal oscillator chip for clock input  which is critical for proper operation",
+      "source_ids": [
+        340
+      ]
+    }
+  ],
+  "node_idx": 340
+}

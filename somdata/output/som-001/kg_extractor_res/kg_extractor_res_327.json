@@ -1,0 +1,79 @@
+{
+  "entities": [
+    {
+      "entity_name": "am16 saradc ino boot",
+      "entity_type": "TECHNOLOGY",
+      "description": "am16 saradc ino boot is a signal that  when grounded  triggers the cpu to enter maskrom mode for firmware upgrades",
+      "source_ids": [
+        327
+      ]
+    },
+    {
+      "entity_name": "usb3 1 otg",
+      "entity_type": "TECHNOLOGY",
+      "description": "usb3 1 otg is an interface used for firmware upgrades when the cpu is in maskrom mode",
+      "source_ids": [
+        327
+      ]
+    },
+    {
+      "entity_name": "maskrom mode",
+      "entity_type": "TECHNOLOGY",
+      "description": "maskrom mode is a cpu mode entered when the am16 saradc ino boot signal is detected as a low level",
+      "source_ids": [
+        327
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        327
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "am16 saradc ino boot",
+      "tgt_entity_name": "maskrom mode",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the am16 saradc ino boot signal being grounded causes the cpu to enter maskrom mode",
+      "source_ids": [
+        327
+      ]
+    },
+    {
+      "src_entity_name": "am16 saradc ino boot",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "the am16 saradc ino boot signal being grounded enables the firmware upgrade process",
+      "source_ids": [
+        327
+      ]
+    },
+    {
+      "src_entity_name": "usb3 1 otg",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the usb3 1 otg interface is used for firmware upgrades when the cpu is in maskrom mode",
+      "source_ids": [
+        327
+      ]
+    },
+    {
+      "src_entity_name": "maskrom mode",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "the cpu enters maskrom mode to allow firmware upgrades via the usb3 1 otg interface",
+      "source_ids": [
+        327
+      ]
+    }
+  ],
+  "node_idx": 327
+}

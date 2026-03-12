@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "rackchip",
+      "entity_type": "ORGANIZATION",
+      "description": "rackchip is an organization mentioned in the text  likely referring to a company or business entity",
+      "source_ids": [
+        348
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        348
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "rackchip",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "rackchip and       are likely the same organization  as they are presented together in the text",
+      "source_ids": [
+        348
+      ]
+    }
+  ],
+  "node_idx": 348
+}

@@ -1,0 +1,177 @@
+{
+  "entities": [
+    {
+      "entity_name": "图 12",
+      "entity_type": "IMAGE",
+      "description": "一张热成像图，显示电子电路板上的温度分布，标注了多个温度点和测量参数。",
+      "source_ids": [
+        252
+      ]
+    },
+    {
+      "entity_name": "61.1 °c",
+      "entity_type": "MEASUREMENT",
+      "description": "热成像图左上角显示的一个温度测量值，表示该区域的温度为61.1摄氏度。",
+      "source_ids": [
+        252
+      ]
+    },
+    {
+      "entity_name": "62.4 °c",
+      "entity_type": "MEASUREMENT",
+      "description": "热成像图右上角显示的一个温度测量值，表示该区域的温度为62.4摄氏度，是图中最高温度点。",
+      "source_ids": [
+        252
+      ]
+    },
+    {
+      "entity_name": "33.1 °c",
+      "entity_type": "MEASUREMENT",
+      "description": "热成像图右下角显示的一个温度测量值，表示该区域的温度为33.1摄氏度。",
+      "source_ids": [
+        252
+      ]
+    },
+    {
+      "entity_name": "2023/10/24 21:07:12",
+      "entity_type": "TIME",
+      "description": "热成像图顶部中央显示的拍摄时间，格式为年/月/日 时:分:秒。",
+      "source_ids": [
+        252
+      ]
+    },
+    {
+      "entity_name": "x1",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "热成像图左下角显示的放大倍数参数，表示图像被放大了一倍。",
+      "source_ids": [
+        252
+      ]
+    },
+    {
+      "entity_name": "ε = 0.90",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "热成像图左下角显示的发射率参数，表示被测物体的发射率为0.90。",
+      "source_ids": [
+        252
+      ]
+    },
+    {
+      "entity_name": "a",
+      "entity_type": "LABEL",
+      "description": "热成像图右上角显示的标记，用于指示最高温度点的位置。",
+      "source_ids": [
+        252
+      ]
+    },
+    {
+      "entity_name": "温度色标",
+      "entity_type": "TABLE",
+      "description": "热成像图右侧显示的温度色标，用于将温度值映射到颜色，以可视化温度分布。",
+      "source_ids": [
+        252
+      ]
+    },
+    {
+      "entity_name": "image 图 12状态3（最高温度点为 $6 2 .",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        252
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "image 图 12状态3（最高温度点为 $6 2 .",
+      "tgt_entity_name": "图 12",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图 12状态3（最高温度点为 $6 2 . related to 图 12",
+      "source_ids": [
+        252
+      ]
+    },
+    {
+      "src_entity_name": "image 图 12状态3（最高温度点为 $6 2 .",
+      "tgt_entity_name": "61.1 °c",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图 12状态3（最高温度点为 $6 2 . related to 61.1 °C",
+      "source_ids": [
+        252
+      ]
+    },
+    {
+      "src_entity_name": "image 图 12状态3（最高温度点为 $6 2 .",
+      "tgt_entity_name": "62.4 °c",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图 12状态3（最高温度点为 $6 2 . related to 62.4 °C",
+      "source_ids": [
+        252
+      ]
+    },
+    {
+      "src_entity_name": "image 图 12状态3（最高温度点为 $6 2 .",
+      "tgt_entity_name": "33.1 °c",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图 12状态3（最高温度点为 $6 2 . related to 33.1 °C",
+      "source_ids": [
+        252
+      ]
+    },
+    {
+      "src_entity_name": "image 图 12状态3（最高温度点为 $6 2 .",
+      "tgt_entity_name": "2023/10/24 21:07:12",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图 12状态3（最高温度点为 $6 2 . related to 2023/10/24 21:07:12",
+      "source_ids": [
+        252
+      ]
+    },
+    {
+      "src_entity_name": "image 图 12状态3（最高温度点为 $6 2 .",
+      "tgt_entity_name": "x1",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图 12状态3（最高温度点为 $6 2 . related to x1",
+      "source_ids": [
+        252
+      ]
+    },
+    {
+      "src_entity_name": "image 图 12状态3（最高温度点为 $6 2 .",
+      "tgt_entity_name": "ε = 0.90",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图 12状态3（最高温度点为 $6 2 . related to ε = 0.90",
+      "source_ids": [
+        252
+      ]
+    },
+    {
+      "src_entity_name": "image 图 12状态3（最高温度点为 $6 2 .",
+      "tgt_entity_name": "a",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图 12状态3（最高温度点为 $6 2 . related to A",
+      "source_ids": [
+        252
+      ]
+    },
+    {
+      "src_entity_name": "image 图 12状态3（最高温度点为 $6 2 .",
+      "tgt_entity_name": "温度色标",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图 12状态3（最高温度点为 $6 2 . related to 温度色标",
+      "source_ids": [
+        252
+      ]
+    }
+  ],
+  "node_idx": 252
+}

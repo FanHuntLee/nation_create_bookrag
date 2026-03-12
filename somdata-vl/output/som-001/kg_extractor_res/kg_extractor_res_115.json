@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "2.2.1 conoa",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of '引脚定义', this section provides the pin definition for the CONOA connector, which is part of the hardware specification for the SOM-TL3588 industrial core board.",
+      "source_ids": [
+        115
+      ]
+    },
+    {
+      "entity_name": "conoa",
+      "entity_type": "PRODUCT",
+      "description": "Refers to a specific connector type used on the SOM-TL3588 industrial core board, detailed in section 2.2.1.",
+      "source_ids": [
+        115
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "conoa",
+      "tgt_entity_name": "2.2.1 conoa",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of 'CONOA' is the primary topic of section 2.2.1.",
+      "source_ids": [
+        115
+      ]
+    }
+  ],
+  "node_idx": 115
+}

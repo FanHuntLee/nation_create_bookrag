@@ -1,0 +1,9 @@
+{
+  "question": "在“3 电气特性”章节中，官方主要从哪三个维度对核心板的电气表现进行了评估和展示？",
+  "answer": "官方主要从“工作环境”、“功耗测试”和“热成像图”这三个维度进行了评估和展示。",
+  "doc_uuid": "som-001",
+  "doc_path": "/root/autodl-fs/bookrag/BookRAG/somdata/SOM-TL3588工业核心板硬件说明书.pdf",
+  "evidence": "第2页 目录 / 第46至48页 第3章节标题结构",
+  "output": "I found no items matching the specified filters to answer the question.",
+  "retrieved_node_ids": []
+}

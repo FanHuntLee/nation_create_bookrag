@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "entity_name": "broker hivemq com",
+      "entity_type": "LOCATION",
+      "description": "broker hivemq com is the mqtt server address used to connect to the mqtt service",
+      "source_ids": [
+        140
+      ]
+    },
+    {
+      "entity_name": "index html",
+      "entity_type": "FILE_TYPE",
+      "description": "index html is a file located in the  tools web mqtt sub  directory that is opened in a web browser to access the mqtt interface",
+      "source_ids": [
+        140
+      ]
+    },
+    {
+      "entity_name": "web",
+      "entity_type": "EVENT",
+      "description": "web    refers to the web page that appears after opening the index html file and allows interaction with the mqtt server",
+      "source_ids": [
+        140
+      ]
+    },
+    {
+      "entity_name": "mqtt",
+      "entity_type": "TECHNOLOGY",
+      "description": "mqtt is a communication protocol used for transmitting data between the arm end and the web end",
+      "source_ids": [
+        140
+      ]
+    },
+    {
+      "entity_name": "tcp",
+      "entity_type": "TECHNOLOGY",
+      "description": "tcp is a communication protocol used by the arm end for mqtt communication",
+      "source_ids": [
+        140
+      ]
+    },
+    {
+      "entity_name": "websocket",
+      "entity_type": "TECHNOLOGY",
+      "description": "websocket is a communication protocol used by the web end for mqtt communication",
+      "source_ids": [
+        140
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        140
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "index html",
+      "tgt_entity_name": "web",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "index html is the file that generates the web    when opened in a browser",
+      "source_ids": [
+        140
+      ]
+    },
+    {
+      "src_entity_name": "web",
+      "tgt_entity_name": "mqtt",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "the web    allows interaction with the mqtt server to retrieve and display data",
+      "source_ids": [
+        140
+      ]
+    },
+    {
+      "src_entity_name": "mqtt",
+      "tgt_entity_name": "tcp",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "mqtt on the arm end uses tcp as its communication protocol",
+      "source_ids": [
+        140
+      ]
+    },
+    {
+      "src_entity_name": "mqtt",
+      "tgt_entity_name": "websocket",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "mqtt on the web end uses websocket as its communication protocol",
+      "source_ids": [
+        140
+      ]
+    },
+    {
+      "src_entity_name": "web",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the web    retrieves and displays the sine wave data from the mqtt server",
+      "source_ids": [
+        140
+      ]
+    },
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the sine wave data is plotted as a waveform on the web page",
+      "source_ids": [
+        140
+      ]
+    }
+  ],
+  "node_idx": 140
+}

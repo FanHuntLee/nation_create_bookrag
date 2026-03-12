@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "linux 5 10 160",
+      "entity_type": "PRODUCT",
+      "description": "linux 5 10 160 is a version of the linux operating system kernel mentioned in the text",
+      "source_ids": [
+        27
+      ]
+    },
+    {
+      "entity_name": "linux rt 5 10 160",
+      "entity_type": "PRODUCT",
+      "description": "linux rt 5 10 160 is a real time variant of the linux operating system kernel mentioned in the text",
+      "source_ids": [
+        27
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "linux 5 10 160",
+      "tgt_entity_name": "linux rt 5 10 160",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "linux rt 5 10 160 is a real time variant of linux 5 10 160  indicating a relationship between the two kernel versions",
+      "source_ids": [
+        27
+      ]
+    }
+  ],
+  "node_idx": 27
+}

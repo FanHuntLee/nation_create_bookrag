@@ -15,7 +15,6 @@ from bs4 import BeautifulSoup
 
 log = logging.getLogger(__name__)
 
-
 def is_likely_incomplete_paragraph(text: str) -> bool:
     """
     Determine if an English paragraph is likely incomplete (truncated due to page/column breaks).

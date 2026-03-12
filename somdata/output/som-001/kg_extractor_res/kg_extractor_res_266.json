@@ -1,0 +1,69 @@
+{
+  "entities": [
+    {
+      "entity_name": "5底板设计注意事项",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of '5底板设计注意事项', this section outlines the design considerations for the base board, which is part of the hardware manual for the SOM-TL3588 industrial core board.",
+      "source_ids": [
+        266
+      ]
+    },
+    {
+      "entity_name": "底板",
+      "entity_type": "PRODUCT",
+      "description": "Refers to the base board, a key component of the hardware design discussed in this section.",
+      "source_ids": [
+        266
+      ]
+    },
+    {
+      "entity_name": "设计",
+      "entity_type": "METHOD_OR_TECHNIQUE",
+      "description": "Refers to the design process and considerations related to the base board, as detailed in this section.",
+      "source_ids": [
+        266
+      ]
+    },
+    {
+      "entity_name": "注意事项",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "Refers to the key points and considerations that must be taken into account during the design of the base board.",
+      "source_ids": [
+        266
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "底板",
+      "tgt_entity_name": "5底板设计注意事项",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '底板' is a primary topic of section 5底板设计注意事项.",
+      "source_ids": [
+        266
+      ]
+    },
+    {
+      "src_entity_name": "设计",
+      "tgt_entity_name": "5底板设计注意事项",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '设计' is a primary topic of section 5底板设计注意事项.",
+      "source_ids": [
+        266
+      ]
+    },
+    {
+      "src_entity_name": "注意事项",
+      "tgt_entity_name": "5底板设计注意事项",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '注意事项' is a primary topic of section 5底板设计注意事项.",
+      "source_ids": [
+        266
+      ]
+    }
+  ],
+  "node_idx": 266
+}

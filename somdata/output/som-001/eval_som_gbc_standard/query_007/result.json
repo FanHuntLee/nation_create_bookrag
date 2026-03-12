@@ -1,0 +1,20 @@
+{
+  "question": "计算核心板高度时需要用到顶层最高元器件高度，该核心板顶层最高的元器件具体是哪一个部件？",
+  "answer": "核心板顶层最高的元器件为电感(L2)。",
+  "doc_uuid": "som-001",
+  "doc_path": "/root/autodl-fs/bookrag/BookRAG/somdata/SOM-TL3588工业核心板硬件说明书.pdf",
+  "evidence": "第51页 文本",
+  "output": "Final Answer:  \n计算核心板高度时，需要用到顶层最高元器件的高度，该核心板顶层最高的元器件是**电感(L2)**。",
+  "retrieved_node_ids": [
+    225,
+    226,
+    237,
+    240,
+    247,
+    256,
+    262,
+    263,
+    264,
+    265
+  ]
+}

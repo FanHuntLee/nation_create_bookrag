@@ -1,0 +1,25 @@
+{
+  "entities": [
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        58
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "is associated with a program  as it visually represents the workflow of a program",
+      "source_ids": [
+        58
+      ]
+    }
+  ],
+  "node_idx": 58
+}

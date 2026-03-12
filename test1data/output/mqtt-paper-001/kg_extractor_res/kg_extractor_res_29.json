@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "linuxsdk",
+      "entity_type": "PRODUCT",
+      "description": "linuxsdk is a product that is based on the rk3588 linux release v1 2 1 20230720 version  indicating it is a software development kit",
+      "source_ids": [
+        29
+      ]
+    },
+    {
+      "entity_name": "rk3588 linux release v1 2 1 20230720",
+      "entity_type": "PRODUCT",
+      "description": "rk3588 linux release v1 2 1 20230720 is a version of a linux release used as the foundation for linuxsdk  indicating it is a specific software build",
+      "source_ids": [
+        29
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "linuxsdk",
+      "tgt_entity_name": "rk3588 linux release v1 2 1 20230720",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "linuxsdk is based on the rk3588 linux release v1 2 1 20230720 version  indicating a dependency relationship",
+      "source_ids": [
+        29
+      ]
+    }
+  ],
+  "node_idx": 29
+}

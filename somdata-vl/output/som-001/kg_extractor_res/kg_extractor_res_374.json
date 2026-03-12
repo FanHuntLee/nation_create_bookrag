@@ -1,0 +1,141 @@
+{
+  "entities": [
+    {
+      "entity_name": "sales tronlong com",
+      "entity_type": "EMAIL",
+      "description": "sales tronlong com is the sales email address for tronlong",
+      "source_ids": [
+        374
+      ]
+    },
+    {
+      "entity_name": "support tronlong com",
+      "entity_type": "EMAIL",
+      "description": "support tronlong com is the technical support email address for tronlong",
+      "source_ids": [
+        374
+      ]
+    },
+    {
+      "entity_name": "020 8998 6280",
+      "entity_type": "PHONE_NUMBER",
+      "description": "020 8998 6280 is the main phone number for tronlong",
+      "source_ids": [
+        374
+      ]
+    },
+    {
+      "entity_name": "020 3893 9734",
+      "entity_type": "PHONE_NUMBER",
+      "description": "020 3893 9734 is the technical hotline number for tronlong",
+      "source_ids": [
+        374
+      ]
+    },
+    {
+      "entity_name": "www tronlong com",
+      "entity_type": "WEBSITE",
+      "description": "www tronlong com is the official website of tronlong",
+      "source_ids": [
+        374
+      ]
+    },
+    {
+      "entity_name": "www 51ele net",
+      "entity_type": "WEBSITE",
+      "description": "www 51ele net is the technical forum website for tronlong",
+      "source_ids": [
+        374
+      ]
+    },
+    {
+      "entity_name": "tronlong tmall com",
+      "entity_type": "WEBSITE",
+      "description": "tronlong tmall com is the official online store website for tronlong",
+      "source_ids": [
+        374
+      ]
+    },
+    {
+      "entity_name": "tronlong",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        374
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "sales tronlong com",
+      "tgt_entity_name": "tronlong",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "sales tronlong com is the sales email address associated with tronlong",
+      "source_ids": [
+        374
+      ]
+    },
+    {
+      "src_entity_name": "support tronlong com",
+      "tgt_entity_name": "tronlong",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "support tronlong com is the technical support email address associated with tronlong",
+      "source_ids": [
+        374
+      ]
+    },
+    {
+      "src_entity_name": "020 8998 6280",
+      "tgt_entity_name": "tronlong",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "020 8998 6280 is the main phone number associated with tronlong",
+      "source_ids": [
+        374
+      ]
+    },
+    {
+      "src_entity_name": "020 3893 9734",
+      "tgt_entity_name": "tronlong",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "020 3893 9734 is the technical hotline number associated with tronlong",
+      "source_ids": [
+        374
+      ]
+    },
+    {
+      "src_entity_name": "www tronlong com",
+      "tgt_entity_name": "tronlong",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "www tronlong com is the official website of tronlong",
+      "source_ids": [
+        374
+      ]
+    },
+    {
+      "src_entity_name": "www 51ele net",
+      "tgt_entity_name": "tronlong",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "www 51ele net is the technical forum website associated with tronlong",
+      "source_ids": [
+        374
+      ]
+    },
+    {
+      "src_entity_name": "tronlong tmall com",
+      "tgt_entity_name": "tronlong",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "tronlong tmall com is the official online store website of tronlong",
+      "source_ids": [
+        374
+      ]
+    }
+  ],
+  "node_idx": 374
+}

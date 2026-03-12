@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "som tl3588",
+      "entity_type": "PRODUCT",
+      "description": "som tl3588    is a product mentioned as the basis for a minimum system circuit design  indicating it is a hardware component used in the design",
+      "source_ids": [
+        351
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        351
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "som tl3588",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the minimum system circuit design is based on the som tl3588 core board  indicating it is a design reference for the product",
+      "source_ids": [
+        351
+      ]
+    }
+  ],
+  "node_idx": 351
+}

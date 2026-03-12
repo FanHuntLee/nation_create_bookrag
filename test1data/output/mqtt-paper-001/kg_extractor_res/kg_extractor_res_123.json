@@ -1,0 +1,87 @@
+{
+  "entities": [
+    {
+      "entity_name": "libmosquitto",
+      "entity_type": "SOFTWARE",
+      "description": "libmosquitto is a software library used to implement mqtt protocol versions 5 0 and 3 1 1 for communication with mqtt brokers",
+      "source_ids": [
+        123
+      ]
+    },
+    {
+      "entity_name": "mqtt",
+      "entity_type": "TECHNOLOGY",
+      "description": "mqtt is a messaging protocol used for communication between devices  specifically mentioned in the context of version 5 0 3 1 1",
+      "source_ids": [
+        123
+      ]
+    },
+    {
+      "entity_name": "mqtt",
+      "entity_type": "SOFTWARE",
+      "description": "mqtt      is a server that facilitates communication between devices using the mqtt protocol",
+      "source_ids": [
+        123
+      ]
+    },
+    {
+      "entity_name": "web",
+      "entity_type": "SOFTWARE",
+      "description": "web   is a web interface used by the upper computer to receive and display data from an mqtt server",
+      "source_ids": [
+        123
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        123
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "libmosquitto",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the evaluation board uses the libmosquitto library to communicate with the mqtt broker",
+      "source_ids": [
+        123
+      ]
+    },
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "mqtt",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "the evaluation board sends sine wave data to the mqtt broker server",
+      "source_ids": [
+        123
+      ]
+    },
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "web",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "the upper computer uses a web interface to receive and display data from the mqtt server",
+      "source_ids": [
+        123
+      ]
+    },
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "the evaluation board generates sine wave data that is sent to the mqtt server",
+      "source_ids": [
+        123
+      ]
+    }
+  ],
+  "node_idx": 123
+}

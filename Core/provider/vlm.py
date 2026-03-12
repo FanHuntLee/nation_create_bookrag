@@ -43,9 +43,29 @@ class BaseVLMController(ABC):
 
 class QwenVLController(BaseVLMController):
     def __init__(self, config: VLMConfig):
-        from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
+        from transformers import AutoProcessor
 
-        self.model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
+        # Support both Qwen2.5-VL and Qwen3-VL.
+        model_cls = None
+        try:
+            from transformers import Qwen3VLForConditionalGeneration  # type: ignore
+
+            model_cls = Qwen3VLForConditionalGeneration
+        except Exception:
+            model_cls = None
+
+        if model_cls is None:
+            try:
+                from transformers import Qwen2_5_VLForConditionalGeneration  # type: ignore
+
+                model_cls = Qwen2_5_VLForConditionalGeneration
+            except Exception as e:
+                raise ImportError(
+                    "Cannot import a Qwen-VL model class from transformers. "
+                    "Please ensure your transformers version supports Qwen-VL."
+                ) from e
+
+        self.model = model_cls.from_pretrained(
             config.model_name,
             device_map="auto",
             torch_dtype="bfloat16",

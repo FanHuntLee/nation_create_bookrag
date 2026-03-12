@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "entity_name": "因我们的存在，让嵌入式应用更简单",
+      "entity_type": "TABLE",
+      "description": "描述嵌入式应用简化的核心理念，强调存在对嵌入式应用的积极影响。",
+      "source_ids": [
+        195
+      ]
+    }
+  ],
+  "relations": [],
+  "node_idx": 195
+}

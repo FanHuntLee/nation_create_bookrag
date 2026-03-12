@@ -1,0 +1,69 @@
+{
+  "entities": [
+    {
+      "entity_name": "emmc",
+      "entity_type": "PRODUCT",
+      "description": "emmc is a type of chip connected to the cpu via a dedicated interface  used for storage and data transfer",
+      "source_ids": [
+        68
+      ]
+    },
+    {
+      "entity_name": "cpu",
+      "entity_type": "PRODUCT",
+      "description": "cpu is a component that provides a dedicated interface for connecting to an emmc chip",
+      "source_ids": [
+        68
+      ]
+    },
+    {
+      "entity_name": "8bit",
+      "entity_type": "MEASUREMENT",
+      "description": "8bit    refers to a data line with a width of 8 bits  used for data transfer between the cpu and emmc chip",
+      "source_ids": [
+        68
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        68
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "emmc",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "connects to an emmc chip via a dedicated cpu interface",
+      "source_ids": [
+        68
+      ]
+    },
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "cpu",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "uses the cpu s dedicated interface to connect to the emmc chip",
+      "source_ids": [
+        68
+      ]
+    },
+    {
+      "src_entity_name": "cpu",
+      "tgt_entity_name": "8bit",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "cpu uses an 8bit data line for communication with the emmc chip",
+      "source_ids": [
+        68
+      ]
+    }
+  ],
+  "node_idx": 68
+}

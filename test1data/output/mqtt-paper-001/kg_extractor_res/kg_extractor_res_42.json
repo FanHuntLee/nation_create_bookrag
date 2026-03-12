@@ -1,0 +1,25 @@
+{
+  "entities": [
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        42
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "use the iot platform as part of their operations  indicating a direct relationship between the two entities",
+      "source_ids": [
+        42
+      ]
+    }
+  ],
+  "node_idx": 42
+}

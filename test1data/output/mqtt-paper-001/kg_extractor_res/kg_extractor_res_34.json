@@ -1,0 +1,51 @@
+{
+  "entities": [
+    {
+      "entity_name": "1 mqtt通信协议简介",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of 'MQTT通信协议案例', this section provides an introduction to the MQTT communication protocol, explaining its purpose, structure, and key features.",
+      "source_ids": [
+        34
+      ]
+    },
+    {
+      "entity_name": "mqtt通信协议",
+      "entity_type": "TECHNOLOGY",
+      "description": "Refers to the Message Queuing Telemetry Transport protocol, a lightweight messaging protocol used for communication in constrained environments.",
+      "source_ids": [
+        34
+      ]
+    },
+    {
+      "entity_name": "简介",
+      "entity_type": "SECTION_TITLE",
+      "description": "Refers to the introductory section within the document that outlines the fundamental aspects of the MQTT communication protocol.",
+      "source_ids": [
+        34
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "mqtt通信协议",
+      "tgt_entity_name": "1 mqtt通信协议简介",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of 'MQTT通信协议' is the primary topic of section '1 MQTT通信协议简介'.",
+      "source_ids": [
+        34
+      ]
+    },
+    {
+      "src_entity_name": "简介",
+      "tgt_entity_name": "1 mqtt通信协议简介",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '简介' (introduction) is a structural element of section '1 MQTT通信协议简介'.",
+      "source_ids": [
+        34
+      ]
+    }
+  ],
+  "node_idx": 34
+}

@@ -1,0 +1,303 @@
+{
+  "entities": [
+    {
+      "entity_name": "图6核心板led 原理图",
+      "entity_type": "IMAGE",
+      "description": "一张展示核心板上LED电路原理图的电子设计图，包含多个LED、电阻和晶体管等元件及其连接关系。",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "entity_name": "led1",
+      "entity_type": "PRODUCT",
+      "description": "一个绿色LED灯，标记为LED_GREEN，用于指示或显示状态。",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "entity_name": "led2",
+      "entity_type": "PRODUCT",
+      "description": "一个绿色LED灯，标记为LED_GREEN，用于指示或显示状态。",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "entity_name": "led0",
+      "entity_type": "PRODUCT",
+      "description": "一个红色LED灯，标记为LED_RED，用于指示或显示状态。",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "entity_name": "r131",
+      "entity_type": "HARDWARE",
+      "description": "一个1K 1%阻值的电阻，用于限流保护LED2。",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "entity_name": "r132",
+      "entity_type": "HARDWARE",
+      "description": "一个1K 1%阻值的电阻，用于限流保护LED1。",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "entity_name": "r133",
+      "entity_type": "HARDWARE",
+      "description": "一个1K 1%阻值的电阻，用于限流保护LED2。",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "entity_name": "r134",
+      "entity_type": "HARDWARE",
+      "description": "一个1K 1%阻值的电阻，用于限流保护LED1。",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "entity_name": "r135",
+      "entity_type": "HARDWARE",
+      "description": "一个2.2K 1%阻值的电阻，用于限流保护LED1。",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "entity_name": "r136",
+      "entity_type": "HARDWARE",
+      "description": "一个1K 1%阻值的电阻，用于限流保护LED2。",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "entity_name": "r137",
+      "entity_type": "HARDWARE",
+      "description": "一个2.2K 1%阻值的电阻，用于限流保护LED2。",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "entity_name": "q3",
+      "entity_type": "HARDWARE",
+      "description": "一个MMBT3904 1AM型号的NPN型晶体管，用于控制LED1的开关。",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "entity_name": "q4",
+      "entity_type": "HARDWARE",
+      "description": "一个MMBT3904 1AM型号的NPN型晶体管，用于控制LED2的开关。",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "entity_name": "vdd_3v3_s3",
+      "entity_type": "MEASUREMENT",
+      "description": "一个3.3V的电源电压，用于为LED1和LED2供电。",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "entity_name": "vdd_4v0_sys",
+      "entity_type": "MEASUREMENT",
+      "description": "一个4.0V的系统电源电压，用于为LED0供电。",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "entity_name": "ae30/gpio2_c5_d/led1/1v8",
+      "entity_type": "SOFTWARE",
+      "description": "一个GPIO引脚的信号标识，用于控制LED1，其信号源可能来自某个软件或硬件模块。",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "entity_name": "t32/gpio0_c2_d/led2/1v8",
+      "entity_type": "SOFTWARE",
+      "description": "一个GPIO引脚的信号标识，用于控制LED2，其信号源可能来自某个软件或硬件模块。",
+      "source_ids": [
+        90
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "图6核心板led 原理图",
+      "tgt_entity_name": "led1",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图6核心板LED 原理图 related to LED1",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "src_entity_name": "图6核心板led 原理图",
+      "tgt_entity_name": "led2",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图6核心板LED 原理图 related to LED2",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "src_entity_name": "图6核心板led 原理图",
+      "tgt_entity_name": "led0",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图6核心板LED 原理图 related to LED0",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "src_entity_name": "图6核心板led 原理图",
+      "tgt_entity_name": "r131",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图6核心板LED 原理图 related to R131",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "src_entity_name": "图6核心板led 原理图",
+      "tgt_entity_name": "r132",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图6核心板LED 原理图 related to R132",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "src_entity_name": "图6核心板led 原理图",
+      "tgt_entity_name": "r133",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图6核心板LED 原理图 related to R133",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "src_entity_name": "图6核心板led 原理图",
+      "tgt_entity_name": "r134",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图6核心板LED 原理图 related to R134",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "src_entity_name": "图6核心板led 原理图",
+      "tgt_entity_name": "r135",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图6核心板LED 原理图 related to R135",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "src_entity_name": "图6核心板led 原理图",
+      "tgt_entity_name": "r136",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图6核心板LED 原理图 related to R136",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "src_entity_name": "图6核心板led 原理图",
+      "tgt_entity_name": "r137",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图6核心板LED 原理图 related to R137",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "src_entity_name": "图6核心板led 原理图",
+      "tgt_entity_name": "q3",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图6核心板LED 原理图 related to Q3",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "src_entity_name": "图6核心板led 原理图",
+      "tgt_entity_name": "q4",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图6核心板LED 原理图 related to Q4",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "src_entity_name": "图6核心板led 原理图",
+      "tgt_entity_name": "vdd_3v3_s3",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图6核心板LED 原理图 related to VDD_3V3_S3",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "src_entity_name": "图6核心板led 原理图",
+      "tgt_entity_name": "vdd_4v0_sys",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图6核心板LED 原理图 related to VDD_4V0_SYS",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "src_entity_name": "图6核心板led 原理图",
+      "tgt_entity_name": "ae30/gpio2_c5_d/led1/1v8",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图6核心板LED 原理图 related to AE30/GPIO2_C5_d/LED1/1V8",
+      "source_ids": [
+        90
+      ]
+    },
+    {
+      "src_entity_name": "图6核心板led 原理图",
+      "tgt_entity_name": "t32/gpio0_c2_d/led2/1v8",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图6核心板LED 原理图 related to T32/GPIO0_C2_d/LED2/1V8",
+      "source_ids": [
+        90
+      ]
+    }
+  ],
+  "node_idx": 90
+}

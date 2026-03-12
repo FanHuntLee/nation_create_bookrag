@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "2.2案例测试",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of '2mqtt_client 案例', this section outlines the testing procedures and validation steps for the MQTT client implementation, likely including setup, execution, and results analysis.",
+      "source_ids": [
+        63
+      ]
+    },
+    {
+      "entity_name": "案例测试",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "Refers to the testing process conducted on the MQTT client implementation, as detailed in section 2.2.",
+      "source_ids": [
+        63
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "案例测试",
+      "tgt_entity_name": "2.2案例测试",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '案例测试' is a primary topic of section 2.2.",
+      "source_ids": [
+        63
+      ]
+    }
+  ],
+  "node_idx": 63
+}

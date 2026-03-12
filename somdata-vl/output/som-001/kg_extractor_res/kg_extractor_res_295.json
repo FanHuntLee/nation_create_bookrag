@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "entity_name": "5 1 2",
+      "entity_type": "SECTION_TITLE",
+      "description": "5 1 2 is a section title indicating a subsection within a document  likely related to system startup instructions",
+      "source_ids": [
+        295
+      ]
+    }
+  ],
+  "relations": [],
+  "node_idx": 295
+}

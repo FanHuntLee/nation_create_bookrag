@@ -47,7 +47,7 @@ def process_tree_nodes(tree: DocumentTree) -> Tuple[Dict[str, List], Dict[str, L
             text_meta_data.append(meta_data)
 
             # Check if the image path exists before adding it
-            if image_path and os.path.exists(image_path):
+            if image_path and os.path.isfile(image_path):
                 image_list.append(image_path)
                 image_meta_data.append(meta_data)
                 image_str_list.append(image_str)
@@ -60,7 +60,7 @@ def process_tree_nodes(tree: DocumentTree) -> Tuple[Dict[str, List], Dict[str, L
             text_meta_data.append(meta_data)
 
             table_img = node.meta_info.img_path
-            if table_img and os.path.exists(table_img):
+            if table_img and os.path.isfile(table_img):
                 image_list.append(table_img)
                 image_meta_data.append(meta_data)
                 image_str_list.append(table_str)
@@ -242,11 +242,8 @@ def compute_mm_embedding(cfg: SystemConfig, tree_index: DocumentTree):
         node_id = node.index_id
         node_type = node.type
         content = node.meta_info.content
-        img_path = (
-            node.meta_info.img_path
-            if (node_type == NodeType.IMAGE or node_type == NodeType.TABLE)
-            else None
-        )
+        _raw_img = node.meta_info.img_path if (node_type == NodeType.IMAGE or node_type == NodeType.TABLE) else None
+        img_path = _raw_img if (_raw_img and os.path.isfile(_raw_img)) else None
 
         node_info = {
             "node_id": node_id,

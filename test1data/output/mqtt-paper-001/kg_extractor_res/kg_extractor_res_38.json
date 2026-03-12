@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "entity_name": "mqtt",
+      "entity_type": "TECHNOLOGY",
+      "description": "mqtt is a technology described as having specific characteristics in the text",
+      "source_ids": [
+        38
+      ]
+    }
+  ],
+  "relations": [],
+  "node_idx": 38
+}

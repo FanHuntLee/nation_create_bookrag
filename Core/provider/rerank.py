@@ -82,6 +82,7 @@ class TextRerankerProvider:
                 model_args["torch_dtype"] = torch_dtype
                 if use_flash_attention:
                     try:
+                        import flash_attn  # noqa: F401
                         model_args["attn_implementation"] = "flash_attention_2"
                         log.info("Using Flash Attention 2.")
                     except ImportError:

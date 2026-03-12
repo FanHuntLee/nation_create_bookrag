@@ -1,0 +1,483 @@
+{
+  "entities": [
+    {
+      "entity_name": "表3",
+      "entity_type": "TABLE",
+      "description": "表格标题，表示第三张表格，内容涉及元器件的工作温度范围，但需以官方数据手册为准。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "元器件",
+      "entity_type": "PRODUCT",
+      "description": "表格中提及的实体，指电子元器件，其工作温度范围是表格内容的一部分。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "工作温度范围",
+      "entity_type": "MEASUREMENT",
+      "description": "表格中提及的属性，表示元器件在正常工作时的温度范围。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "官方数据手册",
+      "entity_type": "DOCUMENT",
+      "description": "表格中提及的参考来源，表示元器件实际工作温度范围应以官方数据手册为准。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "工作温度",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "表示元器件的工作温度范围，用于评估其适用环境条件。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "厂家",
+      "entity_type": "ORGANIZATION",
+      "description": "生产元器件的公司或品牌名称。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "型号王科",
+      "entity_type": "PRODUCT",
+      "description": "元器件的具体型号，用于标识不同的产品版本。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "容量",
+      "entity_type": "MEASUREMENT",
+      "description": "表示元器件的存储容量，单位为GByte。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "颗粒类型",
+      "entity_type": "PRODUCT",
+      "description": "元器件使用的存储颗粒类型，如TLC。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "可循环擦写次数(p/e)",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "表示元器件可进行的擦写次数，用于评估其耐用性。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "工业级龙科技",
+      "entity_type": "PRODUCT",
+      "description": "一种工业级的存储设备，适用于高温或高要求环境。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "江波龙(longsys)",
+      "entity_type": "ORGANIZATION",
+      "description": "生产存储设备的公司名称，品牌为Longsys。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "femdrw032g-88a19",
+      "entity_type": "PRODUCT",
+      "description": "一种32GByte容量的存储设备型号。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "femdrw064g-88a19",
+      "entity_type": "PRODUCT",
+      "description": "一种64GByte容量的存储设备型号。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "femdrw128g-88a19",
+      "entity_type": "PRODUCT",
+      "description": "一种128GByte容量的存储设备型号。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "ks81aab0",
+      "entity_type": "PRODUCT",
+      "description": "一种32GByte容量的存储设备型号，由康芯威(KONSEMI)生产。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "bwctak411g32gi",
+      "entity_type": "PRODUCT",
+      "description": "一种32GByte容量的存储设备型号，由佰维(BIWIN)生产。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "bwefmi032gn2rj",
+      "entity_type": "PRODUCT",
+      "description": "一种32GByte容量的存储设备型号，由佰维(BIWIN)生产。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "bwefmi064gn223",
+      "entity_type": "PRODUCT",
+      "description": "一种64GByte容量的存储设备型号，由佰维(BIWIN)生产。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "bwefmi128gn223",
+      "entity_type": "PRODUCT",
+      "description": "一种128GByte容量的存储设备型号，由佰维(BIWIN)生产。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "xc32maaj-its",
+      "entity_type": "PRODUCT",
+      "description": "一种32GByte容量的存储设备型号，由芯存(XINCUN)生产。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "宽温级",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "表示元器件适用于宽温度范围的环境条件。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "康盈(kowin)",
+      "entity_type": "ORGANIZATION",
+      "description": "生产存储设备的公司名称，品牌为Kowin。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "创 kasj7311",
+      "entity_type": "PRODUCT",
+      "description": "一种64GByte容量的存储设备型号，由康盈(Kowin)生产。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "bwcta0211x64g",
+      "entity_type": "PRODUCT",
+      "description": "一种64GByte容量的存储设备型号，由佰维(BIWIN)生产。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "bwctakj11x64g",
+      "entity_type": "PRODUCT",
+      "description": "一种64GByte容量的存储设备型号，由佰维(BIWIN)生产。",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "entity_name": "bwctakc11x64g",
+      "entity_type": "PRODUCT",
+      "description": "一种64GByte容量的存储设备型号，由佰维(BIWIN)生产。",
+      "source_ids": [
+        69
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "元器件",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about '元器件'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "工作温度范围",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about '工作温度范围'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "官方数据手册",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about '官方数据手册'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "工作温度",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about '工作温度'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "厂家",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about '厂家'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "型号王科",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about '型号王科'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "容量",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about '容量'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "颗粒类型",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about '颗粒类型'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "可循环擦写次数(p/e)",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about '可循环擦写次数(P/E)'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "工业级龙科技",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about '工业级龙科技'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "江波龙(longsys)",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about '江波龙(Longsys)'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "femdrw032g-88a19",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about 'FEMDRW032G-88A19'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "femdrw064g-88a19",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about 'FEMDRW064G-88A19'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "femdrw128g-88a19",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about 'FEMDRW128G-88A19'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "ks81aab0",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about 'KS81AAB0'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "bwctak411g32gi",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about 'BWCTAK411G32GI'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "bwefmi032gn2rj",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about 'BWEFMI032GN2RJ'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "bwefmi064gn223",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about 'BWEFMI064GN223'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "bwefmi128gn223",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about 'BWEFMI128GN223'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "xc32maaj-its",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about 'XC32MAAJ-ITS'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "宽温级",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about '宽温级'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "康盈(kowin)",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about '康盈(Kowin)'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "创 kasj7311",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about '创 KASJ7311'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "bwcta0211x64g",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about 'BWCTA0211X64G'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "bwctakj11x64g",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about 'BWCTAKJ11X64G'.",
+      "source_ids": [
+        69
+      ]
+    },
+    {
+      "src_entity_name": "表3",
+      "tgt_entity_name": "bwctakc11x64g",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表3' contains data about 'BWCTAKC11X64G'.",
+      "source_ids": [
+        69
+      ]
+    }
+  ],
+  "node_idx": 69
+}

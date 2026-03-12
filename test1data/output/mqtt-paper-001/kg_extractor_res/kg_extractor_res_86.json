@@ -1,0 +1,43 @@
+{
+  "entities": [
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        86
+      ]
+    },
+    {
+      "entity_name": "mqtt",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        86
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "mqtt",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the     interacts with the mqtt     to publish messages",
+      "source_ids": [
+        86
+      ]
+    },
+    {
+      "src_entity_name": "mqtt",
+      "tgt_entity_name": "mqtt",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "mqtt is the protocol used by the mqtt     to handle message publishing and subscription",
+      "source_ids": [
+        86
+      ]
+    }
+  ],
+  "node_idx": 86
+}

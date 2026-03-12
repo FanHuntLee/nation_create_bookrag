@@ -1,0 +1,51 @@
+{
+  "entities": [
+    {
+      "entity_name": "linux",
+      "entity_type": "SOFTWARE",
+      "description": "linux is a software development environment mentioned in the text  indicating its use in a specific operating system context",
+      "source_ids": [
+        25
+      ]
+    },
+    {
+      "entity_name": "ubuntu20 04 6",
+      "entity_type": "SOFTWARE",
+      "description": "ubuntu20 04 6 is a specific version of the ubuntu operating system mentioned as part of the development environment",
+      "source_ids": [
+        25
+      ]
+    },
+    {
+      "entity_name": "64bit",
+      "entity_type": "MEASUREMENT",
+      "description": "64bit refers to the architecture type of the operating system mentioned in the text",
+      "source_ids": [
+        25
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "linux",
+      "tgt_entity_name": "ubuntu20 04 6",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "linux is the development environment that runs on the ubuntu20 04 6 operating system",
+      "source_ids": [
+        25
+      ]
+    },
+    {
+      "src_entity_name": "ubuntu20 04 6",
+      "tgt_entity_name": "64bit",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "ubuntu20 04 6 is a 64bit version of the ubuntu operating system",
+      "source_ids": [
+        25
+      ]
+    }
+  ],
+  "node_idx": 25
+}

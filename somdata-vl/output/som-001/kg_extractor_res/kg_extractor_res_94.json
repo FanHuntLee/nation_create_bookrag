@@ -1,0 +1,51 @@
+{
+  "entities": [
+    {
+      "entity_name": "1.7 b2b连接器",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of '1硬件资源', this section describes the B2B connectors used on the SOM-TL3588 industrial core board, detailing their industrial-grade connection method and role in extending IO functionality.",
+      "source_ids": [
+        94
+      ]
+    },
+    {
+      "entity_name": "b2b连接器",
+      "entity_type": "HARDWARE",
+      "description": "Refers to the industrial-grade B2B connectors used for IO expansion on the SOM-TL3588 board, as described in section 1.7.",
+      "source_ids": [
+        94
+      ]
+    },
+    {
+      "entity_name": "连接器",
+      "entity_type": "HARDWARE",
+      "description": "A general term for the physical components used to connect different parts of the SOM-TL3588 board, as discussed in section 1.7.",
+      "source_ids": [
+        94
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "b2b连接器",
+      "tgt_entity_name": "1.7 b2b连接器",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of 'B2B连接器' is a primary topic of section 1.7.",
+      "source_ids": [
+        94
+      ]
+    },
+    {
+      "src_entity_name": "连接器",
+      "tgt_entity_name": "1.7 b2b连接器",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '连接器' is a primary topic of section 1.7.",
+      "source_ids": [
+        94
+      ]
+    }
+  ],
+  "node_idx": 94
+}

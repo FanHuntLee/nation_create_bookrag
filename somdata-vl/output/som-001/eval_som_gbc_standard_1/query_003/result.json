@@ -1,0 +1,21 @@
+{
+  "question": "系统上电后，CPU内部的BootRom引导代码会按照什么顺序依次检测SPL启动程序？",
+  "answer": "会依次从eMMC FLASH、SD卡、USB接口检测SPL启动程序。",
+  "doc_uuid": "som-001",
+  "doc_path": "/root/autodl-fs/bookrag/BookRAG/somdata/SOM-TL3588工业核心板硬件说明书.pdf",
+  "evidence": "第54页至第55页 文本",
+  "output": "Final Answer:  \n系统上电后，CPU内部的BootRom引导代码会依次检测SPL启动程序的顺序为：**首先检测eMMC FLASH，若未找到则检测SD卡，若仍未找到则检测USB接口**，并从**第一个包含SPL启动程序的设备**开始启动。",
+  "retrieved_node_ids": [
+    51,
+    53,
+    55,
+    68,
+    226,
+    231,
+    269,
+    295,
+    296,
+    302,
+    312
+  ]
+}

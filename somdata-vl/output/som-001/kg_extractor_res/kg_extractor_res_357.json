@@ -1,0 +1,393 @@
+{
+  "entities": [
+    {
+      "entity_name": "图33",
+      "entity_type": "IMAGE",
+      "description": "一个电路原理图，展示了一个基于EC2232E芯片的开关电源电路，包含输入、输出、电容、电阻和电感等元件，并标注了电压计算公式。",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "entity_name": "ec2232e",
+      "entity_type": "PRODUCT",
+      "description": "电路中的核心开关电源控制器芯片，型号为EC2232E。",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "entity_name": "vdd_12v0_main",
+      "entity_type": "MEASUREMENT",
+      "description": "电路的主输入电源电压，标称值为12V。",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "entity_name": "vdd_4v0_som_input",
+      "entity_type": "MEASUREMENT",
+      "description": "电路的输出电源电压，标称值为4V，最大电流为3A。",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "entity_name": "3a max",
+      "entity_type": "MEASUREMENT",
+      "description": "电路的输出电流最大值，为3安培。",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "entity_name": "c14",
+      "entity_type": "CAPACITOR",
+      "description": "一个电解电容，标称值为22uF，耐压25V。",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "entity_name": "c15",
+      "entity_type": "CAPACITOR",
+      "description": "一个电解电容，标称值为4.7uF，耐压25V。",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "entity_name": "c16",
+      "entity_type": "CAPACITOR",
+      "description": "一个电解电容，标称值为100uF，耐压25V。",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "entity_name": "c13",
+      "entity_type": "CAPACITOR",
+      "description": "一个陶瓷电容，标称值为100nF，耐压25V。",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "entity_name": "c17",
+      "entity_type": "CAPACITOR",
+      "description": "一个电解电容，标称值为4.7uF，耐压10V。",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "entity_name": "c18",
+      "entity_type": "CAPACITOR",
+      "description": "一个电解电容，标称值为22uF，耐压25V。",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "entity_name": "c19",
+      "entity_type": "CAPACITOR",
+      "description": "一个电解电容，标称值为100uF，耐压25V。",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "entity_name": "r42",
+      "entity_type": "RESISTOR",
+      "description": "一个电阻，标称值为100KΩ，精度1%。",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "entity_name": "r43",
+      "entity_type": "RESISTOR",
+      "description": "一个电阻，标称值为27KΩ，精度1%。",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "entity_name": "r45",
+      "entity_type": "RESISTOR",
+      "description": "一个电阻，标称值为4.7KΩ，精度1%。",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "entity_name": "r47",
+      "entity_type": "RESISTOR",
+      "description": "一个电阻，标称值为57.6KΩ，精度1%。",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "entity_name": "r1",
+      "entity_type": "RESISTOR",
+      "description": "一个电阻，标称值为27KΩ，精度1%。",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "entity_name": "r2",
+      "entity_type": "RESISTOR",
+      "description": "一个电阻，标称值为4.7KΩ，精度1%。",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "entity_name": "l2",
+      "entity_type": "INDUCTOR",
+      "description": "一个电感，型号为CSAB0518-2R2M。",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "entity_name": "vin",
+      "entity_type": "MEASUREMENT",
+      "description": "电路的输入电压，计算公式为 Vin = 12*57.6/(57.6+100) = 4.4V。",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "entity_name": "vout",
+      "entity_type": "MEASUREMENT",
+      "description": "电路的输出电压，计算公式为 Vout = Vfb*(1+R1/R2) = 0.6*(1+27/4.7) = 4.04V。",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "entity_name": "vfb",
+      "entity_type": "MEASUREMENT",
+      "description": "电路的反馈电压，标称值为0.6V。",
+      "source_ids": [
+        357
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "图33",
+      "tgt_entity_name": "ec2232e",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图33 related to EC2232E",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "src_entity_name": "图33",
+      "tgt_entity_name": "vdd_12v0_main",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图33 related to VDD_12V0_MAIN",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "src_entity_name": "图33",
+      "tgt_entity_name": "vdd_4v0_som_input",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图33 related to VDD_4V0_SOM_INPUT",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "src_entity_name": "图33",
+      "tgt_entity_name": "3a max",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图33 related to 3A MAX",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "src_entity_name": "图33",
+      "tgt_entity_name": "c14",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图33 related to C14",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "src_entity_name": "图33",
+      "tgt_entity_name": "c15",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图33 related to C15",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "src_entity_name": "图33",
+      "tgt_entity_name": "c16",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图33 related to C16",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "src_entity_name": "图33",
+      "tgt_entity_name": "c13",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图33 related to C13",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "src_entity_name": "图33",
+      "tgt_entity_name": "c17",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图33 related to C17",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "src_entity_name": "图33",
+      "tgt_entity_name": "c18",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图33 related to C18",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "src_entity_name": "图33",
+      "tgt_entity_name": "c19",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图33 related to C19",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "src_entity_name": "图33",
+      "tgt_entity_name": "r42",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图33 related to R42",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "src_entity_name": "图33",
+      "tgt_entity_name": "r43",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图33 related to R43",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "src_entity_name": "图33",
+      "tgt_entity_name": "r45",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图33 related to R45",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "src_entity_name": "图33",
+      "tgt_entity_name": "r47",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图33 related to R47",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "src_entity_name": "图33",
+      "tgt_entity_name": "r1",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图33 related to R1",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "src_entity_name": "图33",
+      "tgt_entity_name": "r2",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图33 related to R2",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "src_entity_name": "图33",
+      "tgt_entity_name": "l2",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图33 related to L2",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "src_entity_name": "图33",
+      "tgt_entity_name": "vin",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图33 related to Vin",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "src_entity_name": "图33",
+      "tgt_entity_name": "vout",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图33 related to Vout",
+      "source_ids": [
+        357
+      ]
+    },
+    {
+      "src_entity_name": "图33",
+      "tgt_entity_name": "vfb",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图33 related to Vfb",
+      "source_ids": [
+        357
+      ]
+    }
+  ],
+  "node_idx": 357
+}

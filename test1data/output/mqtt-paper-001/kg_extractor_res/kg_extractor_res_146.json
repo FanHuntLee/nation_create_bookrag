@@ -1,0 +1,51 @@
+{
+  "entities": [
+    {
+      "entity_name": "3.3案例编译",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of '3mqtt_sinewave_pub 案例', this section provides instructions and details on how to compile the case study, which is part of the MQTT communication protocol example.",
+      "source_ids": [
+        146
+      ]
+    },
+    {
+      "entity_name": "案例",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "Refers to the example or case study being discussed, which is part of the MQTT communication protocol implementation.",
+      "source_ids": [
+        146
+      ]
+    },
+    {
+      "entity_name": "编译",
+      "entity_type": "METHOD_OR_TECHNIQUE",
+      "description": "Refers to the process of compiling the code or implementation for the case study, as described in section 3.3.",
+      "source_ids": [
+        146
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "案例",
+      "tgt_entity_name": "3.3案例编译",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '案例' (case study) is a primary topic of section 3.3.",
+      "source_ids": [
+        146
+      ]
+    },
+    {
+      "src_entity_name": "编译",
+      "tgt_entity_name": "3.3案例编译",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '编译' (compilation) is a primary topic of section 3.3.",
+      "source_ids": [
+        146
+      ]
+    }
+  ],
+  "node_idx": 146
+}

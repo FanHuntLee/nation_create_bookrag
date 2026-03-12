@@ -1,0 +1,195 @@
+{
+  "entities": [
+    {
+      "entity_name": "表11",
+      "entity_type": "TABLE",
+      "description": "一个表格，包含典型值、最大值、最小值和环境参数等列，用于展示某种数据的统计信息。",
+      "source_ids": [
+        224
+      ]
+    },
+    {
+      "entity_name": "典型值",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "表格中的一列，表示数据的典型或平均值。",
+      "source_ids": [
+        224
+      ]
+    },
+    {
+      "entity_name": "最大值",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "表格中的一列，表示数据的最大值。",
+      "source_ids": [
+        224
+      ]
+    },
+    {
+      "entity_name": "最小值",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "表格中的一列，表示数据的最小值。",
+      "source_ids": [
+        224
+      ]
+    },
+    {
+      "entity_name": "环境参数",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "表格中的一列，表示与环境相关的参数。",
+      "source_ids": [
+        224
+      ]
+    },
+    {
+      "entity_name": "工作温度(工业级)",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "设备在工业级环境下的工作温度范围，通常用于描述设备的运行条件。",
+      "source_ids": [
+        224
+      ]
+    },
+    {
+      "entity_name": "工作温度(宽温级)",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "设备在宽温级环境下的工作温度范围，通常用于描述设备的运行条件。",
+      "source_ids": [
+        224
+      ]
+    },
+    {
+      "entity_name": "存储温度",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "设备在存储状态下的温度范围，通常用于描述设备的存储条件。",
+      "source_ids": [
+        224
+      ]
+    },
+    {
+      "entity_name": "工作湿度",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "设备在工作状态下的湿度范围，通常用于描述设备的运行条件。",
+      "source_ids": [
+        224
+      ]
+    },
+    {
+      "entity_name": "存储湿度",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "设备在存储状态下的湿度范围，通常用于描述设备的存储条件。",
+      "source_ids": [
+        224
+      ]
+    },
+    {
+      "entity_name": "工作电压",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "设备在工作状态下的电压范围，通常用于描述设备的运行条件。",
+      "source_ids": [
+        224
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "表11",
+      "tgt_entity_name": "典型值",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表11' contains data about '典型值'.",
+      "source_ids": [
+        224
+      ]
+    },
+    {
+      "src_entity_name": "表11",
+      "tgt_entity_name": "最大值",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表11' contains data about '最大值'.",
+      "source_ids": [
+        224
+      ]
+    },
+    {
+      "src_entity_name": "表11",
+      "tgt_entity_name": "最小值",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表11' contains data about '最小值'.",
+      "source_ids": [
+        224
+      ]
+    },
+    {
+      "src_entity_name": "表11",
+      "tgt_entity_name": "环境参数",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表11' contains data about '环境参数'.",
+      "source_ids": [
+        224
+      ]
+    },
+    {
+      "src_entity_name": "表11",
+      "tgt_entity_name": "工作温度(工业级)",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表11' contains data about '工作温度(工业级)'.",
+      "source_ids": [
+        224
+      ]
+    },
+    {
+      "src_entity_name": "表11",
+      "tgt_entity_name": "工作温度(宽温级)",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表11' contains data about '工作温度(宽温级)'.",
+      "source_ids": [
+        224
+      ]
+    },
+    {
+      "src_entity_name": "表11",
+      "tgt_entity_name": "存储温度",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表11' contains data about '存储温度'.",
+      "source_ids": [
+        224
+      ]
+    },
+    {
+      "src_entity_name": "表11",
+      "tgt_entity_name": "工作湿度",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表11' contains data about '工作湿度'.",
+      "source_ids": [
+        224
+      ]
+    },
+    {
+      "src_entity_name": "表11",
+      "tgt_entity_name": "存储湿度",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表11' contains data about '存储湿度'.",
+      "source_ids": [
+        224
+      ]
+    },
+    {
+      "src_entity_name": "表11",
+      "tgt_entity_name": "工作电压",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表11' contains data about '工作电压'.",
+      "source_ids": [
+        224
+      ]
+    }
+  ],
+  "node_idx": 224
+}

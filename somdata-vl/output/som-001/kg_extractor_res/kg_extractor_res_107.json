@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "2.1 引脚排列",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of '引脚说明', this section provides an overview of the pin layout for the SOM-TL3588 industrial core board, detailing the physical arrangement and positioning of the pins.",
+      "source_ids": [
+        107
+      ]
+    },
+    {
+      "entity_name": "引脚排列",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "Refers to the physical arrangement and layout of the pins on the SOM-TL3588 industrial core board, which is discussed in section 2.1.",
+      "source_ids": [
+        107
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "引脚排列",
+      "tgt_entity_name": "2.1 引脚排列",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '引脚排列' is the primary topic of section 2.1.",
+      "source_ids": [
+        107
+      ]
+    }
+  ],
+  "node_idx": 107
+}

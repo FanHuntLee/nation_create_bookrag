@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "1.6 led",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of 'Hardware Resources', this section provides an overview of the LED hardware components included on the SOM-TL3588 industrial core board, detailing their functionality and integration within the system.",
+      "source_ids": [
+        87
+      ]
+    },
+    {
+      "entity_name": "led",
+      "entity_type": "PRODUCT",
+      "description": "Refers to the Light Emitting Diode components used as status indicators or functional elements on the SOM-TL3588 industrial core board, as described in section 1.6.",
+      "source_ids": [
+        87
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "led",
+      "tgt_entity_name": "1.6 led",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of 'LED' is a primary topic of section 1.6.",
+      "source_ids": [
+        87
+      ]
+    }
+  ],
+  "node_idx": 87
+}

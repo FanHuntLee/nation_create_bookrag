@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "entity_name": "2mqtt client",
+      "entity_type": "PRODUCT",
+      "description": "2mqtt client is a product mentioned in the text  likely related to a case study or example",
+      "source_ids": [
+        11
+      ]
+    }
+  ],
+  "relations": [],
+  "node_idx": 11
+}

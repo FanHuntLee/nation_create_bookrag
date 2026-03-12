@@ -1,0 +1,231 @@
+{
+  "entities": [
+    {
+      "entity_name": "tronlong",
+      "entity_type": "ORGANIZATION",
+      "description": "tronlong is an organization with a website  sales email  and phone number  indicating it is a company involved in technical support and communication",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "entity_name": "hivemq",
+      "entity_type": "PRODUCT",
+      "description": "hivemq is a public mqtt server used for communication in the case described  indicating it is a service for message queuing",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "entity_name": "ubuntu",
+      "entity_type": "PRODUCT",
+      "description": "ubuntu is an operating system used as the upper machine tool for communication in the case described  indicating it is a software platform",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "entity_name": "mqtt",
+      "entity_type": "TECHNOLOGY",
+      "description": "mqtt is a protocol used for communication between the evaluation board and the upper machine  indicating it is a messaging protocol",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "entity_name": "eth0",
+      "entity_type": "PRODUCT",
+      "description": "eth0 is a network interface on the evaluation board used for connecting to the upper machine  indicating it is a hardware component",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "entity_name": "rgmii",
+      "entity_type": "TECHNOLOGY",
+      "description": "rgmii is a type of interface used for connecting the evaluation board to the upper machine  indicating it is a communication standard",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "entity_name": "51ele net",
+      "entity_type": "WEBSITE",
+      "description": "51ele net is a technical forum associated with tronlong  indicating it is a platform for technical discussions",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "entity_name": "sales tronlong com",
+      "entity_type": "EMAIL",
+      "description": "sales tronlong com is the sales email address for tronlong  indicating it is a contact point for business inquiries",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "entity_name": "support tronlong com",
+      "entity_type": "EMAIL",
+      "description": "support tronlong com is the technical support email address for tronlong  indicating it is a contact point for technical assistance",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "entity_name": "www tronlong com",
+      "entity_type": "WEBSITE",
+      "description": "www tronlong com is the official website of tronlong  indicating it is the primary online presence of the organization",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "entity_name": "020 8998 6280",
+      "entity_type": "PHONE_NUMBER",
+      "description": "020 8998 6280 is the main phone number for tronlong  indicating it is a contact point for general inquiries",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "entity_name": "020 3893 9734",
+      "entity_type": "PHONE_NUMBER",
+      "description": "020 3893 9734 is the technical hotline for tronlong  indicating it is a contact point for technical support",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "entity_name": "6 18",
+      "entity_type": "DATE",
+      "description": "6 18 is a date mentioned in the text  indicating it is a specific day",
+      "source_ids": [
+        60
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "tronlong",
+      "tgt_entity_name": "hivemq",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "tronlong uses hivemq as a public mqtt server for communication in the case described",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "src_entity_name": "tronlong",
+      "tgt_entity_name": "ubuntu",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "tronlong uses ubuntu as the upper machine tool for communication in the case described",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "src_entity_name": "tronlong",
+      "tgt_entity_name": "mqtt",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "tronlong uses mqtt as a protocol for communication between the evaluation board and the upper machine",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "src_entity_name": "tronlong",
+      "tgt_entity_name": "eth0",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "tronlong connects the evaluation board s eth0 interface to the upper machine for communication",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "src_entity_name": "tronlong",
+      "tgt_entity_name": "rgmii",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "tronlong uses rgmii as an interface for connecting the evaluation board to the upper machine",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "src_entity_name": "tronlong",
+      "tgt_entity_name": "51ele net",
+      "relation_name": "",
+      "weight": 7.0,
+      "description": "tronlong is associated with the technical forum 51ele net",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "src_entity_name": "tronlong",
+      "tgt_entity_name": "sales tronlong com",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "tronlong provides sales support through the email address sales tronlong com",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "src_entity_name": "tronlong",
+      "tgt_entity_name": "support tronlong com",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "tronlong provides technical support through the email address support tronlong com",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "src_entity_name": "tronlong",
+      "tgt_entity_name": "www tronlong com",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "tronlong s official website is www tronlong com",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "src_entity_name": "tronlong",
+      "tgt_entity_name": "020 8998 6280",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "tronlong provides general inquiries through the phone number 020 8998 6280",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "src_entity_name": "tronlong",
+      "tgt_entity_name": "020 3893 9734",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "tronlong provides technical support through the phone number 020 3893 9734",
+      "source_ids": [
+        60
+      ]
+    },
+    {
+      "src_entity_name": "tronlong",
+      "tgt_entity_name": "6 18",
+      "relation_name": "",
+      "weight": 6.0,
+      "description": "tronlong mentions the date 6 18 in the text  indicating it is a specific day referenced in the context",
+      "source_ids": [
+        60
+      ]
+    }
+  ],
+  "node_idx": 60
+}

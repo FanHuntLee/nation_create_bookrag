@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "entity_name": "mqtt client",
+      "entity_type": "SOFTWARE",
+      "description": "mqtt client is a software application that is being referenced in the command line interface command",
+      "source_ids": [
+        66
+      ]
+    }
+  ],
+  "relations": [],
+  "node_idx": 66
+}

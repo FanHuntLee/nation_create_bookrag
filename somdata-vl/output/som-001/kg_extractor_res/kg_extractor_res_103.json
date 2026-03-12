@@ -1,0 +1,185 @@
+{
+  "entities": [
+    {
+      "entity_name": "tronlong com",
+      "entity_type": "WEBSITE",
+      "description": "tronlong com is the official website of the company  indicating it is the primary online presence for the organization",
+      "source_ids": [
+        103
+      ]
+    },
+    {
+      "entity_name": "sales tronlong com",
+      "entity_type": "EMAIL_ADDRESS",
+      "description": "sales tronlong com is the sales email address for the company  indicating it is used for business inquiries and customer communication",
+      "source_ids": [
+        103
+      ]
+    },
+    {
+      "entity_name": "020 8998 6280",
+      "entity_type": "PHONE_NUMBER",
+      "description": "020 8998 6280 is the company s main phone number  indicating it is used for general business contact",
+      "source_ids": [
+        103
+      ]
+    },
+    {
+      "entity_name": "13 62",
+      "entity_type": "DATE",
+      "description": "13 62 is a date that may refer to a specific day or event  though the exact context is not clear from the text",
+      "source_ids": [
+        103
+      ]
+    },
+    {
+      "entity_name": "www 51ele net",
+      "entity_type": "WEBSITE",
+      "description": "www 51ele net is a technical forum associated with the company  indicating it is a platform for technical discussions and support",
+      "source_ids": [
+        103
+      ]
+    },
+    {
+      "entity_name": "support tronlong com",
+      "entity_type": "EMAIL_ADDRESS",
+      "description": "support tronlong com is the technical support email address for the company  indicating it is used for technical inquiries and assistance",
+      "source_ids": [
+        103
+      ]
+    },
+    {
+      "entity_name": "020 3893 9734",
+      "entity_type": "PHONE_NUMBER",
+      "description": "020 3893 9734 is the technical hotline number for the company  indicating it is used for technical support and assistance",
+      "source_ids": [
+        103
+      ]
+    },
+    {
+      "entity_name": "b2b",
+      "entity_type": "PRODUCT",
+      "description": "b2b is a product offered by the company  indicating it is a type of board or component used in b2b applications",
+      "source_ids": [
+        103
+      ]
+    },
+    {
+      "entity_name": "conoa",
+      "entity_type": "PRODUCT",
+      "description": "conoa is a connector type used in the company s products  corresponding to an evaluation board",
+      "source_ids": [
+        103
+      ]
+    },
+    {
+      "entity_name": "conob",
+      "entity_type": "PRODUCT",
+      "description": "conob is a connector type used in the company s products  corresponding to an evaluation board",
+      "source_ids": [
+        103
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        103
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "tronlong com",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "tronlong com is the official website of     indicating it is the primary online presence for the organization",
+      "source_ids": [
+        103
+      ]
+    },
+    {
+      "src_entity_name": "sales tronlong com",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "sales tronlong com is the sales email address for     indicating it is used for business inquiries and customer communication",
+      "source_ids": [
+        103
+      ]
+    },
+    {
+      "src_entity_name": "020 8998 6280",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "020 8998 6280 is the main phone number for     indicating it is used for general business contact",
+      "source_ids": [
+        103
+      ]
+    },
+    {
+      "src_entity_name": "www 51ele net",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "www 51ele net is a technical forum associated with     indicating it is a platform for technical discussions and support",
+      "source_ids": [
+        103
+      ]
+    },
+    {
+      "src_entity_name": "support tronlong com",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "support tronlong com is the technical support email address for     indicating it is used for technical inquiries and assistance",
+      "source_ids": [
+        103
+      ]
+    },
+    {
+      "src_entity_name": "020 3893 9734",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "020 3893 9734 is the technical hotline number for     indicating it is used for technical support and assistance",
+      "source_ids": [
+        103
+      ]
+    },
+    {
+      "src_entity_name": "b2b",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "b2b is a product offered by     indicating it is a type of board or component used in b2b applications",
+      "source_ids": [
+        103
+      ]
+    },
+    {
+      "src_entity_name": "conoa",
+      "tgt_entity_name": "b2b",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "conoa is a connector type used in the core board b2b  corresponding to an evaluation board",
+      "source_ids": [
+        103
+      ]
+    },
+    {
+      "src_entity_name": "conob",
+      "tgt_entity_name": "b2b",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "conob is a connector type used in the core board b2b  corresponding to an evaluation board",
+      "source_ids": [
+        103
+      ]
+    }
+  ],
+  "node_idx": 103
+}

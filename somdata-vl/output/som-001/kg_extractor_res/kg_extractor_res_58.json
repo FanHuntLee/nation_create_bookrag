@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "1.1 cpu",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of 'Hardware Resources', this section provides an overview of the CPU hardware component included on the SOM-TL3588 industrial core board, detailing its specifications and integration within the system.",
+      "source_ids": [
+        58
+      ]
+    },
+    {
+      "entity_name": "cpu",
+      "entity_type": "HARDWARE",
+      "description": "Refers to the central processing unit, a critical hardware component discussed in section 1.1.",
+      "source_ids": [
+        58
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "cpu",
+      "tgt_entity_name": "1.1 cpu",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of 'CPU' is a primary topic of section 1.1.",
+      "source_ids": [
+        58
+      ]
+    }
+  ],
+  "node_idx": 58
+}

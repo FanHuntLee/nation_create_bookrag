@@ -1,0 +1,87 @@
+{
+  "entities": [
+    {
+      "entity_name": "2.2.2评估板订阅/上位机发布",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of '2.2案例测试', this section describes the testing scenario involving the evaluation board subscribing and the upper machine publishing messages in the MQTT communication protocol case study.",
+      "source_ids": [
+        83
+      ]
+    },
+    {
+      "entity_name": "评估板",
+      "entity_type": "DEVICE_OR_HARDWARE",
+      "description": "Refers to the hardware device used for testing, specifically the evaluation board involved in the MQTT communication protocol case.",
+      "source_ids": [
+        83
+      ]
+    },
+    {
+      "entity_name": "上位机",
+      "entity_type": "DEVICE_OR_HARDWARE",
+      "description": "Refers to the higher-level machine or software system that publishes messages in the MQTT communication protocol setup.",
+      "source_ids": [
+        83
+      ]
+    },
+    {
+      "entity_name": "订阅",
+      "entity_type": "METHOD_OR_TECHNIQUE",
+      "description": "Refers to the MQTT communication method where the evaluation board receives messages from the upper machine.",
+      "source_ids": [
+        83
+      ]
+    },
+    {
+      "entity_name": "发布",
+      "entity_type": "METHOD_OR_TECHNIQUE",
+      "description": "Refers to the MQTT communication method where the upper machine sends messages to the evaluation board.",
+      "source_ids": [
+        83
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "评估板",
+      "tgt_entity_name": "2.2.2评估板订阅/上位机发布",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '评估板' (evaluation board) is a primary topic of section 2.2.2.",
+      "source_ids": [
+        83
+      ]
+    },
+    {
+      "src_entity_name": "上位机",
+      "tgt_entity_name": "2.2.2评估板订阅/上位机发布",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '上位机' (upper machine) is a primary topic of section 2.2.2.",
+      "source_ids": [
+        83
+      ]
+    },
+    {
+      "src_entity_name": "订阅",
+      "tgt_entity_name": "2.2.2评估板订阅/上位机发布",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '订阅' (subscription) is a primary topic of section 2.2.2.",
+      "source_ids": [
+        83
+      ]
+    },
+    {
+      "src_entity_name": "发布",
+      "tgt_entity_name": "2.2.2评估板订阅/上位机发布",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '发布' (publication) is a primary topic of section 2.2.2.",
+      "source_ids": [
+        83
+      ]
+    }
+  ],
+  "node_idx": 83
+}

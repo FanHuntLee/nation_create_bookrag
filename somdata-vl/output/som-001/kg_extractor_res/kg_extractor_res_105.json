@@ -1,0 +1,87 @@
+{
+  "entities": [
+    {
+      "entity_name": "table: 备注：部分引脚资源存在复用关系。...",
+      "entity_type": "TABLE",
+      "description": "A data table described as: 备注：部分引脚资源存在复用关系。",
+      "source_ids": [
+        105
+      ]
+    },
+    {
+      "entity_name": "备注",
+      "entity_type": "SECTION_TITLE",
+      "description": "表格或文档中的注释部分，说明部分引脚资源存在复用关系。",
+      "source_ids": [
+        105
+      ]
+    },
+    {
+      "entity_name": "timer",
+      "entity_type": "TECHNOLOGY",
+      "description": "A hardware component that supports timing interrupts and includes both safe and non-safe timers.",
+      "source_ids": [
+        105
+      ]
+    },
+    {
+      "entity_name": "watchdog",
+      "entity_type": "TECHNOLOGY",
+      "description": "A hardware component that includes a 32-bit watchdog counter with programmable reset pulse length.",
+      "source_ids": [
+        105
+      ]
+    },
+    {
+      "entity_name": "saradc",
+      "entity_type": "TECHNOLOGY",
+      "description": "An analog-to-digital converter with 8 single-ended input channels, 12-bit resolution, and a sampling rate of up to 1MSPS.",
+      "source_ids": [
+        105
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "table: 备注：部分引脚资源存在复用关系。...",
+      "tgt_entity_name": "备注",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: 备注：部分引脚资源存在复用关系。...' contains data about '备注'.",
+      "source_ids": [
+        105
+      ]
+    },
+    {
+      "src_entity_name": "table: 备注：部分引脚资源存在复用关系。...",
+      "tgt_entity_name": "timer",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: 备注：部分引脚资源存在复用关系。...' contains data about 'Timer'.",
+      "source_ids": [
+        105
+      ]
+    },
+    {
+      "src_entity_name": "table: 备注：部分引脚资源存在复用关系。...",
+      "tgt_entity_name": "watchdog",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: 备注：部分引脚资源存在复用关系。...' contains data about 'Watchdog'.",
+      "source_ids": [
+        105
+      ]
+    },
+    {
+      "src_entity_name": "table: 备注：部分引脚资源存在复用关系。...",
+      "tgt_entity_name": "saradc",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: 备注：部分引脚资源存在复用关系。...' contains data about 'SARADC'.",
+      "source_ids": [
+        105
+      ]
+    }
+  ],
+  "node_idx": 105
+}

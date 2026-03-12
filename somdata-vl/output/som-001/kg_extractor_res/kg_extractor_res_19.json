@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "5",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "5         is a task or problem related to the design of a base plate  indicating a specific focus area in engineering or construction",
+      "source_ids": [
+        19
+      ]
+    },
+    {
+      "entity_name": "51",
+      "entity_type": "PERCENTAGE",
+      "description": "51 is a numerical value that may represent a percentage  though its exact context is not specified in the text",
+      "source_ids": [
+        19
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "5",
+      "tgt_entity_name": "51",
+      "relation_name": "",
+      "weight": 7.0,
+      "description": "51 may be a reference or a specific value related to the design considerations of the base plate",
+      "source_ids": [
+        19
+      ]
+    }
+  ],
+  "node_idx": 19
+}

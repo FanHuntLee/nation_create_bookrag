@@ -1,0 +1,41 @@
+{
+  "entities": [
+    {
+      "entity_name": "020 8998 6280",
+      "entity_type": "TELEPHONE",
+      "description": "020 8998 6280 is a telephone number listed as the company s main line",
+      "source_ids": [
+        259
+      ]
+    },
+    {
+      "entity_name": "020 3893 9734",
+      "entity_type": "TELEPHONE",
+      "description": "020 3893 9734 is a telephone number listed as the technical hotline",
+      "source_ids": [
+        259
+      ]
+    },
+    {
+      "entity_name": "50 62",
+      "entity_type": "PERCENTAGE",
+      "description": "50 62 is a percentage or ratio mentioned in the text  possibly indicating a proportion or fraction",
+      "source_ids": [
+        259
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "020 8998 6280",
+      "tgt_entity_name": "020 3893 9734",
+      "relation_name": "",
+      "weight": 7.0,
+      "description": "both are telephone numbers associated with the company  with the former being the main line and the latter being the technical hotline",
+      "source_ids": [
+        259
+      ]
+    }
+  ],
+  "node_idx": 259
+}

@@ -1,0 +1,18 @@
+{
+  "question": "在底板设计中，如果不使用PCIe 2.0或PCIe 3.0功能，除了数据信号外，参考时钟信号需要如何处理？",
+  "answer": "参考时钟信号（PCIExx_REFCLKP/REFCLKN）也需进行悬空处理。",
+  "doc_uuid": "som-001",
+  "doc_path": "/root/autodl-fs/bookrag/BookRAG/somdata/SOM-TL3588工业核心板硬件说明书.pdf",
+  "evidence": "第57页 文本",
+  "output": "Final Answer:  \n在底板设计中，如果不使用 PCIe 2.0 或 PCIe 3.0 功能，参考时钟信号的处理要求如下：\n\n1. **悬空或接地处理**：  \n   参考时钟信号（如 PCIeXx_REFCLKP/REFCLKN）应保持悬空或接地状态。根据《RK3588 Hardware Design Guide-V1.4-20240314-CN》文档要求，这些信号线在底板上应保持未连接状态，以避免不必要的干扰或错误信号。\n\n2. **时钟源一致性**：  \n   如果 PCIe 3.0 功能模块未使用，但其 PHY 和 Slot 外设的 REFCLKP/N 需要满足同源时钟要求，应确保这些参考时钟信号来自同一颗时钟发生器，以避免时钟偏差。\n\n3. **避免 GPIO 替代**：  \n   PCIe 2.0 的 CLKREQn 和 WAKEn 信号必须使用功能脚，不能用 GPIO 替代，且需选择同一组_Mx（如 _M0、_M1 或 _M2），不能混用不同组的信号。\n\n4. **外围电路与电源要求**：  \n   PCIe 接口的外围电路及电源需满足规格要求，例如 PCIe 2.0 接口的 TXP/N 差分信号上应串接 $100 \\mathrm{nF}$ 的交流耦合电容，建议使用 0201 封装，以降低 ESR 和 ESL，减少线路上的阻抗变化。\n\n5. **系统初始化配置**：  \n   在 Linux 内核（设备树文件）中应关闭 PCIe 功能，以避免系统启动异常。\n\n综上，参考时钟信号在不使用 PCIe 2.0 或 PCIe 3.0 功能时，应悬空或接地，并确保外围电路、电源及系统配置符合相关规范。",
+  "retrieved_node_ids": [
+    98,
+    142,
+    195,
+    266,
+    330,
+    334,
+    335,
+    338
+  ]
+}

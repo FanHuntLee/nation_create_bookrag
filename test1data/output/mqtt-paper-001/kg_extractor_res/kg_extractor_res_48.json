@@ -1,0 +1,43 @@
+{
+  "entities": [
+    {
+      "entity_name": "m2m",
+      "entity_type": "TECHNOLOGY",
+      "description": "m2m   refers to a technology related to machine to machine communication in the internet of things",
+      "source_ids": [
+        48
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        48
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "m2m",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "m2m   and          are both technologies related to the internet of things",
+      "source_ids": [
+        48
+      ]
+    },
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 7.0,
+      "description": "and          are both technologies related to data communication and collection",
+      "source_ids": [
+        48
+      ]
+    }
+  ],
+  "node_idx": 48
+}

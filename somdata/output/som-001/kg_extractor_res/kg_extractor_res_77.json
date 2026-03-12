@@ -1,0 +1,95 @@
+{
+  "entities": [
+    {
+      "entity_name": "sd",
+      "entity_type": "PRODUCT",
+      "description": "sd                      emmc",
+      "source_ids": [
+        77
+      ]
+    },
+    {
+      "entity_name": "nvme",
+      "entity_type": "PRODUCT",
+      "description": "nvme                       emmc",
+      "source_ids": [
+        77
+      ]
+    },
+    {
+      "entity_name": "emmc",
+      "entity_type": "PRODUCT",
+      "description": "emmc",
+      "source_ids": [
+        77
+      ]
+    },
+    {
+      "entity_name": "lpddr4x",
+      "entity_type": "PRODUCT",
+      "description": "lpddr4x          cpu   dmc       32bit",
+      "source_ids": [
+        77
+      ]
+    },
+    {
+      "entity_name": "ddr4 4266",
+      "entity_type": "PRODUCT",
+      "description": "ddr4 4266          lpddr4x       2133mhz",
+      "source_ids": [
+        77
+      ]
+    },
+    {
+      "entity_name": "cpu",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        77
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "sd",
+      "tgt_entity_name": "emmc",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "sd            emmc",
+      "source_ids": [
+        77
+      ]
+    },
+    {
+      "src_entity_name": "nvme",
+      "tgt_entity_name": "emmc",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "nvme             emmc",
+      "source_ids": [
+        77
+      ]
+    },
+    {
+      "src_entity_name": "lpddr4x",
+      "tgt_entity_name": "cpu",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "lpddr4x  cpu   dmc",
+      "source_ids": [
+        77
+      ]
+    },
+    {
+      "src_entity_name": "lpddr4x",
+      "tgt_entity_name": "ddr4 4266",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "lpddr4x  ddr4 4266",
+      "source_ids": [
+        77
+      ]
+    }
+  ],
+  "node_idx": 77
+}

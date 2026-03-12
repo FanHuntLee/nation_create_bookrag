@@ -1,0 +1,315 @@
+{
+  "query": "MQTT协议构建在什么协议上？",
+  "used_sec_ids": [],
+  "all_sec_ids": [],
+  "plan": {
+    "query_type": "simple",
+    "original_query": "MQTT协议构建在什么协议上？",
+    "sub_questions": null,
+    "filters": null,
+    "operation": null
+  },
+  "iterations": [
+    {
+      "sub_query": "MQTT协议构建在什么协议上？",
+      "sub_number": 1,
+      "gbc_entity_map": {
+        "Name: mqtt协议\nType: TECHNOLOGY": [
+          "Name: mqtt通信协议\nType: TECHNOLOGY"
+        ]
+      },
+      "linked_tree_nodes": [
+        {
+          "index_id": 130,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+          ]
+        },
+        {
+          "index_id": 9,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+          ]
+        },
+        {
+          "index_id": 140,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+          ]
+        },
+        {
+          "index_id": 22,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+          ]
+        },
+        {
+          "index_id": 30,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+          ]
+        },
+        {
+          "index_id": 34,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+          ]
+        },
+        {
+          "index_id": 36,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+          ]
+        },
+        {
+          "index_id": 38,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+          ]
+        },
+        {
+          "index_id": 39,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+          ]
+        },
+        {
+          "index_id": 47,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+          ]
+        },
+        {
+          "index_id": 55,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+          ]
+        },
+        {
+          "index_id": 57,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+          ]
+        },
+        {
+          "index_id": 60,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+          ]
+        },
+        {
+          "index_id": 72,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+          ]
+        },
+        {
+          "index_id": 75,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+          ]
+        },
+        {
+          "index_id": 84,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+          ]
+        },
+        {
+          "index_id": 88,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+          ]
+        },
+        {
+          "index_id": 121,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+          ]
+        },
+        {
+          "index_id": 123,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+          ]
+        }
+      ],
+      "linked_section_ids": [
+        121,
+        9,
+        34,
+        55
+      ],
+      "supplementary_ids": [],
+      "selected_explanation": "No further relevant sections were found. The remaining sections do not provide information about the underlying protocol of MQTT.",
+      "retrieval_sec_ids": [
+        121,
+        34,
+        9,
+        55
+      ],
+      "retrieval_nodes": [
+        {
+          "index_id": 130,
+          "type": "text",
+          "content": "本案例使用公网 MQTT HiveMQ 服务器与上位机Ubuntu Web 程序通信。请通过网线将评估板千兆网口 ETH0 RGMI和上位机连接至公网，确保可正常访问互联网。",
+          "page": 13
+        },
+        {
+          "index_id": 34,
+          "type": "title",
+          "content": "1 MQTT通信协议简介",
+          "page": 4
+        },
+        {
+          "index_id": 36,
+          "type": "text",
+          "content": "MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议），是一种基于发布/订阅(Publish/Subscribe)模式的“轻量级”通讯协议，该协议构建于TCP/IP 协议上，由 IBM在1999 年发布。MQTT最大优点在于，可以极少的代码和有限的带宽，为连接远程设备提供实时可靠的消息服务。 创龙 MQTT 是轻量、简单、开放和易于实现的，同时作为一种低开销、低带宽占用的即时通讯协议，使其在物联网、小型设备、移动应用等方面有较广泛的应用。",
+          "page": 4
+        },
+        {
+          "index_id": 75,
+          "type": "text",
+          "content": "参数解析：-h：MQTT 服务器-p：MQTT服务器端口 创龙-M：模式，publish 为发布，subscribe 为订阅-t：MQTT主题，可随便命名-m：发布的MQTT 消息",
+          "page": 8
+        },
+        {
+          "index_id": 140,
+          "type": "text",
+          "content": "评估板程序运行后，在上位机使用浏览器打开\"tools\\web_mqtt_sub\\\"目录下的 index.html 文件。在弹出的Web 页面（如下图），依次输入MQTT 服务器：broker.hivemq.com，端口号：8000，最后点击连接，Web页面将会从MQTT 服务器获取正弦波数据并进行波形绘制。 备注：ARM 端 MQTT通信协议基于TCP 协议，Web 端 MQTT通信协议基于WebSocket 协议，因此使用的端口号不同。",
+          "page": 14
+        },
+        {
+          "index_id": 47,
+          "type": "text",
+          "content": "MQTT作为一种低开销，低带宽占用的即时通讯协议，可以极少的代码和带宽为联网设备提供实时可靠的消息服务，适用于硬件资源有限的设备及带宽有限的网络环境。常见的应用场景如下：",
+          "page": 5
+        },
+        {
+          "index_id": 88,
+          "type": "text",
+          "content": "Host#mosquitto_pub -h broker.hivemq.com -p 1883 -t test/data -m www.tronlong.com  消息发布成功后，评估板将从MQTT 服务器接收到对应消息。",
+          "page": 9
+        },
+        {
+          "index_id": 57,
+          "type": "text",
+          "content": "案例功能：使用 libmosquitto(MQTT version 5.0/3.1.1)的 API与 MQTT 代理服务器通信。基于 MQTT通信协议，实现发布和订阅消息功能。",
+          "page": 6
+        },
+        {
+          "index_id": 60,
+          "type": "text",
+          "content": "公司官网：www.tronlong.com 销售邮箱：sales@tronlong.com 公司总机：020-8998-6280 6/18  \n技术论坛：www.51ele.net 技术邮箱：support@tronlong.com 技术热线：020-3893-9734 本案例使用公网MQTT HiveMQ 服务器与上位机Ubuntu Mosquitto 工具通信。请通过网线将评估板千兆网口 ETH0 RGMII和上位机连接至公网，确保可正常访问互联网。 下表提供了可用的在线公共MQTT服务器，可根据需要自行切换。",
+          "page": 6
+        }
+      ],
+      "iteration_text_nodes": [
+        {
+          "index_id": 130,
+          "type": "text",
+          "content": "本案例使用公网 MQTT HiveMQ 服务器与上位机Ubuntu Web 程序通信。请通过网线将评估板千兆网口 ETH0 RGMI和上位机连接至公网，确保可正常访问互联网。",
+          "page": 13
+        },
+        {
+          "index_id": 34,
+          "type": "title",
+          "content": "1 MQTT通信协议简介",
+          "page": 4
+        },
+        {
+          "index_id": 36,
+          "type": "text",
+          "content": "MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议），是一种基于发布/订阅(Publish/Subscribe)模式的“轻量级”通讯协议，该协议构建于TCP/IP 协议上，由 IBM在1999 年发布。MQTT最大优点在于，可以极少的代码和有限的带宽，为连接远程设备提供实时可靠的消息服务。 创龙 MQTT 是轻量、简单、开放和易于实现的，同时作为一种低开销、低带宽占用的即时通讯协议，使其在物联网、小型设备、移动应用等方面有较广泛的应用。",
+          "page": 4
+        },
+        {
+          "index_id": 75,
+          "type": "text",
+          "content": "参数解析：-h：MQTT 服务器-p：MQTT服务器端口 创龙-M：模式，publish 为发布，subscribe 为订阅-t：MQTT主题，可随便命名-m：发布的MQTT 消息",
+          "page": 8
+        },
+        {
+          "index_id": 140,
+          "type": "text",
+          "content": "评估板程序运行后，在上位机使用浏览器打开\"tools\\web_mqtt_sub\\\"目录下的 index.html 文件。在弹出的Web 页面（如下图），依次输入MQTT 服务器：broker.hivemq.com，端口号：8000，最后点击连接，Web页面将会从MQTT 服务器获取正弦波数据并进行波形绘制。 备注：ARM 端 MQTT通信协议基于TCP 协议，Web 端 MQTT通信协议基于WebSocket 协议，因此使用的端口号不同。",
+          "page": 14
+        },
+        {
+          "index_id": 47,
+          "type": "text",
+          "content": "MQTT作为一种低开销，低带宽占用的即时通讯协议，可以极少的代码和带宽为联网设备提供实时可靠的消息服务，适用于硬件资源有限的设备及带宽有限的网络环境。常见的应用场景如下：",
+          "page": 5
+        },
+        {
+          "index_id": 88,
+          "type": "text",
+          "content": "Host#mosquitto_pub -h broker.hivemq.com -p 1883 -t test/data -m www.tronlong.com  消息发布成功后，评估板将从MQTT 服务器接收到对应消息。",
+          "page": 9
+        },
+        {
+          "index_id": 57,
+          "type": "text",
+          "content": "案例功能：使用 libmosquitto(MQTT version 5.0/3.1.1)的 API与 MQTT 代理服务器通信。基于 MQTT通信协议，实现发布和订阅消息功能。",
+          "page": 6
+        },
+        {
+          "index_id": 60,
+          "type": "text",
+          "content": "公司官网：www.tronlong.com 销售邮箱：sales@tronlong.com 公司总机：020-8998-6280 6/18  \n技术论坛：www.51ele.net 技术邮箱：support@tronlong.com 技术热线：020-3893-9734 本案例使用公网MQTT HiveMQ 服务器与上位机Ubuntu Mosquitto 工具通信。请通过网线将评估板千兆网口 ETH0 RGMII和上位机连接至公网，确保可正常访问互联网。 下表提供了可用的在线公共MQTT服务器，可根据需要自行切换。",
+          "page": 6
+        }
+      ],
+      "iteration_image_nodes": [],
+      "iteration_graph_nodes": [
+        {
+          "entity_name": "mqtt client",
+          "entity_type": "SOFTWARE"
+        },
+        {
+          "entity_name": "mqtt sinewave pub",
+          "entity_type": "SOFTWARE"
+        },
+        {
+          "entity_name": "",
+          "entity_type": "UNKNOWN"
+        },
+        {
+          "entity_name": "mqtt通信协议",
+          "entity_type": "TECHNOLOGY"
+        },
+        {
+          "entity_name": "www tronlong com",
+          "entity_type": "WEBSITE"
+        }
+      ],
+      "partial_answers": [
+        {
+          "source": "Text Chunk 1",
+          "content": "MQTT协议构建在**TCP/IP协议**上。"
+        }
+      ],
+      "generated_answer": "MQTT协议构建在**TCP/IP协议**上。"
+    }
+  ],
+  "final_answer": "MQTT协议构建在**TCP/IP协议**上。"
+}

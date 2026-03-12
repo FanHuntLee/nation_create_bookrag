@@ -1,0 +1,51 @@
+{
+  "entities": [
+    {
+      "entity_name": "2.3 内部引脚使用说明",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of '引脚说明', this section provides detailed information about the internal pin usage within the SOM-TL3588 industrial core board hardware manual.",
+      "source_ids": [
+        173
+      ]
+    },
+    {
+      "entity_name": "内部引脚使用",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "Refers to the specific task of explaining how internal pins are utilized in the hardware design, as detailed in section 2.3.",
+      "source_ids": [
+        173
+      ]
+    },
+    {
+      "entity_name": "引脚",
+      "entity_type": "HARDWARE",
+      "description": "Refers to the physical pins on the SOM-TL3588 industrial core board, which are discussed in detail in section 2.3.",
+      "source_ids": [
+        173
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "内部引脚使用",
+      "tgt_entity_name": "2.3 内部引脚使用说明",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '内部引脚使用' is a primary topic of section 2.3.",
+      "source_ids": [
+        173
+      ]
+    },
+    {
+      "src_entity_name": "引脚",
+      "tgt_entity_name": "2.3 内部引脚使用说明",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '引脚' is a primary topic of section 2.3.",
+      "source_ids": [
+        173
+      ]
+    }
+  ],
+  "node_idx": 173
+}

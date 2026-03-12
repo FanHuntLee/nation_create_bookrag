@@ -1,0 +1,61 @@
+{
+  "entities": [
+    {
+      "entity_name": "am16 saradc ino boot",
+      "entity_type": "TECHNOLOGY",
+      "description": "am16 saradc ino boot is a signal that  when grounded  triggers the cpu to enter maskrom mode for firmware upgrades",
+      "source_ids": [
+        327
+      ]
+    },
+    {
+      "entity_name": "maskrom",
+      "entity_type": "TECHNOLOGY",
+      "description": "maskrom is a mode that the cpu enters when the am16 saradc ino boot signal is detected as a low level",
+      "source_ids": [
+        327
+      ]
+    },
+    {
+      "entity_name": "usb3 1 otg",
+      "entity_type": "TECHNOLOGY",
+      "description": "usb3 1 otg is an interface used for firmware upgrades when the cpu is in maskrom mode",
+      "source_ids": [
+        327
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "am16 saradc ino boot",
+      "tgt_entity_name": "maskrom",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the am16 saradc ino boot signal being grounded causes the cpu to enter maskrom mode",
+      "source_ids": [
+        327
+      ]
+    },
+    {
+      "src_entity_name": "am16 saradc ino boot",
+      "tgt_entity_name": "usb3 1 otg",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "the usb3 1 otg interface is used for firmware upgrades when the cpu is in maskrom mode  which is triggered by the am16 saradc ino boot signal",
+      "source_ids": [
+        327
+      ]
+    },
+    {
+      "src_entity_name": "maskrom",
+      "tgt_entity_name": "usb3 1 otg",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the usb3 1 otg interface is used for firmware upgrades when the cpu is in maskrom mode",
+      "source_ids": [
+        327
+      ]
+    }
+  ],
+  "node_idx": 327
+}

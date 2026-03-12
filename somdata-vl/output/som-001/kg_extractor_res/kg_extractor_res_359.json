@@ -1,0 +1,357 @@
+{
+  "entities": [
+    {
+      "entity_name": "table: node 359...",
+      "entity_type": "TABLE",
+      "description": "A table with no available description.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "entity_name": "level1",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A level or category in a system configuration or testing setup.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "entity_name": "level2",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A level or category in a system configuration or testing setup.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "entity_name": "level3",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A level or category in a system configuration or testing setup.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "entity_name": "level4",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A level or category in a system configuration or testing setup.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "entity_name": "level5",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A level or category in a system configuration or testing setup.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "entity_name": "level6",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A level or category in a system configuration or testing setup.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "entity_name": "level7",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A level or category in a system configuration or testing setup.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "entity_name": "rup",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "A parameter or variable representing a specific value in a system configuration.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "entity_name": "rdown",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "A parameter or variable representing a specific value in a system configuration.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "entity_name": "adc",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "A parameter or variable representing a specific value in a system configuration.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "entity_name": "vol",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "A parameter or variable representing a specific value in a system configuration.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "entity_name": "boot mode",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "A parameter or variable representing a specific value in a system configuration.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "entity_name": "usb(maskrom mode)",
+      "entity_type": "METHOD_OR_TECHNIQUE",
+      "description": "A boot mode or method used in system configuration.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "entity_name": "sd card-usb",
+      "entity_type": "METHOD_OR_TECHNIQUE",
+      "description": "A boot mode or method used in system configuration.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "entity_name": "emmc-usb",
+      "entity_type": "METHOD_OR_TECHNIQUE",
+      "description": "A boot mode or method used in system configuration.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "entity_name": "fspi mo-usb",
+      "entity_type": "METHOD_OR_TECHNIQUE",
+      "description": "A boot mode or method used in system configuration.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "entity_name": "fspi m1-usb",
+      "entity_type": "METHOD_OR_TECHNIQUE",
+      "description": "A boot mode or method used in system configuration.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "entity_name": "fspi m2-usb",
+      "entity_type": "METHOD_OR_TECHNIQUE",
+      "description": "A boot mode or method used in system configuration.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "entity_name": "fspi_m2-fspi_m1-fspi_m0-emmc-sd card-usb",
+      "entity_type": "METHOD_OR_TECHNIQUE",
+      "description": "A boot mode or method used in system configuration.",
+      "source_ids": [
+        359
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "table: node 359...",
+      "tgt_entity_name": "level1",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 359...' contains data about 'LEVEL1'.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "src_entity_name": "table: node 359...",
+      "tgt_entity_name": "level2",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 359...' contains data about 'LEVEL2'.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "src_entity_name": "table: node 359...",
+      "tgt_entity_name": "level3",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 359...' contains data about 'LEVEL3'.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "src_entity_name": "table: node 359...",
+      "tgt_entity_name": "level4",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 359...' contains data about 'LEVEL4'.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "src_entity_name": "table: node 359...",
+      "tgt_entity_name": "level5",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 359...' contains data about 'LEVEL5'.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "src_entity_name": "table: node 359...",
+      "tgt_entity_name": "level6",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 359...' contains data about 'LEVEL6'.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "src_entity_name": "table: node 359...",
+      "tgt_entity_name": "level7",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 359...' contains data about 'LEVEL7'.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "src_entity_name": "table: node 359...",
+      "tgt_entity_name": "rup",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 359...' contains data about 'Rup'.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "src_entity_name": "table: node 359...",
+      "tgt_entity_name": "rdown",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 359...' contains data about 'Rdown'.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "src_entity_name": "table: node 359...",
+      "tgt_entity_name": "adc",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 359...' contains data about 'ADC'.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "src_entity_name": "table: node 359...",
+      "tgt_entity_name": "vol",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 359...' contains data about 'VOL'.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "src_entity_name": "table: node 359...",
+      "tgt_entity_name": "boot mode",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 359...' contains data about 'BOOT MODE'.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "src_entity_name": "table: node 359...",
+      "tgt_entity_name": "usb(maskrom mode)",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 359...' contains data about 'USB(Maskrom mode)'.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "src_entity_name": "table: node 359...",
+      "tgt_entity_name": "sd card-usb",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 359...' contains data about 'SD Card-USB'.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "src_entity_name": "table: node 359...",
+      "tgt_entity_name": "emmc-usb",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 359...' contains data about 'EMMC-USB'.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "src_entity_name": "table: node 359...",
+      "tgt_entity_name": "fspi mo-usb",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 359...' contains data about 'FSPI MO-USB'.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "src_entity_name": "table: node 359...",
+      "tgt_entity_name": "fspi m1-usb",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 359...' contains data about 'FSPI M1-USB'.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "src_entity_name": "table: node 359...",
+      "tgt_entity_name": "fspi m2-usb",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 359...' contains data about 'FSPI M2-USB'.",
+      "source_ids": [
+        359
+      ]
+    },
+    {
+      "src_entity_name": "table: node 359...",
+      "tgt_entity_name": "fspi_m2-fspi_m1-fspi_m0-emmc-sd card-usb",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table 'Table: Node 359...' contains data about 'FSPI_M2-FSPI_M1-FSPI_M0-EMMC-SD Card-USB'.",
+      "source_ids": [
+        359
+      ]
+    }
+  ],
+  "node_idx": 359
+}

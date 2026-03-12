@@ -1,0 +1,20 @@
+[
+  {
+    "question": "MQTT协议构建在什么协议上？",
+    "answer": "TCP/IP协议",
+    "doc_uuid": "mqtt-paper-001",
+    "doc_path": "/root/autodl-fs/bookrag/BookRAG/test1data/2-16-MQTT通信协议案例.pdf",
+    "output": "MQTT协议构建在**TCP/IP协议**上。",
+    "retrieved_node_ids": [
+      34,
+      36,
+      47,
+      57,
+      60,
+      75,
+      88,
+      130,
+      140
+    ]
+  }
+]

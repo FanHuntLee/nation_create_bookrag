@@ -1,0 +1,25 @@
+{
+  "entities": [
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        17
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 5.0,
+      "description": "the term refers to itself  indicating a potential self referential or ongoing process  though the text is incomplete and lacks specific details",
+      "source_ids": [
+        17
+      ]
+    }
+  ],
+  "node_idx": 17
+}

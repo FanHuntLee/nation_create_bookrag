@@ -1,0 +1,61 @@
+{
+  "entities": [
+    {
+      "entity_name": "tl3588 evm",
+      "entity_type": "PRODUCT",
+      "description": "tl3588 evm is a product mentioned as an evaluation board used in the context of power consumption testing",
+      "source_ids": [
+        230
+      ]
+    },
+    {
+      "entity_name": "debian",
+      "entity_type": "PRODUCT",
+      "description": "debian is an operating system mentioned as being used on the tl3588 evm evaluation board for power consumption testing",
+      "source_ids": [
+        230
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        230
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "tl3588 evm",
+      "tgt_entity_name": "debian",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the tl3588 evm evaluation board runs the debian operating system during power consumption testing",
+      "source_ids": [
+        230
+      ]
+    },
+    {
+      "src_entity_name": "tl3588 evm",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the tl3588 evm evaluation board uses natural cooling during power consumption testing",
+      "source_ids": [
+        230
+      ]
+    },
+    {
+      "src_entity_name": "debian",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "the debian operating system is tested under natural cooling conditions on the tl3588 evm evaluation board",
+      "source_ids": [
+        230
+      ]
+    }
+  ],
+  "node_idx": 230
+}

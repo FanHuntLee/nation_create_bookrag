@@ -1,0 +1,8 @@
+[
+  {
+    "question": "MQTT协议构建在什么协议上？",
+    "answer": "TCP/IP协议",
+    "doc_uuid": "mqtt-paper-001",
+    "doc_path": "/root/autodl-fs/bookrag/BookRAG/test1data/2-16-MQTT通信协议案例.pdf"
+  }
+]

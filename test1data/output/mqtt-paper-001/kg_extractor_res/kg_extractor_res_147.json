@@ -1,0 +1,111 @@
+{
+  "entities": [
+    {
+      "entity_name": "ubuntu",
+      "entity_type": "LOCATION",
+      "description": "ubuntu is a location where the source files need to be copied to  indicating it is the target working directory for the task",
+      "source_ids": [
+        147
+      ]
+    },
+    {
+      "entity_name": "linuxsdk",
+      "entity_type": "PRODUCT",
+      "description": "linuxsdk is a product that needs to be compiled before proceeding with the task  as mentioned in the reference manual",
+      "source_ids": [
+        147
+      ]
+    },
+    {
+      "entity_name": "debian",
+      "entity_type": "BOOK",
+      "description": "debian        is a book that provides instructions for compiling the linuxsdk  as referenced in the text",
+      "source_ids": [
+        147
+      ]
+    },
+    {
+      "entity_name": "src",
+      "entity_type": "DIRECTORY",
+      "description": "src is a directory containing the case files that need to be copied to the ubuntu working directory",
+      "source_ids": [
+        147
+      ]
+    },
+    {
+      "entity_name": "rk3588 linux release v1 2 1",
+      "entity_type": "SOFTWARE",
+      "description": "rk3588 linux release v1 2 1 is a software version that includes the extra tools directory for cross compilation",
+      "source_ids": [
+        147
+      ]
+    },
+    {
+      "entity_name": "gcc linaro 10 2 1 2021 01 x86 64 aarch64 linux gnu",
+      "entity_type": "SOFTWARE",
+      "description": "gcc  linaro 10 2 1 2021 01 x86 64 aarch64 linux gnu is a specific compiler tool used for cross compilation",
+      "source_ids": [
+        147
+      ]
+    },
+    {
+      "entity_name": "makefile",
+      "entity_type": "FILE",
+      "description": "makefile is a file that needs to be modified to configure the cross compilation toolchain environment",
+      "source_ids": [
+        147
+      ]
+    },
+    {
+      "entity_name": "cross compilation toolchain",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        147
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "src",
+      "tgt_entity_name": "ubuntu",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the src directory needs to be copied to the ubuntu working directory as part of the setup process",
+      "source_ids": [
+        147
+      ]
+    },
+    {
+      "src_entity_name": "linuxsdk",
+      "tgt_entity_name": "debian",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "the linuxsdk requires compilation as described in the debian",
+      "source_ids": [
+        147
+      ]
+    },
+    {
+      "src_entity_name": "rk3588 linux release v1 2 1",
+      "tgt_entity_name": "gcc linaro 10 2 1 2021 01 x86 64 aarch64 linux gnu",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the rk3588 linux release v1 2 1 software includes the gcc compiler for cross compilation",
+      "source_ids": [
+        147
+      ]
+    },
+    {
+      "src_entity_name": "makefile",
+      "tgt_entity_name": "cross compilation toolchain",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "the makefile is modified to configure the cross compilation toolchain environment",
+      "source_ids": [
+        147
+      ]
+    }
+  ],
+  "node_idx": 147
+}

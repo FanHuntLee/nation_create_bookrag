@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "debian",
+      "entity_type": "ORGANIZATION",
+      "description": "debian is an organization associated with the release of debian 11",
+      "source_ids": [
+        28
+      ]
+    },
+    {
+      "entity_name": "debian 11",
+      "entity_type": "PRODUCT",
+      "description": "debian 11 is a product released by debian  indicating a specific version of the organization s software",
+      "source_ids": [
+        28
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "debian",
+      "tgt_entity_name": "debian 11",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "debian is the organization responsible for releasing debian 11",
+      "source_ids": [
+        28
+      ]
+    }
+  ],
+  "node_idx": 28
+}

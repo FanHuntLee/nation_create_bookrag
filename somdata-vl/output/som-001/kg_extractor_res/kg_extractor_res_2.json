@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "entity_name": "revision history",
+      "entity_type": "EVENT",
+      "description": "revision history is the title of the section indicating a record of changes made to a document or system",
+      "source_ids": [
+        2
+      ]
+    }
+  ],
+  "relations": [],
+  "node_idx": 2
+}

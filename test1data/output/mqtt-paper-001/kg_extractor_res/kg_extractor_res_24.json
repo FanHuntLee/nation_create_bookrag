@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "vmware",
+      "entity_type": "PRODUCT",
+      "description": "vmware is a product mentioned in the text  specifically version 16 2 5 of a virtual machine software",
+      "source_ids": [
+        24
+      ]
+    },
+    {
+      "entity_name": "16 2 5",
+      "entity_type": "VERSION",
+      "description": "16 2 5 is a version number associated with the vmware product  indicating a specific release",
+      "source_ids": [
+        24
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "vmware",
+      "tgt_entity_name": "16 2 5",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "16 2 5 is the version number of the vmware product  specifying a particular release",
+      "source_ids": [
+        24
+      ]
+    }
+  ],
+  "node_idx": 24
+}

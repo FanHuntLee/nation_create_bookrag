@@ -1,0 +1,51 @@
+{
+  "entities": [
+    {
+      "entity_name": "mqtt",
+      "entity_type": "TECHNOLOGY",
+      "description": "mqtt is a technology described as lightweight and reliable  with a concise and compact message format suitable for use in constrained hardware and low bandwidth  high latency networks",
+      "source_ids": [
+        39
+      ]
+    },
+    {
+      "entity_name": "hardware",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        39
+      ]
+    },
+    {
+      "entity_name": "network",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        39
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "mqtt",
+      "tgt_entity_name": "hardware",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "mqtt is designed to operate on constrained hardware devices  indicating a direct relationship between the technology and the hardware it supports",
+      "source_ids": [
+        39
+      ]
+    },
+    {
+      "src_entity_name": "mqtt",
+      "tgt_entity_name": "network",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "mqtt is suitable for use in low bandwidth  high latency networks  showing a direct relationship between the technology and the network environment it is designed for",
+      "source_ids": [
+        39
+      ]
+    }
+  ],
+  "node_idx": 39
+}

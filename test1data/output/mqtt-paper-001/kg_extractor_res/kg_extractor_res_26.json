@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "u boot",
+      "entity_type": "SOFTWARE",
+      "description": "u boot is a software system mentioned in the text  indicating it is a type of software or program",
+      "source_ids": [
+        26
+      ]
+    },
+    {
+      "entity_name": "u bo0t 2017 09",
+      "entity_type": "PRODUCT",
+      "description": "u bo0t 2017 09 is a product version of u boot  indicating it is a specific release or iteration of the software",
+      "source_ids": [
+        26
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "u boot",
+      "tgt_entity_name": "u bo0t 2017 09",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "u bo0t 2017 09 is a specific version of u boot  indicating a direct relationship between the software and its product release",
+      "source_ids": [
+        26
+      ]
+    }
+  ],
+  "node_idx": 26
+}

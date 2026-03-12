@@ -1,0 +1,465 @@
+{
+  "entities": [
+    {
+      "entity_name": "表9",
+      "entity_type": "TABLE",
+      "description": "表格标题，表示第9个表格。",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "b2b引脚号",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "表格中的一个列标题，表示B2B设备的引脚编号。",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "上下拉电阻值",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "表格中的一个列标题，表示上下拉电阻的数值。",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "上下拉配置",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "表格中的一个列标题，表示上下拉电阻的配置方式。",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "芯片引脚号",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "表格中的一个列标题，表示芯片的引脚编号。",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "芯片引脚名称",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "表格中的一个列标题，表示芯片引脚的名称。",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "b171",
+      "entity_type": "BENCHMARK",
+      "description": "A B2B pin number used to identify a specific pin in a hardware design.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "b173",
+      "entity_type": "BENCHMARK",
+      "description": "A B2B pin number used to identify a specific pin in a hardware design.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "a42",
+      "entity_type": "BENCHMARK",
+      "description": "A B2B pin number used to identify a specific pin in a hardware design.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "b3",
+      "entity_type": "BENCHMARK",
+      "description": "A B2B pin number used to identify a specific pin in a hardware design.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "b5",
+      "entity_type": "BENCHMARK",
+      "description": "A B2B pin number used to identify a specific pin in a hardware design.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "龙科b9",
+      "entity_type": "BENCHMARK",
+      "description": "A B2B pin number used to identify a specific pin in a hardware design.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "b7",
+      "entity_type": "BENCHMARK",
+      "description": "A B2B pin number used to identify a specific pin in a hardware design.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "a54",
+      "entity_type": "BENCHMARK",
+      "description": "A B2B pin number used to identify a specific pin in a hardware design.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "a69",
+      "entity_type": "BENCHMARK",
+      "description": "A B2B pin number used to identify a specific pin in a hardware design.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "a59",
+      "entity_type": "BENCHMARK",
+      "description": "A B2B pin number used to identify a specific pin in a hardware design.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "a61",
+      "entity_type": "BENCHMARK",
+      "description": "A B2B pin number used to identify a specific pin in a hardware design.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "a63",
+      "entity_type": "BENCHMARK",
+      "description": "A B2B pin number used to identify a specific pin in a hardware design.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "a65",
+      "entity_type": "BENCHMARK",
+      "description": "A B2B pin number used to identify a specific pin in a hardware design.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "上拉1.8v",
+      "entity_type": "MEASUREMENT",
+      "description": "A voltage level used for pull-up resistors in hardware design.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "上拉1.8v创科",
+      "entity_type": "MEASUREMENT",
+      "description": "A voltage level used for pull-up resistors in hardware design.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "串联22ω电阻",
+      "entity_type": "MEASUREMENT",
+      "description": "A resistor value used in hardware design.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "上拉10k电阻",
+      "entity_type": "MEASUREMENT",
+      "description": "A resistor value used in hardware design.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "下拉1k电阻至gnd",
+      "entity_type": "MEASUREMENT",
+      "description": "A resistor value used in hardware design.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "并联1nf电容至gnd",
+      "entity_type": "MEASUREMENT",
+      "description": "A capacitor value used in hardware design.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "entity_name": "龙科",
+      "entity_type": "ORGANIZATION",
+      "description": "An organization involved in hardware design.",
+      "source_ids": [
+        184
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "b2b引脚号",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about 'B2B引脚号'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "上下拉电阻值",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about '上下拉电阻值'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "上下拉配置",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about '上下拉配置'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "芯片引脚号",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about '芯片引脚号'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "芯片引脚名称",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about '芯片引脚名称'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "b171",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about 'B171'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "b173",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about 'B173'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "a42",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about 'A42'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "b3",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about 'B3'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "b5",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about 'B5'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "龙科b9",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about '龙科B9'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "b7",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about 'B7'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "a54",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about 'A54'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "a69",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about 'A69'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "a59",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about 'A59'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "a61",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about 'A61'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "a63",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about 'A63'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "a65",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about 'A65'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "上拉1.8v",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about '上拉1.8V'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "上拉1.8v创科",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about '上拉1.8V创科'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "串联22ω电阻",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about '串联22Ω电阻'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "上拉10k电阻",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about '上拉10K电阻'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "下拉1k电阻至gnd",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about '下拉1K电阻至GND'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "并联1nf电容至gnd",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about '并联1nF电容至GND'.",
+      "source_ids": [
+        184
+      ]
+    },
+    {
+      "src_entity_name": "表9",
+      "tgt_entity_name": "龙科",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表9' contains data about '龙科'.",
+      "source_ids": [
+        184
+      ]
+    }
+  ],
+  "node_idx": 184
+}

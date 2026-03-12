@@ -1,0 +1,51 @@
+{
+  "entities": [
+    {
+      "entity_name": "2.1案例说明",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of '2mqtt_client 案例', this section provides an explanation of the case study, outlining the purpose, setup, and key components of the MQTT client implementation.",
+      "source_ids": [
+        56
+      ]
+    },
+    {
+      "entity_name": "案例",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "Refers to the practical example or implementation being discussed, which is the focus of section 2.1.",
+      "source_ids": [
+        56
+      ]
+    },
+    {
+      "entity_name": "说明",
+      "entity_type": "METHOD_OR_TECHNIQUE",
+      "description": "Refers to the explanatory process or methodology used to describe the case study, as detailed in section 2.1.",
+      "source_ids": [
+        56
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "案例",
+      "tgt_entity_name": "2.1案例说明",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '案例' is a primary topic of section 2.1.",
+      "source_ids": [
+        56
+      ]
+    },
+    {
+      "src_entity_name": "说明",
+      "tgt_entity_name": "2.1案例说明",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '说明' is a primary topic of section 2.1.",
+      "source_ids": [
+        56
+      ]
+    }
+  ],
+  "node_idx": 56
+}

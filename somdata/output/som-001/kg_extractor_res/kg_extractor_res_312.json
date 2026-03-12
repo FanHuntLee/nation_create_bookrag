@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "entity_name": "pmic pwron",
+      "entity_type": "TECHNOLOGY",
+      "description": "pmic pwron is a technology related to power management integrated circuits  indicating a specific function or component in electronic systems",
+      "source_ids": [
+        312
+      ]
+    }
+  ],
+  "relations": [],
+  "node_idx": 312
+}

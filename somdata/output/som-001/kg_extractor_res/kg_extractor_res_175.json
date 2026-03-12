@@ -1,0 +1,681 @@
+{
+  "entities": [
+    {
+      "entity_name": "表8",
+      "entity_type": "TABLE",
+      "description": "一个表格，包含与B2B引脚和芯片引脚相关的详细信息，包括引脚号、参考电平、引脚功能、芯片引脚号和芯片引脚名称。",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "b2b引脚号",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "表格中的一个列标题，表示B2B接口的引脚编号。",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "参考电平",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "表格中的一个列标题，表示引脚的参考电压或电平。",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "引脚功能",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "表格中的一个列标题，表示引脚的功能描述。",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "芯片引脚号",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "表格中的一个列标题，表示芯片上的引脚编号。",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "芯片引脚名称",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "表格中的一个列标题，表示芯片上引脚的名称。",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "xin_24m",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A clock signal used for oscillator functionality in the device.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "xout_24m",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A clock signal used for oscillator functionality in the device.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "gpi02_c5_d",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A general-purpose input/output pin used for controlling the SOM LED1.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "gpi00_c2_d",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A general-purpose input/output pin used for controlling the SOM LED2.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "emmc_data_strobe",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A signal used for data strobe in eMMC communication.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "emmc_d0",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A data line used in eMMC communication.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "emmc_d4",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A data line used in eMMC communication.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "emmc_cmd",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A command line used in eMMC communication.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "emmc_d1",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A data line used in eMMC communication.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "emmc_d6",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A data line used in eMMC communication.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "emmc_d7",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A data line used in eMMC communication.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "emmc_d2",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A data line used in eMMC communication.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "emmc_clkout",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A clock output signal used in eMMC communication.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "emmc_rstn",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A reset signal used in eMMC communication.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "emmc_d3",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A data line used in eMMC communication.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "emmc_d5",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A data line used in eMMC communication.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "pmic_pwronn/4v0",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A power-on signal used for PMIC control.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "npor/1v8",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A power-on reset signal used for system reset.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "spi2_cs0_m2",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A chip select signal used for SPI2 communication.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "spi2_mosi_m2",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A master out, slave in signal used for SPI2 communication.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "spi2_clk_m2",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A clock signal used for SPI2 communication.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "pmic_sleep1/gpio0_a2_d",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A sleep signal used for PMIC control.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "pmic_sleep5/gpio0_c3_d",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A sleep signal used for PMIC control.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "pmic_int_l/gpio0_a7_u",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "An interrupt signal used for PMIC communication.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "i2c0_scl_m2",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A clock signal used for I2C0 communication.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "i2c0_sda_m2",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A data signal used for I2C0 communication.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "i2c1_scl_m2",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A clock signal used for I2C1 communication.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "i2c1_sda_m2",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A data signal used for I2C1 communication.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "pmic_sleep3/gpio0_c1_d/npu_vsel",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A sleep signal used for PMIC control and NPU voltage selection.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "pmic_sleep2/gpio0_a3_d/cpu_big0_vsel",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A sleep signal used for PMIC control and CPU voltage selection.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "pmic_sleep6//gpio0_d6_d/cpu_big1_vsel",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "A sleep signal used for PMIC control and CPU voltage selection.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "entity_name": "saradc_in5",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "An analog-to-digital converter input used for board ID configuration.",
+      "source_ids": [
+        175
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "b2b引脚号",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'B2B引脚号'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "参考电平",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about '参考电平'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "引脚功能",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about '引脚功能'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "芯片引脚号",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about '芯片引脚号'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "芯片引脚名称",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about '芯片引脚名称'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "xin_24m",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'XIN_24M'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "xout_24m",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'XOUT_24M'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "gpi02_c5_d",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'GPI02_C5_D'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "gpi00_c2_d",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'GPI00_C2_D'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "emmc_data_strobe",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'EMMC_DATA_STROBE'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "emmc_d0",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'EMMC_D0'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "emmc_d4",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'EMMC_D4'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "emmc_cmd",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'EMMC_CMD'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "emmc_d1",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'EMMC_D1'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "emmc_d6",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'EMMC_D6'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "emmc_d7",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'EMMC_D7'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "emmc_d2",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'EMMC_D2'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "emmc_clkout",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'EMMC_CLKOUT'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "emmc_rstn",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'EMMC_RSTN'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "emmc_d3",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'EMMC_D3'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "emmc_d5",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'EMMC_D5'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "pmic_pwronn/4v0",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'PMIC_PWRONn/4V0'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "npor/1v8",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'NPOR/1V8'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "spi2_cs0_m2",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'SPI2_CS0_M2'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "spi2_mosi_m2",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'SPI2_MOSI_M2'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "spi2_clk_m2",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'SPI2_CLK_M2'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "pmic_sleep1/gpio0_a2_d",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'PMIC_SLEEP1/GPIO0_A2_d'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "pmic_sleep5/gpio0_c3_d",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'PMIC_SLEEP5/GPIO0_C3_d'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "pmic_int_l/gpio0_a7_u",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'PMIC_INT_L/GPIO0_A7_u'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "i2c0_scl_m2",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'I2C0_SCL_M2'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "i2c0_sda_m2",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'I2C0_SDA_M2'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "i2c1_scl_m2",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'I2C1_SCL_M2'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "i2c1_sda_m2",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'I2C1_SDA_M2'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "pmic_sleep3/gpio0_c1_d/npu_vsel",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'PMIC_SLEEP3/GPIO0_C1_d/NPU_VSEL'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "pmic_sleep2/gpio0_a3_d/cpu_big0_vsel",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'PMIC_SLEEP2/GPIO0_A3_d/CPU_BIG0_VSEL'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "pmic_sleep6//gpio0_d6_d/cpu_big1_vsel",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'PMIC_SLEEP6//GPIO0_D6_d/CPU_BIG1_VSEL'.",
+      "source_ids": [
+        175
+      ]
+    },
+    {
+      "src_entity_name": "表8",
+      "tgt_entity_name": "saradc_in5",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表8' contains data about 'SARADC_IN5'.",
+      "source_ids": [
+        175
+      ]
+    }
+  ],
+  "node_idx": 175
+}

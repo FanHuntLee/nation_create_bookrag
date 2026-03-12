@@ -1,0 +1,87 @@
+{
+  "entities": [
+    {
+      "entity_name": "rk806 1",
+      "entity_type": "PRODUCT",
+      "description": "rk806 1 is a pmic power management chip used in the core board to meet system power supply requirements and cpu power on and power off timing requirements",
+      "source_ids": [
+        86
+      ]
+    },
+    {
+      "entity_name": "rk860 2",
+      "entity_type": "PRODUCT",
+      "description": "rk860 2 is a pmic power management chip used in the core board to meet system power supply requirements and cpu power on and power off timing requirements",
+      "source_ids": [
+        86
+      ]
+    },
+    {
+      "entity_name": "rk860 3",
+      "entity_type": "PRODUCT",
+      "description": "rk860 3 is a pmic power management chip used in the core board to meet system power supply requirements and cpu power on and power off timing requirements",
+      "source_ids": [
+        86
+      ]
+    },
+    {
+      "entity_name": "4 0v",
+      "entity_type": "MEASUREMENT",
+      "description": "4 0v is the voltage level used to power the core board directly",
+      "source_ids": [
+        86
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        86
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "rk806 1",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "uses rk806 1 as a pmic power management chip to meet system power supply requirements and cpu power on and power off timing requirements",
+      "source_ids": [
+        86
+      ]
+    },
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "rk860 2",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "uses rk860 2 as a pmic power management chip to meet system power supply requirements and cpu power on and power off timing requirements",
+      "source_ids": [
+        86
+      ]
+    },
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "rk860 3",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "uses rk860 3 as a pmic power management chip to meet system power supply requirements and cpu power on and power off timing requirements",
+      "source_ids": [
+        86
+      ]
+    },
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "4 0v",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "is powered directly by a 4 0v dc power supply",
+      "source_ids": [
+        86
+      ]
+    }
+  ],
+  "node_idx": 86
+}

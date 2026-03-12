@@ -1,0 +1,93 @@
+{
+  "entities": [
+    {
+      "entity_name": "3 1",
+      "entity_type": "SECTION_TITLE",
+      "description": "3 1 is a section title indicating the beginning of a case description section",
+      "source_ids": [
+        16
+      ]
+    },
+    {
+      "entity_name": "12",
+      "entity_type": "NUMBER",
+      "description": "12 is a number likely indicating the page number or a count in the document",
+      "source_ids": [
+        16
+      ]
+    },
+    {
+      "entity_name": "3 2",
+      "entity_type": "SECTION_TITLE",
+      "description": "3 2 is a section title indicating the beginning of a case testing section",
+      "source_ids": [
+        16
+      ]
+    },
+    {
+      "entity_name": "3 3",
+      "entity_type": "SECTION_TITLE",
+      "description": "3 3 is a section title indicating the beginning of a case compilation section",
+      "source_ids": [
+        16
+      ]
+    },
+    {
+      "entity_name": "15",
+      "entity_type": "NUMBER",
+      "description": "15 is a number likely indicating the page number or a count in the document",
+      "source_ids": [
+        16
+      ]
+    },
+    {
+      "entity_name": "3 4",
+      "entity_type": "SECTION_TITLE",
+      "description": "3 4 is a section title indicating the beginning of a key code section",
+      "source_ids": [
+        16
+      ]
+    },
+    {
+      "entity_name": "16",
+      "entity_type": "NUMBER",
+      "description": "16 is a number likely indicating the page number or a count in the document",
+      "source_ids": [
+        16
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "3 1",
+      "tgt_entity_name": "3 2",
+      "relation_name": "",
+      "weight": 7.0,
+      "description": "3 1 and 3 2 are consecutive section titles in the document  suggesting a logical progression of content",
+      "source_ids": [
+        16
+      ]
+    },
+    {
+      "src_entity_name": "3 2",
+      "tgt_entity_name": "3 3",
+      "relation_name": "",
+      "weight": 7.0,
+      "description": "3 2 and 3 3 are consecutive section titles in the document  suggesting a logical progression of content",
+      "source_ids": [
+        16
+      ]
+    },
+    {
+      "src_entity_name": "3 3",
+      "tgt_entity_name": "3 4",
+      "relation_name": "",
+      "weight": 7.0,
+      "description": "3 3 and 3 4 are consecutive section titles in the document  suggesting a logical progression of content",
+      "source_ids": [
+        16
+      ]
+    }
+  ],
+  "node_idx": 16
+}

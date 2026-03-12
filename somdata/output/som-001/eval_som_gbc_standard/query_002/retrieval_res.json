@@ -1,0 +1,191 @@
+{
+  "query": "在进行底板设计时，出于系统稳定性考虑，官方建议尽量选用其他I2C总线而不是I2C0和I2C1，具体原因是什么？",
+  "used_sec_ids": [],
+  "all_sec_ids": [],
+  "plan": {
+    "query_type": "complex",
+    "original_query": "在进行底板设计时，出于系统稳定性考虑，官方建议尽量选用其他I2C总线而不是I2C0和I2C1，具体原因是什么？",
+    "sub_questions": [
+      {
+        "question": "在进行底板设计时，官方建议尽量选用其他I2C总线而不是I2C0和I2C1，具体原因是什么？",
+        "type": "retrieval"
+      }
+    ],
+    "filters": null,
+    "operation": null
+  },
+  "iterations": [
+    {
+      "sub_query": "在进行底板设计时，官方建议尽量选用其他I2C总线而不是I2C0和I2C1，具体原因是什么？",
+      "sub_number": 1,
+      "gbc_entity_map": {
+        "Name: i2c0\nType: PRODUCT": [
+          "Name: i2c0\nType: PRODUCT"
+        ],
+        "Name: i2c1\nType: PRODUCT": [
+          "Name: i2c1\nType: PRODUCT"
+        ],
+        "Name: 底板设计\nType: TASK_OR_PROBLEM": [
+          "Name: 底板\nType: PRODUCT"
+        ]
+      },
+      "linked_tree_nodes": [
+        {
+          "index_id": 174,
+          "map_cnt": 2,
+          "linked_entities": [
+            "Name: i2c1\nType: PRODUCT",
+            "Name: i2c0\nType: PRODUCT"
+          ]
+        },
+        {
+          "index_id": 266,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: 底板\nType: PRODUCT"
+          ]
+        }
+      ],
+      "linked_section_ids": [
+        106,
+        266
+      ],
+      "supplementary_ids": [
+        315
+      ],
+      "selected_explanation": "Section 315 titled '5.2其他设计注意事项' is semantically relevant because it likely contains additional design considerations that could provide context or complementary information about why other I2C buses are recommended over I2C0 and I2C1 in the bottom board design.",
+      "retrieval_sec_ids": [
+        315,
+        106,
+        266
+      ],
+      "retrieval_nodes": [
+        {
+          "index_id": 322,
+          "type": "text",
+          "content": "评估底板通过TYPECO 总线引出 USB3.1OTG 接口，可通过 USB3.1OTG 接口快速固化系统至eMMCFLASH(eMMC)，底板设计时建议保留此外设接口。",
+          "page": 57
+        },
+        {
+          "index_id": 324,
+          "type": "text",
+          "content": "评估底板通过 CH340T 芯片将 UART2（_M0 组）总线转换为Type-C 接口，作为系统调试串口使用，底板设计时建议保留UART2作为系统调试串口。",
+          "page": 57
+        },
+        {
+          "index_id": 266,
+          "type": "title",
+          "content": "5底板设计注意事项",
+          "page": 51
+        },
+        {
+          "index_id": 174,
+          "type": "text",
+          "content": "“B2B 引脚号”为\"-\"表示该引脚在核心板内部使用，且未引出至 B2B 连接器；其他代表核心板内部已使用，且同时引出至核心板B2B 连接器。 备注：由于I2C0、I2C1已连接至核心板的 PMIC 电源管理芯片，因此从系统稳定性角度考虑，建议进行底板设计时尽量选用其他I2C总线。",
+          "page": 33
+        },
+        {
+          "index_id": 175,
+          "type": "table",
+          "content": "Caption: 表8\nThis table contains the following columns:\n - B2B引脚号\n - 参考电平\n - 引脚功能\n - 芯片引脚号\n - 芯片引脚名称\n\nTable Body:\nB2B引脚号 | 芯片引脚号 | 芯片引脚名称 | 引脚功能 | 参考电平\n | R34 | XIN_24M | OSC(Y1) | \n | T34 | XOUT_24M | OSC(Y1) | \n | AE30 | GPI02_C5_D | SOM LED1 | 1.8V\n | T32 | GPI00_C2_D | SOM LED2 | 1.8V\n | Y34 | EMMC_DATA_STROBE | eMMC | 1.8V\n | Y33 | EMMC_D0 | eMMC | 1.8V\n技 | Y32 | 包EMMC_D4 | eMMC | 1.8V\n | W34 | EMMC_CMD | eMMC | 1.8V\n | W33 | EMMC_D1 | eMMC | 1.8V\n | W32 | EMMC_D6 | eMMC | 1.8V\n | V33 | EMMC_D7 | eMMC | 1.8V\n | V32 | EMMC_D2 | eMMC | 1.8V\n | V34 | EMMC_CLKOUT | eMMC | 1.8V\n | AA34 | EMMC_RSTN | eMMC | 1.8V\n | AA33 | EMMC_D3技 | eMMC | 1.8V\n- | AA32 | EMMC_D5 | eMMC | 1.8V\nB173 | - | PMIC_PWRONn/4V0 | PMIC | 4.0V\nB171 | M31 | NPOR/1V8 | RESET | 1.8V\n | K30 | SPI2_CS0_M2 | SP12 | 1.8V\n | N30 | SPI2_MOSI_M2 | SP12 | 1.8V\n | N31 | SPI2_CLK_M2 | SP12 | 1.8V\n | R32 | PMIC_SLEEP1/GPIO0_A2_d | PMIC | 1.8V\n | T30 | PMIC_SLEEP5/GPIO0_C3_d | PMIC | 1.8V\n | M30 | PMIC_INT_L/GPIO0_A7_u | PMIC | 1.8V\nB3 | W30 | I2C0_SCL_M2 | 12C0 | 1.8V\nB5 | W29 | I2C0_SDA_M2 | 12CO | 1.8V\nB9 | V29 | I2C1_SCL_M2 | 12C1 | 1.8V\nB7 | V28 | I2C1_SDA_M2 | 12C1 | 1.8V\n | U32 | PMIC_SLEEP3/GPIO0_C1_d/NPU_VSEL | PMIC | 1.8V\n | R31 | PMIC_SLEEP2/GPIO0_A3_d/CPU_BIG0_VSEL | PMIC | 1.8V\n | W28 | PMIC_SLEEP6//GPIO0_D6_d/CPU_BIG1_VSEL | PMIC | 1.8V\nA69 | AK15 | SARADC_IN5 | BOARD IDCONFIG | ",
+          "page": 33,
+          "img_path": "/root/autodl-fs/bookrag/BookRAG/somdata/output/som-001/auto/images/b233562eb6acd869dae08e7120b54c20113b0b348f612bf2e1471f27d67d17bb.jpg",
+          "table_body": "<table><tr><td colspan=\"1\" rowspan=\"1\">B2B引脚号</td><td colspan=\"1\" rowspan=\"1\">芯片引脚号</td><td colspan=\"1\" rowspan=\"1\">芯片引脚名称</td><td colspan=\"1\" rowspan=\"1\">引脚功能</td><td colspan=\"1\" rowspan=\"1\">参考电平</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">R34</td><td colspan=\"1\" rowspan=\"1\">XIN_24M</td><td colspan=\"1\" rowspan=\"1\">OSC(Y1)</td><td colspan=\"1\" rowspan=\"1\"></td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">T34</td><td colspan=\"1\" rowspan=\"1\">XOUT_24M</td><td colspan=\"1\" rowspan=\"1\">OSC(Y1)</td><td colspan=\"1\" rowspan=\"1\"></td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">AE30</td><td colspan=\"1\" rowspan=\"1\">GPI02_C5_D</td><td colspan=\"1\" rowspan=\"1\">SOM LED1</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">T32</td><td colspan=\"1\" rowspan=\"1\">GPI00_C2_D</td><td colspan=\"1\" rowspan=\"1\"> SOM LED2</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">Y34</td><td colspan=\"1\" rowspan=\"1\">EMMC_DATA_STROBE</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">Y33</td><td colspan=\"1\" rowspan=\"1\">EMMC_D0</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">技</td><td colspan=\"1\" rowspan=\"1\">Y32</td><td colspan=\"1\" rowspan=\"1\">包EMMC_D4</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">W34</td><td colspan=\"1\" rowspan=\"1\">EMMC_CMD</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">W33</td><td colspan=\"1\" rowspan=\"1\">EMMC_D1</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">W32</td><td colspan=\"1\" rowspan=\"1\">EMMC_D6</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">V33</td><td colspan=\"1\" rowspan=\"1\">EMMC_D7</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">V32</td><td colspan=\"1\" rowspan=\"1\">EMMC_D2</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">V34</td><td colspan=\"1\" rowspan=\"1\">EMMC_CLKOUT</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">AA34</td><td colspan=\"1\" rowspan=\"1\">EMMC_RSTN</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">AA33</td><td colspan=\"1\" rowspan=\"1\">EMMC_D3技</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">-</td><td colspan=\"1\" rowspan=\"1\">AA32</td><td colspan=\"1\" rowspan=\"1\">EMMC_D5</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">B173</td><td colspan=\"1\" rowspan=\"1\">-</td><td colspan=\"1\" rowspan=\"1\">PMIC_PWRONn/4V0</td><td colspan=\"1\" rowspan=\"1\">PMIC</td><td colspan=\"1\" rowspan=\"1\">4.0V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">B171</td><td colspan=\"1\" rowspan=\"1\">M31</td><td colspan=\"1\" rowspan=\"1\">NPOR/1V8</td><td colspan=\"1\" rowspan=\"1\">RESET</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">K30</td><td colspan=\"1\" rowspan=\"1\">SPI2_CS0_M2</td><td colspan=\"1\" rowspan=\"1\">SP12</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">N30</td><td colspan=\"1\" rowspan=\"1\">SPI2_MOSI_M2</td><td colspan=\"1\" rowspan=\"1\">SP12</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">N31</td><td colspan=\"1\" rowspan=\"1\">SPI2_CLK_M2</td><td colspan=\"1\" rowspan=\"1\">SP12</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">R32</td><td colspan=\"1\" rowspan=\"1\">PMIC_SLEEP1/GPIO0_A2_d</td><td colspan=\"1\" rowspan=\"1\">PMIC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">T30</td><td colspan=\"1\" rowspan=\"1\">PMIC_SLEEP5/GPIO0_C3_d</td><td colspan=\"1\" rowspan=\"1\">PMIC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">M30</td><td colspan=\"1\" rowspan=\"1\">PMIC_INT_L/GPIO0_A7_u</td><td colspan=\"1\" rowspan=\"1\">PMIC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">B3</td><td colspan=\"1\" rowspan=\"1\">W30</td><td colspan=\"1\" rowspan=\"1\">I2C0_SCL_M2</td><td colspan=\"1\" rowspan=\"1\">12C0</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">B5</td><td colspan=\"1\" rowspan=\"1\">W29</td><td colspan=\"1\" rowspan=\"1\">I2C0_SDA_M2</td><td colspan=\"1\" rowspan=\"1\">12CO</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">B9</td><td colspan=\"1\" rowspan=\"1\">V29</td><td colspan=\"1\" rowspan=\"1\">I2C1_SCL_M2</td><td colspan=\"1\" rowspan=\"1\">12C1</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">B7</td><td colspan=\"1\" rowspan=\"1\">V28</td><td colspan=\"1\" rowspan=\"1\">I2C1_SDA_M2</td><td colspan=\"1\" rowspan=\"1\">12C1</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">U32</td><td colspan=\"1\" rowspan=\"1\">PMIC_SLEEP3/GPIO0_C1_d/NPU_VSEL</td><td colspan=\"1\" rowspan=\"1\">PMIC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">R31</td><td colspan=\"1\" rowspan=\"1\">PMIC_SLEEP2/GPIO0_A3_d/CPU_BIG0_VSEL</td><td colspan=\"1\" rowspan=\"1\">PMIC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">W28</td><td colspan=\"1\" rowspan=\"1\">PMIC_SLEEP6//GPIO0_D6_d/CPU_BIG1_VSEL</td><td colspan=\"1\" rowspan=\"1\">PMIC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">A69</td><td colspan=\"1\" rowspan=\"1\">AK15</td><td colspan=\"1\" rowspan=\"1\">SARADC_IN5</td><td colspan=\"1\" rowspan=\"1\">BOARD IDCONFIG</td><td colspan=\"1\" rowspan=\"1\"></td></tr></table>",
+          "caption": "表8",
+          "footnote": ""
+        },
+        {
+          "index_id": 313,
+          "type": "text",
+          "content": "PMIC_PWRONn/4VO 为核心板板载 PMIC 的开关机控制引脚,在PMIC 内部已上拉45K电阻至4.OV，默认情况请悬空处理。长按 PWRON 按键6秒，PMIC将会关机；再次短按PWRON 按键0.5 秒，PMIC 将切换为开机。 剑龙",
+          "page": 56
+        },
+        {
+          "index_id": 317,
+          "type": "text",
+          "content": "评估底板通过SDMMC总线引出Micro SD 接口，主要用于调试过程中使用系统启动卡来启动系统，或批量生产时基于Micro SD卡快速固化系统至eMMC，底板设计时建议保留此外设接口。",
+          "page": 56
+        }
+      ],
+      "iteration_text_nodes": [
+        {
+          "index_id": 322,
+          "type": "text",
+          "content": "评估底板通过TYPECO 总线引出 USB3.1OTG 接口，可通过 USB3.1OTG 接口快速固化系统至eMMCFLASH(eMMC)，底板设计时建议保留此外设接口。",
+          "page": 57
+        },
+        {
+          "index_id": 324,
+          "type": "text",
+          "content": "评估底板通过 CH340T 芯片将 UART2（_M0 组）总线转换为Type-C 接口，作为系统调试串口使用，底板设计时建议保留UART2作为系统调试串口。",
+          "page": 57
+        },
+        {
+          "index_id": 266,
+          "type": "title",
+          "content": "5底板设计注意事项",
+          "page": 51
+        },
+        {
+          "index_id": 174,
+          "type": "text",
+          "content": "“B2B 引脚号”为\"-\"表示该引脚在核心板内部使用，且未引出至 B2B 连接器；其他代表核心板内部已使用，且同时引出至核心板B2B 连接器。 备注：由于I2C0、I2C1已连接至核心板的 PMIC 电源管理芯片，因此从系统稳定性角度考虑，建议进行底板设计时尽量选用其他I2C总线。",
+          "page": 33
+        },
+        {
+          "index_id": 175,
+          "type": "table",
+          "content": "Caption: 表8\nThis table contains the following columns:\n - B2B引脚号\n - 参考电平\n - 引脚功能\n - 芯片引脚号\n - 芯片引脚名称\n\nTable Body:\nB2B引脚号 | 芯片引脚号 | 芯片引脚名称 | 引脚功能 | 参考电平\n | R34 | XIN_24M | OSC(Y1) | \n | T34 | XOUT_24M | OSC(Y1) | \n | AE30 | GPI02_C5_D | SOM LED1 | 1.8V\n | T32 | GPI00_C2_D | SOM LED2 | 1.8V\n | Y34 | EMMC_DATA_STROBE | eMMC | 1.8V\n | Y33 | EMMC_D0 | eMMC | 1.8V\n技 | Y32 | 包EMMC_D4 | eMMC | 1.8V\n | W34 | EMMC_CMD | eMMC | 1.8V\n | W33 | EMMC_D1 | eMMC | 1.8V\n | W32 | EMMC_D6 | eMMC | 1.8V\n | V33 | EMMC_D7 | eMMC | 1.8V\n | V32 | EMMC_D2 | eMMC | 1.8V\n | V34 | EMMC_CLKOUT | eMMC | 1.8V\n | AA34 | EMMC_RSTN | eMMC | 1.8V\n | AA33 | EMMC_D3技 | eMMC | 1.8V\n- | AA32 | EMMC_D5 | eMMC | 1.8V\nB173 | - | PMIC_PWRONn/4V0 | PMIC | 4.0V\nB171 | M31 | NPOR/1V8 | RESET | 1.8V\n | K30 | SPI2_CS0_M2 | SP12 | 1.8V\n | N30 | SPI2_MOSI_M2 | SP12 | 1.8V\n | N31 | SPI2_CLK_M2 | SP12 | 1.8V\n | R32 | PMIC_SLEEP1/GPIO0_A2_d | PMIC | 1.8V\n | T30 | PMIC_SLEEP5/GPIO0_C3_d | PMIC | 1.8V\n | M30 | PMIC_INT_L/GPIO0_A7_u | PMIC | 1.8V\nB3 | W30 | I2C0_SCL_M2 | 12C0 | 1.8V\nB5 | W29 | I2C0_SDA_M2 | 12CO | 1.8V\nB9 | V29 | I2C1_SCL_M2 | 12C1 | 1.8V\nB7 | V28 | I2C1_SDA_M2 | 12C1 | 1.8V\n | U32 | PMIC_SLEEP3/GPIO0_C1_d/NPU_VSEL | PMIC | 1.8V\n | R31 | PMIC_SLEEP2/GPIO0_A3_d/CPU_BIG0_VSEL | PMIC | 1.8V\n | W28 | PMIC_SLEEP6//GPIO0_D6_d/CPU_BIG1_VSEL | PMIC | 1.8V\nA69 | AK15 | SARADC_IN5 | BOARD IDCONFIG | ",
+          "page": 33,
+          "img_path": "/root/autodl-fs/bookrag/BookRAG/somdata/output/som-001/auto/images/b233562eb6acd869dae08e7120b54c20113b0b348f612bf2e1471f27d67d17bb.jpg",
+          "table_body": "<table><tr><td colspan=\"1\" rowspan=\"1\">B2B引脚号</td><td colspan=\"1\" rowspan=\"1\">芯片引脚号</td><td colspan=\"1\" rowspan=\"1\">芯片引脚名称</td><td colspan=\"1\" rowspan=\"1\">引脚功能</td><td colspan=\"1\" rowspan=\"1\">参考电平</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">R34</td><td colspan=\"1\" rowspan=\"1\">XIN_24M</td><td colspan=\"1\" rowspan=\"1\">OSC(Y1)</td><td colspan=\"1\" rowspan=\"1\"></td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">T34</td><td colspan=\"1\" rowspan=\"1\">XOUT_24M</td><td colspan=\"1\" rowspan=\"1\">OSC(Y1)</td><td colspan=\"1\" rowspan=\"1\"></td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">AE30</td><td colspan=\"1\" rowspan=\"1\">GPI02_C5_D</td><td colspan=\"1\" rowspan=\"1\">SOM LED1</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">T32</td><td colspan=\"1\" rowspan=\"1\">GPI00_C2_D</td><td colspan=\"1\" rowspan=\"1\"> SOM LED2</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">Y34</td><td colspan=\"1\" rowspan=\"1\">EMMC_DATA_STROBE</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">Y33</td><td colspan=\"1\" rowspan=\"1\">EMMC_D0</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">技</td><td colspan=\"1\" rowspan=\"1\">Y32</td><td colspan=\"1\" rowspan=\"1\">包EMMC_D4</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">W34</td><td colspan=\"1\" rowspan=\"1\">EMMC_CMD</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">W33</td><td colspan=\"1\" rowspan=\"1\">EMMC_D1</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">W32</td><td colspan=\"1\" rowspan=\"1\">EMMC_D6</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">V33</td><td colspan=\"1\" rowspan=\"1\">EMMC_D7</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">V32</td><td colspan=\"1\" rowspan=\"1\">EMMC_D2</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">V34</td><td colspan=\"1\" rowspan=\"1\">EMMC_CLKOUT</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">AA34</td><td colspan=\"1\" rowspan=\"1\">EMMC_RSTN</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">AA33</td><td colspan=\"1\" rowspan=\"1\">EMMC_D3技</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">-</td><td colspan=\"1\" rowspan=\"1\">AA32</td><td colspan=\"1\" rowspan=\"1\">EMMC_D5</td><td colspan=\"1\" rowspan=\"1\">eMMC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">B173</td><td colspan=\"1\" rowspan=\"1\">-</td><td colspan=\"1\" rowspan=\"1\">PMIC_PWRONn/4V0</td><td colspan=\"1\" rowspan=\"1\">PMIC</td><td colspan=\"1\" rowspan=\"1\">4.0V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">B171</td><td colspan=\"1\" rowspan=\"1\">M31</td><td colspan=\"1\" rowspan=\"1\">NPOR/1V8</td><td colspan=\"1\" rowspan=\"1\">RESET</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">K30</td><td colspan=\"1\" rowspan=\"1\">SPI2_CS0_M2</td><td colspan=\"1\" rowspan=\"1\">SP12</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">N30</td><td colspan=\"1\" rowspan=\"1\">SPI2_MOSI_M2</td><td colspan=\"1\" rowspan=\"1\">SP12</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">N31</td><td colspan=\"1\" rowspan=\"1\">SPI2_CLK_M2</td><td colspan=\"1\" rowspan=\"1\">SP12</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">R32</td><td colspan=\"1\" rowspan=\"1\">PMIC_SLEEP1/GPIO0_A2_d</td><td colspan=\"1\" rowspan=\"1\">PMIC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">T30</td><td colspan=\"1\" rowspan=\"1\">PMIC_SLEEP5/GPIO0_C3_d</td><td colspan=\"1\" rowspan=\"1\">PMIC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">M30</td><td colspan=\"1\" rowspan=\"1\">PMIC_INT_L/GPIO0_A7_u</td><td colspan=\"1\" rowspan=\"1\">PMIC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">B3</td><td colspan=\"1\" rowspan=\"1\">W30</td><td colspan=\"1\" rowspan=\"1\">I2C0_SCL_M2</td><td colspan=\"1\" rowspan=\"1\">12C0</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">B5</td><td colspan=\"1\" rowspan=\"1\">W29</td><td colspan=\"1\" rowspan=\"1\">I2C0_SDA_M2</td><td colspan=\"1\" rowspan=\"1\">12CO</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">B9</td><td colspan=\"1\" rowspan=\"1\">V29</td><td colspan=\"1\" rowspan=\"1\">I2C1_SCL_M2</td><td colspan=\"1\" rowspan=\"1\">12C1</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">B7</td><td colspan=\"1\" rowspan=\"1\">V28</td><td colspan=\"1\" rowspan=\"1\">I2C1_SDA_M2</td><td colspan=\"1\" rowspan=\"1\">12C1</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">U32</td><td colspan=\"1\" rowspan=\"1\">PMIC_SLEEP3/GPIO0_C1_d/NPU_VSEL</td><td colspan=\"1\" rowspan=\"1\">PMIC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">R31</td><td colspan=\"1\" rowspan=\"1\">PMIC_SLEEP2/GPIO0_A3_d/CPU_BIG0_VSEL</td><td colspan=\"1\" rowspan=\"1\">PMIC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\"></td><td colspan=\"1\" rowspan=\"1\">W28</td><td colspan=\"1\" rowspan=\"1\">PMIC_SLEEP6//GPIO0_D6_d/CPU_BIG1_VSEL</td><td colspan=\"1\" rowspan=\"1\">PMIC</td><td colspan=\"1\" rowspan=\"1\">1.8V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">A69</td><td colspan=\"1\" rowspan=\"1\">AK15</td><td colspan=\"1\" rowspan=\"1\">SARADC_IN5</td><td colspan=\"1\" rowspan=\"1\">BOARD IDCONFIG</td><td colspan=\"1\" rowspan=\"1\"></td></tr></table>",
+          "caption": "表8",
+          "footnote": ""
+        },
+        {
+          "index_id": 313,
+          "type": "text",
+          "content": "PMIC_PWRONn/4VO 为核心板板载 PMIC 的开关机控制引脚,在PMIC 内部已上拉45K电阻至4.OV，默认情况请悬空处理。长按 PWRON 按键6秒，PMIC将会关机；再次短按PWRON 按键0.5 秒，PMIC 将切换为开机。 剑龙",
+          "page": 56
+        },
+        {
+          "index_id": 317,
+          "type": "text",
+          "content": "评估底板通过SDMMC总线引出Micro SD 接口，主要用于调试过程中使用系统启动卡来启动系统，或批量生产时基于Micro SD卡快速固化系统至eMMC，底板设计时建议保留此外设接口。",
+          "page": 56
+        }
+      ],
+      "iteration_image_nodes": [],
+      "iteration_graph_nodes": [
+        {
+          "entity_name": "底板",
+          "entity_type": "PRODUCT"
+        },
+        {
+          "entity_name": "5底板设计注意事项",
+          "entity_type": "SECTION_TITLE"
+        },
+        {
+          "entity_name": "i2c1",
+          "entity_type": "PRODUCT"
+        },
+        {
+          "entity_name": "i2c0",
+          "entity_type": "PRODUCT"
+        },
+        {
+          "entity_name": "pmic",
+          "entity_type": "PRODUCT"
+        }
+      ],
+      "partial_answers": [
+        {
+          "source": "Text Chunk 1",
+          "content": "在进行底板设计时，官方建议尽量选用其他I2C总线而不是I2C0和I2C1，具体原因如下：\n\n1. **I2C0和I2C1已连接至PMIC电源管理芯片**：根据文档内容，I2C0和I2C1总线已被用于连接核心板的PMIC（电源管理芯片）。这意味着这两个I2C总线在系统中承担了关键的电源管理功能，例如控制电源开关、电压调节等。\n\n2. **系统稳定性考虑**：由于I2C0和I2C1与PMIC直接相关，如果在底板设计中使用这些总线，可能会干扰PMIC的正常工作，从而影响系统的稳定性。因此，为了确保系统的稳定性和可靠性，建议在底板设计中尽量使用其他未被占用的I2C总线。\n\n3. **避免资源冲突**：I2C0和I2C1已经被核心板内部使用，如果底板设计中也使用这些总线，可能会导致资源冲突，影响通信的可靠性。\n\n综上所述，为了确保系统的稳定性、避免资源冲突以及保证PMIC的正常工作，官方建议在底板设计时尽量选用其他I2C总线而不是I2C0和I2C1。"
+        }
+      ],
+      "generated_answer": "在进行底板设计时，官方建议尽量选用其他I2C总线而不是I2C0和I2C1，具体原因如下：\n\n1. **I2C0和I2C1已连接至PMIC电源管理芯片**：根据文档内容，I2C0和I2C1总线已被用于连接核心板的PMIC（电源管理芯片）。这意味着这两个I2C总线在系统中承担了关键的电源管理功能，例如控制电源开关、电压调节等。\n\n2. **系统稳定性考虑**：由于I2C0和I2C1与PMIC直接相关，如果在底板设计中使用这些总线，可能会干扰PMIC的正常工作，从而影响系统的稳定性。因此，为了确保系统的稳定性和可靠性，建议在底板设计中尽量使用其他未被占用的I2C总线。\n\n3. **避免资源冲突**：I2C0和I2C1已经被核心板内部使用，如果底板设计中也使用这些总线，可能会导致资源冲突，影响通信的可靠性。\n\n综上所述，为了确保系统的稳定性、避免资源冲突以及保证PMIC的正常工作，官方建议在底板设计时尽量选用其他I2C总线而不是I2C0和I2C1。"
+    }
+  ],
+  "final_answer": "Final Answer:  \n在进行底板设计时，官方建议尽量选用其他I2C总线而不是I2C0和I2C1，主要出于以下原因：  \n\n1. **I2C0和I2C1已连接至PMIC电源管理芯片**：这两个I2C总线已被用于连接核心板的PMIC（电源管理芯片），负责关键的电源管理功能，如电源开关控制、电压调节等。  \n\n2. **系统稳定性考虑**：由于I2C0和I2C1与PMIC直接相关，若在底板设计中使用这些总线，可能会干扰PMIC的正常工作，进而影响整个系统的稳定性与可靠性。  \n\n3. **避免资源冲突**：I2C0和I2C1已被核心板内部占用，若底板设计中也使用这些总线，可能导致通信资源冲突，影响数据传输的可靠性。  \n\n综上所述，为确保系统稳定运行、避免资源冲突并保障PMIC的正常工作，官方建议在底板设计时尽量选用其他未被占用的I2C总线。"
+}

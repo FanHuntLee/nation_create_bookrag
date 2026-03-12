@@ -1,0 +1,285 @@
+{
+  "entities": [
+    {
+      "entity_name": "表10",
+      "entity_type": "TABLE",
+      "description": "A table referenced as 'Table 10' with no column headers provided.",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "entity_name": "b2b 引脚号",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "B2B 引脚号，表示连接器或芯片之间的物理引脚编号，用于标识特定功能的连接点。",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "entity_name": "芯片引脚号",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "芯片引脚号，表示芯片上的物理引脚编号，用于标识特定功能的连接点。",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "entity_name": "芯片引脚名称",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "芯片引脚名称，表示芯片上引脚的功能名称，用于标识特定功能的连接点。",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "entity_name": "引脚功能",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "引脚功能，表示引脚在电路中的具体功能，如数据传输、电源供应等。",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "entity_name": "走线长度/mil",
+      "entity_type": "MEASUREMENT",
+      "description": "走线长度，以mil为单位，表示电路板上信号线的物理长度。",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "entity_name": "阻抗说明",
+      "entity_type": "MEASUREMENT",
+      "description": "阻抗说明，表示电路中信号线的阻抗特性，通常用于确保信号完整性。",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "entity_name": "ap2",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "AP2 是芯片上的一个引脚编号，用于标识特定功能的连接点。",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "entity_name": "hdmi_tx1_sbdn/edp_tx1_auxn",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "HDMI_TX1_SBDN/EDP_TX1_AUXN 是芯片上的一个引脚名称，用于标识 HDMI 和 eDP 传输的辅助信号。",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "entity_name": "edp",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "eDP 是一种显示接口标准，用于连接芯片和显示器，支持高速数据传输。",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "entity_name": "差分100ohm",
+      "entity_type": "MEASUREMENT",
+      "description": "差分100ohm 表示差分信号线的阻抗值，用于确保信号传输的稳定性。",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "entity_name": "差分1000ohm",
+      "entity_type": "MEASUREMENT",
+      "description": "差分1000ohm 表示差分信号线的阻抗值，用于确保信号传输的稳定性。",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "entity_name": "ap4",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "AP4 是芯片上的一个引脚编号，用于标识特定功能的连接点。",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "entity_name": "hdmi_tx1_don/edp_tx1_d0n",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "HDMI_TX1_DON/EDP_TX1_D0N 是芯片上的一个引脚名称，用于标识 HDMI 和 eDP 传输的数据信号。",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "entity_name": "hdmi_rx_d2n",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "HDMI_RX_D2N 是芯片上的一个引脚名称，用于标识 HDMI 接收的差分数据信号。",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "entity_name": "hdmi_in",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "HDMI_IN 表示 HDMI 接收接口，用于接收 HDMI 信号。",
+      "source_ids": [
+        191
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "表10",
+      "tgt_entity_name": "b2b 引脚号",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表10' contains data about 'B2B 引脚号'.",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "src_entity_name": "表10",
+      "tgt_entity_name": "芯片引脚号",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表10' contains data about '芯片引脚号'.",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "src_entity_name": "表10",
+      "tgt_entity_name": "芯片引脚名称",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表10' contains data about '芯片引脚名称'.",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "src_entity_name": "表10",
+      "tgt_entity_name": "引脚功能",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表10' contains data about '引脚功能'.",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "src_entity_name": "表10",
+      "tgt_entity_name": "走线长度/mil",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表10' contains data about '走线长度/mil'.",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "src_entity_name": "表10",
+      "tgt_entity_name": "阻抗说明",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表10' contains data about '阻抗说明'.",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "src_entity_name": "表10",
+      "tgt_entity_name": "ap2",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表10' contains data about 'AP2'.",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "src_entity_name": "表10",
+      "tgt_entity_name": "hdmi_tx1_sbdn/edp_tx1_auxn",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表10' contains data about 'HDMI_TX1_SBDN/EDP_TX1_AUXN'.",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "src_entity_name": "表10",
+      "tgt_entity_name": "edp",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表10' contains data about 'eDP'.",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "src_entity_name": "表10",
+      "tgt_entity_name": "差分100ohm",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表10' contains data about '差分100ohm'.",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "src_entity_name": "表10",
+      "tgt_entity_name": "差分1000ohm",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表10' contains data about '差分1000ohm'.",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "src_entity_name": "表10",
+      "tgt_entity_name": "ap4",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表10' contains data about 'AP4'.",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "src_entity_name": "表10",
+      "tgt_entity_name": "hdmi_tx1_don/edp_tx1_d0n",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表10' contains data about 'HDMI_TX1_DON/EDP_TX1_D0N'.",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "src_entity_name": "表10",
+      "tgt_entity_name": "hdmi_rx_d2n",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表10' contains data about 'HDMI_RX_D2N'.",
+      "source_ids": [
+        191
+      ]
+    },
+    {
+      "src_entity_name": "表10",
+      "tgt_entity_name": "hdmi_in",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Table '表10' contains data about 'HDMI_IN'.",
+      "source_ids": [
+        191
+      ]
+    }
+  ],
+  "node_idx": 191
+}

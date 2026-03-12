@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "aarch64 linux gnu gcc",
+      "entity_type": "SOFTWARE",
+      "description": "aarch64 linux gnu gcc is a compiler tool used in the context of building software for the aarch64 architecture",
+      "source_ids": [
+        157
+      ]
+    },
+    {
+      "entity_name": "host make",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        157
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "host make",
+      "tgt_entity_name": "aarch64 linux gnu gcc",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "host make uses aarch64 linux gnu gcc as the compiler for building software",
+      "source_ids": [
+        157
+      ]
+    }
+  ],
+  "node_idx": 157
+}

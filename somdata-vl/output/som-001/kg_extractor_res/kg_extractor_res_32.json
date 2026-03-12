@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "entity_name": "前言",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of the 'SOM-TL3588工业核心板硬件说明书', this section provides an introduction and overview of the document, setting the context for the hardware resources and technical details that follow.",
+      "source_ids": [
+        32
+      ]
+    }
+  ],
+  "relations": [],
+  "node_idx": 32
+}

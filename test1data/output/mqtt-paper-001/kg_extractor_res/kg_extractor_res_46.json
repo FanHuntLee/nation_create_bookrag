@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "1.2应用场景",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of '1 MQTT通信协议简介', this section outlines the practical applications and use cases of the MQTT communication protocol.",
+      "source_ids": [
+        46
+      ]
+    },
+    {
+      "entity_name": "应用场景",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "Refers to the various real-world applications and scenarios where the MQTT communication protocol is utilized, as discussed in section 1.2.",
+      "source_ids": [
+        46
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "应用场景",
+      "tgt_entity_name": "1.2应用场景",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '应用场景' is a primary topic of section 1.2.",
+      "source_ids": [
+        46
+      ]
+    }
+  ],
+  "node_idx": 46
+}

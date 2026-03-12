@@ -1,0 +1,89 @@
+{
+  "entities": [
+    {
+      "entity_name": "mqtt",
+      "entity_type": "TECHNOLOGY",
+      "description": "mqtt     is a technology provided by the company for development cases  indicating it is a communication protocol used in software development",
+      "source_ids": [
+        30
+      ]
+    },
+    {
+      "entity_name": "mqtt client",
+      "entity_type": "PRODUCT",
+      "description": "mqtt client is a product provided by the company as part of the mqtt communication protocol development case  indicating it is a specific implementation or component",
+      "source_ids": [
+        30
+      ]
+    },
+    {
+      "entity_name": "mqtt sinewave pub",
+      "entity_type": "PRODUCT",
+      "description": "mqtt sinewave pub is a product provided by the company as part of the mqtt communication protocol development case  indicating it is a specific implementation or component",
+      "source_ids": [
+        30
+      ]
+    },
+    {
+      "entity_name": "4 demo mqtt demos",
+      "entity_type": "DIRECTORY",
+      "description": "4      demo mqtt demos  is a directory where the mqtt communication protocol development cases are located  indicating it is a file organization structure",
+      "source_ids": [
+        30
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "mqtt",
+      "tgt_entity_name": "mqtt client",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "mqtt client is a product related to the mqtt communication protocol  indicating it is a specific implementation or component of the protocol",
+      "source_ids": [
+        30
+      ]
+    },
+    {
+      "src_entity_name": "mqtt",
+      "tgt_entity_name": "mqtt sinewave pub",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "mqtt sinewave pub is a product related to the mqtt communication protocol  indicating it is a specific implementation or component of the protocol",
+      "source_ids": [
+        30
+      ]
+    },
+    {
+      "src_entity_name": "mqtt",
+      "tgt_entity_name": "4 demo mqtt demos",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "the mqtt communication protocol development cases are located in the directory 4      demo mqtt demos   indicating it is the storage location for these products",
+      "source_ids": [
+        30
+      ]
+    },
+    {
+      "src_entity_name": "mqtt client",
+      "tgt_entity_name": "4 demo mqtt demos",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "mqtt client is located in the directory 4      demo mqtt demos   indicating it is stored within this file organization structure",
+      "source_ids": [
+        30
+      ]
+    },
+    {
+      "src_entity_name": "mqtt sinewave pub",
+      "tgt_entity_name": "4 demo mqtt demos",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "mqtt sinewave pub is located in the directory 4      demo mqtt demos   indicating it is stored within this file organization structure",
+      "source_ids": [
+        30
+      ]
+    }
+  ],
+  "node_idx": 30
+}

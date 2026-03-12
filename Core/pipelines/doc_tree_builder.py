@@ -122,6 +122,18 @@ def build_tree_from_pdf(cfg: SystemConfig, reforce: bool = False) -> DocumentTre
         # tmp pdf_list save for fast test
         log.info(f"Content extracted and saved to {tmp_save_path}")
 
+    # Clean surrogate characters from PDF content
+    import re
+    def _clean_surrogates(obj):
+        if isinstance(obj, str):
+            return re.sub(r'[\ud800-\udfff]', '', obj)
+        elif isinstance(obj, dict):
+            return {k: _clean_surrogates(v) for k, v in obj.items()}
+        elif isinstance(obj, list):
+            return [_clean_surrogates(item) for item in obj]
+        return obj
+    pdf_list = _clean_surrogates(pdf_list)
+
     llm = LLM(cfg.llm)
     vlm = VLM(cfg.vlm) if cfg.tree.use_vlm else None
 

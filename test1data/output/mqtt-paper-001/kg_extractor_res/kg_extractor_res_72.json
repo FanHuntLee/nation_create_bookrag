@@ -1,0 +1,105 @@
+{
+  "entities": [
+    {
+      "entity_name": "mosquitto sub",
+      "entity_type": "SOFTWARE",
+      "description": "mosquitto sub is a command line tool used to subscribe to mqtt topics",
+      "source_ids": [
+        72
+      ]
+    },
+    {
+      "entity_name": "mqtt",
+      "entity_type": "TECHNOLOGY",
+      "description": "mqtt is a protocol used for messaging between devices  mentioned in the context of subscription and publishing",
+      "source_ids": [
+        72
+      ]
+    },
+    {
+      "entity_name": "broker hivemq com",
+      "entity_type": "LOCATION",
+      "description": "broker hivemq com is the hostname of the mqtt server being used for communication",
+      "source_ids": [
+        72
+      ]
+    },
+    {
+      "entity_name": "test data",
+      "entity_type": "EVENT",
+      "description": "test data is an mqtt topic that can be customized for message subscription",
+      "source_ids": [
+        72
+      ]
+    },
+    {
+      "entity_name": "tcp",
+      "entity_type": "TECHNOLOGY",
+      "description": "tcp is a protocol used for establishing communication over the network  mentioned in the context of mqtt port configuration",
+      "source_ids": [
+        72
+      ]
+    },
+    {
+      "entity_name": "command line",
+      "entity_type": "SOFTWARE",
+      "description": "command line refers to the interface used to execute the mosquitto sub tool",
+      "source_ids": [
+        72
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "mosquitto sub",
+      "tgt_entity_name": "mqtt",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "mosquitto sub is a tool that operates within the mqtt protocol framework",
+      "source_ids": [
+        72
+      ]
+    },
+    {
+      "src_entity_name": "mosquitto sub",
+      "tgt_entity_name": "broker hivemq com",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "mosquitto sub connects to the mqtt server at broker hivemq com",
+      "source_ids": [
+        72
+      ]
+    },
+    {
+      "src_entity_name": "mosquitto sub",
+      "tgt_entity_name": "test data",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "mosquitto sub subscribes to the mqtt topic test data",
+      "source_ids": [
+        72
+      ]
+    },
+    {
+      "src_entity_name": "broker hivemq com",
+      "tgt_entity_name": "mqtt",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "broker hivemq com is the server that hosts the mqtt protocol",
+      "source_ids": [
+        72
+      ]
+    },
+    {
+      "src_entity_name": "tcp",
+      "tgt_entity_name": "mqtt",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "tcp is the protocol used to establish the connection for mqtt communication",
+      "source_ids": [
+        72
+      ]
+    }
+  ],
+  "node_idx": 72
+}

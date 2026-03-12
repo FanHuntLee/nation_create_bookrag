@@ -1,0 +1,51 @@
+{
+  "entities": [
+    {
+      "entity_name": "windows 7 64bit",
+      "entity_type": "PRODUCT",
+      "description": "windows 7 64bit is a version of the windows operating system mentioned as part of the development environment",
+      "source_ids": [
+        23
+      ]
+    },
+    {
+      "entity_name": "windows 10 64bit",
+      "entity_type": "PRODUCT",
+      "description": "windows 10 64bit is a version of the windows operating system mentioned as part of the development environment",
+      "source_ids": [
+        23
+      ]
+    },
+    {
+      "entity_name": "windows",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        23
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "windows",
+      "tgt_entity_name": "windows 7 64bit",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "windows      includes windows 7 64bit as one of the operating systems used",
+      "source_ids": [
+        23
+      ]
+    },
+    {
+      "src_entity_name": "windows",
+      "tgt_entity_name": "windows 10 64bit",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "windows      includes windows 10 64bit as one of the operating systems used",
+      "source_ids": [
+        23
+      ]
+    }
+  ],
+  "node_idx": 23
+}

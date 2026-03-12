@@ -1,0 +1,61 @@
+{
+  "entities": [
+    {
+      "entity_name": "bin",
+      "entity_type": "DIRECTORY",
+      "description": "bin                 mqtt sinewave pub",
+      "source_ids": [
+        131
+      ]
+    },
+    {
+      "entity_name": "mqtt sinewave pub",
+      "entity_type": "SOFTWARE",
+      "description": "mqtt sinewave pub",
+      "source_ids": [
+        131
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        131
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "bin",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "bin     mqtt sinewave pub",
+      "source_ids": [
+        131
+      ]
+    },
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "mqtt sinewave pub",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "mqtt sinewave pub",
+      "source_ids": [
+        131
+      ]
+    },
+    {
+      "src_entity_name": "bin",
+      "tgt_entity_name": "mqtt sinewave pub",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "mqtt sinewave pub     bin",
+      "source_ids": [
+        131
+      ]
+    }
+  ],
+  "node_idx": 131
+}

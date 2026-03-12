@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "entity_name": "图31",
+      "entity_type": "IMAGE",
+      "description": "一张电路原理图，显示了多个电子元件、连接线和标注，用于描述电子设备的内部电路结构。",
+      "source_ids": [
+        352
+      ]
+    }
+  ],
+  "relations": [],
+  "node_idx": 352
+}

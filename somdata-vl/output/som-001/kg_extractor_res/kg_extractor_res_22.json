@@ -1,0 +1,177 @@
+{
+  "entities": [
+    {
+      "entity_name": "tronlong",
+      "entity_type": "ORGANIZATION",
+      "description": "tronlong is an organization mentioned as a company that specializes in creating industrial core boards",
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "entity_name": "www tronlong com",
+      "entity_type": "WEBSITE",
+      "description": "www tronlong com is the official website of tronlong  indicating the organization s online presence",
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "entity_name": "sales tronlong com",
+      "entity_type": "EMAIL_ADDRESS",
+      "description": "sales tronlong com is the sales email address for tronlong  indicating a point of contact for business inquiries",
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "entity_name": "020 8998 6280",
+      "entity_type": "PHONE_NUMBER",
+      "description": "020 8998 6280 is the main phone number for tronlong  indicating a means of direct communication",
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "entity_name": "www 51ele net",
+      "entity_type": "WEBSITE",
+      "description": "www 51ele net is a technical forum associated with tronlong  indicating a platform for technical discussions",
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "entity_name": "support tronlong com",
+      "entity_type": "EMAIL_ADDRESS",
+      "description": "support tronlong com is the technical support email address for tronlong  indicating a point of contact for technical inquiries",
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "entity_name": "020 3893 9734",
+      "entity_type": "PHONE_NUMBER",
+      "description": "020 3893 9734 is the technical hotline number for tronlong  indicating a means of direct technical communication",
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "entity_name": "5 1 1",
+      "entity_type": "DOCUMENT_SECTION",
+      "description": "5 1 1       is a section of a document related to power design  indicating a technical specification",
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "entity_name": "5 1 2",
+      "entity_type": "DOCUMENT_SECTION",
+      "description": "5 1 2       is a section of a document related to system startup  indicating a technical specification",
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "entity_name": "5 1 3",
+      "entity_type": "DOCUMENT_SECTION",
+      "description": "5 1 3       is a section of a document related to system reset signals  indicating a technical specification",
+      "source_ids": [
+        22
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "tronlong",
+      "tgt_entity_name": "www tronlong com",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "tronlong s official website is hosted at www tronlong com  indicating an online presence",
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "src_entity_name": "tronlong",
+      "tgt_entity_name": "sales tronlong com",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "tronlong s sales email address is sales tronlong com  indicating a point of contact for business inquiries",
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "src_entity_name": "tronlong",
+      "tgt_entity_name": "020 8998 6280",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "tronlong s main phone number is 020 8998 6280  indicating a means of direct communication",
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "src_entity_name": "tronlong",
+      "tgt_entity_name": "www 51ele net",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "tronlong is associated with the technical forum www 51ele net  indicating a platform for technical discussions",
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "src_entity_name": "tronlong",
+      "tgt_entity_name": "support tronlong com",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "tronlong s technical support email address is support tronlong com  indicating a point of contact for technical inquiries",
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "src_entity_name": "tronlong",
+      "tgt_entity_name": "020 3893 9734",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "tronlong s technical hotline number is 020 3893 9734  indicating a means of direct technical communication",
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "src_entity_name": "tronlong",
+      "tgt_entity_name": "5 1 1",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "tronlong is associated with the document section 5 1 1        indicating a technical specification related to power design",
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "src_entity_name": "tronlong",
+      "tgt_entity_name": "5 1 2",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "tronlong is associated with the document section 5 1 2        indicating a technical specification related to system startup",
+      "source_ids": [
+        22
+      ]
+    },
+    {
+      "src_entity_name": "tronlong",
+      "tgt_entity_name": "5 1 3",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "tronlong is associated with the document section 5 1 3        indicating a technical specification related to system reset signals",
+      "source_ids": [
+        22
+      ]
+    }
+  ],
+  "node_idx": 22
+}

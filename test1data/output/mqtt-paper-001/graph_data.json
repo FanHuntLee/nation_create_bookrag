@@ -1,0 +1,4436 @@
+{
+    "graph": {
+        "directed": false,
+        "multigraph": false,
+        "graph": {},
+        "nodes": [
+            {
+                "entity_name": "mqtt通信协议案例",
+                "entity_type": "SECTION_TITLE",
+                "description": "\"mqtt通信协议案例\"作为文档标题\"MQTT通信协议案例\"的主要部分，是该文档的引言或概述，介绍了MQTT通信协议的案例研究，可能讨论了协议的实际应用或实例。同时，作为\"3mqtt_sinewave_pub 案例\"的子部分，该节作为一个案例研究，展示了MQTT通信协议的应用，特别是聚焦于正弦波发布示例。",
+                "source_ids": [
+                    1,
+                    121
+                ],
+                "id": "Name: mqtt通信协议案例\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "revision history",
+                "entity_type": "EVENT",
+                "description": "revision history is the title of a section that indicates the document s history of changes",
+                "source_ids": [
+                    2
+                ],
+                "id": "Name: revision history\nType: EVENT"
+            },
+            {
+                "entity_name": "table 1",
+                "entity_type": "TABLE",
+                "description": "A table with three columns: Description, Draft Date, and Revision No., but no specific context or content provided in the description.",
+                "source_ids": [
+                    3
+                ],
+                "id": "Name: table 1\nType: TABLE"
+            },
+            {
+                "entity_name": "description",
+                "entity_type": "PARAMETER_OR_VARIABLE",
+                "description": "A column in the table representing a textual description or explanation of an item or entry.",
+                "source_ids": [
+                    3
+                ],
+                "id": "Name: description\nType: PARAMETER_OR_VARIABLE"
+            },
+            {
+                "entity_name": "draft date",
+                "entity_type": "DATE",
+                "description": "A column in the table representing the date when a document or item was initially drafted.",
+                "source_ids": [
+                    3
+                ],
+                "id": "Name: draft date\nType: DATE"
+            },
+            {
+                "entity_name": "revision no.",
+                "entity_type": "PARAMETER_OR_VARIABLE",
+                "description": "A column in the table representing the revision number of a document or item, indicating its version.",
+                "source_ids": [
+                    3
+                ],
+                "id": "Name: revision no.\nType: PARAMETER_OR_VARIABLE"
+            },
+            {
+                "entity_name": "2024/09/30",
+                "entity_type": "DATE",
+                "description": "A date representing the draft date of the document.",
+                "source_ids": [
+                    3
+                ],
+                "id": "Name: 2024/09/30\nType: DATE"
+            },
+            {
+                "entity_name": "v1.0",
+                "entity_type": "VERSION",
+                "description": "A version identifier for the document.",
+                "source_ids": [
+                    3
+                ],
+                "id": "Name: v1.0\nType: VERSION"
+            },
+            {
+                "entity_name": "1. 初始版本。",
+                "entity_type": "DESCRIPTION",
+                "description": "A description indicating the initial version of the document.",
+                "source_ids": [
+                    3
+                ],
+                "id": "Name: 1. 初始版本。\nType: DESCRIPTION"
+            },
+            {
+                "entity_name": "www tronlong com",
+                "entity_type": "WEBSITE",
+                "description": "www tronlong com is the official website of tronlong, serving as the primary online presence for the organization and a primary source of information. It is used for company information, sales inquiries, and providing details about their products and services. The website also indicates that it is a primary point of contact for information and is associated with messages being published through the mqtt protocol.",
+                "source_ids": [
+                    4,
+                    137,
+                    143,
+                    18,
+                    31,
+                    165,
+                    44,
+                    173,
+                    176,
+                    178,
+                    52,
+                    60,
+                    68,
+                    74,
+                    77,
+                    88,
+                    92,
+                    103,
+                    116,
+                    126
+                ],
+                "id": "Name: www tronlong com\nType: WEBSITE"
+            },
+            {
+                "entity_name": "sales tronlong com",
+                "entity_type": "EMAIL_ADDRESS",
+                "description": "\"sales tronlong com is the sales email address of the company, used for contacting the sales department and for business inquiries and customer interactions. It serves as a contact point for reaching out to the organization regarding sales inquiries and customer communication.\"",
+                "source_ids": [
+                    4,
+                    165,
+                    68,
+                    103,
+                    137,
+                    44,
+                    77,
+                    173,
+                    143,
+                    176,
+                    92,
+                    18,
+                    178,
+                    52,
+                    116,
+                    60,
+                    126,
+                    31
+                ],
+                "id": "Name: sales tronlong com\nType: EMAIL_ADDRESS"
+            },
+            {
+                "entity_name": "020 8998 6280",
+                "entity_type": "PHONE_NUMBER",
+                "description": "\"020 8998 6280 is the main phone number for the company, specifically for Tronlong, and is used for general inquiries, customer service, and general business communication, serving as the primary contact point for general contact with the organization.\"",
+                "source_ids": [
+                    4,
+                    165,
+                    68,
+                    103,
+                    137,
+                    44,
+                    77,
+                    173,
+                    143,
+                    176,
+                    92,
+                    18,
+                    178,
+                    52,
+                    116,
+                    60,
+                    126,
+                    31
+                ],
+                "id": "Name: 020 8998 6280\nType: PHONE_NUMBER"
+            },
+            {
+                "entity_name": "1 18",
+                "entity_type": "DATE",
+                "description": "1 18 is a date mentioned in the text  possibly indicating a page number or a specific date",
+                "source_ids": [
+                    4
+                ],
+                "id": "Name: 1 18\nType: DATE"
+            },
+            {
+                "entity_name": "support tronlong com",
+                "entity_type": "EMAIL_ADDRESS",
+                "description": "\"support tronlong com is the technical support email address for tronlong, used for contacting the company regarding technical issues, technical inquiries, and assistance. It serves as a contact point for resolving technical problems and is utilized for reaching out to the technical support department of the organization.\"",
+                "source_ids": [
+                    4,
+                    165,
+                    68,
+                    103,
+                    137,
+                    44,
+                    77,
+                    173,
+                    143,
+                    176,
+                    92,
+                    18,
+                    178,
+                    52,
+                    116,
+                    60,
+                    126,
+                    31
+                ],
+                "id": "Name: support tronlong com\nType: EMAIL_ADDRESS"
+            },
+            {
+                "entity_name": "020 3893 9734",
+                "entity_type": "PHONE_NUMBER",
+                "description": "\"020 3893 9734 is the technical hotline number for the company, specifically used for technical inquiries, support, and assistance. It serves as a contact point for technical support and is utilized for contacting the organization regarding technical matters. The number is associated with Tronlong and is designated as the technical hotline for the company, indicating its role in providing technical support and assistance.\"",
+                "source_ids": [
+                    4,
+                    165,
+                    68,
+                    103,
+                    137,
+                    44,
+                    77,
+                    173,
+                    143,
+                    176,
+                    92,
+                    18,
+                    178,
+                    52,
+                    116,
+                    60,
+                    126,
+                    31
+                ],
+                "id": "Name: 020 3893 9734\nType: PHONE_NUMBER"
+            },
+            {
+                "entity_name": "tronlong",
+                "entity_type": "ORGANIZATION",
+                "description": "tronlong is an organization that specializes in manufacturing industrial core boards, as indicated by their professional branding and contact information, which includes a website, sales email, and phone number, indicating it is a business entity involved in technical support and communication.",
+                "source_ids": [
+                    5,
+                    138,
+                    144,
+                    19,
+                    151,
+                    32,
+                    166,
+                    44,
+                    45,
+                    174,
+                    179,
+                    53,
+                    60,
+                    61,
+                    69,
+                    78,
+                    93,
+                    104,
+                    116,
+                    117,
+                    127
+                ],
+                "id": "Name: tronlong\nType: ORGANIZATION"
+            },
+            {
+                "entity_name": "3",
+                "entity_type": "NUMBER",
+                "description": "3 is a number that likely represents the page number or section number of the document",
+                "source_ids": [
+                    8
+                ],
+                "id": "Name: 3\nType: NUMBER"
+            },
+            {
+                "entity_name": "",
+                "entity_type": "UNKNOWN",
+                "description": "</think>\n\n\" The entity's description is not provided.\"",
+                "source_ids": [
+                    130,
+                    131,
+                    134,
+                    8,
+                    12,
+                    140,
+                    17,
+                    22,
+                    156,
+                    40,
+                    41,
+                    42,
+                    44,
+                    48,
+                    58,
+                    65,
+                    81,
+                    84,
+                    86,
+                    99,
+                    123,
+                    124
+                ],
+                "id": "Name: \nType: UNKNOWN"
+            },
+            {
+                "entity_name": "1 mqtt通信协议简介. 4",
+                "entity_type": "SECTION_TITLE",
+                "description": "As a subsection of 'MQTT通信协议简介', this section provides an expanded explanation of the MQTT communication protocol, likely covering advanced topics or detailed explanations following the introductory section.",
+                "source_ids": [
+                    9
+                ],
+                "id": "Name: 1 mqtt通信协议简介. 4\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "mqtt通信协议",
+                "entity_type": "TECHNOLOGY",
+                "description": "mqtt通信协议，即Message Queuing Telemetry Transport协议，是一种轻量级的消息传递协议，专为在受限环境中进行通信而设计。该协议具有低开销、低带宽占用、简单易实现的特点，适用于物联网和小型设备，其消息格式简洁紧凑，适合在带宽有限、延迟较高的网络环境中使用。mqtt通信协议被广泛应用于设备间的通信，包括评估板与上位机之间的数据传输，以及在客户端实现和订阅发布机制中的应用。其版本如5.0和3.1.1在文本中被提及，同时支持通过命令行界面指定服务器、端口、模式、主题和消息等参数。该协议在多个开发案例中被使用，例如在tl3588 evm评估板和公共mqtt hivemq服务器与Ubuntu网页程序之间的通信中，均体现了其作为可靠、实时的消息传递协议的重要性。",
+                "source_ids": [
+                    130,
+                    9,
+                    140,
+                    22,
+                    30,
+                    34,
+                    36,
+                    38,
+                    39,
+                    47,
+                    55,
+                    57,
+                    60,
+                    72,
+                    75,
+                    84,
+                    88,
+                    121,
+                    123
+                ],
+                "id": "Name: mqtt通信协议\nType: TECHNOLOGY"
+            },
+            {
+                "entity_name": "简介",
+                "entity_type": "ACADEMIC_SUBJECT",
+                "description": "Refers to an introductory or explanatory section about the MQTT communication protocol, which is the focus of this section.",
+                "source_ids": [
+                    9
+                ],
+                "id": "Name: 简介\nType: ACADEMIC_SUBJECT"
+            },
+            {
+                "entity_name": "mosquitto",
+                "entity_type": "SOFTWARE",
+                "description": "mosquitto is an open-source MQTT message broker server software that provides a lightweight publish-subscribe messaging paradigm, used for publishing and subscribing to messages in IoT and messaging systems. It is discussed in section 1.3 and is a tool mentioned in the text related to installation and application scenarios. mosquitto sub is a command line tool used to subscribe to MQTT topics, and mosquitto is a product mentioned in the text, likely referring to a software or system instance.",
+                "source_ids": [
+                    64,
+                    160,
+                    72,
+                    10,
+                    108,
+                    49,
+                    50
+                ],
+                "id": "Name: mosquitto\nType: SOFTWARE"
+            },
+            {
+                "entity_name": "2mqtt client",
+                "entity_type": "PRODUCT",
+                "description": "2mqtt client is a product mentioned in the text  likely related to a case study or example",
+                "source_ids": [
+                    11
+                ],
+                "id": "Name: 2mqtt client\nType: PRODUCT"
+            },
+            {
+                "entity_name": "3 1",
+                "entity_type": "SECTION_TITLE",
+                "description": "3 1 is a section title indicating the beginning of a case description section",
+                "source_ids": [
+                    16
+                ],
+                "id": "Name: 3 1\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "12",
+                "entity_type": "NUMBER",
+                "description": "12 is a number likely indicating the page number or a count in the document",
+                "source_ids": [
+                    16
+                ],
+                "id": "Name: 12\nType: NUMBER"
+            },
+            {
+                "entity_name": "3 2",
+                "entity_type": "SECTION_TITLE",
+                "description": "\"3 2 is a section title indicating the beginning of a case testing section. As a subsection of '2mqtt_client 案例', this section outlines the testing procedures and validation steps for the MQTT client implementation, likely including setup, execution, and results analysis.\"",
+                "source_ids": [
+                    16,
+                    63
+                ],
+                "id": "Name: 3 2\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "3 3",
+                "entity_type": "SECTION_TITLE",
+                "description": "3 3 is a section title indicating the beginning of a case compilation section",
+                "source_ids": [
+                    16
+                ],
+                "id": "Name: 3 3\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "15",
+                "entity_type": "NUMBER",
+                "description": "15 is a number likely indicating the page number or a count in the document",
+                "source_ids": [
+                    16
+                ],
+                "id": "Name: 15\nType: NUMBER"
+            },
+            {
+                "entity_name": "3 4",
+                "entity_type": "SECTION_TITLE",
+                "description": "3 4 is a section title indicating the beginning of a key code section",
+                "source_ids": [
+                    16
+                ],
+                "id": "Name: 3 4\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "16",
+                "entity_type": "NUMBER",
+                "description": "16 is a number likely indicating the page number or a count in the document",
+                "source_ids": [
+                    16
+                ],
+                "id": "Name: 16\nType: NUMBER"
+            },
+            {
+                "entity_name": "2 18",
+                "entity_type": "DATE",
+                "description": "2 18 is a date mentioned in the text  possibly indicating a page number or a specific date",
+                "source_ids": [
+                    18
+                ],
+                "id": "Name: 2 18\nType: DATE"
+            },
+            {
+                "entity_name": "tl3588 evm",
+                "entity_type": "PRODUCT",
+                "description": "tl3588 evm is a product  specifically an evaluation board  that is the focus of the development case described in the text",
+                "source_ids": [
+                    22
+                ],
+                "id": "Name: tl3588 evm\nType: PRODUCT"
+            },
+            {
+                "entity_name": "windows 7 64bit",
+                "entity_type": "PRODUCT",
+                "description": "windows 7 64bit is a version of the windows operating system mentioned as part of the development environment",
+                "source_ids": [
+                    23
+                ],
+                "id": "Name: windows 7 64bit\nType: PRODUCT"
+            },
+            {
+                "entity_name": "windows 10 64bit",
+                "entity_type": "PRODUCT",
+                "description": "windows 10 64bit is a version of the windows operating system mentioned as part of the development environment",
+                "source_ids": [
+                    23
+                ],
+                "id": "Name: windows 10 64bit\nType: PRODUCT"
+            },
+            {
+                "entity_name": "windows",
+                "entity_type": "UNKNOWN",
+                "description": "",
+                "source_ids": [
+                    23
+                ],
+                "id": "Name: windows\nType: UNKNOWN"
+            },
+            {
+                "entity_name": "vmware",
+                "entity_type": "PRODUCT",
+                "description": "vmware is a product mentioned in the text  specifically version 16 2 5 of a virtual machine software",
+                "source_ids": [
+                    24
+                ],
+                "id": "Name: vmware\nType: PRODUCT"
+            },
+            {
+                "entity_name": "16 2 5",
+                "entity_type": "VERSION",
+                "description": "16 2 5 is a version number associated with the vmware product  indicating a specific release",
+                "source_ids": [
+                    24
+                ],
+                "id": "Name: 16 2 5\nType: VERSION"
+            },
+            {
+                "entity_name": "linux",
+                "entity_type": "SOFTWARE",
+                "description": "linux is a software development environment mentioned in the text  indicating its use in a specific operating system context",
+                "source_ids": [
+                    25
+                ],
+                "id": "Name: linux\nType: SOFTWARE"
+            },
+            {
+                "entity_name": "ubuntu20 04 6",
+                "entity_type": "SOFTWARE",
+                "description": "ubuntu20 04 6 is a specific version of the ubuntu operating system mentioned as part of the development environment",
+                "source_ids": [
+                    25
+                ],
+                "id": "Name: ubuntu20 04 6\nType: SOFTWARE"
+            },
+            {
+                "entity_name": "64bit",
+                "entity_type": "MEASUREMENT",
+                "description": "64bit refers to the architecture type of the operating system mentioned in the text",
+                "source_ids": [
+                    25
+                ],
+                "id": "Name: 64bit\nType: MEASUREMENT"
+            },
+            {
+                "entity_name": "u boot",
+                "entity_type": "SOFTWARE",
+                "description": "u boot is a software system mentioned in the text  indicating it is a type of software or program",
+                "source_ids": [
+                    26
+                ],
+                "id": "Name: u boot\nType: SOFTWARE"
+            },
+            {
+                "entity_name": "u bo0t 2017 09",
+                "entity_type": "PRODUCT",
+                "description": "u bo0t 2017 09 is a product version of u boot  indicating it is a specific release or iteration of the software",
+                "source_ids": [
+                    26
+                ],
+                "id": "Name: u bo0t 2017 09\nType: PRODUCT"
+            },
+            {
+                "entity_name": "linux 5 10 160",
+                "entity_type": "PRODUCT",
+                "description": "linux 5 10 160 is a version of the linux operating system kernel mentioned in the text",
+                "source_ids": [
+                    27
+                ],
+                "id": "Name: linux 5 10 160\nType: PRODUCT"
+            },
+            {
+                "entity_name": "linux rt 5 10 160",
+                "entity_type": "PRODUCT",
+                "description": "linux rt 5 10 160 is a real time variant of the linux operating system kernel mentioned in the text",
+                "source_ids": [
+                    27
+                ],
+                "id": "Name: linux rt 5 10 160\nType: PRODUCT"
+            },
+            {
+                "entity_name": "debian",
+                "entity_type": "ORGANIZATION",
+                "description": "debian is an organization associated with the release of debian 11",
+                "source_ids": [
+                    28
+                ],
+                "id": "Name: debian\nType: ORGANIZATION"
+            },
+            {
+                "entity_name": "debian 11",
+                "entity_type": "PRODUCT",
+                "description": "debian 11 is a product released by debian  indicating a specific version of the organization s software",
+                "source_ids": [
+                    28
+                ],
+                "id": "Name: debian 11\nType: PRODUCT"
+            },
+            {
+                "entity_name": "linuxsdk",
+                "entity_type": "PRODUCT",
+                "description": "linuxsdk is a product that is based on the rk3588 linux release v1 2 1 20230720 version, indicating it is a software development kit. It is a software product that needs to be compiled before proceeding with the case setup, indicating it is a key component of the process. As mentioned in the reference manual, linuxsdk is a product that needs to be compiled before proceeding with the task.",
+                "source_ids": [
+                    147,
+                    29,
+                    95
+                ],
+                "id": "Name: linuxsdk\nType: PRODUCT"
+            },
+            {
+                "entity_name": "rk3588 linux release v1 2 1 20230720",
+                "entity_type": "PRODUCT",
+                "description": "rk3588 linux release v1 2 1 20230720 is a version of a linux release used as the foundation for linuxsdk  indicating it is a specific software build",
+                "source_ids": [
+                    29
+                ],
+                "id": "Name: rk3588 linux release v1 2 1 20230720\nType: PRODUCT"
+            },
+            {
+                "entity_name": "4 demo mqtt demos",
+                "entity_type": "DIRECTORY",
+                "description": "4      demo mqtt demos  is a directory where the mqtt communication protocol development cases are located  indicating it is a file organization structure",
+                "source_ids": [
+                    30
+                ],
+                "id": "Name: 4 demo mqtt demos\nType: DIRECTORY"
+            },
+            {
+                "entity_name": "3 18",
+                "entity_type": "DATE",
+                "description": "3 18 is a date mentioned in the text  possibly indicating a specific day or event",
+                "source_ids": [
+                    31
+                ],
+                "id": "Name: 3 18\nType: DATE"
+            },
+            {
+                "entity_name": "1 mqtt通信协议简介",
+                "entity_type": "SECTION_TITLE",
+                "description": "As a subsection of 'MQTT通信协议案例', this section provides an introduction to the MQTT communication protocol, explaining its purpose, structure, and key features.",
+                "source_ids": [
+                    34
+                ],
+                "id": "Name: 1 mqtt通信协议简介\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "简介",
+                "entity_type": "SECTION_TITLE",
+                "description": "Refers to the introductory section within the document that outlines the fundamental aspects of the MQTT communication protocol.",
+                "source_ids": [
+                    34
+                ],
+                "id": "Name: 简介\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "1.1概述",
+                "entity_type": "SECTION_TITLE",
+                "description": "As a subsection of 'MQTT通信协议简介', this section provides an overview of the MQTT communication protocol, including its general principles and foundational concepts.",
+                "source_ids": [
+                    35
+                ],
+                "id": "Name: 1.1概述\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "tcp ip",
+                "entity_type": "TECHNOLOGY",
+                "description": "tcp ip is a protocol suite that mqtt is built upon  enabling communication over networks",
+                "source_ids": [
+                    36
+                ],
+                "id": "Name: tcp ip\nType: TECHNOLOGY"
+            },
+            {
+                "entity_name": "ibm",
+                "entity_type": "ORGANIZATION",
+                "description": "ibm is the organization that released the mqtt protocol in 1999",
+                "source_ids": [
+                    36
+                ],
+                "id": "Name: ibm\nType: ORGANIZATION"
+            },
+            {
+                "entity_name": "1999",
+                "entity_type": "DATE",
+                "description": "1999 is the year when the mqtt protocol was released by ibm",
+                "source_ids": [
+                    36
+                ],
+                "id": "Name: 1999\nType: DATE"
+            },
+            {
+                "entity_name": "hardware",
+                "entity_type": "UNKNOWN",
+                "description": "",
+                "source_ids": [
+                    39
+                ],
+                "id": "Name: hardware\nType: UNKNOWN"
+            },
+            {
+                "entity_name": "network",
+                "entity_type": "UNKNOWN",
+                "description": "",
+                "source_ids": [
+                    39
+                ],
+                "id": "Name: network\nType: UNKNOWN"
+            },
+            {
+                "entity_name": "qos",
+                "entity_type": "TECHNOLOGY",
+                "description": "qos     is a technology feature that defines the quality of service levels for data transmission in an internet of things system",
+                "source_ids": [
+                    41
+                ],
+                "id": "Name: qos\nType: TECHNOLOGY"
+            },
+            {
+                "entity_name": "4 18",
+                "entity_type": "DATE",
+                "description": "4 18 is a date mentioned in the text  possibly indicating a specific day or event",
+                "source_ids": [
+                    44
+                ],
+                "id": "Name: 4 18\nType: DATE"
+            },
+            {
+                "entity_name": "tronlong",
+                "entity_type": "EMAIL_ADDRESS",
+                "description": "tronlong  is an email address associated with tronlong  possibly used for communication or support",
+                "source_ids": [
+                    44
+                ],
+                "id": "Name: tronlong\nType: EMAIL_ADDRESS"
+            },
+            {
+                "entity_name": "1.2应用场景",
+                "entity_type": "SECTION_TITLE",
+                "description": "As a subsection of '1 MQTT通信协议简介', this section outlines the practical applications and use cases of the MQTT communication protocol.",
+                "source_ids": [
+                    46
+                ],
+                "id": "Name: 1.2应用场景\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "应用场景",
+                "entity_type": "TASK_OR_PROBLEM",
+                "description": "Refers to the various real-world applications and scenarios where the MQTT communication protocol is utilized, as discussed in section 1.2.",
+                "source_ids": [
+                    46
+                ],
+                "id": "Name: 应用场景\nType: TASK_OR_PROBLEM"
+            },
+            {
+                "entity_name": "hardware resource",
+                "entity_type": "UNKNOWN",
+                "description": "",
+                "source_ids": [
+                    47
+                ],
+                "id": "Name: hardware resource\nType: UNKNOWN"
+            },
+            {
+                "entity_name": "bandwidth",
+                "entity_type": "UNKNOWN",
+                "description": "",
+                "source_ids": [
+                    47
+                ],
+                "id": "Name: bandwidth\nType: UNKNOWN"
+            },
+            {
+                "entity_name": "m2m",
+                "entity_type": "TECHNOLOGY",
+                "description": "m2m   refers to a technology related to machine to machine communication in the internet of things",
+                "source_ids": [
+                    48
+                ],
+                "id": "Name: m2m\nType: TECHNOLOGY"
+            },
+            {
+                "entity_name": "1.3 mosquitto 工具安装",
+                "entity_type": "SECTION_TITLE",
+                "description": "As a subsection of 'MQTT通信协议简介', this section provides instructions on the installation of the Mosquitto tool, which is a widely used MQTT broker for message brokering in IoT applications.",
+                "source_ids": [
+                    49
+                ],
+                "id": "Name: 1.3 mosquitto 工具安装\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "工具安装",
+                "entity_type": "TASK_OR_PROBLEM",
+                "description": "Refers to the process of installing software tools, specifically the Mosquitto MQTT broker, as outlined in section 1.3.",
+                "source_ids": [
+                    49
+                ],
+                "id": "Name: 工具安装\nType: TASK_OR_PROBLEM"
+            },
+            {
+                "entity_name": "ubuntu",
+                "entity_type": "LOCATION",
+                "description": "ubuntu is an operating system used as the communication target in the text, requiring the installation of mosquitto tools. ubuntu is a location where the source files need to be copied to, indicating it is the target directory for the files and the target working directory for the task.",
+                "source_ids": [
+                    50,
+                    147,
+                    95
+                ],
+                "id": "Name: ubuntu\nType: LOCATION"
+            },
+            {
+                "entity_name": "mqtt client",
+                "entity_type": "SOFTWARE",
+                "description": "mqtt client is a software application that is being referenced in the command line interface command and is a product provided by the company as part of the mqtt communication protocol development case, indicating it is a specific implementation or component. It is also a case example in the text that uses mosquitto tools to demonstrate mqtt communication protocol functionality.",
+                "source_ids": [
+                    65,
+                    66,
+                    74,
+                    50,
+                    30
+                ],
+                "id": "Name: mqtt client\nType: SOFTWARE"
+            },
+            {
+                "entity_name": "5 18",
+                "entity_type": "DATE",
+                "description": "5 18 is a date mentioned in the text  though no specific context is provided about its significance",
+                "source_ids": [
+                    52
+                ],
+                "id": "Name: 5 18\nType: DATE"
+            },
+            {
+                "entity_name": "2mqtt_client 案例",
+                "entity_type": "SECTION_TITLE",
+                "description": "As a subsection of '2mqtt_client 案例', this section provides an example implementation of an MQTT client, detailing its structure and functionality within the broader MQTT communication protocol case study.",
+                "source_ids": [
+                    55
+                ],
+                "id": "Name: 2mqtt_client 案例\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "client",
+                "entity_type": "SOFTWARE",
+                "description": "Refers to the software component implementing the MQTT protocol, specifically the client-side functionality detailed in this section.",
+                "source_ids": [
+                    55
+                ],
+                "id": "Name: client\nType: SOFTWARE"
+            },
+            {
+                "entity_name": "2.1案例说明",
+                "entity_type": "SECTION_TITLE",
+                "description": "As a subsection of '2mqtt_client 案例', this section provides an explanation of the case study, outlining the purpose, setup, and key components of the MQTT client implementation.",
+                "source_ids": [
+                    56
+                ],
+                "id": "Name: 2.1案例说明\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "案例",
+                "entity_type": "TASK_OR_PROBLEM",
+                "description": "\"案例\" refers to the illustrative implementation or demonstration of the MQTT client, which is the central focus of this section. It also refers to the practical example or implementation being discussed, which is the focus of section 2.1. Additionally, it refers to the example or case study being discussed, which is part of the MQTT communication protocol implementation.",
+                "source_ids": [
+                    56,
+                    146,
+                    55
+                ],
+                "id": "Name: 案例\nType: TASK_OR_PROBLEM"
+            },
+            {
+                "entity_name": "说明",
+                "entity_type": "METHOD_OR_TECHNIQUE",
+                "description": "Refers to the explanatory process or methodology used to describe the case study, as detailed in section 2.1.",
+                "source_ids": [
+                    56
+                ],
+                "id": "Name: 说明\nType: METHOD_OR_TECHNIQUE"
+            },
+            {
+                "entity_name": "libmosquitto",
+                "entity_type": "SOFTWARE",
+                "description": "libmosquitto is a software library that provides an API for communicating with MQTT broker servers using the MQTT protocol. It is a software library used to implement MQTT protocol versions 5.0 and 3.1.1 for communication with MQTT brokers.",
+                "source_ids": [
+                    57,
+                    123
+                ],
+                "id": "Name: libmosquitto\nType: SOFTWARE"
+            },
+            {
+                "entity_name": "mqtt",
+                "entity_type": "SOFTWARE",
+                "description": "\"MQTT is a server that facilitates communication between devices using the MQTT protocol.\"",
+                "source_ids": [
+                    81,
+                    123,
+                    134,
+                    57
+                ],
+                "id": "Name: mqtt\nType: SOFTWARE"
+            },
+            {
+                "entity_name": "hivemq",
+                "entity_type": "PRODUCT",
+                "description": "hivemq is an organization that provides a public mqtt server for communication, which is used as a service for message queuing and messaging over the internet.",
+                "source_ids": [
+                    64,
+                    130,
+                    60
+                ],
+                "id": "Name: hivemq\nType: PRODUCT"
+            },
+            {
+                "entity_name": "ubuntu",
+                "entity_type": "PRODUCT",
+                "description": "ubuntu is an operating system used as the upper machine tool for communication in the case described, indicating it is a software platform. ubuntu is a product that refers to the upper computer's operating system used in the communication setup.",
+                "source_ids": [
+                    130,
+                    60
+                ],
+                "id": "Name: ubuntu\nType: PRODUCT"
+            },
+            {
+                "entity_name": "eth0",
+                "entity_type": "PRODUCT",
+                "description": "eth0 is a network interface on the evaluation board used for connecting to the upper machine  indicating it is a hardware component",
+                "source_ids": [
+                    60
+                ],
+                "id": "Name: eth0\nType: PRODUCT"
+            },
+            {
+                "entity_name": "rgmii",
+                "entity_type": "TECHNOLOGY",
+                "description": "rgmii is a type of interface used for connecting the evaluation board to the upper machine  indicating it is a communication standard",
+                "source_ids": [
+                    60
+                ],
+                "id": "Name: rgmii\nType: TECHNOLOGY"
+            },
+            {
+                "entity_name": "51ele net",
+                "entity_type": "WEBSITE",
+                "description": "\"51ele net is a technical forum associated with Tronlong, serving as a platform for technical discussions and support. It functions as a website where users can engage in technical conversations, providing a space for both discussions and problem-solving related to technical topics.\"",
+                "source_ids": [
+                    4,
+                    165,
+                    68,
+                    103,
+                    137,
+                    44,
+                    77,
+                    173,
+                    143,
+                    176,
+                    92,
+                    18,
+                    178,
+                    52,
+                    116,
+                    60,
+                    126,
+                    31
+                ],
+                "id": "Name: 51ele net\nType: WEBSITE"
+            },
+            {
+                "entity_name": "6 18",
+                "entity_type": "DATE",
+                "description": "6 18 is a date mentioned in the text  indicating it is a specific day",
+                "source_ids": [
+                    60
+                ],
+                "id": "Name: 6 18\nType: DATE"
+            },
+            {
+                "entity_name": "案例测试",
+                "entity_type": "TASK_OR_PROBLEM",
+                "description": "案例测试指的是对MQTT客户端实现进行的测试过程，如第2.2节所述。它还指对MQTT通信协议案例研究进行的测试过程和验证活动，如第3.2节所述。",
+                "source_ids": [
+                    129,
+                    63
+                ],
+                "id": "Name: 案例测试\nType: TASK_OR_PROBLEM"
+            },
+            {
+                "entity_name": "表1",
+                "entity_type": "TABLE",
+                "description": "A table containing information about broker addresses, TCP ports, WebSocket configurations, and server names.",
+                "source_ids": [
+                    64
+                ],
+                "id": "Name: 表1\nType: TABLE"
+            },
+            {
+                "entity_name": "broker地址",
+                "entity_type": "LOCATION",
+                "description": "The address of the broker, listed as a column header in the table.",
+                "source_ids": [
+                    64
+                ],
+                "id": "Name: broker地址\nType: LOCATION"
+            },
+            {
+                "entity_name": "tcp 端口",
+                "entity_type": "PARAMETER_OR_VARIABLE",
+                "description": "The TCP port number, listed as a column header in the table.",
+                "source_ids": [
+                    64
+                ],
+                "id": "Name: tcp 端口\nType: PARAMETER_OR_VARIABLE"
+            },
+            {
+                "entity_name": "websocket",
+                "entity_type": "TECHNOLOGY",
+                "description": "WebSocket is a communication protocol used for real-time data exchange, listed as a column header in the table. It is a communication protocol used by the web end for MQTT communication.",
+                "source_ids": [
+                    64,
+                    140
+                ],
+                "id": "Name: websocket\nType: TECHNOLOGY"
+            },
+            {
+                "entity_name": "服务器名称",
+                "entity_type": "LOCATION",
+                "description": "The name of the server, listed as a column header in the table.",
+                "source_ids": [
+                    64
+                ],
+                "id": "Name: 服务器名称\nType: LOCATION"
+            },
+            {
+                "entity_name": "eclipse",
+                "entity_type": "ORGANIZATION",
+                "description": "An open-source project that includes the Eclipse Paho MQTT client and broker.",
+                "source_ids": [
+                    64
+                ],
+                "id": "Name: eclipse\nType: ORGANIZATION"
+            },
+            {
+                "entity_name": "emqx（国内）",
+                "entity_type": "ORGANIZATION",
+                "description": "A domestic MQTT broker used for scalable and high-performance messaging.",
+                "source_ids": [
+                    64
+                ],
+                "id": "Name: emqx（国内）\nType: ORGANIZATION"
+            },
+            {
+                "entity_name": "bin",
+                "entity_type": "DIRECTORY",
+                "description": "The bin directory contains an mqtt client and an mqtt sinewave pub.",
+                "source_ids": [
+                    65,
+                    131
+                ],
+                "id": "Name: bin\nType: DIRECTORY"
+            },
+            {
+                "entity_name": "7 18",
+                "entity_type": "DATE",
+                "description": "7 18 is a date mentioned in the text  possibly indicating a specific day or event",
+                "source_ids": [
+                    68
+                ],
+                "id": "Name: 7 18\nType: DATE"
+            },
+            {
+                "entity_name": "2.2.1 评估板发布/上位机订阅",
+                "entity_type": "SECTION_TITLE",
+                "description": "As a subsection of '2.2 案例测试', this section describes the communication scenario where the evaluation board publishes messages and the upper machine subscribes to them, forming part of the MQTT client case study.",
+                "source_ids": [
+                    71
+                ],
+                "id": "Name: 2.2.1 评估板发布/上位机订阅\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "评估板",
+                "entity_type": "DEVICE_OR_HARDWARE",
+                "description": "评估板是指用于发布消息的硬件平台，如在MQTT通信设置的第2.2.1节中所述，它也是用于测试的硬件设备，具体涉及MQTT通信协议案例中的评估板。",
+                "source_ids": [
+                    83,
+                    71
+                ],
+                "id": "Name: 评估板\nType: DEVICE_OR_HARDWARE"
+            },
+            {
+                "entity_name": "上位机",
+                "entity_type": "DEVICE_OR_HARDWARE",
+                "description": "上位机是指在MQTT通信协议设置中，作为更高层级的机器或软件系统，既可以订阅消息也可以发布消息的设备或系统。",
+                "source_ids": [
+                    83,
+                    71
+                ],
+                "id": "Name: 上位机\nType: DEVICE_OR_HARDWARE"
+            },
+            {
+                "entity_name": "发布",
+                "entity_type": "METHOD_OR_TECHNIQUE",
+                "description": "发布是指在MQTT通信协议中，上位机向评估板发送消息的动作，如在第2.2.1节所述。",
+                "source_ids": [
+                    83,
+                    71
+                ],
+                "id": "Name: 发布\nType: METHOD_OR_TECHNIQUE"
+            },
+            {
+                "entity_name": "订阅",
+                "entity_type": "METHOD_OR_TECHNIQUE",
+                "description": "订阅是指在MQTT通信协议中接收消息的动作，如第2.2.1节所述。它指的是评估板从上位机接收消息的MQTT通信方法。",
+                "source_ids": [
+                    83,
+                    71
+                ],
+                "id": "Name: 订阅\nType: METHOD_OR_TECHNIQUE"
+            },
+            {
+                "entity_name": "broker hivemq com",
+                "entity_type": "LOCATION",
+                "description": "broker hivemq com is the hostname of the mqtt server being used for communication, and it is a location where the mqtt server is hosted, allowing messages to be published and received. Additionally, broker hivemq com is a location where an mqtt broker is hosted, enabling message publishing, and it serves as the mqtt server address used to connect to the mqtt service.",
+                "source_ids": [
+                    72,
+                    88,
+                    140,
+                    135
+                ],
+                "id": "Name: broker hivemq com\nType: LOCATION"
+            },
+            {
+                "entity_name": "test data",
+                "entity_type": "EVENT",
+                "description": "test data is an mqtt topic that can be customized for message subscription",
+                "source_ids": [
+                    72
+                ],
+                "id": "Name: test data\nType: EVENT"
+            },
+            {
+                "entity_name": "tcp",
+                "entity_type": "TECHNOLOGY",
+                "description": "tcp is a communication protocol used for establishing communication over the network, mentioned in the context of mqtt port configuration. It is also used by the arm end for mqtt communication.",
+                "source_ids": [
+                    72,
+                    140
+                ],
+                "id": "Name: tcp\nType: TECHNOLOGY"
+            },
+            {
+                "entity_name": "command line",
+                "entity_type": "SOFTWARE",
+                "description": "command line refers to the interface used to execute the mosquitto sub tool",
+                "source_ids": [
+                    72
+                ],
+                "id": "Name: command line\nType: SOFTWARE"
+            },
+            {
+                "entity_name": "h",
+                "entity_type": "PARAMETER_OR_VARIABLE",
+                "description": "h is a parameter used to specify the mqtt server in the command line interface",
+                "source_ids": [
+                    75
+                ],
+                "id": "Name: h\nType: PARAMETER_OR_VARIABLE"
+            },
+            {
+                "entity_name": "p",
+                "entity_type": "PARAMETER_OR_VARIABLE",
+                "description": "p is a parameter used to specify the mqtt server port in the command line interface",
+                "source_ids": [
+                    75
+                ],
+                "id": "Name: p\nType: PARAMETER_OR_VARIABLE"
+            },
+            {
+                "entity_name": "t",
+                "entity_type": "PARAMETER_OR_VARIABLE",
+                "description": "t is a parameter used to specify the mqtt topic  which can be named arbitrarily  in the command line interface",
+                "source_ids": [
+                    75
+                ],
+                "id": "Name: t\nType: PARAMETER_OR_VARIABLE"
+            },
+            {
+                "entity_name": "m",
+                "entity_type": "PARAMETER_OR_VARIABLE",
+                "description": "m is a parameter used to specify the mqtt message to be published in the command line interface",
+                "source_ids": [
+                    75
+                ],
+                "id": "Name: m\nType: PARAMETER_OR_VARIABLE"
+            },
+            {
+                "entity_name": "8 18",
+                "entity_type": "DATE",
+                "description": "8 18 is a date mentioned in the text  though no specific context is provided for its significance",
+                "source_ids": [
+                    77
+                ],
+                "id": "Name: 8 18\nType: DATE"
+            },
+            {
+                "entity_name": "2.2.2评估板订阅/上位机发布",
+                "entity_type": "SECTION_TITLE",
+                "description": "As a subsection of '2.2案例测试', this section describes the testing scenario involving the evaluation board subscribing and the upper machine publishing messages in the MQTT communication protocol case study.",
+                "source_ids": [
+                    83
+                ],
+                "id": "Name: 2.2.2评估板订阅/上位机发布\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "mqtt",
+                "entity_type": "UNKNOWN",
+                "description": "\"MQTT is a lightweight messaging protocol used for communication in IoT devices and other applications where bandwidth and power are limited. It operates over TCP/IP and uses a publish/subscribe model to enable efficient data transmission.\"",
+                "source_ids": [
+                    112,
+                    86,
+                    168
+                ],
+                "id": "Name: mqtt\nType: UNKNOWN"
+            },
+            {
+                "entity_name": "test data",
+                "entity_type": "TOPIC",
+                "description": "test data is a topic used in the mqtt protocol for publishing and receiving messages",
+                "source_ids": [
+                    88
+                ],
+                "id": "Name: test data\nType: TOPIC"
+            },
+            {
+                "entity_name": "9 18",
+                "entity_type": "DATE",
+                "description": "9 18 is a date mentioned in the text  though no specific context is provided",
+                "source_ids": [
+                    92
+                ],
+                "id": "Name: 9 18\nType: DATE"
+            },
+            {
+                "entity_name": "2.3案例编译",
+                "entity_type": "SECTION_TITLE",
+                "description": "As a subsection of '2mqtt_client 案例', this section provides instructions and details on how to compile the MQTT client case, likely including setup steps, dependencies, and build processes.",
+                "source_ids": [
+                    94
+                ],
+                "id": "Name: 2.3案例编译\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "案例编译",
+                "entity_type": "TASK_OR_PROBLEM",
+                "description": "Refers to the process of compiling the MQTT client case, which is the focus of section 2.3.",
+                "source_ids": [
+                    94
+                ],
+                "id": "Name: 案例编译\nType: TASK_OR_PROBLEM"
+            },
+            {
+                "entity_name": "debian",
+                "entity_type": "BOOK",
+                "description": "debian is a book that provides instructions for compiling the linuxsdk, as referenced in the text, and it needs to be referenced before compiling the linuxsdk, indicating it provides necessary instructions for the process.",
+                "source_ids": [
+                    147,
+                    95
+                ],
+                "id": "Name: debian\nType: BOOK"
+            },
+            {
+                "entity_name": "src",
+                "entity_type": "DIRECTORY",
+                "description": "src is a directory containing the case files that need to be copied to the ubuntu working directory, indicating it is the source location of the files.",
+                "source_ids": [
+                    147,
+                    95
+                ],
+                "id": "Name: src\nType: DIRECTORY"
+            },
+            {
+                "entity_name": "rk3588 linux release v1 2 1",
+                "entity_type": "SOFTWARE",
+                "description": "\"rk3588 linux release v1 2 1 is a software release version that contains the necessary tools for cross compilation, indicating it is a key component of the setup process. It is a software version that includes the extra tools directory for cross compilation.\"",
+                "source_ids": [
+                    147,
+                    95
+                ],
+                "id": "Name: rk3588 linux release v1 2 1\nType: SOFTWARE"
+            },
+            {
+                "entity_name": "gcc linaro 10 2 1 2021 01 x86 64 aarch64 linux gnu",
+                "entity_type": "SOFTWARE",
+                "description": "\"GCC Linaro 10 2 1 2021 01 x86 64 aarch64 Linux GNU is a specific compiler tool used for cross compilation, indicating it is part of the toolchain environment.\"",
+                "source_ids": [
+                    147,
+                    95
+                ],
+                "id": "Name: gcc linaro 10 2 1 2021 01 x86 64 aarch64 linux gnu\nType: SOFTWARE"
+            },
+            {
+                "entity_name": "makefile",
+                "entity_type": "FILE",
+                "description": "makefile is a configuration file that needs to be modified to set up the cross compilation environment, indicating it is a key file in the process. It is a file that needs to be modified to configure the cross compilation toolchain environment.",
+                "source_ids": [
+                    147,
+                    95
+                ],
+                "id": "Name: makefile\nType: FILE"
+            },
+            {
+                "entity_name": "cross compilation",
+                "entity_type": "UNKNOWN",
+                "description": "",
+                "source_ids": [
+                    95
+                ],
+                "id": "Name: cross compilation\nType: UNKNOWN"
+            },
+            {
+                "entity_name": "aarch64 linux gnu gcc",
+                "entity_type": "SOFTWARE",
+                "description": "aarch64 linux gnu gcc is a compiler tool used in the build process, indicating it is a specific software tool for compiling code. It is a compiler tool used in the context of building software for the aarch64 architecture.",
+                "source_ids": [
+                    100,
+                    157
+                ],
+                "id": "Name: aarch64 linux gnu gcc\nType: SOFTWARE"
+            },
+            {
+                "entity_name": "host",
+                "entity_type": "UNKNOWN",
+                "description": "",
+                "source_ids": [
+                    100
+                ],
+                "id": "Name: host\nType: UNKNOWN"
+            },
+            {
+                "entity_name": "10 18",
+                "entity_type": "DATE",
+                "description": "10 18 is a date mentioned in the text  possibly indicating a specific day or event related to the company",
+                "source_ids": [
+                    103
+                ],
+                "id": "Name: 10 18\nType: DATE"
+            },
+            {
+                "entity_name": "sdk path",
+                "entity_type": "PARAMETER_OR_VARIABLE",
+                "description": "\"sdk path is a parameter or variable representing the path to the linux sdk source code.\"",
+                "source_ids": [
+                    105,
+                    150
+                ],
+                "id": "Name: sdk path\nType: PARAMETER_OR_VARIABLE"
+            },
+            {
+                "entity_name": "rk3588",
+                "entity_type": "PRODUCT",
+                "description": "\"rk3588 is a product mentioned as the target platform for the linux sdk.\"",
+                "source_ids": [
+                    105,
+                    150
+                ],
+                "id": "Name: rk3588\nType: PRODUCT"
+            },
+            {
+                "entity_name": "linux",
+                "entity_type": "OPERATING_SYSTEM",
+                "description": "\"Linux is an operating system for which the SDK is being set up, and it is an operating system referenced in the context of the SDK path.\"",
+                "source_ids": [
+                    105,
+                    150
+                ],
+                "id": "Name: linux\nType: OPERATING_SYSTEM"
+            },
+            {
+                "entity_name": "2.4关键代码",
+                "entity_type": "SECTION_TITLE",
+                "description": "As a subsection of '2mqtt_client 案例', this section provides the core implementation details and critical code segments that demonstrate the functionality of the MQTT client in the MQTT communication protocol case study.",
+                "source_ids": [
+                    107
+                ],
+                "id": "Name: 2.4关键代码\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "关键代码",
+                "entity_type": "SECTION_TITLE",
+                "description": "\"关键代码 refers to the essential code components that are analyzed and explained in this section.\"",
+                "source_ids": [
+                    107,
+                    159
+                ],
+                "id": "Name: 关键代码\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "11 18",
+                "entity_type": "DATE",
+                "description": "11 18 is a date mentioned in the text  possibly indicating a specific day or event related to tronlong",
+                "source_ids": [
+                    116
+                ],
+                "id": "Name: 11 18\nType: DATE"
+            },
+            {
+                "entity_name": "案例",
+                "entity_type": "EXAMPLE_OR_CASE_STUDY",
+                "description": "Refers to the specific example or demonstration provided in this section, illustrating the practical application of the MQTT communication protocol.",
+                "source_ids": [
+                    121
+                ],
+                "id": "Name: 案例\nType: EXAMPLE_OR_CASE_STUDY"
+            },
+            {
+                "entity_name": "3.1案例说明",
+                "entity_type": "SECTION_TITLE",
+                "description": "As a subsection of '3mqtt_sinewave_pub 案例', this section provides an explanation of the case study, outlining the purpose, setup, and key components of the MQTT communication example.",
+                "source_ids": [
+                    122
+                ],
+                "id": "Name: 3.1案例说明\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "web",
+                "entity_type": "SOFTWARE",
+                "description": "web is a web interface used by the upper computer to receive and display data from an MQTT server, and it serves as a software component of the upper computer used for communication.",
+                "source_ids": [
+                    130,
+                    123
+                ],
+                "id": "Name: web\nType: SOFTWARE"
+            },
+            {
+                "entity_name": "12 18",
+                "entity_type": "DATE",
+                "description": "12 18 is a date mentioned in the text  likely referring to a specific day or event",
+                "source_ids": [
+                    126
+                ],
+                "id": "Name: 12 18\nType: DATE"
+            },
+            {
+                "entity_name": "3.2 案例测试",
+                "entity_type": "SECTION_TITLE",
+                "description": "As a subsection of '3mqtt_sinewave_pub 案例', this section outlines the testing procedures and results for the MQTT communication protocol case study.",
+                "source_ids": [
+                    129
+                ],
+                "id": "Name: 3.2 案例测试\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "eth0 rgmi",
+                "entity_type": "DEVICE",
+                "description": "eth0 rgmi is a gigabit ethernet port on the evaluation board used for network connectivity",
+                "source_ids": [
+                    130
+                ],
+                "id": "Name: eth0 rgmi\nType: DEVICE"
+            },
+            {
+                "entity_name": "mqtt sinewave pub",
+                "entity_type": "SOFTWARE",
+                "description": "mqtt sinewave pub is a software application used to publish messages to an mqtt broker. It is a product provided by the company as part of the mqtt communication protocol development case, indicating it is a specific implementation or component. The application is being invoked with the help command, indicating it is a command line tool for interacting with mqtt protocols. mqtt sinewave pub is a product or example mentioned in the text, possibly related to mqtt technology or a specific application case.",
+                "source_ids": [
+                    131,
+                    132,
+                    135,
+                    15,
+                    30
+                ],
+                "id": "Name: mqtt sinewave pub\nType: SOFTWARE"
+            },
+            {
+                "entity_name": "help",
+                "entity_type": "UNKNOWN",
+                "description": "",
+                "source_ids": [
+                    132
+                ],
+                "id": "Name: help\nType: UNKNOWN"
+            },
+            {
+                "entity_name": "13 18",
+                "entity_type": "DATE",
+                "description": "13 18 is a date mentioned in the text  possibly indicating a page number or a specific date",
+                "source_ids": [
+                    137
+                ],
+                "id": "Name: 13 18\nType: DATE"
+            },
+            {
+                "entity_name": "index html",
+                "entity_type": "FILE_TYPE",
+                "description": "index html is a file located in the  tools web mqtt sub  directory that is opened in a web browser to access the mqtt interface",
+                "source_ids": [
+                    140
+                ],
+                "id": "Name: index html\nType: FILE_TYPE"
+            },
+            {
+                "entity_name": "web",
+                "entity_type": "EVENT",
+                "description": "web    refers to the web page that appears after opening the index html file and allows interaction with the mqtt server",
+                "source_ids": [
+                    140
+                ],
+                "id": "Name: web\nType: EVENT"
+            },
+            {
+                "entity_name": "14 18",
+                "entity_type": "DATE",
+                "description": "14 18 is a date mentioned in the text  though the exact month is not specified",
+                "source_ids": [
+                    143
+                ],
+                "id": "Name: 14 18\nType: DATE"
+            },
+            {
+                "entity_name": "3.3案例编译",
+                "entity_type": "SECTION_TITLE",
+                "description": "As a subsection of '3mqtt_sinewave_pub 案例', this section provides instructions and details on how to compile the case study, which is part of the MQTT communication protocol example.",
+                "source_ids": [
+                    146
+                ],
+                "id": "Name: 3.3案例编译\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "编译",
+                "entity_type": "METHOD_OR_TECHNIQUE",
+                "description": "Refers to the process of compiling the code or implementation for the case study, as described in section 3.3.",
+                "source_ids": [
+                    146
+                ],
+                "id": "Name: 编译\nType: METHOD_OR_TECHNIQUE"
+            },
+            {
+                "entity_name": "cross compilation toolchain",
+                "entity_type": "UNKNOWN",
+                "description": "",
+                "source_ids": [
+                    147
+                ],
+                "id": "Name: cross compilation toolchain\nType: UNKNOWN"
+            },
+            {
+                "entity_name": "host make",
+                "entity_type": "UNKNOWN",
+                "description": "",
+                "source_ids": [
+                    157
+                ],
+                "id": "Name: host make\nType: UNKNOWN"
+            },
+            {
+                "entity_name": "3.4关键代码",
+                "entity_type": "SECTION_TITLE",
+                "description": "As a subsection of '3mqtt_sinewave_pub 案例', this section provides the core implementation details and critical code segments that demonstrate the MQTT communication protocol's functionality.",
+                "source_ids": [
+                    159
+                ],
+                "id": "Name: 3.4关键代码\nType: SECTION_TITLE"
+            },
+            {
+                "entity_name": "16 18",
+                "entity_type": "DATE",
+                "description": "16 18 is a date mentioned in the text  possibly indicating a specific day or a range of dates",
+                "source_ids": [
+                    165
+                ],
+                "id": "Name: 16 18\nType: DATE"
+            },
+            {
+                "entity_name": "server",
+                "entity_type": "UNKNOWN",
+                "description": "",
+                "source_ids": [
+                    168
+                ],
+                "id": "Name: server\nType: UNKNOWN"
+            },
+            {
+                "entity_name": "17 18",
+                "entity_type": "DATE",
+                "description": "17 18 is a date that may refer to a specific day or period  though the exact context is not clear from the text",
+                "source_ids": [
+                    173
+                ],
+                "id": "Name: 17 18\nType: DATE"
+            },
+            {
+                "entity_name": "tronlong tmall com",
+                "entity_type": "WEBSITE",
+                "description": "tronlong tmall com is the official online store of tronlong  indicating the location where products are sold",
+                "source_ids": [
+                    176
+                ],
+                "id": "Name: tronlong tmall com\nType: WEBSITE"
+            },
+            {
+                "entity_name": "tronlong",
+                "entity_type": "UNKNOWN",
+                "description": "",
+                "source_ids": [
+                    176
+                ],
+                "id": "Name: tronlong\nType: UNKNOWN"
+            },
+            {
+                "entity_name": "18 18",
+                "entity_type": "DATE",
+                "description": "18 18 is a date that may indicate the number of pages or a specific date  but the context is unclear without additional information",
+                "source_ids": [
+                    178
+                ],
+                "id": "Name: 18 18\nType: DATE"
+            }
+        ],
+        "links": [
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "mqtt通信协议案例",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of 'MQTT通信协议' is the central technology discussed in this case study.",
+                "source_ids": [
+                    121
+                ],
+                "source": "Name: mqtt通信协议案例\nType: SECTION_TITLE",
+                "target": "Name: mqtt通信协议\nType: TECHNOLOGY"
+            },
+            {
+                "src_entity_name": "案例",
+                "tgt_entity_name": "mqtt通信协议案例",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '案例' represents the specific example or demonstration presented in this section.",
+                "source_ids": [
+                    121
+                ],
+                "source": "Name: mqtt通信协议案例\nType: SECTION_TITLE",
+                "target": "Name: 案例\nType: EXAMPLE_OR_CASE_STUDY"
+            },
+            {
+                "src_entity_name": "table 1",
+                "tgt_entity_name": "description",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "Table 'Table 1' contains data about 'Description'.",
+                "source_ids": [
+                    3
+                ],
+                "source": "Name: table 1\nType: TABLE",
+                "target": "Name: description\nType: PARAMETER_OR_VARIABLE"
+            },
+            {
+                "src_entity_name": "table 1",
+                "tgt_entity_name": "draft date",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "Table 'Table 1' contains data about 'Draft Date'.",
+                "source_ids": [
+                    3
+                ],
+                "source": "Name: table 1\nType: TABLE",
+                "target": "Name: draft date\nType: DATE"
+            },
+            {
+                "src_entity_name": "table 1",
+                "tgt_entity_name": "revision no.",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "Table 'Table 1' contains data about 'Revision No.'.",
+                "source_ids": [
+                    3
+                ],
+                "source": "Name: table 1\nType: TABLE",
+                "target": "Name: revision no.\nType: PARAMETER_OR_VARIABLE"
+            },
+            {
+                "src_entity_name": "table 1",
+                "tgt_entity_name": "2024/09/30",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "Table 'Table 1' contains data about '2024/09/30'.",
+                "source_ids": [
+                    3
+                ],
+                "source": "Name: table 1\nType: TABLE",
+                "target": "Name: 2024/09/30\nType: DATE"
+            },
+            {
+                "src_entity_name": "table 1",
+                "tgt_entity_name": "v1.0",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "Table 'Table 1' contains data about 'V1.0'.",
+                "source_ids": [
+                    3
+                ],
+                "source": "Name: table 1\nType: TABLE",
+                "target": "Name: v1.0\nType: VERSION"
+            },
+            {
+                "src_entity_name": "table 1",
+                "tgt_entity_name": "1. 初始版本。",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "Table 'Table 1' contains data about '1. 初始版本。'.",
+                "source_ids": [
+                    3
+                ],
+                "source": "Name: table 1\nType: TABLE",
+                "target": "Name: 1. 初始版本。\nType: DESCRIPTION"
+            },
+            {
+                "src_entity_name": "www tronlong com",
+                "tgt_entity_name": "sales tronlong com",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "www tronlong com is the official website of the company  and sales tronlong com is the sales email address associated with the company",
+                "source_ids": [
+                    178
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: sales tronlong com\nType: EMAIL_ADDRESS"
+            },
+            {
+                "src_entity_name": "www tronlong com",
+                "tgt_entity_name": "020 8998 6280",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "www tronlong com is the official website of the company  and 020 8998 6280 is the company s main phone number associated with the website",
+                "source_ids": [
+                    178
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: 020 8998 6280\nType: PHONE_NUMBER"
+            },
+            {
+                "src_entity_name": "www tronlong com",
+                "tgt_entity_name": "1 18",
+                "relation_name": "",
+                "weight": 7.0,
+                "description": "www tronlong com is the official website of the company  and 1 18 is a date or page number mentioned in the context of the website",
+                "source_ids": [
+                    4
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: 1 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "www tronlong com",
+                "tgt_entity_name": "support tronlong com",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "www tronlong com is the official website of the company  and support tronlong com is the technical support email address associated with the company",
+                "source_ids": [
+                    178
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: support tronlong com\nType: EMAIL_ADDRESS"
+            },
+            {
+                "src_entity_name": "www tronlong com",
+                "tgt_entity_name": "020 3893 9734",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "www tronlong com is the official website of the company  and 020 3893 9734 is the technical hotline number associated with the company",
+                "source_ids": [
+                    178
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: 020 3893 9734\nType: PHONE_NUMBER"
+            },
+            {
+                "src_entity_name": "www tronlong com",
+                "tgt_entity_name": "2 18",
+                "relation_name": "",
+                "weight": 6.0,
+                "description": "www tronlong com is the official website of the company  and 2 18 is a date or page number mentioned in the context of the website",
+                "source_ids": [
+                    18
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: 2 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "www tronlong com",
+                "tgt_entity_name": "3 18",
+                "relation_name": "",
+                "weight": 6.0,
+                "description": "www tronlong com is the official website of the company  and 3 18 is a date mentioned in the text  possibly related to an event or milestone",
+                "source_ids": [
+                    31
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: 3 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "tronlong",
+                "tgt_entity_name": "www tronlong com",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "tronlong s official website is used for company information and sales inquiries",
+                "source_ids": [
+                    44
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: tronlong\nType: EMAIL_ADDRESS"
+            },
+            {
+                "src_entity_name": "www tronlong com",
+                "tgt_entity_name": "51ele net",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "www tronlong com is the official website of the company  and www 51ele net is a technical forum associated with the company",
+                "source_ids": [
+                    178
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: 51ele net\nType: WEBSITE"
+            },
+            {
+                "src_entity_name": "tronlong",
+                "tgt_entity_name": "www tronlong com",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "tronlong s official website is used to provide information about their products and services",
+                "source_ids": [
+                    116
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: tronlong\nType: ORGANIZATION"
+            },
+            {
+                "src_entity_name": "www tronlong com",
+                "tgt_entity_name": "7 18",
+                "relation_name": "",
+                "weight": 6.0,
+                "description": "www tronlong com is the official website of the company  and 7 18 is a date mentioned in the text  possibly related to an event or milestone",
+                "source_ids": [
+                    68
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: 7 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "mqtt client",
+                "tgt_entity_name": "www tronlong com",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "mqtt client sends a message containing the content www tronlong com",
+                "source_ids": [
+                    74
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: mqtt client\nType: SOFTWARE"
+            },
+            {
+                "src_entity_name": "www tronlong com",
+                "tgt_entity_name": "8 18",
+                "relation_name": "",
+                "weight": 5.0,
+                "description": "the official website is mentioned alongside a date  suggesting a possible event or update date  though the connection is indirect",
+                "source_ids": [
+                    77
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: 8 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "www tronlong com",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "mqtt is used to publish messages to www tronlong com",
+                "source_ids": [
+                    88
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: mqtt通信协议\nType: TECHNOLOGY"
+            },
+            {
+                "src_entity_name": "broker hivemq com",
+                "tgt_entity_name": "www tronlong com",
+                "relation_name": "",
+                "weight": 7.0,
+                "description": "broker hivemq com is the server that facilitates message publishing to www tronlong com",
+                "source_ids": [
+                    88
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: broker hivemq com\nType: LOCATION"
+            },
+            {
+                "src_entity_name": "test data",
+                "tgt_entity_name": "www tronlong com",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "test data is the topic used to publish messages to www tronlong com",
+                "source_ids": [
+                    88
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: test data\nType: TOPIC"
+            },
+            {
+                "src_entity_name": "www tronlong com",
+                "tgt_entity_name": "9 18",
+                "relation_name": "",
+                "weight": 5.0,
+                "description": "www tronlong com is the official website of the company  and 9 18 is a date mentioned in the text  though no specific context is provided",
+                "source_ids": [
+                    92
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: 9 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "www tronlong com",
+                "tgt_entity_name": "10 18",
+                "relation_name": "",
+                "weight": 6.0,
+                "description": "www tronlong com is the official website of the company  and 10 18 is a date possibly related to the company",
+                "source_ids": [
+                    103
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: 10 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "www tronlong com",
+                "tgt_entity_name": "12 18",
+                "relation_name": "",
+                "weight": 6.0,
+                "description": "www tronlong com is the official website of the company  and 12 18 is a date mentioned in the context of the company s information",
+                "source_ids": [
+                    126
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: 12 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "www tronlong com",
+                "tgt_entity_name": "13 18",
+                "relation_name": "",
+                "weight": 7.0,
+                "description": "www tronlong com is the official website of the company  and 13 18 is a date or page number mentioned in the context of the website",
+                "source_ids": [
+                    137
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: 13 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "www tronlong com",
+                "tgt_entity_name": "14 18",
+                "relation_name": "",
+                "weight": 5.0,
+                "description": "the official website is associated with the date 14 18  though the exact context is unclear",
+                "source_ids": [
+                    143
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: 14 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "www tronlong com",
+                "tgt_entity_name": "16 18",
+                "relation_name": "",
+                "weight": 6.0,
+                "description": "www tronlong com is the official website of the company  and 16 18 is a date mentioned in the text associated with it",
+                "source_ids": [
+                    165
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: 16 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "www tronlong com",
+                "tgt_entity_name": "17 18",
+                "relation_name": "",
+                "weight": 6.0,
+                "description": "the official website is associated with a date  possibly indicating a specific event or period related to the company",
+                "source_ids": [
+                    173
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: 17 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "www tronlong com",
+                "tgt_entity_name": "tronlong",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "www tronlong com is the official website of tronlong  indicating the primary online presence of the organization",
+                "source_ids": [
+                    176
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: tronlong\nType: UNKNOWN"
+            },
+            {
+                "src_entity_name": "www tronlong com",
+                "tgt_entity_name": "18 18",
+                "relation_name": "",
+                "weight": 6.0,
+                "description": "www tronlong com is the official website of the company  and 18 18 is a date or page number associated with the company s information",
+                "source_ids": [
+                    178
+                ],
+                "source": "Name: www tronlong com\nType: WEBSITE",
+                "target": "Name: 18 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "sales tronlong com",
+                "tgt_entity_name": "020 8998 6280",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "sales tronlong com is the sales email address for the company  and 020 8998 6280 is the company s main phone number  both used for business communication",
+                "source_ids": [
+                    178
+                ],
+                "source": "Name: sales tronlong com\nType: EMAIL_ADDRESS",
+                "target": "Name: 020 8998 6280\nType: PHONE_NUMBER"
+            },
+            {
+                "src_entity_name": "tronlong",
+                "tgt_entity_name": "sales tronlong com",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "tronlong s sales email address is used for contacting the company regarding sales",
+                "source_ids": [
+                    44
+                ],
+                "source": "Name: sales tronlong com\nType: EMAIL_ADDRESS",
+                "target": "Name: tronlong\nType: EMAIL_ADDRESS"
+            },
+            {
+                "src_entity_name": "sales tronlong com",
+                "tgt_entity_name": "support tronlong com",
+                "relation_name": "",
+                "weight": 7.0,
+                "description": "sales tronlong com is the sales email address for the company  and support tronlong com is the technical support email address  both used for different types of communication",
+                "source_ids": [
+                    178
+                ],
+                "source": "Name: sales tronlong com\nType: EMAIL_ADDRESS",
+                "target": "Name: support tronlong com\nType: EMAIL_ADDRESS"
+            },
+            {
+                "src_entity_name": "sales tronlong com",
+                "tgt_entity_name": "020 3893 9734",
+                "relation_name": "",
+                "weight": 7.0,
+                "description": "sales tronlong com is the sales email address for the company  and 020 3893 9734 is the technical hotline number  both used for different types of communication",
+                "source_ids": [
+                    178
+                ],
+                "source": "Name: sales tronlong com\nType: EMAIL_ADDRESS",
+                "target": "Name: 020 3893 9734\nType: PHONE_NUMBER"
+            },
+            {
+                "src_entity_name": "tronlong",
+                "tgt_entity_name": "sales tronlong com",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "tronlong s sales email address is used for business inquiries and customer communication",
+                "source_ids": [
+                    116
+                ],
+                "source": "Name: sales tronlong com\nType: EMAIL_ADDRESS",
+                "target": "Name: tronlong\nType: ORGANIZATION"
+            },
+            {
+                "src_entity_name": "sales tronlong com",
+                "tgt_entity_name": "51ele net",
+                "relation_name": "",
+                "weight": 7.0,
+                "description": "the sales email address and technical forum are both associated with the company  indicating a connection between the company and its technical community",
+                "source_ids": [
+                    173
+                ],
+                "source": "Name: sales tronlong com\nType: EMAIL_ADDRESS",
+                "target": "Name: 51ele net\nType: WEBSITE"
+            },
+            {
+                "src_entity_name": "sales tronlong com",
+                "tgt_entity_name": "12 18",
+                "relation_name": "",
+                "weight": 6.0,
+                "description": "sales tronlong com is the sales email address  and 12 18 is a date mentioned in the context of the company s information",
+                "source_ids": [
+                    126
+                ],
+                "source": "Name: sales tronlong com\nType: EMAIL_ADDRESS",
+                "target": "Name: 12 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "sales tronlong com",
+                "tgt_entity_name": "16 18",
+                "relation_name": "",
+                "weight": 5.0,
+                "description": "sales tronlong com is the sales email address of the company  and 16 18 is a date mentioned in the text associated with it",
+                "source_ids": [
+                    165
+                ],
+                "source": "Name: sales tronlong com\nType: EMAIL_ADDRESS",
+                "target": "Name: 16 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "sales tronlong com",
+                "tgt_entity_name": "tronlong",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "sales tronlong com is the sales email address for tronlong  indicating a direct contact point for sales inquiries",
+                "source_ids": [
+                    176
+                ],
+                "source": "Name: sales tronlong com\nType: EMAIL_ADDRESS",
+                "target": "Name: tronlong\nType: UNKNOWN"
+            },
+            {
+                "src_entity_name": "tronlong",
+                "tgt_entity_name": "020 8998 6280",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "tronlong s main phone number is used for general inquiries",
+                "source_ids": [
+                    44
+                ],
+                "source": "Name: 020 8998 6280\nType: PHONE_NUMBER",
+                "target": "Name: tronlong\nType: EMAIL_ADDRESS"
+            },
+            {
+                "src_entity_name": "020 8998 6280",
+                "tgt_entity_name": "support tronlong com",
+                "relation_name": "",
+                "weight": 7.0,
+                "description": "020 8998 6280 is the company s main phone number  and support tronlong com is the technical support email address  both used for different types of communication",
+                "source_ids": [
+                    178
+                ],
+                "source": "Name: 020 8998 6280\nType: PHONE_NUMBER",
+                "target": "Name: support tronlong com\nType: EMAIL_ADDRESS"
+            },
+            {
+                "src_entity_name": "020 8998 6280",
+                "tgt_entity_name": "020 3893 9734",
+                "relation_name": "",
+                "weight": 7.0,
+                "description": "020 8998 6280 is the company s main phone number  and 020 3893 9734 is the technical hotline number  both used for different types of communication",
+                "source_ids": [
+                    178
+                ],
+                "source": "Name: 020 8998 6280\nType: PHONE_NUMBER",
+                "target": "Name: 020 3893 9734\nType: PHONE_NUMBER"
+            },
+            {
+                "src_entity_name": "020 8998 6280",
+                "tgt_entity_name": "51ele net",
+                "relation_name": "",
+                "weight": 7.0,
+                "description": "the main phone number and technical forum are both associated with the company  indicating a connection between the company and its technical community",
+                "source_ids": [
+                    173
+                ],
+                "source": "Name: 020 8998 6280\nType: PHONE_NUMBER",
+                "target": "Name: 51ele net\nType: WEBSITE"
+            },
+            {
+                "src_entity_name": "tronlong",
+                "tgt_entity_name": "020 8998 6280",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "tronlong s main phone number is used for general inquiries and customer service",
+                "source_ids": [
+                    116
+                ],
+                "source": "Name: 020 8998 6280\nType: PHONE_NUMBER",
+                "target": "Name: tronlong\nType: ORGANIZATION"
+            },
+            {
+                "src_entity_name": "020 8998 6280",
+                "tgt_entity_name": "12 18",
+                "relation_name": "",
+                "weight": 6.0,
+                "description": "020 8998 6280 is the main phone number  and 12 18 is a date mentioned in the context of the company s information",
+                "source_ids": [
+                    126
+                ],
+                "source": "Name: 020 8998 6280\nType: PHONE_NUMBER",
+                "target": "Name: 12 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "020 8998 6280",
+                "tgt_entity_name": "16 18",
+                "relation_name": "",
+                "weight": 5.0,
+                "description": "020 8998 6280 is the main phone number of the company  and 16 18 is a date mentioned in the text associated with it",
+                "source_ids": [
+                    165
+                ],
+                "source": "Name: 020 8998 6280\nType: PHONE_NUMBER",
+                "target": "Name: 16 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "020 8998 6280",
+                "tgt_entity_name": "tronlong",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "020 8998 6280 is the main phone number for tronlong  indicating a direct contact point for general inquiries",
+                "source_ids": [
+                    176
+                ],
+                "source": "Name: 020 8998 6280\nType: PHONE_NUMBER",
+                "target": "Name: tronlong\nType: UNKNOWN"
+            },
+            {
+                "src_entity_name": "support tronlong com",
+                "tgt_entity_name": "020 3893 9734",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "support tronlong com is the technical support email address for the company  and 020 3893 9734 is the technical hotline number  both used for technical communication",
+                "source_ids": [
+                    178
+                ],
+                "source": "Name: support tronlong com\nType: EMAIL_ADDRESS",
+                "target": "Name: 020 3893 9734\nType: PHONE_NUMBER"
+            },
+            {
+                "src_entity_name": "tronlong",
+                "tgt_entity_name": "support tronlong com",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "tronlong s technical support email address is used for contacting the company regarding technical issues",
+                "source_ids": [
+                    44
+                ],
+                "source": "Name: support tronlong com\nType: EMAIL_ADDRESS",
+                "target": "Name: tronlong\nType: EMAIL_ADDRESS"
+            },
+            {
+                "src_entity_name": "51ele net",
+                "tgt_entity_name": "support tronlong com",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "the technical forum and technical support email address are both associated with the company  indicating a connection between the company and its technical support services",
+                "source_ids": [
+                    173
+                ],
+                "source": "Name: support tronlong com\nType: EMAIL_ADDRESS",
+                "target": "Name: 51ele net\nType: WEBSITE"
+            },
+            {
+                "src_entity_name": "tronlong",
+                "tgt_entity_name": "support tronlong com",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "tronlong s technical support email address is used for resolving technical issues",
+                "source_ids": [
+                    116
+                ],
+                "source": "Name: support tronlong com\nType: EMAIL_ADDRESS",
+                "target": "Name: tronlong\nType: ORGANIZATION"
+            },
+            {
+                "src_entity_name": "12 18",
+                "tgt_entity_name": "support tronlong com",
+                "relation_name": "",
+                "weight": 6.0,
+                "description": "12 18 is a date mentioned in the context of the company s information  and support tronlong com is the technical support email address",
+                "source_ids": [
+                    126
+                ],
+                "source": "Name: support tronlong com\nType: EMAIL_ADDRESS",
+                "target": "Name: 12 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "16 18",
+                "tgt_entity_name": "support tronlong com",
+                "relation_name": "",
+                "weight": 5.0,
+                "description": "16 18 is a date mentioned in the text  and support tronlong com is the technical support email address associated with it",
+                "source_ids": [
+                    165
+                ],
+                "source": "Name: support tronlong com\nType: EMAIL_ADDRESS",
+                "target": "Name: 16 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "support tronlong com",
+                "tgt_entity_name": "tronlong",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "support tronlong com is the technical support email address for tronlong  indicating a direct contact point for technical assistance",
+                "source_ids": [
+                    176
+                ],
+                "source": "Name: support tronlong com\nType: EMAIL_ADDRESS",
+                "target": "Name: tronlong\nType: UNKNOWN"
+            },
+            {
+                "src_entity_name": "tronlong",
+                "tgt_entity_name": "020 3893 9734",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "tronlong s technical hotline number is used for technical support inquiries",
+                "source_ids": [
+                    44
+                ],
+                "source": "Name: 020 3893 9734\nType: PHONE_NUMBER",
+                "target": "Name: tronlong\nType: EMAIL_ADDRESS"
+            },
+            {
+                "src_entity_name": "51ele net",
+                "tgt_entity_name": "020 3893 9734",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "the technical forum and technical hotline number are both associated with the company  indicating a connection between the company and its technical support services",
+                "source_ids": [
+                    173
+                ],
+                "source": "Name: 020 3893 9734\nType: PHONE_NUMBER",
+                "target": "Name: 51ele net\nType: WEBSITE"
+            },
+            {
+                "src_entity_name": "tronlong",
+                "tgt_entity_name": "020 3893 9734",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "tronlong s technical hotline number is used for technical assistance and support",
+                "source_ids": [
+                    116
+                ],
+                "source": "Name: 020 3893 9734\nType: PHONE_NUMBER",
+                "target": "Name: tronlong\nType: ORGANIZATION"
+            },
+            {
+                "src_entity_name": "12 18",
+                "tgt_entity_name": "020 3893 9734",
+                "relation_name": "",
+                "weight": 6.0,
+                "description": "12 18 is a date mentioned in the context of the company s information  and 020 3893 9734 is the technical hotline number",
+                "source_ids": [
+                    126
+                ],
+                "source": "Name: 020 3893 9734\nType: PHONE_NUMBER",
+                "target": "Name: 12 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "16 18",
+                "tgt_entity_name": "020 3893 9734",
+                "relation_name": "",
+                "weight": 5.0,
+                "description": "16 18 is a date mentioned in the text  and 020 3893 9734 is the technical hotline number associated with it",
+                "source_ids": [
+                    165
+                ],
+                "source": "Name: 020 3893 9734\nType: PHONE_NUMBER",
+                "target": "Name: 16 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "020 3893 9734",
+                "tgt_entity_name": "tronlong",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "020 3893 9734 is the technical hotline number for tronlong  indicating a direct contact point for technical support",
+                "source_ids": [
+                    176
+                ],
+                "source": "Name: 020 3893 9734\nType: PHONE_NUMBER",
+                "target": "Name: tronlong\nType: UNKNOWN"
+            },
+            {
+                "src_entity_name": "tronlong",
+                "tgt_entity_name": "hivemq",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "tronlong uses hivemq as a public mqtt server for communication in the case described",
+                "source_ids": [
+                    60
+                ],
+                "source": "Name: tronlong\nType: ORGANIZATION",
+                "target": "Name: hivemq\nType: PRODUCT"
+            },
+            {
+                "src_entity_name": "tronlong",
+                "tgt_entity_name": "ubuntu",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "tronlong uses ubuntu as the upper machine tool for communication in the case described",
+                "source_ids": [
+                    60
+                ],
+                "source": "Name: tronlong\nType: ORGANIZATION",
+                "target": "Name: ubuntu\nType: PRODUCT"
+            },
+            {
+                "src_entity_name": "tronlong",
+                "tgt_entity_name": "mqtt通信协议",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "tronlong uses mqtt as a protocol for communication between the evaluation board and the upper machine",
+                "source_ids": [
+                    60
+                ],
+                "source": "Name: tronlong\nType: ORGANIZATION",
+                "target": "Name: mqtt通信协议\nType: TECHNOLOGY"
+            },
+            {
+                "src_entity_name": "tronlong",
+                "tgt_entity_name": "eth0",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "tronlong connects the evaluation board s eth0 interface to the upper machine for communication",
+                "source_ids": [
+                    60
+                ],
+                "source": "Name: tronlong\nType: ORGANIZATION",
+                "target": "Name: eth0\nType: PRODUCT"
+            },
+            {
+                "src_entity_name": "tronlong",
+                "tgt_entity_name": "rgmii",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "tronlong uses rgmii as an interface for connecting the evaluation board to the upper machine",
+                "source_ids": [
+                    60
+                ],
+                "source": "Name: tronlong\nType: ORGANIZATION",
+                "target": "Name: rgmii\nType: TECHNOLOGY"
+            },
+            {
+                "src_entity_name": "tronlong",
+                "tgt_entity_name": "51ele net",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "tronlong s technical forum is used for technical discussions and support",
+                "source_ids": [
+                    116
+                ],
+                "source": "Name: tronlong\nType: ORGANIZATION",
+                "target": "Name: 51ele net\nType: WEBSITE"
+            },
+            {
+                "src_entity_name": "tronlong",
+                "tgt_entity_name": "6 18",
+                "relation_name": "",
+                "weight": 6.0,
+                "description": "tronlong mentions the date 6 18 in the text  indicating it is a specific day referenced in the context",
+                "source_ids": [
+                    60
+                ],
+                "source": "Name: tronlong\nType: ORGANIZATION",
+                "target": "Name: 6 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "tronlong",
+                "tgt_entity_name": "11 18",
+                "relation_name": "",
+                "weight": 7.0,
+                "description": "11 18 is a date associated with tronlong  possibly indicating a specific event or milestone",
+                "source_ids": [
+                    116
+                ],
+                "source": "Name: tronlong\nType: ORGANIZATION",
+                "target": "Name: 11 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "",
+                "tgt_entity_name": "3",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "is likely associated with the number 3  indicating its position or page number in the document",
+                "source_ids": [
+                    8
+                ],
+                "source": "Name: 3\nType: NUMBER",
+                "target": "Name: \nType: UNKNOWN"
+            },
+            {
+                "src_entity_name": "",
+                "tgt_entity_name": "tl3588 evm",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "is the organization that produces the tl3588 evm evaluation board",
+                "source_ids": [
+                    22
+                ],
+                "source": "Name: \nType: UNKNOWN",
+                "target": "Name: tl3588 evm\nType: PRODUCT"
+            },
+            {
+                "src_entity_name": "",
+                "tgt_entity_name": "qos",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "includes the qos quality level feature as one of its comprehensive application features",
+                "source_ids": [
+                    41
+                ],
+                "source": "Name: \nType: UNKNOWN",
+                "target": "Name: qos\nType: TECHNOLOGY"
+            },
+            {
+                "src_entity_name": "tronlong",
+                "tgt_entity_name": "",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "tronlong is mentioned as professionally developing the industrial core board product",
+                "source_ids": [
+                    44
+                ],
+                "source": "Name: \nType: UNKNOWN",
+                "target": "Name: tronlong\nType: EMAIL_ADDRESS"
+            },
+            {
+                "src_entity_name": "m2m",
+                "tgt_entity_name": "",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "m2m   and          are both technologies related to the internet of things",
+                "source_ids": [
+                    48
+                ],
+                "source": "Name: \nType: UNKNOWN",
+                "target": "Name: m2m\nType: TECHNOLOGY"
+            },
+            {
+                "src_entity_name": "",
+                "tgt_entity_name": "bin",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "bin     mqtt sinewave pub",
+                "source_ids": [
+                    131
+                ],
+                "source": "Name: \nType: UNKNOWN",
+                "target": "Name: bin\nType: DIRECTORY"
+            },
+            {
+                "src_entity_name": "",
+                "tgt_entity_name": "mqtt client",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "mqtt client",
+                "source_ids": [
+                    65
+                ],
+                "source": "Name: \nType: UNKNOWN",
+                "target": "Name: mqtt client\nType: SOFTWARE"
+            },
+            {
+                "src_entity_name": "",
+                "tgt_entity_name": "mqtt",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "mqtt",
+                "source_ids": [
+                    134
+                ],
+                "source": "Name: \nType: UNKNOWN",
+                "target": "Name: mqtt\nType: SOFTWARE"
+            },
+            {
+                "src_entity_name": "",
+                "tgt_entity_name": "mqtt通信协议",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "the upper computer communicates with the mqtt server for data exchange",
+                "source_ids": [
+                    130
+                ],
+                "source": "Name: \nType: UNKNOWN",
+                "target": "Name: mqtt通信协议\nType: TECHNOLOGY"
+            },
+            {
+                "src_entity_name": "",
+                "tgt_entity_name": "mqtt",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "the     interacts with the mqtt     to publish messages",
+                "source_ids": [
+                    86
+                ],
+                "source": "Name: \nType: UNKNOWN",
+                "target": "Name: mqtt\nType: UNKNOWN"
+            },
+            {
+                "src_entity_name": "",
+                "tgt_entity_name": "libmosquitto",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "the evaluation board uses the libmosquitto library to communicate with the mqtt broker",
+                "source_ids": [
+                    123
+                ],
+                "source": "Name: \nType: UNKNOWN",
+                "target": "Name: libmosquitto\nType: SOFTWARE"
+            },
+            {
+                "src_entity_name": "",
+                "tgt_entity_name": "web",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "the upper computer uses a web interface to receive and display data from the mqtt server",
+                "source_ids": [
+                    123
+                ],
+                "source": "Name: \nType: UNKNOWN",
+                "target": "Name: web\nType: SOFTWARE"
+            },
+            {
+                "src_entity_name": "",
+                "tgt_entity_name": "eth0 rgmi",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "has a gigabit ethernet port eth0 rgmi for network connectivity",
+                "source_ids": [
+                    130
+                ],
+                "source": "Name: \nType: UNKNOWN",
+                "target": "Name: eth0 rgmi\nType: DEVICE"
+            },
+            {
+                "src_entity_name": "",
+                "tgt_entity_name": "mqtt sinewave pub",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "mqtt sinewave pub",
+                "source_ids": [
+                    131
+                ],
+                "source": "Name: \nType: UNKNOWN",
+                "target": "Name: mqtt sinewave pub\nType: SOFTWARE"
+            },
+            {
+                "src_entity_name": "web",
+                "tgt_entity_name": "",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "the web    retrieves and displays the sine wave data from the mqtt server",
+                "source_ids": [
+                    140
+                ],
+                "source": "Name: \nType: UNKNOWN",
+                "target": "Name: web\nType: EVENT"
+            },
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "1 mqtt通信协议简介. 4",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of 'MQTT通信协议' is a primary topic of section 1 MQTT通信协议简介. 4.",
+                "source_ids": [
+                    9
+                ],
+                "source": "Name: 1 mqtt通信协议简介. 4\nType: SECTION_TITLE",
+                "target": "Name: mqtt通信协议\nType: TECHNOLOGY"
+            },
+            {
+                "src_entity_name": "简介",
+                "tgt_entity_name": "1 mqtt通信协议简介. 4",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '简介' (introduction) is a primary topic of section 1 MQTT通信协议简介. 4.",
+                "source_ids": [
+                    9
+                ],
+                "source": "Name: 1 mqtt通信协议简介. 4\nType: SECTION_TITLE",
+                "target": "Name: 简介\nType: ACADEMIC_SUBJECT"
+            },
+            {
+                "src_entity_name": "tl3588 evm",
+                "tgt_entity_name": "mqtt通信协议",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "the tl3588 evm evaluation board uses the mqtt communication protocol for its development case",
+                "source_ids": [
+                    22
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: tl3588 evm\nType: PRODUCT"
+            },
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "4 demo mqtt demos",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "the mqtt communication protocol development cases are located in the directory 4      demo mqtt demos   indicating it is the storage location for these products",
+                "source_ids": [
+                    30
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: 4 demo mqtt demos\nType: DIRECTORY"
+            },
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "1 mqtt通信协议简介",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of 'MQTT通信协议' is the primary topic of section '1 MQTT通信协议简介'.",
+                "source_ids": [
+                    34
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: 1 mqtt通信协议简介\nType: SECTION_TITLE"
+            },
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "tcp ip",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "mqtt is built on top of the tcp ip protocol  allowing it to function over networks",
+                "source_ids": [
+                    36
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: tcp ip\nType: TECHNOLOGY"
+            },
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "ibm",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "mqtt was developed and released by ibm in 1999",
+                "source_ids": [
+                    36
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: ibm\nType: ORGANIZATION"
+            },
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "1999",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "mqtt was released in the year 1999",
+                "source_ids": [
+                    36
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: 1999\nType: DATE"
+            },
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "hardware",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "mqtt is designed to operate on constrained hardware devices  indicating a direct relationship between the technology and the hardware it supports",
+                "source_ids": [
+                    39
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: hardware\nType: UNKNOWN"
+            },
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "network",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "mqtt is suitable for use in low bandwidth  high latency networks  showing a direct relationship between the technology and the network environment it is designed for",
+                "source_ids": [
+                    39
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: network\nType: UNKNOWN"
+            },
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "hardware resource",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "mqtt is suitable for devices with limited hardware resources",
+                "source_ids": [
+                    47
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: hardware resource\nType: UNKNOWN"
+            },
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "bandwidth",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "mqtt is suitable for networks with limited bandwidth",
+                "source_ids": [
+                    47
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: bandwidth\nType: UNKNOWN"
+            },
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "mqtt client",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "mqtt client is a product related to the mqtt communication protocol  indicating it is a specific implementation or component of the protocol",
+                "source_ids": [
+                    30
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: mqtt client\nType: SOFTWARE"
+            },
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "2mqtt_client 案例",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of 'MQTT' is a primary topic of section '2mqtt_client 案例'.",
+                "source_ids": [
+                    55
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: 2mqtt_client 案例\nType: SECTION_TITLE"
+            },
+            {
+                "src_entity_name": "mosquitto",
+                "tgt_entity_name": "mqtt通信协议",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "mosquitto sub is a tool that operates within the mqtt protocol framework",
+                "source_ids": [
+                    72
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: mosquitto\nType: SOFTWARE"
+            },
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "broker hivemq com",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "mqtt uses broker hivemq com as the server location for message publishing and receiving",
+                "source_ids": [
+                    88
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: broker hivemq com\nType: LOCATION"
+            },
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "tcp",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "mqtt on the arm end uses tcp as its communication protocol",
+                "source_ids": [
+                    140
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: tcp\nType: TECHNOLOGY"
+            },
+            {
+                "src_entity_name": "h",
+                "tgt_entity_name": "mqtt通信协议",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "h is a parameter related to the mqtt server  specifying its address",
+                "source_ids": [
+                    75
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: h\nType: PARAMETER_OR_VARIABLE"
+            },
+            {
+                "src_entity_name": "p",
+                "tgt_entity_name": "mqtt通信协议",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "p is a parameter related to the mqtt protocol  specifying the server port",
+                "source_ids": [
+                    75
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: p\nType: PARAMETER_OR_VARIABLE"
+            },
+            {
+                "src_entity_name": "m",
+                "tgt_entity_name": "mqtt通信协议",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "m is a parameter related to the mqtt protocol  specifying the operation mode  publish or subscribe",
+                "source_ids": [
+                    75
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: m\nType: PARAMETER_OR_VARIABLE"
+            },
+            {
+                "src_entity_name": "t",
+                "tgt_entity_name": "mqtt通信协议",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "t is a parameter related to the mqtt protocol  specifying the topic for message transmission",
+                "source_ids": [
+                    75
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: t\nType: PARAMETER_OR_VARIABLE"
+            },
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "test data",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "mqtt uses test data as a topic for message publishing and receiving",
+                "source_ids": [
+                    88
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: test data\nType: TOPIC"
+            },
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "hivemq",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "mqtt is the technology used by the hivemq server for communication",
+                "source_ids": [
+                    130
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: hivemq\nType: PRODUCT"
+            },
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "ubuntu",
+                "relation_name": "",
+                "weight": 7.0,
+                "description": "mqtt is the technology used for communication with the ubuntu web program",
+                "source_ids": [
+                    130
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: ubuntu\nType: PRODUCT"
+            },
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "web",
+                "relation_name": "",
+                "weight": 7.0,
+                "description": "mqtt is the technology used for communication with the web software component",
+                "source_ids": [
+                    130
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: web\nType: SOFTWARE"
+            },
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "mqtt sinewave pub",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "mqtt sinewave pub is a product related to the mqtt communication protocol  indicating it is a specific implementation or component of the protocol",
+                "source_ids": [
+                    30
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: mqtt sinewave pub\nType: SOFTWARE"
+            },
+            {
+                "src_entity_name": "web",
+                "tgt_entity_name": "mqtt通信协议",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "the web    allows interaction with the mqtt server to retrieve and display data",
+                "source_ids": [
+                    140
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: web\nType: EVENT"
+            },
+            {
+                "src_entity_name": "mqtt通信协议",
+                "tgt_entity_name": "websocket",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "mqtt on the web end uses websocket as its communication protocol",
+                "source_ids": [
+                    140
+                ],
+                "source": "Name: mqtt通信协议\nType: TECHNOLOGY",
+                "target": "Name: websocket\nType: TECHNOLOGY"
+            },
+            {
+                "src_entity_name": "mosquitto",
+                "tgt_entity_name": "1.3 mosquitto 工具安装",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of 'Mosquitto' is a primary topic of section 1.3.",
+                "source_ids": [
+                    49
+                ],
+                "source": "Name: mosquitto\nType: SOFTWARE",
+                "target": "Name: 1.3 mosquitto 工具安装\nType: SECTION_TITLE"
+            },
+            {
+                "src_entity_name": "mosquitto",
+                "tgt_entity_name": "ubuntu",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "mosquitto tools need to be installed on the ubuntu system to enable mqtt communication functionality",
+                "source_ids": [
+                    50
+                ],
+                "source": "Name: mosquitto\nType: SOFTWARE",
+                "target": "Name: ubuntu\nType: LOCATION"
+            },
+            {
+                "src_entity_name": "mosquitto",
+                "tgt_entity_name": "mqtt client",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "the mqtt client example uses mosquitto tools to demonstrate mqtt communication protocol functionality",
+                "source_ids": [
+                    50
+                ],
+                "source": "Name: mosquitto\nType: SOFTWARE",
+                "target": "Name: mqtt client\nType: SOFTWARE"
+            },
+            {
+                "src_entity_name": "表1",
+                "tgt_entity_name": "mosquitto",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "Table '表1' contains data about 'Mosquitto'.",
+                "source_ids": [
+                    64
+                ],
+                "source": "Name: mosquitto\nType: SOFTWARE",
+                "target": "Name: 表1\nType: TABLE"
+            },
+            {
+                "src_entity_name": "mosquitto",
+                "tgt_entity_name": "broker hivemq com",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "mosquitto sub connects to the mqtt server at broker hivemq com",
+                "source_ids": [
+                    72
+                ],
+                "source": "Name: mosquitto\nType: SOFTWARE",
+                "target": "Name: broker hivemq com\nType: LOCATION"
+            },
+            {
+                "src_entity_name": "mosquitto",
+                "tgt_entity_name": "test data",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "mosquitto sub subscribes to the mqtt topic test data",
+                "source_ids": [
+                    72
+                ],
+                "source": "Name: mosquitto\nType: SOFTWARE",
+                "target": "Name: test data\nType: EVENT"
+            },
+            {
+                "src_entity_name": "3 1",
+                "tgt_entity_name": "3 2",
+                "relation_name": "",
+                "weight": 7.0,
+                "description": "3 1 and 3 2 are consecutive section titles in the document  suggesting a logical progression of content",
+                "source_ids": [
+                    16
+                ],
+                "source": "Name: 3 1\nType: SECTION_TITLE",
+                "target": "Name: 3 2\nType: SECTION_TITLE"
+            },
+            {
+                "src_entity_name": "3 2",
+                "tgt_entity_name": "3 3",
+                "relation_name": "",
+                "weight": 7.0,
+                "description": "3 2 and 3 3 are consecutive section titles in the document  suggesting a logical progression of content",
+                "source_ids": [
+                    16
+                ],
+                "source": "Name: 3 2\nType: SECTION_TITLE",
+                "target": "Name: 3 3\nType: SECTION_TITLE"
+            },
+            {
+                "src_entity_name": "案例测试",
+                "tgt_entity_name": "3 2",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '案例测试' is a primary topic of section 2.2.",
+                "source_ids": [
+                    63
+                ],
+                "source": "Name: 3 2\nType: SECTION_TITLE",
+                "target": "Name: 案例测试\nType: TASK_OR_PROBLEM"
+            },
+            {
+                "src_entity_name": "3 3",
+                "tgt_entity_name": "3 4",
+                "relation_name": "",
+                "weight": 7.0,
+                "description": "3 3 and 3 4 are consecutive section titles in the document  suggesting a logical progression of content",
+                "source_ids": [
+                    16
+                ],
+                "source": "Name: 3 3\nType: SECTION_TITLE",
+                "target": "Name: 3 4\nType: SECTION_TITLE"
+            },
+            {
+                "src_entity_name": "windows",
+                "tgt_entity_name": "windows 7 64bit",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "windows      includes windows 7 64bit as one of the operating systems used",
+                "source_ids": [
+                    23
+                ],
+                "source": "Name: windows 7 64bit\nType: PRODUCT",
+                "target": "Name: windows\nType: UNKNOWN"
+            },
+            {
+                "src_entity_name": "windows",
+                "tgt_entity_name": "windows 10 64bit",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "windows      includes windows 10 64bit as one of the operating systems used",
+                "source_ids": [
+                    23
+                ],
+                "source": "Name: windows 10 64bit\nType: PRODUCT",
+                "target": "Name: windows\nType: UNKNOWN"
+            },
+            {
+                "src_entity_name": "vmware",
+                "tgt_entity_name": "16 2 5",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "16 2 5 is the version number of the vmware product  specifying a particular release",
+                "source_ids": [
+                    24
+                ],
+                "source": "Name: vmware\nType: PRODUCT",
+                "target": "Name: 16 2 5\nType: VERSION"
+            },
+            {
+                "src_entity_name": "linux",
+                "tgt_entity_name": "ubuntu20 04 6",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "linux is the development environment that runs on the ubuntu20 04 6 operating system",
+                "source_ids": [
+                    25
+                ],
+                "source": "Name: linux\nType: SOFTWARE",
+                "target": "Name: ubuntu20 04 6\nType: SOFTWARE"
+            },
+            {
+                "src_entity_name": "ubuntu20 04 6",
+                "tgt_entity_name": "64bit",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "ubuntu20 04 6 is a 64bit version of the ubuntu operating system",
+                "source_ids": [
+                    25
+                ],
+                "source": "Name: ubuntu20 04 6\nType: SOFTWARE",
+                "target": "Name: 64bit\nType: MEASUREMENT"
+            },
+            {
+                "src_entity_name": "u boot",
+                "tgt_entity_name": "u bo0t 2017 09",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "u bo0t 2017 09 is a specific version of u boot  indicating a direct relationship between the software and its product release",
+                "source_ids": [
+                    26
+                ],
+                "source": "Name: u boot\nType: SOFTWARE",
+                "target": "Name: u bo0t 2017 09\nType: PRODUCT"
+            },
+            {
+                "src_entity_name": "linux 5 10 160",
+                "tgt_entity_name": "linux rt 5 10 160",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "linux rt 5 10 160 is a real time variant of linux 5 10 160  indicating a relationship between the two kernel versions",
+                "source_ids": [
+                    27
+                ],
+                "source": "Name: linux 5 10 160\nType: PRODUCT",
+                "target": "Name: linux rt 5 10 160\nType: PRODUCT"
+            },
+            {
+                "src_entity_name": "debian",
+                "tgt_entity_name": "debian 11",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "debian is the organization responsible for releasing debian 11",
+                "source_ids": [
+                    28
+                ],
+                "source": "Name: debian\nType: ORGANIZATION",
+                "target": "Name: debian 11\nType: PRODUCT"
+            },
+            {
+                "src_entity_name": "linuxsdk",
+                "tgt_entity_name": "rk3588 linux release v1 2 1 20230720",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "linuxsdk is based on the rk3588 linux release v1 2 1 20230720 version  indicating a dependency relationship",
+                "source_ids": [
+                    29
+                ],
+                "source": "Name: linuxsdk\nType: PRODUCT",
+                "target": "Name: rk3588 linux release v1 2 1 20230720\nType: PRODUCT"
+            },
+            {
+                "src_entity_name": "linuxsdk",
+                "tgt_entity_name": "debian",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "the linuxsdk requires compilation as described in the debian",
+                "source_ids": [
+                    147
+                ],
+                "source": "Name: linuxsdk\nType: PRODUCT",
+                "target": "Name: debian\nType: BOOK"
+            },
+            {
+                "src_entity_name": "mqtt client",
+                "tgt_entity_name": "4 demo mqtt demos",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "mqtt client is located in the directory 4      demo mqtt demos   indicating it is stored within this file organization structure",
+                "source_ids": [
+                    30
+                ],
+                "source": "Name: 4 demo mqtt demos\nType: DIRECTORY",
+                "target": "Name: mqtt client\nType: SOFTWARE"
+            },
+            {
+                "src_entity_name": "mqtt sinewave pub",
+                "tgt_entity_name": "4 demo mqtt demos",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "mqtt sinewave pub is located in the directory 4      demo mqtt demos   indicating it is stored within this file organization structure",
+                "source_ids": [
+                    30
+                ],
+                "source": "Name: 4 demo mqtt demos\nType: DIRECTORY",
+                "target": "Name: mqtt sinewave pub\nType: SOFTWARE"
+            },
+            {
+                "src_entity_name": "简介",
+                "tgt_entity_name": "1 mqtt通信协议简介",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '简介' (introduction) is a structural element of section '1 MQTT通信协议简介'.",
+                "source_ids": [
+                    34
+                ],
+                "source": "Name: 1 mqtt通信协议简介\nType: SECTION_TITLE",
+                "target": "Name: 简介\nType: SECTION_TITLE"
+            },
+            {
+                "src_entity_name": "tronlong",
+                "tgt_entity_name": "www 51ele net",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "tronlong s technical forum is used for technical discussions and support",
+                "source_ids": [
+                    44
+                ],
+                "source": "Name: tronlong\nType: EMAIL_ADDRESS",
+                "target": "Name: 51ele net\nType: WEBSITE"
+            },
+            {
+                "src_entity_name": "应用场景",
+                "tgt_entity_name": "1.2应用场景",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '应用场景' is a primary topic of section 1.2.",
+                "source_ids": [
+                    46
+                ],
+                "source": "Name: 1.2应用场景\nType: SECTION_TITLE",
+                "target": "Name: 应用场景\nType: TASK_OR_PROBLEM"
+            },
+            {
+                "src_entity_name": "工具安装",
+                "tgt_entity_name": "1.3 mosquitto 工具安装",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '工具安装' (tool installation) is a primary topic of section 1.3.",
+                "source_ids": [
+                    49
+                ],
+                "source": "Name: 1.3 mosquitto 工具安装\nType: SECTION_TITLE",
+                "target": "Name: 工具安装\nType: TASK_OR_PROBLEM"
+            },
+            {
+                "src_entity_name": "ubuntu",
+                "tgt_entity_name": "mqtt client",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "the mqtt client example is executed on the ubuntu system as part of the mqtt communication setup",
+                "source_ids": [
+                    50
+                ],
+                "source": "Name: ubuntu\nType: LOCATION",
+                "target": "Name: mqtt client\nType: SOFTWARE"
+            },
+            {
+                "src_entity_name": "src",
+                "tgt_entity_name": "ubuntu",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "the src directory needs to be copied to the ubuntu working directory as part of the setup process",
+                "source_ids": [
+                    147
+                ],
+                "source": "Name: ubuntu\nType: LOCATION",
+                "target": "Name: src\nType: DIRECTORY"
+            },
+            {
+                "src_entity_name": "bin",
+                "tgt_entity_name": "mqtt client",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "mqtt client    bin",
+                "source_ids": [
+                    65
+                ],
+                "source": "Name: mqtt client\nType: SOFTWARE",
+                "target": "Name: bin\nType: DIRECTORY"
+            },
+            {
+                "src_entity_name": "client",
+                "tgt_entity_name": "2mqtt_client 案例",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of 'Client' is a primary topic of section '2mqtt_client 案例'.",
+                "source_ids": [
+                    55
+                ],
+                "source": "Name: 2mqtt_client 案例\nType: SECTION_TITLE",
+                "target": "Name: client\nType: SOFTWARE"
+            },
+            {
+                "src_entity_name": "案例",
+                "tgt_entity_name": "2mqtt_client 案例",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '案例' is a primary topic of section '2mqtt_client 案例'.",
+                "source_ids": [
+                    55
+                ],
+                "source": "Name: 2mqtt_client 案例\nType: SECTION_TITLE",
+                "target": "Name: 案例\nType: TASK_OR_PROBLEM"
+            },
+            {
+                "src_entity_name": "案例",
+                "tgt_entity_name": "2.1案例说明",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '案例' is a primary topic of section 2.1.",
+                "source_ids": [
+                    56
+                ],
+                "source": "Name: 2.1案例说明\nType: SECTION_TITLE",
+                "target": "Name: 案例\nType: TASK_OR_PROBLEM"
+            },
+            {
+                "src_entity_name": "说明",
+                "tgt_entity_name": "2.1案例说明",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '说明' is a primary topic of section 2.1.",
+                "source_ids": [
+                    56
+                ],
+                "source": "Name: 2.1案例说明\nType: SECTION_TITLE",
+                "target": "Name: 说明\nType: METHOD_OR_TECHNIQUE"
+            },
+            {
+                "src_entity_name": "案例",
+                "tgt_entity_name": "3.3案例编译",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '案例' (case study) is a primary topic of section 3.3.",
+                "source_ids": [
+                    146
+                ],
+                "source": "Name: 案例\nType: TASK_OR_PROBLEM",
+                "target": "Name: 3.3案例编译\nType: SECTION_TITLE"
+            },
+            {
+                "src_entity_name": "libmosquitto",
+                "tgt_entity_name": "mqtt",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "libmosquitto uses the mqtt protocol for communication with mqtt broker servers",
+                "source_ids": [
+                    57
+                ],
+                "source": "Name: libmosquitto\nType: SOFTWARE",
+                "target": "Name: mqtt\nType: SOFTWARE"
+            },
+            {
+                "src_entity_name": "表1",
+                "tgt_entity_name": "hivemq",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "Table '表1' contains data about 'HiveMQ'.",
+                "source_ids": [
+                    64
+                ],
+                "source": "Name: hivemq\nType: PRODUCT",
+                "target": "Name: 表1\nType: TABLE"
+            },
+            {
+                "src_entity_name": "12 18",
+                "tgt_entity_name": "51ele net",
+                "relation_name": "",
+                "weight": 6.0,
+                "description": "12 18 is a date mentioned in the context of the company s information  and www 51ele net is a technical forum associated with the company",
+                "source_ids": [
+                    126
+                ],
+                "source": "Name: 51ele net\nType: WEBSITE",
+                "target": "Name: 12 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "16 18",
+                "tgt_entity_name": "51ele net",
+                "relation_name": "",
+                "weight": 5.0,
+                "description": "16 18 is a date mentioned in the text  and www 51ele net is a technical forum associated with it",
+                "source_ids": [
+                    165
+                ],
+                "source": "Name: 51ele net\nType: WEBSITE",
+                "target": "Name: 16 18\nType: DATE"
+            },
+            {
+                "src_entity_name": "51ele net",
+                "tgt_entity_name": "tronlong",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "www 51ele net is the technical forum website for tronlong  indicating a platform for technical discussions and support",
+                "source_ids": [
+                    176
+                ],
+                "source": "Name: 51ele net\nType: WEBSITE",
+                "target": "Name: tronlong\nType: UNKNOWN"
+            },
+            {
+                "src_entity_name": "案例测试",
+                "tgt_entity_name": "3.2 案例测试",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '案例测试' is the primary focus of section 3.2.",
+                "source_ids": [
+                    129
+                ],
+                "source": "Name: 案例测试\nType: TASK_OR_PROBLEM",
+                "target": "Name: 3.2 案例测试\nType: SECTION_TITLE"
+            },
+            {
+                "src_entity_name": "表1",
+                "tgt_entity_name": "broker地址",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "Table '表1' contains data about 'Broker地址'.",
+                "source_ids": [
+                    64
+                ],
+                "source": "Name: 表1\nType: TABLE",
+                "target": "Name: broker地址\nType: LOCATION"
+            },
+            {
+                "src_entity_name": "表1",
+                "tgt_entity_name": "tcp 端口",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "Table '表1' contains data about 'TCP 端口'.",
+                "source_ids": [
+                    64
+                ],
+                "source": "Name: 表1\nType: TABLE",
+                "target": "Name: tcp 端口\nType: PARAMETER_OR_VARIABLE"
+            },
+            {
+                "src_entity_name": "表1",
+                "tgt_entity_name": "websocket",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "Table '表1' contains data about 'WebSocket'.",
+                "source_ids": [
+                    64
+                ],
+                "source": "Name: 表1\nType: TABLE",
+                "target": "Name: websocket\nType: TECHNOLOGY"
+            },
+            {
+                "src_entity_name": "表1",
+                "tgt_entity_name": "服务器名称",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "Table '表1' contains data about '服务器名称'.",
+                "source_ids": [
+                    64
+                ],
+                "source": "Name: 表1\nType: TABLE",
+                "target": "Name: 服务器名称\nType: LOCATION"
+            },
+            {
+                "src_entity_name": "表1",
+                "tgt_entity_name": "eclipse",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "Table '表1' contains data about 'Eclipse'.",
+                "source_ids": [
+                    64
+                ],
+                "source": "Name: 表1\nType: TABLE",
+                "target": "Name: eclipse\nType: ORGANIZATION"
+            },
+            {
+                "src_entity_name": "表1",
+                "tgt_entity_name": "emqx（国内）",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "Table '表1' contains data about 'EMQX（国内）'.",
+                "source_ids": [
+                    64
+                ],
+                "source": "Name: 表1\nType: TABLE",
+                "target": "Name: emqx（国内）\nType: ORGANIZATION"
+            },
+            {
+                "src_entity_name": "bin",
+                "tgt_entity_name": "mqtt sinewave pub",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "mqtt sinewave pub     bin",
+                "source_ids": [
+                    131
+                ],
+                "source": "Name: bin\nType: DIRECTORY",
+                "target": "Name: mqtt sinewave pub\nType: SOFTWARE"
+            },
+            {
+                "src_entity_name": "评估板",
+                "tgt_entity_name": "2.2.1 评估板发布/上位机订阅",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '评估板' (Evaluation Board) is a primary topic of section 2.2.1.",
+                "source_ids": [
+                    71
+                ],
+                "source": "Name: 2.2.1 评估板发布/上位机订阅\nType: SECTION_TITLE",
+                "target": "Name: 评估板\nType: DEVICE_OR_HARDWARE"
+            },
+            {
+                "src_entity_name": "上位机",
+                "tgt_entity_name": "2.2.1 评估板发布/上位机订阅",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '上位机' (Upper Machine) is a primary topic of section 2.2.1.",
+                "source_ids": [
+                    71
+                ],
+                "source": "Name: 2.2.1 评估板发布/上位机订阅\nType: SECTION_TITLE",
+                "target": "Name: 上位机\nType: DEVICE_OR_HARDWARE"
+            },
+            {
+                "src_entity_name": "发布",
+                "tgt_entity_name": "2.2.1 评估板发布/上位机订阅",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '发布' (Publish) is a primary topic of section 2.2.1.",
+                "source_ids": [
+                    71
+                ],
+                "source": "Name: 2.2.1 评估板发布/上位机订阅\nType: SECTION_TITLE",
+                "target": "Name: 发布\nType: METHOD_OR_TECHNIQUE"
+            },
+            {
+                "src_entity_name": "订阅",
+                "tgt_entity_name": "2.2.1 评估板发布/上位机订阅",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '订阅' (Subscribe) is a primary topic of section 2.2.1.",
+                "source_ids": [
+                    71
+                ],
+                "source": "Name: 2.2.1 评估板发布/上位机订阅\nType: SECTION_TITLE",
+                "target": "Name: 订阅\nType: METHOD_OR_TECHNIQUE"
+            },
+            {
+                "src_entity_name": "评估板",
+                "tgt_entity_name": "2.2.2评估板订阅/上位机发布",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '评估板' (evaluation board) is a primary topic of section 2.2.2.",
+                "source_ids": [
+                    83
+                ],
+                "source": "Name: 评估板\nType: DEVICE_OR_HARDWARE",
+                "target": "Name: 2.2.2评估板订阅/上位机发布\nType: SECTION_TITLE"
+            },
+            {
+                "src_entity_name": "上位机",
+                "tgt_entity_name": "2.2.2评估板订阅/上位机发布",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '上位机' (upper machine) is a primary topic of section 2.2.2.",
+                "source_ids": [
+                    83
+                ],
+                "source": "Name: 上位机\nType: DEVICE_OR_HARDWARE",
+                "target": "Name: 2.2.2评估板订阅/上位机发布\nType: SECTION_TITLE"
+            },
+            {
+                "src_entity_name": "发布",
+                "tgt_entity_name": "2.2.2评估板订阅/上位机发布",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '发布' (publication) is a primary topic of section 2.2.2.",
+                "source_ids": [
+                    83
+                ],
+                "source": "Name: 发布\nType: METHOD_OR_TECHNIQUE",
+                "target": "Name: 2.2.2评估板订阅/上位机发布\nType: SECTION_TITLE"
+            },
+            {
+                "src_entity_name": "订阅",
+                "tgt_entity_name": "2.2.2评估板订阅/上位机发布",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '订阅' (subscription) is a primary topic of section 2.2.2.",
+                "source_ids": [
+                    83
+                ],
+                "source": "Name: 订阅\nType: METHOD_OR_TECHNIQUE",
+                "target": "Name: 2.2.2评估板订阅/上位机发布\nType: SECTION_TITLE"
+            },
+            {
+                "src_entity_name": "broker hivemq com",
+                "tgt_entity_name": "test data",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "broker hivemq com hosts the mqtt server that uses test data as a topic for message publishing",
+                "source_ids": [
+                    88
+                ],
+                "source": "Name: broker hivemq com\nType: LOCATION",
+                "target": "Name: test data\nType: TOPIC"
+            },
+            {
+                "src_entity_name": "mqtt sinewave pub",
+                "tgt_entity_name": "broker hivemq com",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "mqtt sinewave pub publishes messages to the mqtt broker hosted at broker hivemq com",
+                "source_ids": [
+                    135
+                ],
+                "source": "Name: broker hivemq com\nType: LOCATION",
+                "target": "Name: mqtt sinewave pub\nType: SOFTWARE"
+            },
+            {
+                "src_entity_name": "mqtt",
+                "tgt_entity_name": "server",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "mqtt is being connected to the server  indicating a direct technological relationship",
+                "source_ids": [
+                    168
+                ],
+                "source": "Name: mqtt\nType: UNKNOWN",
+                "target": "Name: server\nType: UNKNOWN"
+            },
+            {
+                "src_entity_name": "案例编译",
+                "tgt_entity_name": "2.3案例编译",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '案例编译' is a primary topic of section 2.3.",
+                "source_ids": [
+                    94
+                ],
+                "source": "Name: 2.3案例编译\nType: SECTION_TITLE",
+                "target": "Name: 案例编译\nType: TASK_OR_PROBLEM"
+            },
+            {
+                "src_entity_name": "src",
+                "tgt_entity_name": "makefile",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "the src directory contains the makefile that needs to be modified  indicating a direct association between the directory and the configuration file",
+                "source_ids": [
+                    95
+                ],
+                "source": "Name: src\nType: DIRECTORY",
+                "target": "Name: makefile\nType: FILE"
+            },
+            {
+                "src_entity_name": "rk3588 linux release v1 2 1",
+                "tgt_entity_name": "gcc linaro 10 2 1 2021 01 x86 64 aarch64 linux gnu",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "the rk3588 linux release v1 2 1 software includes the gcc compiler for cross compilation",
+                "source_ids": [
+                    147
+                ],
+                "source": "Name: rk3588 linux release v1 2 1\nType: SOFTWARE",
+                "target": "Name: gcc linaro 10 2 1 2021 01 x86 64 aarch64 linux gnu\nType: SOFTWARE"
+            },
+            {
+                "src_entity_name": "makefile",
+                "tgt_entity_name": "cross compilation",
+                "relation_name": "",
+                "weight": 7.0,
+                "description": "the makefile is used to configure the cross compilation environment  indicating its role in the setup process",
+                "source_ids": [
+                    95
+                ],
+                "source": "Name: makefile\nType: FILE",
+                "target": "Name: cross compilation\nType: UNKNOWN"
+            },
+            {
+                "src_entity_name": "makefile",
+                "tgt_entity_name": "cross compilation toolchain",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "the makefile is modified to configure the cross compilation toolchain environment",
+                "source_ids": [
+                    147
+                ],
+                "source": "Name: makefile\nType: FILE",
+                "target": "Name: cross compilation toolchain\nType: UNKNOWN"
+            },
+            {
+                "src_entity_name": "host",
+                "tgt_entity_name": "aarch64 linux gnu gcc",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "the host is using aarch64 linux gnu gcc as the compiler in the build process",
+                "source_ids": [
+                    100
+                ],
+                "source": "Name: aarch64 linux gnu gcc\nType: SOFTWARE",
+                "target": "Name: host\nType: UNKNOWN"
+            },
+            {
+                "src_entity_name": "host make",
+                "tgt_entity_name": "aarch64 linux gnu gcc",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "host make uses aarch64 linux gnu gcc as the compiler for building software",
+                "source_ids": [
+                    157
+                ],
+                "source": "Name: aarch64 linux gnu gcc\nType: SOFTWARE",
+                "target": "Name: host make\nType: UNKNOWN"
+            },
+            {
+                "src_entity_name": "sdk path",
+                "tgt_entity_name": "rk3588",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "sdk path points to the linux sdk for the rk3588 product",
+                "source_ids": [
+                    150
+                ],
+                "source": "Name: sdk path\nType: PARAMETER_OR_VARIABLE",
+                "target": "Name: rk3588\nType: PRODUCT"
+            },
+            {
+                "src_entity_name": "sdk path",
+                "tgt_entity_name": "linux",
+                "relation_name": "",
+                "weight": 8.0,
+                "description": "sdk path is associated with the linux operating system",
+                "source_ids": [
+                    150
+                ],
+                "source": "Name: sdk path\nType: PARAMETER_OR_VARIABLE",
+                "target": "Name: linux\nType: OPERATING_SYSTEM"
+            },
+            {
+                "src_entity_name": "关键代码",
+                "tgt_entity_name": "2.4关键代码",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '关键代码' is the primary focus of section 2.4.",
+                "source_ids": [
+                    107
+                ],
+                "source": "Name: 2.4关键代码\nType: SECTION_TITLE",
+                "target": "Name: 关键代码\nType: SECTION_TITLE"
+            },
+            {
+                "src_entity_name": "关键代码",
+                "tgt_entity_name": "3.4关键代码",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '关键代码' is the primary focus of section 3.4.",
+                "source_ids": [
+                    159
+                ],
+                "source": "Name: 关键代码\nType: SECTION_TITLE",
+                "target": "Name: 3.4关键代码\nType: SECTION_TITLE"
+            },
+            {
+                "src_entity_name": "mqtt sinewave pub",
+                "tgt_entity_name": "help",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "the   help command is used to display usage information for the mqtt sinewave pub software  indicating a standard command line interface feature",
+                "source_ids": [
+                    132
+                ],
+                "source": "Name: mqtt sinewave pub\nType: SOFTWARE",
+                "target": "Name: help\nType: UNKNOWN"
+            },
+            {
+                "src_entity_name": "index html",
+                "tgt_entity_name": "web",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "index html is the file that generates the web    when opened in a browser",
+                "source_ids": [
+                    140
+                ],
+                "source": "Name: index html\nType: FILE_TYPE",
+                "target": "Name: web\nType: EVENT"
+            },
+            {
+                "src_entity_name": "编译",
+                "tgt_entity_name": "3.3案例编译",
+                "relation_name": "",
+                "weight": 10.0,
+                "description": "The concept of '编译' (compilation) is a primary topic of section 3.3.",
+                "source_ids": [
+                    146
+                ],
+                "source": "Name: 3.3案例编译\nType: SECTION_TITLE",
+                "target": "Name: 编译\nType: METHOD_OR_TECHNIQUE"
+            },
+            {
+                "src_entity_name": "tronlong tmall com",
+                "tgt_entity_name": "tronlong",
+                "relation_name": "",
+                "weight": 9.0,
+                "description": "tronlong tmall com is the official online store of tronlong  indicating the location where products are sold",
+                "source_ids": [
+                    176
+                ],
+                "source": "Name: tronlong tmall com\nType: WEBSITE",
+                "target": "Name: tronlong\nType: UNKNOWN"
+            }
+        ]
+    },
+    "tree2kg": {
+        "1": [
+            "Name: mqtt通信协议案例\nType: SECTION_TITLE"
+        ],
+        "2": [
+            "Name: revision history\nType: EVENT"
+        ],
+        "3": [
+            "Name: revision no.\nType: PARAMETER_OR_VARIABLE",
+            "Name: table 1\nType: TABLE",
+            "Name: v1.0\nType: VERSION",
+            "Name: 1. 初始版本。\nType: DESCRIPTION",
+            "Name: 2024/09/30\nType: DATE",
+            "Name: draft date\nType: DATE",
+            "Name: description\nType: PARAMETER_OR_VARIABLE"
+        ],
+        "4": [
+            "Name: support tronlong com\nType: EMAIL_ADDRESS",
+            "Name: 020 8998 6280\nType: PHONE_NUMBER",
+            "Name: www tronlong com\nType: WEBSITE",
+            "Name: 020 3893 9734\nType: PHONE_NUMBER",
+            "Name: 51ele net\nType: WEBSITE",
+            "Name: 1 18\nType: DATE",
+            "Name: sales tronlong com\nType: EMAIL_ADDRESS"
+        ],
+        "5": [
+            "Name: tronlong\nType: ORGANIZATION"
+        ],
+        "8": [
+            "Name: \nType: UNKNOWN",
+            "Name: 3\nType: NUMBER"
+        ],
+        "9": [
+            "Name: 简介\nType: ACADEMIC_SUBJECT",
+            "Name: mqtt通信协议\nType: TECHNOLOGY",
+            "Name: 1 mqtt通信协议简介. 4\nType: SECTION_TITLE"
+        ],
+        "10": [
+            "Name: mosquitto\nType: SOFTWARE"
+        ],
+        "11": [
+            "Name: 2mqtt client\nType: PRODUCT"
+        ],
+        "12": [
+            "Name: \nType: UNKNOWN"
+        ],
+        "15": [
+            "Name: mqtt sinewave pub\nType: SOFTWARE"
+        ],
+        "16": [
+            "Name: 15\nType: NUMBER",
+            "Name: 12\nType: NUMBER",
+            "Name: 3 1\nType: SECTION_TITLE",
+            "Name: 3 2\nType: SECTION_TITLE",
+            "Name: 3 3\nType: SECTION_TITLE",
+            "Name: 3 4\nType: SECTION_TITLE",
+            "Name: 16\nType: NUMBER"
+        ],
+        "17": [
+            "Name: \nType: UNKNOWN"
+        ],
+        "18": [
+            "Name: support tronlong com\nType: EMAIL_ADDRESS",
+            "Name: 020 8998 6280\nType: PHONE_NUMBER",
+            "Name: 2 18\nType: DATE",
+            "Name: www tronlong com\nType: WEBSITE",
+            "Name: 020 3893 9734\nType: PHONE_NUMBER",
+            "Name: 51ele net\nType: WEBSITE",
+            "Name: sales tronlong com\nType: EMAIL_ADDRESS"
+        ],
+        "19": [
+            "Name: tronlong\nType: ORGANIZATION"
+        ],
+        "22": [
+            "Name: \nType: UNKNOWN",
+            "Name: tl3588 evm\nType: PRODUCT",
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+        ],
+        "23": [
+            "Name: windows\nType: UNKNOWN",
+            "Name: windows 7 64bit\nType: PRODUCT",
+            "Name: windows 10 64bit\nType: PRODUCT"
+        ],
+        "24": [
+            "Name: vmware\nType: PRODUCT",
+            "Name: 16 2 5\nType: VERSION"
+        ],
+        "25": [
+            "Name: 64bit\nType: MEASUREMENT",
+            "Name: linux\nType: SOFTWARE",
+            "Name: ubuntu20 04 6\nType: SOFTWARE"
+        ],
+        "26": [
+            "Name: u bo0t 2017 09\nType: PRODUCT",
+            "Name: u boot\nType: SOFTWARE"
+        ],
+        "27": [
+            "Name: linux rt 5 10 160\nType: PRODUCT",
+            "Name: linux 5 10 160\nType: PRODUCT"
+        ],
+        "28": [
+            "Name: debian 11\nType: PRODUCT",
+            "Name: debian\nType: ORGANIZATION"
+        ],
+        "29": [
+            "Name: linuxsdk\nType: PRODUCT",
+            "Name: rk3588 linux release v1 2 1 20230720\nType: PRODUCT"
+        ],
+        "30": [
+            "Name: mqtt client\nType: SOFTWARE",
+            "Name: mqtt通信协议\nType: TECHNOLOGY",
+            "Name: mqtt sinewave pub\nType: SOFTWARE",
+            "Name: 4 demo mqtt demos\nType: DIRECTORY"
+        ],
+        "31": [
+            "Name: support tronlong com\nType: EMAIL_ADDRESS",
+            "Name: 020 8998 6280\nType: PHONE_NUMBER",
+            "Name: 3 18\nType: DATE",
+            "Name: www tronlong com\nType: WEBSITE",
+            "Name: 020 3893 9734\nType: PHONE_NUMBER",
+            "Name: 51ele net\nType: WEBSITE",
+            "Name: sales tronlong com\nType: EMAIL_ADDRESS"
+        ],
+        "32": [
+            "Name: tronlong\nType: ORGANIZATION"
+        ],
+        "34": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY",
+            "Name: 1 mqtt通信协议简介\nType: SECTION_TITLE",
+            "Name: 简介\nType: SECTION_TITLE"
+        ],
+        "35": [
+            "Name: 1.1概述\nType: SECTION_TITLE"
+        ],
+        "36": [
+            "Name: ibm\nType: ORGANIZATION",
+            "Name: tcp ip\nType: TECHNOLOGY",
+            "Name: 1999\nType: DATE",
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+        ],
+        "38": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+        ],
+        "39": [
+            "Name: network\nType: UNKNOWN",
+            "Name: hardware\nType: UNKNOWN",
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+        ],
+        "40": [
+            "Name: \nType: UNKNOWN"
+        ],
+        "41": [
+            "Name: qos\nType: TECHNOLOGY",
+            "Name: \nType: UNKNOWN"
+        ],
+        "42": [
+            "Name: \nType: UNKNOWN"
+        ],
+        "44": [
+            "Name: support tronlong com\nType: EMAIL_ADDRESS",
+            "Name: 020 8998 6280\nType: PHONE_NUMBER",
+            "Name: 4 18\nType: DATE",
+            "Name: www tronlong com\nType: WEBSITE",
+            "Name: 020 3893 9734\nType: PHONE_NUMBER",
+            "Name: 51ele net\nType: WEBSITE",
+            "Name: \nType: UNKNOWN",
+            "Name: tronlong\nType: ORGANIZATION",
+            "Name: tronlong\nType: EMAIL_ADDRESS",
+            "Name: sales tronlong com\nType: EMAIL_ADDRESS"
+        ],
+        "45": [
+            "Name: tronlong\nType: ORGANIZATION"
+        ],
+        "46": [
+            "Name: 1.2应用场景\nType: SECTION_TITLE",
+            "Name: 应用场景\nType: TASK_OR_PROBLEM"
+        ],
+        "47": [
+            "Name: bandwidth\nType: UNKNOWN",
+            "Name: mqtt通信协议\nType: TECHNOLOGY",
+            "Name: hardware resource\nType: UNKNOWN"
+        ],
+        "48": [
+            "Name: \nType: UNKNOWN",
+            "Name: m2m\nType: TECHNOLOGY"
+        ],
+        "49": [
+            "Name: 1.3 mosquitto 工具安装\nType: SECTION_TITLE",
+            "Name: 工具安装\nType: TASK_OR_PROBLEM",
+            "Name: mosquitto\nType: SOFTWARE"
+        ],
+        "50": [
+            "Name: mqtt client\nType: SOFTWARE",
+            "Name: ubuntu\nType: LOCATION",
+            "Name: mosquitto\nType: SOFTWARE"
+        ],
+        "52": [
+            "Name: support tronlong com\nType: EMAIL_ADDRESS",
+            "Name: 020 8998 6280\nType: PHONE_NUMBER",
+            "Name: www tronlong com\nType: WEBSITE",
+            "Name: 020 3893 9734\nType: PHONE_NUMBER",
+            "Name: 51ele net\nType: WEBSITE",
+            "Name: 5 18\nType: DATE",
+            "Name: sales tronlong com\nType: EMAIL_ADDRESS"
+        ],
+        "53": [
+            "Name: tronlong\nType: ORGANIZATION"
+        ],
+        "55": [
+            "Name: 2mqtt_client 案例\nType: SECTION_TITLE",
+            "Name: mqtt通信协议\nType: TECHNOLOGY",
+            "Name: 案例\nType: TASK_OR_PROBLEM",
+            "Name: client\nType: SOFTWARE"
+        ],
+        "56": [
+            "Name: 说明\nType: METHOD_OR_TECHNIQUE",
+            "Name: 2.1案例说明\nType: SECTION_TITLE",
+            "Name: 案例\nType: TASK_OR_PROBLEM"
+        ],
+        "57": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY",
+            "Name: mqtt\nType: SOFTWARE",
+            "Name: libmosquitto\nType: SOFTWARE"
+        ],
+        "58": [
+            "Name: \nType: UNKNOWN"
+        ],
+        "60": [
+            "Name: support tronlong com\nType: EMAIL_ADDRESS",
+            "Name: 020 8998 6280\nType: PHONE_NUMBER",
+            "Name: 6 18\nType: DATE",
+            "Name: mqtt通信协议\nType: TECHNOLOGY",
+            "Name: www tronlong com\nType: WEBSITE",
+            "Name: 020 3893 9734\nType: PHONE_NUMBER",
+            "Name: hivemq\nType: PRODUCT",
+            "Name: ubuntu\nType: PRODUCT",
+            "Name: 51ele net\nType: WEBSITE",
+            "Name: tronlong\nType: ORGANIZATION",
+            "Name: rgmii\nType: TECHNOLOGY",
+            "Name: eth0\nType: PRODUCT",
+            "Name: sales tronlong com\nType: EMAIL_ADDRESS"
+        ],
+        "61": [
+            "Name: tronlong\nType: ORGANIZATION"
+        ],
+        "63": [
+            "Name: 3 2\nType: SECTION_TITLE",
+            "Name: 案例测试\nType: TASK_OR_PROBLEM"
+        ],
+        "64": [
+            "Name: mosquitto\nType: SOFTWARE",
+            "Name: eclipse\nType: ORGANIZATION",
+            "Name: 服务器名称\nType: LOCATION",
+            "Name: tcp 端口\nType: PARAMETER_OR_VARIABLE",
+            "Name: hivemq\nType: PRODUCT",
+            "Name: emqx（国内）\nType: ORGANIZATION",
+            "Name: websocket\nType: TECHNOLOGY",
+            "Name: 表1\nType: TABLE",
+            "Name: broker地址\nType: LOCATION"
+        ],
+        "65": [
+            "Name: mqtt client\nType: SOFTWARE",
+            "Name: \nType: UNKNOWN",
+            "Name: bin\nType: DIRECTORY"
+        ],
+        "66": [
+            "Name: mqtt client\nType: SOFTWARE"
+        ],
+        "68": [
+            "Name: support tronlong com\nType: EMAIL_ADDRESS",
+            "Name: 020 8998 6280\nType: PHONE_NUMBER",
+            "Name: www tronlong com\nType: WEBSITE",
+            "Name: 020 3893 9734\nType: PHONE_NUMBER",
+            "Name: 51ele net\nType: WEBSITE",
+            "Name: 7 18\nType: DATE",
+            "Name: sales tronlong com\nType: EMAIL_ADDRESS"
+        ],
+        "69": [
+            "Name: tronlong\nType: ORGANIZATION"
+        ],
+        "71": [
+            "Name: 上位机\nType: DEVICE_OR_HARDWARE",
+            "Name: 2.2.1 评估板发布/上位机订阅\nType: SECTION_TITLE",
+            "Name: 订阅\nType: METHOD_OR_TECHNIQUE",
+            "Name: 发布\nType: METHOD_OR_TECHNIQUE",
+            "Name: 评估板\nType: DEVICE_OR_HARDWARE"
+        ],
+        "72": [
+            "Name: command line\nType: SOFTWARE",
+            "Name: mqtt通信协议\nType: TECHNOLOGY",
+            "Name: mosquitto\nType: SOFTWARE",
+            "Name: broker hivemq com\nType: LOCATION",
+            "Name: tcp\nType: TECHNOLOGY",
+            "Name: test data\nType: EVENT"
+        ],
+        "74": [
+            "Name: mqtt client\nType: SOFTWARE",
+            "Name: www tronlong com\nType: WEBSITE"
+        ],
+        "75": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY",
+            "Name: m\nType: PARAMETER_OR_VARIABLE",
+            "Name: t\nType: PARAMETER_OR_VARIABLE",
+            "Name: p\nType: PARAMETER_OR_VARIABLE",
+            "Name: h\nType: PARAMETER_OR_VARIABLE"
+        ],
+        "77": [
+            "Name: support tronlong com\nType: EMAIL_ADDRESS",
+            "Name: 020 8998 6280\nType: PHONE_NUMBER",
+            "Name: www tronlong com\nType: WEBSITE",
+            "Name: 8 18\nType: DATE",
+            "Name: 020 3893 9734\nType: PHONE_NUMBER",
+            "Name: 51ele net\nType: WEBSITE",
+            "Name: sales tronlong com\nType: EMAIL_ADDRESS"
+        ],
+        "78": [
+            "Name: tronlong\nType: ORGANIZATION"
+        ],
+        "81": [
+            "Name: mqtt\nType: SOFTWARE",
+            "Name: \nType: UNKNOWN"
+        ],
+        "83": [
+            "Name: 上位机\nType: DEVICE_OR_HARDWARE",
+            "Name: 2.2.2评估板订阅/上位机发布\nType: SECTION_TITLE",
+            "Name: 订阅\nType: METHOD_OR_TECHNIQUE",
+            "Name: 发布\nType: METHOD_OR_TECHNIQUE",
+            "Name: 评估板\nType: DEVICE_OR_HARDWARE"
+        ],
+        "84": [
+            "Name: \nType: UNKNOWN",
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+        ],
+        "86": [
+            "Name: mqtt\nType: UNKNOWN",
+            "Name: \nType: UNKNOWN"
+        ],
+        "88": [
+            "Name: broker hivemq com\nType: LOCATION",
+            "Name: www tronlong com\nType: WEBSITE",
+            "Name: test data\nType: TOPIC",
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+        ],
+        "92": [
+            "Name: support tronlong com\nType: EMAIL_ADDRESS",
+            "Name: 020 8998 6280\nType: PHONE_NUMBER",
+            "Name: www tronlong com\nType: WEBSITE",
+            "Name: 020 3893 9734\nType: PHONE_NUMBER",
+            "Name: 51ele net\nType: WEBSITE",
+            "Name: sales tronlong com\nType: EMAIL_ADDRESS",
+            "Name: 9 18\nType: DATE"
+        ],
+        "93": [
+            "Name: tronlong\nType: ORGANIZATION"
+        ],
+        "94": [
+            "Name: 案例编译\nType: TASK_OR_PROBLEM",
+            "Name: 2.3案例编译\nType: SECTION_TITLE"
+        ],
+        "95": [
+            "Name: linuxsdk\nType: PRODUCT",
+            "Name: makefile\nType: FILE",
+            "Name: debian\nType: BOOK",
+            "Name: src\nType: DIRECTORY",
+            "Name: ubuntu\nType: LOCATION",
+            "Name: rk3588 linux release v1 2 1\nType: SOFTWARE",
+            "Name: gcc linaro 10 2 1 2021 01 x86 64 aarch64 linux gnu\nType: SOFTWARE",
+            "Name: cross compilation\nType: UNKNOWN"
+        ],
+        "99": [
+            "Name: \nType: UNKNOWN"
+        ],
+        "100": [
+            "Name: host\nType: UNKNOWN",
+            "Name: aarch64 linux gnu gcc\nType: SOFTWARE"
+        ],
+        "103": [
+            "Name: support tronlong com\nType: EMAIL_ADDRESS",
+            "Name: 10 18\nType: DATE",
+            "Name: 020 8998 6280\nType: PHONE_NUMBER",
+            "Name: www tronlong com\nType: WEBSITE",
+            "Name: 020 3893 9734\nType: PHONE_NUMBER",
+            "Name: 51ele net\nType: WEBSITE",
+            "Name: sales tronlong com\nType: EMAIL_ADDRESS"
+        ],
+        "104": [
+            "Name: tronlong\nType: ORGANIZATION"
+        ],
+        "105": [
+            "Name: sdk path\nType: PARAMETER_OR_VARIABLE",
+            "Name: rk3588\nType: PRODUCT",
+            "Name: linux\nType: OPERATING_SYSTEM"
+        ],
+        "107": [
+            "Name: 2.4关键代码\nType: SECTION_TITLE",
+            "Name: 关键代码\nType: SECTION_TITLE"
+        ],
+        "108": [
+            "Name: mosquitto\nType: SOFTWARE"
+        ],
+        "112": [
+            "Name: mqtt\nType: UNKNOWN"
+        ],
+        "116": [
+            "Name: support tronlong com\nType: EMAIL_ADDRESS",
+            "Name: 020 8998 6280\nType: PHONE_NUMBER",
+            "Name: www tronlong com\nType: WEBSITE",
+            "Name: 020 3893 9734\nType: PHONE_NUMBER",
+            "Name: 11 18\nType: DATE",
+            "Name: 51ele net\nType: WEBSITE",
+            "Name: tronlong\nType: ORGANIZATION",
+            "Name: sales tronlong com\nType: EMAIL_ADDRESS"
+        ],
+        "117": [
+            "Name: tronlong\nType: ORGANIZATION"
+        ],
+        "121": [
+            "Name: mqtt通信协议案例\nType: SECTION_TITLE",
+            "Name: 案例\nType: EXAMPLE_OR_CASE_STUDY",
+            "Name: mqtt通信协议\nType: TECHNOLOGY"
+        ],
+        "122": [
+            "Name: 3.1案例说明\nType: SECTION_TITLE"
+        ],
+        "123": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY",
+            "Name: web\nType: SOFTWARE",
+            "Name: mqtt\nType: SOFTWARE",
+            "Name: \nType: UNKNOWN",
+            "Name: libmosquitto\nType: SOFTWARE"
+        ],
+        "124": [
+            "Name: \nType: UNKNOWN"
+        ],
+        "126": [
+            "Name: support tronlong com\nType: EMAIL_ADDRESS",
+            "Name: 12 18\nType: DATE",
+            "Name: 020 8998 6280\nType: PHONE_NUMBER",
+            "Name: www tronlong com\nType: WEBSITE",
+            "Name: 020 3893 9734\nType: PHONE_NUMBER",
+            "Name: 51ele net\nType: WEBSITE",
+            "Name: sales tronlong com\nType: EMAIL_ADDRESS"
+        ],
+        "127": [
+            "Name: tronlong\nType: ORGANIZATION"
+        ],
+        "129": [
+            "Name: 案例测试\nType: TASK_OR_PROBLEM",
+            "Name: 3.2 案例测试\nType: SECTION_TITLE"
+        ],
+        "130": [
+            "Name: mqtt通信协议\nType: TECHNOLOGY",
+            "Name: hivemq\nType: PRODUCT",
+            "Name: ubuntu\nType: PRODUCT",
+            "Name: web\nType: SOFTWARE",
+            "Name: \nType: UNKNOWN",
+            "Name: eth0 rgmi\nType: DEVICE"
+        ],
+        "131": [
+            "Name: mqtt sinewave pub\nType: SOFTWARE",
+            "Name: \nType: UNKNOWN",
+            "Name: bin\nType: DIRECTORY"
+        ],
+        "132": [
+            "Name: mqtt sinewave pub\nType: SOFTWARE",
+            "Name: help\nType: UNKNOWN"
+        ],
+        "134": [
+            "Name: mqtt\nType: SOFTWARE",
+            "Name: \nType: UNKNOWN"
+        ],
+        "135": [
+            "Name: broker hivemq com\nType: LOCATION",
+            "Name: mqtt sinewave pub\nType: SOFTWARE"
+        ],
+        "137": [
+            "Name: support tronlong com\nType: EMAIL_ADDRESS",
+            "Name: 020 8998 6280\nType: PHONE_NUMBER",
+            "Name: www tronlong com\nType: WEBSITE",
+            "Name: 020 3893 9734\nType: PHONE_NUMBER",
+            "Name: 51ele net\nType: WEBSITE",
+            "Name: 13 18\nType: DATE",
+            "Name: sales tronlong com\nType: EMAIL_ADDRESS"
+        ],
+        "138": [
+            "Name: tronlong\nType: ORGANIZATION"
+        ],
+        "140": [
+            "Name: web\nType: EVENT",
+            "Name: mqtt通信协议\nType: TECHNOLOGY",
+            "Name: broker hivemq com\nType: LOCATION",
+            "Name: tcp\nType: TECHNOLOGY",
+            "Name: \nType: UNKNOWN",
+            "Name: websocket\nType: TECHNOLOGY",
+            "Name: index html\nType: FILE_TYPE"
+        ],
+        "143": [
+            "Name: support tronlong com\nType: EMAIL_ADDRESS",
+            "Name: 020 8998 6280\nType: PHONE_NUMBER",
+            "Name: www tronlong com\nType: WEBSITE",
+            "Name: 020 3893 9734\nType: PHONE_NUMBER",
+            "Name: 51ele net\nType: WEBSITE",
+            "Name: 14 18\nType: DATE",
+            "Name: sales tronlong com\nType: EMAIL_ADDRESS"
+        ],
+        "144": [
+            "Name: tronlong\nType: ORGANIZATION"
+        ],
+        "146": [
+            "Name: 编译\nType: METHOD_OR_TECHNIQUE",
+            "Name: 3.3案例编译\nType: SECTION_TITLE",
+            "Name: 案例\nType: TASK_OR_PROBLEM"
+        ],
+        "147": [
+            "Name: linuxsdk\nType: PRODUCT",
+            "Name: makefile\nType: FILE",
+            "Name: debian\nType: BOOK",
+            "Name: src\nType: DIRECTORY",
+            "Name: ubuntu\nType: LOCATION",
+            "Name: cross compilation toolchain\nType: UNKNOWN",
+            "Name: rk3588 linux release v1 2 1\nType: SOFTWARE",
+            "Name: gcc linaro 10 2 1 2021 01 x86 64 aarch64 linux gnu\nType: SOFTWARE"
+        ],
+        "150": [
+            "Name: sdk path\nType: PARAMETER_OR_VARIABLE",
+            "Name: rk3588\nType: PRODUCT",
+            "Name: linux\nType: OPERATING_SYSTEM"
+        ],
+        "151": [
+            "Name: tronlong\nType: ORGANIZATION"
+        ],
+        "156": [
+            "Name: \nType: UNKNOWN"
+        ],
+        "157": [
+            "Name: host make\nType: UNKNOWN",
+            "Name: aarch64 linux gnu gcc\nType: SOFTWARE"
+        ],
+        "159": [
+            "Name: 3.4关键代码\nType: SECTION_TITLE",
+            "Name: 关键代码\nType: SECTION_TITLE"
+        ],
+        "160": [
+            "Name: mosquitto\nType: SOFTWARE"
+        ],
+        "165": [
+            "Name: support tronlong com\nType: EMAIL_ADDRESS",
+            "Name: 020 8998 6280\nType: PHONE_NUMBER",
+            "Name: 16 18\nType: DATE",
+            "Name: www tronlong com\nType: WEBSITE",
+            "Name: 020 3893 9734\nType: PHONE_NUMBER",
+            "Name: 51ele net\nType: WEBSITE",
+            "Name: sales tronlong com\nType: EMAIL_ADDRESS"
+        ],
+        "166": [
+            "Name: tronlong\nType: ORGANIZATION"
+        ],
+        "168": [
+            "Name: mqtt\nType: UNKNOWN",
+            "Name: server\nType: UNKNOWN"
+        ],
+        "173": [
+            "Name: support tronlong com\nType: EMAIL_ADDRESS",
+            "Name: 020 8998 6280\nType: PHONE_NUMBER",
+            "Name: www tronlong com\nType: WEBSITE",
+            "Name: 020 3893 9734\nType: PHONE_NUMBER",
+            "Name: 51ele net\nType: WEBSITE",
+            "Name: 17 18\nType: DATE",
+            "Name: sales tronlong com\nType: EMAIL_ADDRESS"
+        ],
+        "174": [
+            "Name: tronlong\nType: ORGANIZATION"
+        ],
+        "176": [
+            "Name: support tronlong com\nType: EMAIL_ADDRESS",
+            "Name: 020 8998 6280\nType: PHONE_NUMBER",
+            "Name: 020 3893 9734\nType: PHONE_NUMBER",
+            "Name: www tronlong com\nType: WEBSITE",
+            "Name: tronlong tmall com\nType: WEBSITE",
+            "Name: 51ele net\nType: WEBSITE",
+            "Name: tronlong\nType: UNKNOWN",
+            "Name: sales tronlong com\nType: EMAIL_ADDRESS"
+        ],
+        "178": [
+            "Name: support tronlong com\nType: EMAIL_ADDRESS",
+            "Name: 020 8998 6280\nType: PHONE_NUMBER",
+            "Name: www tronlong com\nType: WEBSITE",
+            "Name: 020 3893 9734\nType: PHONE_NUMBER",
+            "Name: 51ele net\nType: WEBSITE",
+            "Name: 18 18\nType: DATE",
+            "Name: sales tronlong com\nType: EMAIL_ADDRESS"
+        ],
+        "179": [
+            "Name: tronlong\nType: ORGANIZATION"
+        ]
+    },
+    "variant": null
+}

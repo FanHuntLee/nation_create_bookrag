@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "entity_name": "pcie2 0",
+      "entity_type": "TECHNOLOGY",
+      "description": "pcie2 0 is a technology design that requires attention in its implementation",
+      "source_ids": [
+        334
+      ]
+    }
+  ],
+  "relations": [],
+  "node_idx": 334
+}

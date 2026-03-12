@@ -1,0 +1,159 @@
+{
+  "entities": [
+    {
+      "entity_name": "图9状态3",
+      "entity_type": "IMAGE",
+      "description": "一张热成像图，显示电路板的温度分布，标注为图9状态3，最高温度点为60.6°C。",
+      "source_ids": [
+        242
+      ]
+    },
+    {
+      "entity_name": "60.6 °c",
+      "entity_type": "MEASUREMENT",
+      "description": "图像中显示的最高温度点，位于电路板中央区域，是该热成像图的最高温度读数。",
+      "source_ids": [
+        242
+      ]
+    },
+    {
+      "entity_name": "59.0 °c",
+      "entity_type": "MEASUREMENT",
+      "description": "图像左上角显示的温度读数，表示该位置的温度为59.0摄氏度。",
+      "source_ids": [
+        242
+      ]
+    },
+    {
+      "entity_name": "30.4 °c",
+      "entity_type": "MEASUREMENT",
+      "description": "图像右下角显示的温度读数，表示该位置的温度为30.4摄氏度，是该热成像图的最低温度读数。",
+      "source_ids": [
+        242
+      ]
+    },
+    {
+      "entity_name": "2023/10/24 16:54:00",
+      "entity_type": "TIME",
+      "description": "图像顶部显示的日期和时间戳，表示该热成像图的拍摄时间为2023年10月24日16点54分。",
+      "source_ids": [
+        242
+      ]
+    },
+    {
+      "entity_name": "x1",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "图像左下角显示的倍率参数，表示图像的放大倍数为x1。",
+      "source_ids": [
+        242
+      ]
+    },
+    {
+      "entity_name": "ε = 0.90",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "图像左下角显示的发射率参数，表示该热成像设备使用的发射率为0.90。",
+      "source_ids": [
+        242
+      ]
+    },
+    {
+      "entity_name": "a",
+      "entity_type": "LABEL",
+      "description": "图像右上角显示的标记，用于指示温度测量点A的位置。",
+      "source_ids": [
+        242
+      ]
+    },
+    {
+      "entity_name": "image 图9状态3（最高温度点为 $6 0 . 6",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        242
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "image 图9状态3（最高温度点为 $6 0 . 6",
+      "tgt_entity_name": "图9状态3",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图9状态3（最高温度点为 $6 0 . 6 related to 图9状态3",
+      "source_ids": [
+        242
+      ]
+    },
+    {
+      "src_entity_name": "image 图9状态3（最高温度点为 $6 0 . 6",
+      "tgt_entity_name": "60.6 °c",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图9状态3（最高温度点为 $6 0 . 6 related to 60.6 °C",
+      "source_ids": [
+        242
+      ]
+    },
+    {
+      "src_entity_name": "image 图9状态3（最高温度点为 $6 0 . 6",
+      "tgt_entity_name": "59.0 °c",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图9状态3（最高温度点为 $6 0 . 6 related to 59.0 °C",
+      "source_ids": [
+        242
+      ]
+    },
+    {
+      "src_entity_name": "image 图9状态3（最高温度点为 $6 0 . 6",
+      "tgt_entity_name": "30.4 °c",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图9状态3（最高温度点为 $6 0 . 6 related to 30.4 °C",
+      "source_ids": [
+        242
+      ]
+    },
+    {
+      "src_entity_name": "image 图9状态3（最高温度点为 $6 0 . 6",
+      "tgt_entity_name": "2023/10/24 16:54:00",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图9状态3（最高温度点为 $6 0 . 6 related to 2023/10/24 16:54:00",
+      "source_ids": [
+        242
+      ]
+    },
+    {
+      "src_entity_name": "image 图9状态3（最高温度点为 $6 0 . 6",
+      "tgt_entity_name": "x1",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图9状态3（最高温度点为 $6 0 . 6 related to x1",
+      "source_ids": [
+        242
+      ]
+    },
+    {
+      "src_entity_name": "image 图9状态3（最高温度点为 $6 0 . 6",
+      "tgt_entity_name": "ε = 0.90",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图9状态3（最高温度点为 $6 0 . 6 related to ε = 0.90",
+      "source_ids": [
+        242
+      ]
+    },
+    {
+      "src_entity_name": "image 图9状态3（最高温度点为 $6 0 . 6",
+      "tgt_entity_name": "a",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图9状态3（最高温度点为 $6 0 . 6 related to A",
+      "source_ids": [
+        242
+      ]
+    }
+  ],
+  "node_idx": 242
+}

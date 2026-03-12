@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "entity_name": "26 1 overview",
+      "entity_type": "SECTION_TITLE",
+      "description": "26 1 overview is a section title indicating the beginning of a section discussing an overview of a topic",
+      "source_ids": [
+        294
+      ]
+    }
+  ],
+  "relations": [],
+  "node_idx": 294
+}

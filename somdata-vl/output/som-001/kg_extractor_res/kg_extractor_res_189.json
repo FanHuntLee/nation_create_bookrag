@@ -1,0 +1,69 @@
+{
+  "entities": [
+    {
+      "entity_name": "2.5 功能引脚信号走线长度与阻抗说明",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of '引脚说明', this section provides detailed information about the signal trace length and impedance characteristics of functional pins, which are critical for ensuring proper electrical performance in the SOM-TL3588 industrial core board.",
+      "source_ids": [
+        189
+      ]
+    },
+    {
+      "entity_name": "功能引脚",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "Refers to the specific functional pins on the SOM-TL3588 industrial core board, which are discussed in relation to their signal trace length and impedance in section 2.5.",
+      "source_ids": [
+        189
+      ]
+    },
+    {
+      "entity_name": "信号走线长度",
+      "entity_type": "MEASUREMENT",
+      "description": "Refers to the physical length of signal traces on the board, which is a key parameter analyzed in section 2.5.",
+      "source_ids": [
+        189
+      ]
+    },
+    {
+      "entity_name": "阻抗",
+      "entity_type": "MEASUREMENT",
+      "description": "Refers to the electrical impedance of signal traces, which is an important factor in signal integrity and is discussed in section 2.5.",
+      "source_ids": [
+        189
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "功能引脚",
+      "tgt_entity_name": "2.5 功能引脚信号走线长度与阻抗说明",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '功能引脚' is a primary topic of section 2.5.",
+      "source_ids": [
+        189
+      ]
+    },
+    {
+      "src_entity_name": "信号走线长度",
+      "tgt_entity_name": "2.5 功能引脚信号走线长度与阻抗说明",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '信号走线长度' is a primary topic of section 2.5.",
+      "source_ids": [
+        189
+      ]
+    },
+    {
+      "src_entity_name": "阻抗",
+      "tgt_entity_name": "2.5 功能引脚信号走线长度与阻抗说明",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '阻抗' is a primary topic of section 2.5.",
+      "source_ids": [
+        189
+      ]
+    }
+  ],
+  "node_idx": 189
+}

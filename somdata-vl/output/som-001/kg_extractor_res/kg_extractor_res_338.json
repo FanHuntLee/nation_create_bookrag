@@ -1,0 +1,117 @@
+{
+  "entities": [
+    {
+      "entity_name": "rockchip developer guide pcle cn",
+      "entity_type": "DOCUMENT",
+      "description": "rockchip developer guide pcle cn is a document that provides developer guidance for pcie technology  specifically mentioning sections about controller initialization issues",
+      "source_ids": [
+        338
+      ]
+    },
+    {
+      "entity_name": "pcle3 0",
+      "entity_type": "TECHNOLOGY",
+      "description": "pcle3 0    is a technology component that requires specific initialization procedures to prevent system anomalies",
+      "source_ids": [
+        338
+      ]
+    },
+    {
+      "entity_name": "pcle 2 0",
+      "entity_type": "TECHNOLOGY",
+      "description": "pcle 2 0    is a technology component that requires specific initialization procedures to prevent system anomalies",
+      "source_ids": [
+        338
+      ]
+    },
+    {
+      "entity_name": "linux",
+      "entity_type": "SOFTWARE",
+      "description": "linux    is the operating system kernel that needs to be configured to disable pcie functionality when not in use",
+      "source_ids": [
+        338
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        338
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "rockchip developer guide pcle cn",
+      "tgt_entity_name": "pcle3 0",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "the document discusses the initialization of pcle3 0    and its potential to cause system anomalies if not properly configured",
+      "source_ids": [
+        338
+      ]
+    },
+    {
+      "src_entity_name": "rockchip developer guide pcle cn",
+      "tgt_entity_name": "pcle 2 0",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "the document discusses the initialization of pcle 2 0    and its potential to cause system anomalies if not properly configured",
+      "source_ids": [
+        338
+      ]
+    },
+    {
+      "src_entity_name": "pcle3 0",
+      "tgt_entity_name": "linux",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the pcle3 0    requires the linux    to be configured to disable pcie functionality when not in use to prevent system anomalies",
+      "source_ids": [
+        338
+      ]
+    },
+    {
+      "src_entity_name": "pcle 2 0",
+      "tgt_entity_name": "linux",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the pcle 2 0    requires the linux    to be configured to disable pcie functionality when not in use to prevent system anomalies",
+      "source_ids": [
+        338
+      ]
+    },
+    {
+      "src_entity_name": "linux",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the linux    uses       to describe hardware components and configure pcie functionality",
+      "source_ids": [
+        338
+      ]
+    },
+    {
+      "src_entity_name": "pcle3 0",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "the pcle3 0    may cause system   if pcie functionality is not properly disabled in the linux",
+      "source_ids": [
+        338
+      ]
+    },
+    {
+      "src_entity_name": "pcle 2 0",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "the pcle 2 0    may cause system   if pcie functionality is not properly disabled in the linux",
+      "source_ids": [
+        338
+      ]
+    }
+  ],
+  "node_idx": 338
+}

@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "entity_name": "3.1案例说明",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of '3mqtt_sinewave_pub 案例', this section provides an explanation of the case study, outlining the purpose, setup, and key components of the MQTT communication example.",
+      "source_ids": [
+        122
+      ]
+    }
+  ],
+  "relations": [],
+  "node_idx": 122
+}

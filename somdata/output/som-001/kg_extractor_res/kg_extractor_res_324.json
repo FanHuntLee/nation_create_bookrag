@@ -1,0 +1,79 @@
+{
+  "entities": [
+    {
+      "entity_name": "ch340t",
+      "entity_type": "HARDWARE",
+      "description": "ch340t is a hardware chip used to convert uart2 bus to a type c interface for system debugging",
+      "source_ids": [
+        324
+      ]
+    },
+    {
+      "entity_name": "uart2",
+      "entity_type": "TECHNOLOGY",
+      "description": "uart2 is a bus interface that is converted to a type c interface for system debugging",
+      "source_ids": [
+        324
+      ]
+    },
+    {
+      "entity_name": "type c",
+      "entity_type": "PRODUCT",
+      "description": "type c is a product interface standard used for connecting devices",
+      "source_ids": [
+        324
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        324
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "ch340t",
+      "tgt_entity_name": "uart2",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "ch340t converts uart2 bus to a type c interface for system debugging",
+      "source_ids": [
+        324
+      ]
+    },
+    {
+      "src_entity_name": "ch340t",
+      "tgt_entity_name": "type c",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "ch340t is used to convert uart2 to a type c interface",
+      "source_ids": [
+        324
+      ]
+    },
+    {
+      "src_entity_name": "uart2",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "uart2 is used as the system debugging serial port for communication and debugging",
+      "source_ids": [
+        324
+      ]
+    },
+    {
+      "src_entity_name": "ch340t",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "ch340t enables the use of uart2 as a system debugging serial port through type c interface",
+      "source_ids": [
+        324
+      ]
+    }
+  ],
+  "node_idx": 324
+}

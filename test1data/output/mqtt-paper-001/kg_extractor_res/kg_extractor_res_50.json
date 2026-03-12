@@ -1,0 +1,61 @@
+{
+  "entities": [
+    {
+      "entity_name": "mosquitto",
+      "entity_type": "SOFTWARE",
+      "description": "mosquitto is an open source mqtt message broker  server  software that provides a lightweight publish subscribe messaging paradigm",
+      "source_ids": [
+        50
+      ]
+    },
+    {
+      "entity_name": "ubuntu",
+      "entity_type": "LOCATION",
+      "description": "ubuntu is an operating system used as the communication target in the text  requiring the installation of mosquitto tools",
+      "source_ids": [
+        50
+      ]
+    },
+    {
+      "entity_name": "mqtt client",
+      "entity_type": "SOFTWARE",
+      "description": "mqtt client is a case example in the text that uses mosquitto tools to demonstrate mqtt communication protocol functionality",
+      "source_ids": [
+        50
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "mosquitto",
+      "tgt_entity_name": "ubuntu",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "mosquitto tools need to be installed on the ubuntu system to enable mqtt communication functionality",
+      "source_ids": [
+        50
+      ]
+    },
+    {
+      "src_entity_name": "mosquitto",
+      "tgt_entity_name": "mqtt client",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "the mqtt client example uses mosquitto tools to demonstrate mqtt communication protocol functionality",
+      "source_ids": [
+        50
+      ]
+    },
+    {
+      "src_entity_name": "ubuntu",
+      "tgt_entity_name": "mqtt client",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "the mqtt client example is executed on the ubuntu system as part of the mqtt communication setup",
+      "source_ids": [
+        50
+      ]
+    }
+  ],
+  "node_idx": 50
+}

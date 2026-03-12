@@ -1,0 +1,51 @@
+{
+  "entities": [
+    {
+      "entity_name": "3mqtt_sinewave_pub 案例",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of '3mqtt_sinewave_pub 案例', this section serves as a case study demonstrating the application of the MQTT communication protocol, specifically focusing on the sine wave publishing example.",
+      "source_ids": [
+        121
+      ]
+    },
+    {
+      "entity_name": "mqtt通信协议",
+      "entity_type": "TECHNOLOGY",
+      "description": "Refers to the Message Queuing Telemetry Transport protocol, a lightweight messaging protocol used for communication in constrained environments, discussed in the context of this case study.",
+      "source_ids": [
+        121
+      ]
+    },
+    {
+      "entity_name": "案例",
+      "entity_type": "EXAMPLE_OR_CASE_STUDY",
+      "description": "Refers to the specific example or demonstration provided in this section, illustrating the practical application of the MQTT communication protocol.",
+      "source_ids": [
+        121
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "mqtt通信协议",
+      "tgt_entity_name": "3mqtt_sinewave_pub 案例",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of 'MQTT通信协议' is the central technology discussed in this case study.",
+      "source_ids": [
+        121
+      ]
+    },
+    {
+      "src_entity_name": "案例",
+      "tgt_entity_name": "3mqtt_sinewave_pub 案例",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '案例' represents the specific example or demonstration presented in this section.",
+      "source_ids": [
+        121
+      ]
+    }
+  ],
+  "node_idx": 121
+}

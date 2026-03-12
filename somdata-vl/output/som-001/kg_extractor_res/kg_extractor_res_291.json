@@ -1,0 +1,141 @@
+{
+  "entities": [
+    {
+      "entity_name": "图22",
+      "entity_type": "IMAGE",
+      "description": "一个电路图，显示了电源连接和电容元件。",
+      "source_ids": [
+        291
+      ]
+    },
+    {
+      "entity_name": "图23",
+      "entity_type": "IMAGE",
+      "description": "一个电路图，显示了电源连接和电容元件。",
+      "source_ids": [
+        291
+      ]
+    },
+    {
+      "entity_name": "saradc_avdd_1v8",
+      "entity_type": "ELECTRICAL_SIGNAL",
+      "description": "一个1.8V的模拟电源引脚，用于为SARADC（逐次逼近寄存器模数转换器）供电。",
+      "source_ids": [
+        291
+      ]
+    },
+    {
+      "entity_name": "vdda_1v8_s0",
+      "entity_type": "ELECTRICAL_SIGNAL",
+      "description": "一个1.8V的模拟电源引脚，标记为S0，用于为电路中的某个模块供电。",
+      "source_ids": [
+        291
+      ]
+    },
+    {
+      "entity_name": "ah18",
+      "entity_type": "ELECTRICAL_SIGNAL",
+      "description": "一个电气连接点，连接SARADC_AVDD_1V8和VDDA_1V8_S0。",
+      "source_ids": [
+        291
+      ]
+    },
+    {
+      "entity_name": "c233",
+      "entity_type": "CAPACITOR",
+      "description": "一个100nF的电容，用于滤波或去耦。",
+      "source_ids": [
+        291
+      ]
+    },
+    {
+      "entity_name": "c0201",
+      "entity_type": "CAPACITOR",
+      "description": "一个6.3V额定电压的电容，用于滤波或去耦。",
+      "source_ids": [
+        291
+      ]
+    },
+    {
+      "entity_name": "image 图22 图23",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        291
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "image 图22 图23",
+      "tgt_entity_name": "图22",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图22 图23 related to 图22",
+      "source_ids": [
+        291
+      ]
+    },
+    {
+      "src_entity_name": "image 图22 图23",
+      "tgt_entity_name": "图23",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图22 图23 related to 图23",
+      "source_ids": [
+        291
+      ]
+    },
+    {
+      "src_entity_name": "image 图22 图23",
+      "tgt_entity_name": "saradc_avdd_1v8",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图22 图23 related to SARADC_AVDD_1V8",
+      "source_ids": [
+        291
+      ]
+    },
+    {
+      "src_entity_name": "image 图22 图23",
+      "tgt_entity_name": "vdda_1v8_s0",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图22 图23 related to VDDA_1V8_S0",
+      "source_ids": [
+        291
+      ]
+    },
+    {
+      "src_entity_name": "image 图22 图23",
+      "tgt_entity_name": "ah18",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图22 图23 related to AH18",
+      "source_ids": [
+        291
+      ]
+    },
+    {
+      "src_entity_name": "image 图22 图23",
+      "tgt_entity_name": "c233",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图22 图23 related to C233",
+      "source_ids": [
+        291
+      ]
+    },
+    {
+      "src_entity_name": "image 图22 图23",
+      "tgt_entity_name": "c0201",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity Image 图22 图23 related to C0201",
+      "source_ids": [
+        291
+      ]
+    }
+  ],
+  "node_idx": 291
+}

@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "3.2 案例测试",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of '3mqtt_sinewave_pub 案例', this section outlines the testing procedures and results for the MQTT communication protocol case study.",
+      "source_ids": [
+        129
+      ]
+    },
+    {
+      "entity_name": "案例测试",
+      "entity_type": "TASK_OR_PROBLEM",
+      "description": "Refers to the testing process and validation activities conducted on the MQTT communication protocol case study, as detailed in section 3.2.",
+      "source_ids": [
+        129
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "案例测试",
+      "tgt_entity_name": "3.2 案例测试",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '案例测试' is the primary focus of section 3.2.",
+      "source_ids": [
+        129
+      ]
+    }
+  ],
+  "node_idx": 129
+}

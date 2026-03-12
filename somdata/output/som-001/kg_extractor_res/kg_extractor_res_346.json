@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "rockchip",
+      "entity_type": "ORGANIZATION",
+      "description": "rockchip is an organization mentioned in the text  likely referring to a company or business entity",
+      "source_ids": [
+        346
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        346
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "rockchip",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "rockchip is the english name for        indicating a direct translation or naming relationship",
+      "source_ids": [
+        346
+      ]
+    }
+  ],
+  "node_idx": 346
+}

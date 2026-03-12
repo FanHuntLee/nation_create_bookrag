@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "entity_name": "图32",
+      "entity_type": "IMAGE",
+      "description": "A schematic diagram showing a detailed circuit or system architecture with labeled components and signal paths, likely representing a technical or engineering design.",
+      "source_ids": [
+        353
+      ]
+    }
+  ],
+  "relations": [],
+  "node_idx": 353
+}

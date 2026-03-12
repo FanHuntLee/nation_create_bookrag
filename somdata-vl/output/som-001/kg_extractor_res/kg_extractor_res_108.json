@@ -1,0 +1,141 @@
+{
+  "entities": [
+    {
+      "entity_name": "图7",
+      "entity_type": "IMAGE",
+      "description": "一张标注了引脚和连接器位置的电路板示意图，用于展示硬件接口布局。",
+      "source_ids": [
+        108
+      ]
+    },
+    {
+      "entity_name": "pin180",
+      "entity_type": "MEASUREMENT",
+      "description": "电路板上的一个引脚编号，位于顶部和底部边缘，用于标识物理连接点。",
+      "source_ids": [
+        108
+      ]
+    },
+    {
+      "entity_name": "pin179",
+      "entity_type": "MEASUREMENT",
+      "description": "电路板上的一个引脚编号，位于顶部和底部边缘，用于标识物理连接点。",
+      "source_ids": [
+        108
+      ]
+    },
+    {
+      "entity_name": "pin2",
+      "entity_type": "MEASUREMENT",
+      "description": "电路板上的一个引脚编号，位于顶部和底部边缘，用于标识物理连接点。",
+      "source_ids": [
+        108
+      ]
+    },
+    {
+      "entity_name": "pin1",
+      "entity_type": "MEASUREMENT",
+      "description": "电路板上的一个引脚编号，位于顶部和底部边缘，用于标识物理连接点。",
+      "source_ids": [
+        108
+      ]
+    },
+    {
+      "entity_name": "con0b",
+      "entity_type": "HARDWARE",
+      "description": "电路板上的一个连接器，位于顶部边缘，用于外部设备连接。",
+      "source_ids": [
+        108
+      ]
+    },
+    {
+      "entity_name": "con0a",
+      "entity_type": "HARDWARE",
+      "description": "电路板上的一个连接器，位于底部边缘，用于外部设备连接。",
+      "source_ids": [
+        108
+      ]
+    },
+    {
+      "entity_name": "male",
+      "entity_type": "HARDWARE",
+      "description": "连接器的性别标识，表示该连接器为公头，用于与其他母头连接。",
+      "source_ids": [
+        108
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "图7",
+      "tgt_entity_name": "pin180",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图7 related to pin180",
+      "source_ids": [
+        108
+      ]
+    },
+    {
+      "src_entity_name": "图7",
+      "tgt_entity_name": "pin179",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图7 related to pin179",
+      "source_ids": [
+        108
+      ]
+    },
+    {
+      "src_entity_name": "图7",
+      "tgt_entity_name": "pin2",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图7 related to pin2",
+      "source_ids": [
+        108
+      ]
+    },
+    {
+      "src_entity_name": "图7",
+      "tgt_entity_name": "pin1",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图7 related to pin1",
+      "source_ids": [
+        108
+      ]
+    },
+    {
+      "src_entity_name": "图7",
+      "tgt_entity_name": "con0b",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图7 related to CON0B",
+      "source_ids": [
+        108
+      ]
+    },
+    {
+      "src_entity_name": "图7",
+      "tgt_entity_name": "con0a",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图7 related to CON0A",
+      "source_ids": [
+        108
+      ]
+    },
+    {
+      "src_entity_name": "图7",
+      "tgt_entity_name": "male",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "Image entity 图7 related to MALE",
+      "source_ids": [
+        108
+      ]
+    }
+  ],
+  "node_idx": 108
+}

@@ -1,0 +1,213 @@
+{
+  "entities": [
+    {
+      "entity_name": "tronlong com",
+      "entity_type": "WEBSITE",
+      "description": "tronlong com is the official website of the company  providing contact information and technical resources",
+      "source_ids": [
+        272
+      ]
+    },
+    {
+      "entity_name": "sales tronlong com",
+      "entity_type": "EMAIL_ADDRESS",
+      "description": "sales tronlong com is the sales email address for the company  used for business inquiries",
+      "source_ids": [
+        272
+      ]
+    },
+    {
+      "entity_name": "020 8998 6280",
+      "entity_type": "PHONE_NUMBER",
+      "description": "020 8998 6280 is the company s main phone number  used for general inquiries",
+      "source_ids": [
+        272
+      ]
+    },
+    {
+      "entity_name": "51 62",
+      "entity_type": "NUMBER",
+      "description": "51 62 is a number mentioned in the text  possibly indicating a page or section number",
+      "source_ids": [
+        272
+      ]
+    },
+    {
+      "entity_name": "www 51ele net",
+      "entity_type": "WEBSITE",
+      "description": "www 51ele net is a technical forum associated with the company  providing technical support and resources",
+      "source_ids": [
+        272
+      ]
+    },
+    {
+      "entity_name": "support tronlong com",
+      "entity_type": "EMAIL_ADDRESS",
+      "description": "support tronlong com is the technical support email address for the company  used for technical inquiries",
+      "source_ids": [
+        272
+      ]
+    },
+    {
+      "entity_name": "020 3893 9734",
+      "entity_type": "PHONE_NUMBER",
+      "description": "020 3893 9734 is the technical hotline number for the company  used for technical support",
+      "source_ids": [
+        272
+      ]
+    },
+    {
+      "entity_name": "vdd 4v0 som input",
+      "entity_type": "TECHNICAL_TERM",
+      "description": "vdd 4v0 som input is a technical term referring to a power input specification for a core board",
+      "source_ids": [
+        272
+      ]
+    },
+    {
+      "entity_name": "b2b",
+      "entity_type": "TECHNICAL_TERM",
+      "description": "b2b     is a technical term referring to a connector used in the design of the core board",
+      "source_ids": [
+        272
+      ]
+    },
+    {
+      "entity_name": "50uf",
+      "entity_type": "MEASUREMENT",
+      "description": "50uf is a measurement indicating the capacitance value recommended for the energy storage capacitor",
+      "source_ids": [
+        272
+      ]
+    },
+    {
+      "entity_name": "4 0v",
+      "entity_type": "MEASUREMENT",
+      "description": "4 0v is a measurement indicating the typical operating voltage for the core board",
+      "source_ids": [
+        272
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        272
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "tronlong com",
+      "tgt_entity_name": "www 51ele net",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "tronlong com and www 51ele net are both websites associated with the company  providing technical and business resources",
+      "source_ids": [
+        272
+      ]
+    },
+    {
+      "src_entity_name": "tronlong com",
+      "tgt_entity_name": "sales tronlong com",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "tronlong com is the official website of the company  and sales tronlong com is the sales email address associated with it",
+      "source_ids": [
+        272
+      ]
+    },
+    {
+      "src_entity_name": "tronlong com",
+      "tgt_entity_name": "020 8998 6280",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "tronlong com is the official website of the company  and 020 8998 6280 is the main phone number associated with it",
+      "source_ids": [
+        272
+      ]
+    },
+    {
+      "src_entity_name": "tronlong com",
+      "tgt_entity_name": "51 62",
+      "relation_name": "",
+      "weight": 7.0,
+      "description": "tronlong com is the official website of the company  and 51 62 is a number mentioned in the text  possibly indicating a page or section number",
+      "source_ids": [
+        272
+      ]
+    },
+    {
+      "src_entity_name": "tronlong com",
+      "tgt_entity_name": "support tronlong com",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "tronlong com is the official website of the company  and support tronlong com is the technical support email address associated with it",
+      "source_ids": [
+        272
+      ]
+    },
+    {
+      "src_entity_name": "tronlong com",
+      "tgt_entity_name": "020 3893 9734",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "tronlong com is the official website of the company  and 020 3893 9734 is the technical hotline number associated with it",
+      "source_ids": [
+        272
+      ]
+    },
+    {
+      "src_entity_name": "vdd 4v0 som input",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "vdd 4v0 som input is a power input specification for the core board  indicating the power requirements for the core board",
+      "source_ids": [
+        272
+      ]
+    },
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "is a type of capacitor recommended for use with the core board to ensure stable operation",
+      "source_ids": [
+        272
+      ]
+    },
+    {
+      "src_entity_name": "b2b",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "b2b     is a connector used in the design of the base board  indicating the physical connection points for the board",
+      "source_ids": [
+        272
+      ]
+    },
+    {
+      "src_entity_name": "50uf",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "50uf is the recommended capacitance value for the energy storage capacitor  indicating the size of the capacitor needed",
+      "source_ids": [
+        272
+      ]
+    },
+    {
+      "src_entity_name": "4 0v",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "4 0v is the typical operating voltage for the core board  indicating the power requirements for the board",
+      "source_ids": [
+        272
+      ]
+    }
+  ],
+  "node_idx": 272
+}

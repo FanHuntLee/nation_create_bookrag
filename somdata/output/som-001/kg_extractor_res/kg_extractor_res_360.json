@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "entity_name": "micro sd card",
+      "entity_type": "PRODUCT",
+      "description": "a micro sd card is a type of storage device mentioned in the text",
+      "source_ids": [
+        360
+      ]
+    }
+  ],
+  "relations": [],
+  "node_idx": 360
+}

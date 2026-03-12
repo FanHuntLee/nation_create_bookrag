@@ -1,0 +1,105 @@
+{
+  "entities": [
+    {
+      "entity_name": "cpu",
+      "entity_type": "DEVICE",
+      "description": "cpu is a component that contains bootrom and is responsible for initiating the boot process",
+      "source_ids": [
+        296
+      ]
+    },
+    {
+      "entity_name": "bootrom",
+      "entity_type": "SOFTWARE",
+      "description": "bootrom is a type of software stored within the cpu that initiates the boot process",
+      "source_ids": [
+        296
+      ]
+    },
+    {
+      "entity_name": "emmc flash",
+      "entity_type": "DEVICE",
+      "description": "emmc flash is a storage device that is checked for spl boot program during the boot process",
+      "source_ids": [
+        296
+      ]
+    },
+    {
+      "entity_name": "sd",
+      "entity_type": "DEVICE",
+      "description": "sd  is a storage device that is checked for spl boot program during the boot process",
+      "source_ids": [
+        296
+      ]
+    },
+    {
+      "entity_name": "usb",
+      "entity_type": "DEVICE",
+      "description": "usb    is a device interface that is checked for spl boot program during the boot process",
+      "source_ids": [
+        296
+      ]
+    },
+    {
+      "entity_name": "spl",
+      "entity_type": "SOFTWARE",
+      "description": "spl     is a boot program that is searched for on various devices during the boot process",
+      "source_ids": [
+        296
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "cpu",
+      "tgt_entity_name": "bootrom",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the cpu contains bootrom  which is responsible for initiating the boot process",
+      "source_ids": [
+        296
+      ]
+    },
+    {
+      "src_entity_name": "cpu",
+      "tgt_entity_name": "emmc flash",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "the cpu checks emmc flash for the spl boot program as part of the boot process",
+      "source_ids": [
+        296
+      ]
+    },
+    {
+      "src_entity_name": "cpu",
+      "tgt_entity_name": "sd",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "the cpu checks sd  for the spl boot program as part of the boot process",
+      "source_ids": [
+        296
+      ]
+    },
+    {
+      "src_entity_name": "cpu",
+      "tgt_entity_name": "usb",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "the cpu checks usb    for the spl boot program as part of the boot process",
+      "source_ids": [
+        296
+      ]
+    },
+    {
+      "src_entity_name": "bootrom",
+      "tgt_entity_name": "spl",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "bootrom is responsible for searching for and loading the spl     during the boot process",
+      "source_ids": [
+        296
+      ]
+    }
+  ],
+  "node_idx": 296
+}

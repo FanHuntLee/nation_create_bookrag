@@ -1,0 +1,231 @@
+{
+  "entities": [
+    {
+      "entity_name": "edp",
+      "entity_type": "TECHNOLOGY",
+      "description": "edp is a technology mentioned as one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "entity_name": "hdmi",
+      "entity_type": "TECHNOLOGY",
+      "description": "hdmi is a technology mentioned as one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "entity_name": "rgmii",
+      "entity_type": "TECHNOLOGY",
+      "description": "rgmii is a technology mentioned as one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "entity_name": "fspi",
+      "entity_type": "TECHNOLOGY",
+      "description": "fspi is a technology mentioned as one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "entity_name": "sdmmc",
+      "entity_type": "TECHNOLOGY",
+      "description": "sdmmc is a technology mentioned as one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "entity_name": "usb2 0",
+      "entity_type": "TECHNOLOGY",
+      "description": "usb2 0 is a technology mentioned as one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "entity_name": "usb3 1",
+      "entity_type": "TECHNOLOGY",
+      "description": "usb3 1 is a technology mentioned as one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "entity_name": "pcie",
+      "entity_type": "TECHNOLOGY",
+      "description": "pcie is a technology mentioned as one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "entity_name": "lvds",
+      "entity_type": "TECHNOLOGY",
+      "description": "lvds is a technology mentioned as one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "entity_name": "mipi csi",
+      "entity_type": "TECHNOLOGY",
+      "description": "mipi csi is a technology mentioned as one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "entity_name": "mipi dsi",
+      "entity_type": "TECHNOLOGY",
+      "description": "mipi dsi is a technology mentioned as one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "entity_name": "lcd",
+      "entity_type": "TECHNOLOGY",
+      "description": "lcd is a technology mentioned as one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "entity_name": "pcb",
+      "entity_type": "TECHNOLOGY",
+      "description": "pcb is a technology mentioned in the context of trace length and impedance for the listed functional pin signals",
+      "source_ids": [
+        190
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "edp",
+      "tgt_entity_name": "pcb",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "edp is one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "src_entity_name": "hdmi",
+      "tgt_entity_name": "pcb",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "hdmi is one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "src_entity_name": "rgmii",
+      "tgt_entity_name": "pcb",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "rgmii is one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "src_entity_name": "fspi",
+      "tgt_entity_name": "pcb",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "fspi is one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "src_entity_name": "sdmmc",
+      "tgt_entity_name": "pcb",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "sdmmc is one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "src_entity_name": "usb2 0",
+      "tgt_entity_name": "pcb",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "usb2 0 is one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "src_entity_name": "usb3 1",
+      "tgt_entity_name": "pcb",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "usb3 1 is one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "src_entity_name": "pcie",
+      "tgt_entity_name": "pcb",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "pcie is one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "src_entity_name": "lvds",
+      "tgt_entity_name": "pcb",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "lvds is one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "src_entity_name": "mipi csi",
+      "tgt_entity_name": "pcb",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "mipi csi is one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "src_entity_name": "mipi dsi",
+      "tgt_entity_name": "pcb",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "mipi dsi is one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    },
+    {
+      "src_entity_name": "lcd",
+      "tgt_entity_name": "pcb",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "lcd is one of the functional pin signals for which pcb trace length and impedance are described",
+      "source_ids": [
+        190
+      ]
+    }
+  ],
+  "node_idx": 190
+}

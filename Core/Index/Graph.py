@@ -3,7 +3,7 @@ from networkx.readwrite import json_graph
 import os
 from collections import defaultdict
 from typing import Iterable, Union, Set, List
-from numpy import source
+
 from pydantic import BaseModel, Field
 import json
 
@@ -341,7 +341,7 @@ class Graph:
 
         graph_instance = cls(save_path=load_dir)
 
-        graph_instance.kg = json_graph.node_link_graph(loaded_data["graph"])
+        graph_instance.kg = json_graph.node_link_graph(loaded_data["graph"], edges="links")
 
         for _, node_data in graph_instance.kg.nodes(data=True):
             if "source_ids" in node_data and isinstance(node_data["source_ids"], list):

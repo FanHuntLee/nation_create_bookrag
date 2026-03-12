@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "3.4关键代码",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of '3mqtt_sinewave_pub 案例', this section provides the core implementation details and critical code segments that demonstrate the MQTT communication protocol's functionality.",
+      "source_ids": [
+        159
+      ]
+    },
+    {
+      "entity_name": "关键代码",
+      "entity_type": "SECTION_TITLE",
+      "description": "Refers to the essential code components that are analyzed and explained in this section.",
+      "source_ids": [
+        159
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "关键代码",
+      "tgt_entity_name": "3.4关键代码",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of '关键代码' is the primary focus of section 3.4.",
+      "source_ids": [
+        159
+      ]
+    }
+  ],
+  "node_idx": 159
+}

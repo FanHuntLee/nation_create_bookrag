@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "entity_name": "1.1概述",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of 'MQTT通信协议简介', this section provides an overview of the MQTT communication protocol, including its general principles and foundational concepts.",
+      "source_ids": [
+        35
+      ]
+    }
+  ],
+  "relations": [],
+  "node_idx": 35
+}

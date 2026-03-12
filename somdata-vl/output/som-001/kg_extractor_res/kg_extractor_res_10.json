@@ -1,0 +1,115 @@
+{
+  "entities": [
+    {
+      "entity_name": "cpu",
+      "entity_type": "TECHNOLOGY",
+      "description": "cpu is a component of a computer system  indicating a technological element discussed in the text",
+      "source_ids": [
+        10
+      ]
+    },
+    {
+      "entity_name": "rom",
+      "entity_type": "TECHNOLOGY",
+      "description": "rom is a type of computer memory  indicating a technological element discussed in the text",
+      "source_ids": [
+        10
+      ]
+    },
+    {
+      "entity_name": "ram",
+      "entity_type": "TECHNOLOGY",
+      "description": "ram is a type of computer memory  indicating a technological element discussed in the text",
+      "source_ids": [
+        10
+      ]
+    },
+    {
+      "entity_name": "led",
+      "entity_type": "TECHNOLOGY",
+      "description": "led is a type of light emitting diode  indicating a technological element discussed in the text",
+      "source_ids": [
+        10
+      ]
+    },
+    {
+      "entity_name": "b2b",
+      "entity_type": "TECHNOLOGY",
+      "description": "b2b    refers to a type of connector used in business to business applications  indicating a technological element discussed in the text",
+      "source_ids": [
+        10
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        10
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "cpu",
+      "tgt_entity_name": "rom",
+      "relation_name": "",
+      "weight": 7.0,
+      "description": "cpu and rom are both components of a computer system  indicating related technological elements",
+      "source_ids": [
+        10
+      ]
+    },
+    {
+      "src_entity_name": "cpu",
+      "tgt_entity_name": "ram",
+      "relation_name": "",
+      "weight": 7.0,
+      "description": "cpu and ram are both components of a computer system  indicating related technological elements",
+      "source_ids": [
+        10
+      ]
+    },
+    {
+      "src_entity_name": "rom",
+      "tgt_entity_name": "ram",
+      "relation_name": "",
+      "weight": 7.0,
+      "description": "rom and ram are both types of computer memory  indicating related technological elements",
+      "source_ids": [
+        10
+      ]
+    },
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 7.0,
+      "description": "and    are both components in electronic circuits  indicating related technological elements",
+      "source_ids": [
+        10
+      ]
+    },
+    {
+      "src_entity_name": "led",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 7.0,
+      "description": "led and    are both components in electronic circuits  indicating related technological elements",
+      "source_ids": [
+        10
+      ]
+    },
+    {
+      "src_entity_name": "b2b",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 7.0,
+      "description": "b2b    and      are both related to peripheral components in technology systems",
+      "source_ids": [
+        10
+      ]
+    }
+  ],
+  "node_idx": 10
+}

@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "entity_name": "mosquitto",
+      "entity_type": "SOFTWARE",
+      "description": "mosquitto is a tool mentioned in the text related to installation and application scenarios",
+      "source_ids": [
+        10
+      ]
+    }
+  ],
+  "relations": [],
+  "node_idx": 10
+}

@@ -1,0 +1,115 @@
+{
+  "entities": [
+    {
+      "entity_name": "mqtt",
+      "entity_type": "TECHNOLOGY",
+      "description": "mqtt is a technology used for communication between the public mqtt hivemq server and the upper computer ubuntu web program",
+      "source_ids": [
+        130
+      ]
+    },
+    {
+      "entity_name": "hivemq",
+      "entity_type": "ORGANIZATION",
+      "description": "hivemq is an organization that provides a public mqtt server for communication",
+      "source_ids": [
+        130
+      ]
+    },
+    {
+      "entity_name": "ubuntu",
+      "entity_type": "PRODUCT",
+      "description": "ubuntu is a product that refers to the upper computer s operating system used in the communication setup",
+      "source_ids": [
+        130
+      ]
+    },
+    {
+      "entity_name": "web",
+      "entity_type": "SOFTWARE",
+      "description": "web is a software component of the upper computer used for communication",
+      "source_ids": [
+        130
+      ]
+    },
+    {
+      "entity_name": "eth0 rgmi",
+      "entity_type": "DEVICE",
+      "description": "eth0 rgmi is a gigabit ethernet port on the evaluation board used for network connectivity",
+      "source_ids": [
+        130
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        130
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "mqtt",
+      "tgt_entity_name": "hivemq",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "mqtt is the technology used by the hivemq server for communication",
+      "source_ids": [
+        130
+      ]
+    },
+    {
+      "src_entity_name": "mqtt",
+      "tgt_entity_name": "ubuntu",
+      "relation_name": "",
+      "weight": 7.0,
+      "description": "mqtt is the technology used for communication with the ubuntu web program",
+      "source_ids": [
+        130
+      ]
+    },
+    {
+      "src_entity_name": "mqtt",
+      "tgt_entity_name": "web",
+      "relation_name": "",
+      "weight": 7.0,
+      "description": "mqtt is the technology used for communication with the web software component",
+      "source_ids": [
+        130
+      ]
+    },
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "eth0 rgmi",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "has a gigabit ethernet port eth0 rgmi for network connectivity",
+      "source_ids": [
+        130
+      ]
+    },
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "is connected to the upper computer for network communication",
+      "source_ids": [
+        130
+      ]
+    },
+    {
+      "src_entity_name": "",
+      "tgt_entity_name": "mqtt",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "the upper computer communicates with the mqtt server for data exchange",
+      "source_ids": [
+        130
+      ]
+    }
+  ],
+  "node_idx": 130
+}

@@ -1,0 +1,23 @@
+{
+  "question": "根据复位信号路径图，外部的Reset Key触发后，分别连接到了RK3588处理器的哪两个引脚信号，以及RK806-1芯片的哪个引脚信号上？",
+  "answer": "连接到了RK3588处理器的nPOR和TSADC_SHUT信号上，以及RK806-1芯片的RESETB信号上。",
+  "doc_uuid": "som-001",
+  "doc_path": "/root/autodl-fs/bookrag/BookRAG/somdata/SOM-TL3588工业核心板硬件说明书.pdf",
+  "evidence": "第55页 图25",
+  "output": "Final Answer:  \n根据复位信号路径图，外部的 Reset Key 触发后，连接的引脚信号如下：\n\n- **RK3588 处理器**：\n  1. **M31/RESETn/PU/1V8**（物理引脚编号：4, 6, 7）\n  2. **M31/RESETn/PU/3V3**（物理引脚编号：9, 11, 12, 16）\n\n- **RK806-1 芯片**：\n  - **引脚 9、11、12、16**\n\n综上，所有连接的引脚信号包括：  \n**RK3588 的 M31/RESETn/PU/1V8（引脚 4, 6, 7）**、**M31/RESETn/PU/3V3（引脚 9, 11, 12, 16）**，以及 **RK806-1 的引脚 9、11、12、16**。",
+  "retrieved_node_ids": [
+    53,
+    86,
+    89,
+    106,
+    116,
+    173,
+    272,
+    286,
+    302,
+    304,
+    306,
+    309,
+    311
+  ]
+}

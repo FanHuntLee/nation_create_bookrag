@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "entity_name": "pmic pwron",
+      "entity_type": "TECHNOLOGY",
+      "description": "pmic pwron is a technology term referring to a power management integrated circuit power on function",
+      "source_ids": [
+        312
+      ]
+    }
+  ],
+  "relations": [],
+  "node_idx": 312
+}

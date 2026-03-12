@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "3电气特性. .46",
+      "entity_type": "SECTION_TITLE",
+      "description": "As a subsection of '3电气特性', this section provides an overview of the electrical characteristics of the SOM-TL3588 industrial core board, detailing specifications such as voltage, current, and signal integrity.",
+      "source_ids": [
+        15
+      ]
+    },
+    {
+      "entity_name": "electrical characteristics",
+      "entity_type": "TECHNOLOGY",
+      "description": "Refers to the technical specifications and performance parameters of the hardware, as outlined in section 3.1.",
+      "source_ids": [
+        15
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "electrical characteristics",
+      "tgt_entity_name": "3电气特性. .46",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "The concept of 'Electrical Characteristics' is the primary topic of section 3.1.",
+      "source_ids": [
+        15
+      ]
+    }
+  ],
+  "node_idx": 15
+}

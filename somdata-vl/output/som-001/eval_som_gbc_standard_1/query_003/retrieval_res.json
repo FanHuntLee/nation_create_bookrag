@@ -1,0 +1,575 @@
+{
+  "query": "系统上电后，CPU内部的BootRom引导代码会按照什么顺序依次检测SPL启动程序？",
+  "used_sec_ids": [],
+  "all_sec_ids": [],
+  "plan": {
+    "query_type": "complex",
+    "original_query": "系统上电后，CPU内部的BootRom引导代码会按照什么顺序依次检测SPL启动程序？",
+    "sub_questions": [
+      {
+        "question": "系统上电后，CPU内部的BootRom引导代码会检测哪些SPL启动程序？",
+        "type": "retrieval"
+      },
+      {
+        "question": "系统上电后，CPU内部的BootRom引导代码检测SPL启动程序的顺序是什么？",
+        "type": "retrieval"
+      },
+      {
+        "question": "根据检测到的SPL启动程序列表和顺序，总结BootRom引导代码依次检测SPL启动程序的顺序。",
+        "type": "synthesis"
+      }
+    ],
+    "filters": null,
+    "operation": null
+  },
+  "iterations": [
+    {
+      "sub_query": "系统上电后，CPU内部的BootRom引导代码会检测哪些SPL启动程序？",
+      "sub_number": 1,
+      "gbc_entity_map": {
+        "Name: bootrom\nType: SOFTWARE": [
+          "Name: bootrom\nType: SOFTWARE"
+        ],
+        "Name: spl启动程序\nType: SOFTWARE": [
+          "Name: spl\nType: SOFTWARE"
+        ],
+        "Name: 系统\nType: SYSTEM": [
+          "Name: 释义\nType: DESCRIPTION"
+        ],
+        "Name: cpu\nType: HARDWARE": [
+          "Name: cpu\nType: HARDWARE"
+        ]
+      },
+      "linked_tree_nodes": [
+        {
+          "index_id": 296,
+          "map_cnt": 3,
+          "linked_entities": [
+            "Name: bootrom\nType: SOFTWARE",
+            "Name: spl\nType: SOFTWARE",
+            "Name: cpu\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 35,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: 释义\nType: DESCRIPTION"
+          ]
+        },
+        {
+          "index_id": 96,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: cpu\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 97,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: cpu\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 68,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: cpu\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 77,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: cpu\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 81,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: cpu\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 51,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: cpu\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 53,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: cpu\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 55,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: cpu\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 58,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: cpu\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 286,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: cpu\nType: HARDWARE"
+          ]
+        }
+      ],
+      "linked_section_ids": [
+        266,
+        32,
+        50
+      ],
+      "supplementary_ids": [],
+      "selected_explanation": "没有找到与用户问题相关的剩余部分。用户的问题涉及系统上电后CPU内部BootRom引导代码检测的SPL启动程序，而剩余部分的标题和路径未涉及相关技术细节。",
+      "retrieval_sec_ids": [
+        32,
+        266,
+        50
+      ],
+      "retrieval_nodes": [
+        {
+          "index_id": 68,
+          "type": "text",
+          "content": "核心板通过CPU 的专用eMMC接口连接一片eMMC芯片，采用8bit数据线，兼容如下eMMC 配置。",
+          "page": 9
+        },
+        {
+          "index_id": 295,
+          "type": "text",
+          "content": "5.1.2 系统启动说明",
+          "page": 54
+        },
+        {
+          "index_id": 296,
+          "type": "text",
+          "content": "系统上电后，由 CPU 内部 BootRom 的引导代码依次从eMMC FLASH、SD卡、USB 接口检测 SPL启动程序，从第一个包含 SPL启动程序的设备开始启动。SPL启动后，将优先",
+          "page": 54
+        },
+        {
+          "index_id": 269,
+          "type": "text",
+          "content": "5.1.1 电源设计说明",
+          "page": 51
+        },
+        {
+          "index_id": 302,
+          "type": "text",
+          "content": "5.1.3 系统复位信号",
+          "page": 55
+        },
+        {
+          "index_id": 51,
+          "type": "text",
+          "content": "SOM-TL3588 核心板板载 CPU、ROM、RAM、晶振、电源、LED 等硬件资源，并通过工业级 B2B 连接方式引出 IO。",
+          "page": 6
+        },
+        {
+          "index_id": 53,
+          "type": "image",
+          "content": "图2核心板正面实物图",
+          "page": 6,
+          "img_path": "/root/autodl-fs/bookrag/BookRAG/somdata-vl/output/som-001/auto/images/d345ad0564795f0985504aab5e7ba42149174cbabf3e6dc6859166b9409f4107.jpg"
+        },
+        {
+          "index_id": 55,
+          "type": "text",
+          "content": "公司官网：www.tronlong.com 销售邮箱：sales@tronlong.com 公司总机：020-8998-6280 6/62  \n技术论坛：www.51ele.net 技术邮箱：support@tronlong.com 技术热线：020-3893-9734 核心板CPU 型号兼容 RK3588J和 RK3588，FCBGA1088L封装，引脚数量为1088个，尺寸为23mm\\*23mm。RK3588J为工业级，工作温度范围为 $4 0 ^ { \\circ } C ^ { \\sim } 8 5 ^ { \\circ } C$ ；RK3588为宽温级，工作温度范围为 $0 ^ { \\circ } C ^ { \\sim } 8 0 ^ { \\circ } C$ 。 CPU 主要架构如下：",
+          "page": 6
+        },
+        {
+          "index_id": 312,
+          "type": "text",
+          "content": "（2）PMIC_PWRON",
+          "page": 56
+        }
+      ],
+      "iteration_text_nodes": [
+        {
+          "index_id": 68,
+          "type": "text",
+          "content": "核心板通过CPU 的专用eMMC接口连接一片eMMC芯片，采用8bit数据线，兼容如下eMMC 配置。",
+          "page": 9
+        },
+        {
+          "index_id": 295,
+          "type": "text",
+          "content": "5.1.2 系统启动说明",
+          "page": 54
+        },
+        {
+          "index_id": 296,
+          "type": "text",
+          "content": "系统上电后，由 CPU 内部 BootRom 的引导代码依次从eMMC FLASH、SD卡、USB 接口检测 SPL启动程序，从第一个包含 SPL启动程序的设备开始启动。SPL启动后，将优先",
+          "page": 54
+        },
+        {
+          "index_id": 269,
+          "type": "text",
+          "content": "5.1.1 电源设计说明",
+          "page": 51
+        },
+        {
+          "index_id": 302,
+          "type": "text",
+          "content": "5.1.3 系统复位信号",
+          "page": 55
+        },
+        {
+          "index_id": 51,
+          "type": "text",
+          "content": "SOM-TL3588 核心板板载 CPU、ROM、RAM、晶振、电源、LED 等硬件资源，并通过工业级 B2B 连接方式引出 IO。",
+          "page": 6
+        },
+        {
+          "index_id": 55,
+          "type": "text",
+          "content": "公司官网：www.tronlong.com 销售邮箱：sales@tronlong.com 公司总机：020-8998-6280 6/62  \n技术论坛：www.51ele.net 技术邮箱：support@tronlong.com 技术热线：020-3893-9734 核心板CPU 型号兼容 RK3588J和 RK3588，FCBGA1088L封装，引脚数量为1088个，尺寸为23mm\\*23mm。RK3588J为工业级，工作温度范围为 $4 0 ^ { \\circ } C ^ { \\sim } 8 5 ^ { \\circ } C$ ；RK3588为宽温级，工作温度范围为 $0 ^ { \\circ } C ^ { \\sim } 8 0 ^ { \\circ } C$ 。 CPU 主要架构如下：",
+          "page": 6
+        },
+        {
+          "index_id": 312,
+          "type": "text",
+          "content": "（2）PMIC_PWRON",
+          "page": 56
+        }
+      ],
+      "iteration_image_nodes": [
+        {
+          "index_id": 53,
+          "type": "image",
+          "content": "图2核心板正面实物图",
+          "page": 6,
+          "img_path": "/root/autodl-fs/bookrag/BookRAG/somdata-vl/output/som-001/auto/images/d345ad0564795f0985504aab5e7ba42149174cbabf3e6dc6859166b9409f4107.jpg"
+        }
+      ],
+      "iteration_graph_nodes": [
+        {
+          "entity_name": "cpu",
+          "entity_type": "HARDWARE"
+        },
+        {
+          "entity_name": "bootrom",
+          "entity_type": "SOFTWARE"
+        },
+        {
+          "entity_name": "表1",
+          "entity_type": "TABLE"
+        },
+        {
+          "entity_name": "释义",
+          "entity_type": "DESCRIPTION"
+        },
+        {
+          "entity_name": "spl",
+          "entity_type": "SOFTWARE"
+        }
+      ],
+      "partial_answers": [
+        {
+          "source": "Text Chunk 1",
+          "content": "系统上电后，CPU内部的BootRom引导代码会依次检测以下设备中的SPL启动程序：\n\n1. **eMMC FLASH**  \n2. **SD卡**  \n3. **USB接口**\n\nBootRom会从第一个包含SPL启动程序的设备开始启动。"
+        },
+        {
+          "source": "Image 1",
+          "content": "根据提供的背景信息和图像，**无法确定系统上电后，CPU内部的BootRom引导代码会检测哪些SPL启动程序**。\n\n原因如下：\n\n1.  **图像内容不相关**：提供的图片（图2核心板正面实物图）仅展示了硬件板级的物理布局，包括CPU、内存、存储、电源管理芯片等。它没有包含任何关于软件启动流程、BootRom代码、或SPL（Secondary Program Loader）启动程序的任何信息。\n2.  **缺乏启动流程描述**：背景信息中没有提及任何关于系统上电后BootRom如何工作、它会执行哪些步骤、或者它会检测哪些SPL程序的说明。\n3.  **SPL是软件概念**：SPL是软件启动程序，而图中展示的是硬件组件。硬件图无法直接说明软件的执行流程。\n\n因此，仅凭这张硬件实物图，无法回答关于BootRom检测SPL程序的问题。要回答这个问题，需要查阅该特定CPU（如图中标注的Rockchip RK3588）的官方启动流程文档或技术手册。"
+        }
+      ],
+      "generated_answer": "系统上电后，CPU内部的BootRom引导代码会依次检测以下设备中的SPL启动程序：\n\n1. **eMMC FLASH**  \n2. **SD卡**  \n3. **USB接口**\n\nBootRom会从第一个包含SPL启动程序的设备开始启动。\n\n需要注意的是，上述信息来源于文本分析，而图像资料（图2核心板正面实物图）仅展示了硬件布局，并未提供关于BootRom检测SPL启动程序的具体信息。因此，若需更准确的启动流程细节，建议参考对应CPU（如Rockchip RK3588）的官方启动流程文档或技术手册。"
+    },
+    {
+      "sub_query": "系统上电后，CPU内部的BootRom引导代码检测SPL启动程序的顺序是什么？",
+      "sub_number": 2,
+      "gbc_entity_map": {
+        "Name: bootrom\nType: SOFTWARE": [
+          "Name: bootrom\nType: SOFTWARE"
+        ],
+        "Name: spl启动程序\nType: SOFTWARE": [
+          "Name: spl\nType: SOFTWARE"
+        ],
+        "Name: 系统\nType: SYSTEM": [
+          "Name: 释义\nType: DESCRIPTION"
+        ],
+        "Name: cpu\nType: HARDWARE": [
+          "Name: cpu\nType: HARDWARE"
+        ],
+        "Name: 启动顺序\nType: TASK_OR_PROBLEM": [
+          "Name: 状态2\nType: TASK_OR_PROBLEM"
+        ]
+      },
+      "linked_tree_nodes": [
+        {
+          "index_id": 296,
+          "map_cnt": 3,
+          "linked_entities": [
+            "Name: cpu\nType: HARDWARE",
+            "Name: bootrom\nType: SOFTWARE",
+            "Name: spl\nType: SOFTWARE"
+          ]
+        },
+        {
+          "index_id": 96,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: cpu\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 97,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: cpu\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 68,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: cpu\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 77,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: cpu\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 81,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: cpu\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 51,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: cpu\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 53,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: cpu\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 55,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: cpu\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 58,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: cpu\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 286,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: cpu\nType: HARDWARE"
+          ]
+        },
+        {
+          "index_id": 35,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: 释义\nType: DESCRIPTION"
+          ]
+        },
+        {
+          "index_id": 226,
+          "map_cnt": 1,
+          "linked_entities": [
+            "Name: 状态2\nType: TASK_OR_PROBLEM"
+          ]
+        }
+      ],
+      "linked_section_ids": [
+        266,
+        50,
+        32,
+        222
+      ],
+      "supplementary_ids": [],
+      "selected_explanation": "没有找到与用户问题相关的剩余部分。用户的问题涉及系统上电后CPU内部BootRom引导代码检测SPL启动程序的顺序，而剩余部分的标题和路径未涉及相关技术细节或流程说明。",
+      "retrieval_sec_ids": [
+        32,
+        266,
+        50,
+        222
+      ],
+      "retrieval_nodes": [
+        {
+          "index_id": 226,
+          "type": "table",
+          "content": "Caption: 表 12 核心板功耗测试\nThis table contains the following columns:\n - CPU\n - RK3588\n - RK3588J\n - 测试项\n\nTable Body:\n测试项 | CPU | RK3588J | RK3588\n工作状态 | 环境温度值 | Ta=25.4℃ | Ta=24.6℃\n文状态1 | 主频 | Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz | Cortex-A76主频为1.6GHzCortex-A55主频为1.4GHz\n文状态1 | 电压典型值 | 4.0V | 4.0V\n文状态1 | 电流典型值 | 0.37A | 0.39A\n文状态1 | 功耗典型值 | 1.48W | 1.56W\n文状态1 | CPU内部传感器温度值 | 38.85℃ | 46.1℃\n状态2 | 主频 | Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz | Cortex-A76 主频为 1.6GHzCortex-A55主频为1.4GHz\n状态2 | 电压典型值 | 4.0V | 4.0V\n状态2 | 电流典型值 | 1.24A | 1.36A\n状态2 | 功耗典型值 | 4.96W | 5.44W\n状态2 | CPU内部传感器温度值 | 63.77℃ | 67.46℃\n花科技状态3 | 主频 | Cortex-A76 主频为 2.0GHzCortex-A55主频为1.7GHz | Cortex-A76主频为2.4GHzCortex-A55主频为1.8GHz\n花科技状态3 | 电压典型值 | 4.0V | 4.0V\n花科技状态3 | 电流典型值 | 1.67A | 1.96A\n花科技状态3 | 功耗典型值 | 6.68W | 7.84W\n花科技状态3 | CPU内部传感器温度值 | 77.62℃ | 85.89℃",
+          "page": 46,
+          "img_path": "/root/autodl-fs/bookrag/BookRAG/somdata-vl/output/som-001/auto/images/ab3a4ba7fc9a29b529a59588000a7f574c273fd408953ac1bc4a1d70691bf226.jpg",
+          "table_body": "<table><tr><td>测试项</td><td>CPU</td><td>RK3588J</td><td>RK3588</td></tr><tr><td colspan=\"1\" rowspan=\"1\">工作状态</td><td colspan=\"1\" rowspan=\"1\">环境温度值</td><td colspan=\"1\" rowspan=\"1\">Ta=25.4℃</td><td colspan=\"1\" rowspan=\"1\">Ta=24.6℃</td></tr><tr><td colspan=\"1\" rowspan=\"5\">文状态1</td><td colspan=\"1\" rowspan=\"1\">主频</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76主频为1.6GHzCortex-A55主频为1.4GHz</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电压典型值</td><td colspan=\"1\" rowspan=\"1\">4.0V</td><td colspan=\"1\" rowspan=\"1\">4.0V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电流典型值</td><td colspan=\"1\" rowspan=\"1\">0.37A</td><td colspan=\"1\" rowspan=\"1\">0.39A</td></tr><tr><td colspan=\"1\" rowspan=\"1\">功耗典型值</td><td colspan=\"1\" rowspan=\"1\">1.48W</td><td colspan=\"1\" rowspan=\"1\">1.56W</td></tr><tr><td colspan=\"1\" rowspan=\"1\">CPU内部传感器温度值</td><td colspan=\"1\" rowspan=\"1\">38.85℃</td><td colspan=\"1\" rowspan=\"1\">46.1℃</td></tr><tr><td colspan=\"1\" rowspan=\"5\">状态2</td><td colspan=\"1\" rowspan=\"1\">主频</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为 1.6GHzCortex-A55主频为1.4GHz</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电压典型值</td><td colspan=\"1\" rowspan=\"1\">4.0V</td><td colspan=\"1\" rowspan=\"1\">4.0V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电流典型值</td><td colspan=\"1\" rowspan=\"1\">1.24A</td><td colspan=\"1\" rowspan=\"1\">1.36A</td></tr><tr><td colspan=\"1\" rowspan=\"1\">功耗典型值</td><td colspan=\"1\" rowspan=\"1\">4.96W</td><td colspan=\"1\" rowspan=\"1\">5.44W</td></tr><tr><td colspan=\"1\" rowspan=\"1\">CPU内部传感器温度值</td><td colspan=\"1\" rowspan=\"1\">63.77℃</td><td colspan=\"1\" rowspan=\"1\">67.46℃</td></tr><tr><td colspan=\"1\" rowspan=\"5\">花科技状态3</td><td colspan=\"1\" rowspan=\"1\">主频</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为 2.0GHzCortex-A55主频为1.7GHz</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76主频为2.4GHzCortex-A55主频为1.8GHz</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电压典型值</td><td colspan=\"1\" rowspan=\"1\">4.0V</td><td colspan=\"1\" rowspan=\"1\">4.0V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电流典型值</td><td colspan=\"1\" rowspan=\"1\">1.67A</td><td colspan=\"1\" rowspan=\"1\">1.96A</td></tr><tr><td colspan=\"1\" rowspan=\"1\">功耗典型值</td><td colspan=\"1\" rowspan=\"1\">6.68W</td><td colspan=\"1\" rowspan=\"1\">7.84W</td></tr><tr><td colspan=\"1\" rowspan=\"1\">CPU内部传感器温度值</td><td colspan=\"1\" rowspan=\"1\">77.62℃</td><td colspan=\"1\" rowspan=\"1\">85.89℃</td></tr></table>",
+          "caption": "表 12 核心板功耗测试",
+          "footnote": ""
+        },
+        {
+          "index_id": 68,
+          "type": "text",
+          "content": "核心板通过CPU 的专用eMMC接口连接一片eMMC芯片，采用8bit数据线，兼容如下eMMC 配置。",
+          "page": 9
+        },
+        {
+          "index_id": 295,
+          "type": "text",
+          "content": "5.1.2 系统启动说明",
+          "page": 54
+        },
+        {
+          "index_id": 296,
+          "type": "text",
+          "content": "系统上电后，由 CPU 内部 BootRom 的引导代码依次从eMMC FLASH、SD卡、USB 接口检测 SPL启动程序，从第一个包含 SPL启动程序的设备开始启动。SPL启动后，将优先",
+          "page": 54
+        },
+        {
+          "index_id": 231,
+          "type": "text",
+          "content": "状态1：系统启动，评估板不接入其他外接模块，不执行程序。",
+          "page": 47
+        },
+        {
+          "index_id": 269,
+          "type": "text",
+          "content": "5.1.1 电源设计说明",
+          "page": 51
+        },
+        {
+          "index_id": 51,
+          "type": "text",
+          "content": "SOM-TL3588 核心板板载 CPU、ROM、RAM、晶振、电源、LED 等硬件资源，并通过工业级 B2B 连接方式引出 IO。",
+          "page": 6
+        },
+        {
+          "index_id": 55,
+          "type": "text",
+          "content": "公司官网：www.tronlong.com 销售邮箱：sales@tronlong.com 公司总机：020-8998-6280 6/62  \n技术论坛：www.51ele.net 技术邮箱：support@tronlong.com 技术热线：020-3893-9734 核心板CPU 型号兼容 RK3588J和 RK3588，FCBGA1088L封装，引脚数量为1088个，尺寸为23mm\\*23mm。RK3588J为工业级，工作温度范围为 $4 0 ^ { \\circ } C ^ { \\sim } 8 5 ^ { \\circ } C$ ；RK3588为宽温级，工作温度范围为 $0 ^ { \\circ } C ^ { \\sim } 8 0 ^ { \\circ } C$ 。 CPU 主要架构如下：",
+          "page": 6
+        },
+        {
+          "index_id": 312,
+          "type": "text",
+          "content": "（2）PMIC_PWRON",
+          "page": 56
+        }
+      ],
+      "iteration_text_nodes": [
+        {
+          "index_id": 226,
+          "type": "table",
+          "content": "Caption: 表 12 核心板功耗测试\nThis table contains the following columns:\n - CPU\n - RK3588\n - RK3588J\n - 测试项\n\nTable Body:\n测试项 | CPU | RK3588J | RK3588\n工作状态 | 环境温度值 | Ta=25.4℃ | Ta=24.6℃\n文状态1 | 主频 | Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz | Cortex-A76主频为1.6GHzCortex-A55主频为1.4GHz\n文状态1 | 电压典型值 | 4.0V | 4.0V\n文状态1 | 电流典型值 | 0.37A | 0.39A\n文状态1 | 功耗典型值 | 1.48W | 1.56W\n文状态1 | CPU内部传感器温度值 | 38.85℃ | 46.1℃\n状态2 | 主频 | Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz | Cortex-A76 主频为 1.6GHzCortex-A55主频为1.4GHz\n状态2 | 电压典型值 | 4.0V | 4.0V\n状态2 | 电流典型值 | 1.24A | 1.36A\n状态2 | 功耗典型值 | 4.96W | 5.44W\n状态2 | CPU内部传感器温度值 | 63.77℃ | 67.46℃\n花科技状态3 | 主频 | Cortex-A76 主频为 2.0GHzCortex-A55主频为1.7GHz | Cortex-A76主频为2.4GHzCortex-A55主频为1.8GHz\n花科技状态3 | 电压典型值 | 4.0V | 4.0V\n花科技状态3 | 电流典型值 | 1.67A | 1.96A\n花科技状态3 | 功耗典型值 | 6.68W | 7.84W\n花科技状态3 | CPU内部传感器温度值 | 77.62℃ | 85.89℃",
+          "page": 46,
+          "img_path": "/root/autodl-fs/bookrag/BookRAG/somdata-vl/output/som-001/auto/images/ab3a4ba7fc9a29b529a59588000a7f574c273fd408953ac1bc4a1d70691bf226.jpg",
+          "table_body": "<table><tr><td>测试项</td><td>CPU</td><td>RK3588J</td><td>RK3588</td></tr><tr><td colspan=\"1\" rowspan=\"1\">工作状态</td><td colspan=\"1\" rowspan=\"1\">环境温度值</td><td colspan=\"1\" rowspan=\"1\">Ta=25.4℃</td><td colspan=\"1\" rowspan=\"1\">Ta=24.6℃</td></tr><tr><td colspan=\"1\" rowspan=\"5\">文状态1</td><td colspan=\"1\" rowspan=\"1\">主频</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76主频为1.6GHzCortex-A55主频为1.4GHz</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电压典型值</td><td colspan=\"1\" rowspan=\"1\">4.0V</td><td colspan=\"1\" rowspan=\"1\">4.0V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电流典型值</td><td colspan=\"1\" rowspan=\"1\">0.37A</td><td colspan=\"1\" rowspan=\"1\">0.39A</td></tr><tr><td colspan=\"1\" rowspan=\"1\">功耗典型值</td><td colspan=\"1\" rowspan=\"1\">1.48W</td><td colspan=\"1\" rowspan=\"1\">1.56W</td></tr><tr><td colspan=\"1\" rowspan=\"1\">CPU内部传感器温度值</td><td colspan=\"1\" rowspan=\"1\">38.85℃</td><td colspan=\"1\" rowspan=\"1\">46.1℃</td></tr><tr><td colspan=\"1\" rowspan=\"5\">状态2</td><td colspan=\"1\" rowspan=\"1\">主频</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为1.6GHzCortex-A55主频为1.3GHz</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为 1.6GHzCortex-A55主频为1.4GHz</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电压典型值</td><td colspan=\"1\" rowspan=\"1\">4.0V</td><td colspan=\"1\" rowspan=\"1\">4.0V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电流典型值</td><td colspan=\"1\" rowspan=\"1\">1.24A</td><td colspan=\"1\" rowspan=\"1\">1.36A</td></tr><tr><td colspan=\"1\" rowspan=\"1\">功耗典型值</td><td colspan=\"1\" rowspan=\"1\">4.96W</td><td colspan=\"1\" rowspan=\"1\">5.44W</td></tr><tr><td colspan=\"1\" rowspan=\"1\">CPU内部传感器温度值</td><td colspan=\"1\" rowspan=\"1\">63.77℃</td><td colspan=\"1\" rowspan=\"1\">67.46℃</td></tr><tr><td colspan=\"1\" rowspan=\"5\">花科技状态3</td><td colspan=\"1\" rowspan=\"1\">主频</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76 主频为 2.0GHzCortex-A55主频为1.7GHz</td><td colspan=\"1\" rowspan=\"1\">Cortex-A76主频为2.4GHzCortex-A55主频为1.8GHz</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电压典型值</td><td colspan=\"1\" rowspan=\"1\">4.0V</td><td colspan=\"1\" rowspan=\"1\">4.0V</td></tr><tr><td colspan=\"1\" rowspan=\"1\">电流典型值</td><td colspan=\"1\" rowspan=\"1\">1.67A</td><td colspan=\"1\" rowspan=\"1\">1.96A</td></tr><tr><td colspan=\"1\" rowspan=\"1\">功耗典型值</td><td colspan=\"1\" rowspan=\"1\">6.68W</td><td colspan=\"1\" rowspan=\"1\">7.84W</td></tr><tr><td colspan=\"1\" rowspan=\"1\">CPU内部传感器温度值</td><td colspan=\"1\" rowspan=\"1\">77.62℃</td><td colspan=\"1\" rowspan=\"1\">85.89℃</td></tr></table>",
+          "caption": "表 12 核心板功耗测试",
+          "footnote": ""
+        },
+        {
+          "index_id": 68,
+          "type": "text",
+          "content": "核心板通过CPU 的专用eMMC接口连接一片eMMC芯片，采用8bit数据线，兼容如下eMMC 配置。",
+          "page": 9
+        },
+        {
+          "index_id": 295,
+          "type": "text",
+          "content": "5.1.2 系统启动说明",
+          "page": 54
+        },
+        {
+          "index_id": 296,
+          "type": "text",
+          "content": "系统上电后，由 CPU 内部 BootRom 的引导代码依次从eMMC FLASH、SD卡、USB 接口检测 SPL启动程序，从第一个包含 SPL启动程序的设备开始启动。SPL启动后，将优先",
+          "page": 54
+        },
+        {
+          "index_id": 231,
+          "type": "text",
+          "content": "状态1：系统启动，评估板不接入其他外接模块，不执行程序。",
+          "page": 47
+        },
+        {
+          "index_id": 269,
+          "type": "text",
+          "content": "5.1.1 电源设计说明",
+          "page": 51
+        },
+        {
+          "index_id": 51,
+          "type": "text",
+          "content": "SOM-TL3588 核心板板载 CPU、ROM、RAM、晶振、电源、LED 等硬件资源，并通过工业级 B2B 连接方式引出 IO。",
+          "page": 6
+        },
+        {
+          "index_id": 55,
+          "type": "text",
+          "content": "公司官网：www.tronlong.com 销售邮箱：sales@tronlong.com 公司总机：020-8998-6280 6/62  \n技术论坛：www.51ele.net 技术邮箱：support@tronlong.com 技术热线：020-3893-9734 核心板CPU 型号兼容 RK3588J和 RK3588，FCBGA1088L封装，引脚数量为1088个，尺寸为23mm\\*23mm。RK3588J为工业级，工作温度范围为 $4 0 ^ { \\circ } C ^ { \\sim } 8 5 ^ { \\circ } C$ ；RK3588为宽温级，工作温度范围为 $0 ^ { \\circ } C ^ { \\sim } 8 0 ^ { \\circ } C$ 。 CPU 主要架构如下：",
+          "page": 6
+        },
+        {
+          "index_id": 312,
+          "type": "text",
+          "content": "（2）PMIC_PWRON",
+          "page": 56
+        }
+      ],
+      "iteration_image_nodes": [],
+      "iteration_graph_nodes": [
+        {
+          "entity_name": "cpu",
+          "entity_type": "HARDWARE"
+        },
+        {
+          "entity_name": "bootrom",
+          "entity_type": "SOFTWARE"
+        },
+        {
+          "entity_name": "释义",
+          "entity_type": "DESCRIPTION"
+        },
+        {
+          "entity_name": "spl",
+          "entity_type": "SOFTWARE"
+        },
+        {
+          "entity_name": "状态2",
+          "entity_type": "TASK_OR_PROBLEM"
+        }
+      ],
+      "partial_answers": [
+        {
+          "source": "Text Chunk 1",
+          "content": "系统上电后，CPU内部的BootRom引导代码检测SPL启动程序的顺序是：**依次从eMMC FLASH、SD卡、USB接口检测SPL启动程序**，并从**第一个包含SPL启动程序的设备开始启动**。"
+        }
+      ],
+      "generated_answer": "系统上电后，CPU内部的BootRom引导代码检测SPL启动程序的顺序是：**依次从eMMC FLASH、SD卡、USB接口检测SPL启动程序**，并从**第一个包含SPL启动程序的设备开始启动**。"
+    }
+  ],
+  "final_answer": "Final Answer:  \n系统上电后，CPU内部的BootRom引导代码会依次检测SPL启动程序的顺序为：**首先检测eMMC FLASH，若未找到则检测SD卡，若仍未找到则检测USB接口**，并从**第一个包含SPL启动程序的设备**开始启动。"
+}

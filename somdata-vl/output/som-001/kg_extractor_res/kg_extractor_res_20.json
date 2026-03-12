@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "5 1",
+      "entity_type": "SECTION_TITLE",
+      "description": "5 1 is a section title indicating the beginning of a section on minimum system design",
+      "source_ids": [
+        20
+      ]
+    },
+    {
+      "entity_name": "",
+      "entity_type": "UNKNOWN",
+      "description": "",
+      "source_ids": [
+        20
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "5 1",
+      "tgt_entity_name": "",
+      "relation_name": "",
+      "weight": 10.0,
+      "description": "5 1 is the section title for the task or problem of",
+      "source_ids": [
+        20
+      ]
+    }
+  ],
+  "node_idx": 20
+}

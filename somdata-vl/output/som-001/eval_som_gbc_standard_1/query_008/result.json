@@ -1,0 +1,19 @@
+{
+  "question": "根据核心板引出的外设资源表，GMAC外设支持哪两种PHY接口，且自适应的网速范围是多少？",
+  "answer": "支持RMII和RGMII PHY接口，支持10/100/1000Mbps自适应。",
+  "doc_uuid": "som-001",
+  "doc_path": "/root/autodl-fs/bookrag/BookRAG/somdata/SOM-TL3588工业核心板硬件说明书.pdf",
+  "evidence": "第13页 表5",
+  "output": "根据提供的信息，GMAC外设支持的两种PHY接口是 **RMII** 和 **RGMII**，并且其自适应的网速范围是 **10/100/1000Mbps**。",
+  "retrieved_node_ids": [
+    51,
+    77,
+    95,
+    96,
+    97,
+    98,
+    103,
+    335,
+    339
+  ]
+}

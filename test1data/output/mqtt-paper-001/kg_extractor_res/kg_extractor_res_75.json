@@ -1,0 +1,87 @@
+{
+  "entities": [
+    {
+      "entity_name": "h",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "h is a parameter used to specify the mqtt server in the command line interface",
+      "source_ids": [
+        75
+      ]
+    },
+    {
+      "entity_name": "p",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "p is a parameter used to specify the mqtt server port in the command line interface",
+      "source_ids": [
+        75
+      ]
+    },
+    {
+      "entity_name": "t",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "t is a parameter used to specify the mqtt topic  which can be named arbitrarily  in the command line interface",
+      "source_ids": [
+        75
+      ]
+    },
+    {
+      "entity_name": "m",
+      "entity_type": "PARAMETER_OR_VARIABLE",
+      "description": "m is a parameter used to specify the mqtt message to be published in the command line interface",
+      "source_ids": [
+        75
+      ]
+    },
+    {
+      "entity_name": "mqtt",
+      "entity_type": "TECHNOLOGY",
+      "description": "mqtt is a protocol used for messaging  with parameters such as server  port  mode  topic  and message specified in the command line interface",
+      "source_ids": [
+        75
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "h",
+      "tgt_entity_name": "mqtt",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "h is a parameter related to the mqtt server  specifying its address",
+      "source_ids": [
+        75
+      ]
+    },
+    {
+      "src_entity_name": "p",
+      "tgt_entity_name": "mqtt",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "p is a parameter related to the mqtt protocol  specifying the server port",
+      "source_ids": [
+        75
+      ]
+    },
+    {
+      "src_entity_name": "m",
+      "tgt_entity_name": "mqtt",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "m is a parameter related to the mqtt protocol  specifying the operation mode  publish or subscribe",
+      "source_ids": [
+        75
+      ]
+    },
+    {
+      "src_entity_name": "t",
+      "tgt_entity_name": "mqtt",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "t is a parameter related to the mqtt protocol  specifying the topic for message transmission",
+      "source_ids": [
+        75
+      ]
+    }
+  ],
+  "node_idx": 75
+}

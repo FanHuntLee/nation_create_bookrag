@@ -1,0 +1,51 @@
+{
+  "entities": [
+    {
+      "entity_name": "m31 resetn pu 1v8",
+      "entity_type": "TECHNOLOGY",
+      "description": "m31 resetn pu 1v8 is a cpu reset input pin used for controlling peripheral interface resets",
+      "source_ids": [
+        304
+      ]
+    },
+    {
+      "entity_name": "pmic rk806 1",
+      "entity_type": "TECHNOLOGY",
+      "description": "pmic rk806 1  is a power management ic that provides a reset output resetb pin connected to the cpu reset input",
+      "source_ids": [
+        304
+      ]
+    },
+    {
+      "entity_name": "vdd 3v3 som output",
+      "entity_type": "TECHNOLOGY",
+      "description": "vdd 3v3 som output is a power supply line that introduces a delay before the reset signal is pulled high",
+      "source_ids": [
+        304
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "m31 resetn pu 1v8",
+      "tgt_entity_name": "pmic rk806 1",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the cpu reset input pin is connected to the pmic s reset output pin  allowing for coordinated reset control",
+      "source_ids": [
+        304
+      ]
+    },
+    {
+      "src_entity_name": "m31 resetn pu 1v8",
+      "tgt_entity_name": "vdd 3v3 som output",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "the reset signal is delayed by vdd 3v3 som output for approximately 5 2ms before being pulled high",
+      "source_ids": [
+        304
+      ]
+    }
+  ],
+  "node_idx": 304
+}

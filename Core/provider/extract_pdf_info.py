@@ -194,17 +194,17 @@ def merge_middle_content(
         para_blocks = info.get("para_blocks", [])
         middle_json_para_list.extend(para_blocks)
     if len(middle_json_para_list) != len(content_list):
-        log.error(
-            f"Error: The number of items in middle_json ({len(middle_json_para_list)}) does not match the number of content items ({len(content_list)})."
-        )
-        raise ValueError(
-            f"The number of items in middle_json ({len(middle_json_para_list)}) does not match the number of content items ({len(content_list)})."
+        log.warning(
+            f"Warning: The number of items in middle_json ({len(middle_json_para_list)}) does not match the number of content items ({len(content_list)}). Will pair up to min length."
         )
 
     res_pdf_info_list = []
     for i in range(len(content_list)):
         res_pdf_info = copy.deepcopy(content_list[i])
-        res_pdf_info["middle_json"] = copy.deepcopy(middle_json_para_list[i])
+        if i < len(middle_json_para_list):
+            res_pdf_info["middle_json"] = copy.deepcopy(middle_json_para_list[i])
+        else:
+            res_pdf_info["middle_json"] = {}
         if "img_path" in res_pdf_info:
             res_pdf_info["img_path"] = os.path.join(parse_dir, res_pdf_info["img_path"])
             if not os.path.exists(res_pdf_info["img_path"]):

@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "entity_name": "rk3588 hardware design guide cn v1 2 20221012",
+      "entity_type": "DOCUMENT",
+      "description": "rk3588 hardware design guide cn v1 2 20221012 is a hardware design guide document provided by rockchip as a reference for development",
+      "source_ids": [
+        46
+      ]
+    },
+    {
+      "entity_name": "rockchip",
+      "entity_type": "ORGANIZATION",
+      "description": "rockchip is an organization that provides official reference design documents for hardware development",
+      "source_ids": [
+        46
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "rk3588 hardware design guide cn v1 2 20221012",
+      "tgt_entity_name": "rockchip",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "the hardware design guide is provided by rockchip as an official reference document",
+      "source_ids": [
+        46
+      ]
+    }
+  ],
+  "node_idx": 46
+}

@@ -1,0 +1,51 @@
+{
+  "entities": [
+    {
+      "entity_name": "libmosquitto",
+      "entity_type": "SOFTWARE",
+      "description": "libmosquitto is a software library that provides an api for communicating with mqtt broker servers using the mqtt protocol",
+      "source_ids": [
+        57
+      ]
+    },
+    {
+      "entity_name": "mqtt",
+      "entity_type": "TECHNOLOGY",
+      "description": "mqtt is a communication protocol used for messaging between devices  with versions 5 0 and 3 1 1 mentioned in the text",
+      "source_ids": [
+        57
+      ]
+    },
+    {
+      "entity_name": "mqtt",
+      "entity_type": "SOFTWARE",
+      "description": "mqtt      is a server that facilitates communication between devices using the mqtt protocol",
+      "source_ids": [
+        57
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "src_entity_name": "libmosquitto",
+      "tgt_entity_name": "mqtt",
+      "relation_name": "",
+      "weight": 9.0,
+      "description": "libmosquitto uses the mqtt protocol for communication with mqtt broker servers",
+      "source_ids": [
+        57
+      ]
+    },
+    {
+      "src_entity_name": "mqtt",
+      "tgt_entity_name": "mqtt",
+      "relation_name": "",
+      "weight": 8.0,
+      "description": "mqtt is the protocol used by mqtt      to facilitate communication between devices",
+      "source_ids": [
+        57
+      ]
+    }
+  ],
+  "node_idx": 57
+}
