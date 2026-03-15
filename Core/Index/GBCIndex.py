@@ -94,6 +94,33 @@ class GBC:
         log.info(f"Rebuilt entity VDB with {len(texts)} entries.")
 
     @classmethod
+    def build_gbc_index(
+        cls,
+        graph_index: Graph,
+        config: SystemConfig,
+        tree_index: Optional[DocumentTree] = None,
+    ) -> "GBC":
+        """
+        Create a GBC instance from an already-built Graph, save everything, and
+        build the entity vector database.
+
+        This is the canonical way to turn any Graph object (built locally or
+        returned by kg_service) into a fully-indexed GBC.
+
+        :param graph_index: Fully built Graph instance.
+        :param config: System configuration.
+        :param tree_index: Optional DocumentTree to attach.
+        :return: A ready-to-use GBC instance with entity VDB populated.
+        """
+        gbc = cls(config=config, graph_index=graph_index, TreeIndex=tree_index)
+        gbc.save_gbc_index()
+        gbc.rebuild_vdb()
+        log.info(
+            f"GBC index built: {len(graph_index.get_all_nodes())} entities indexed."
+        )
+        return gbc
+    
+    @classmethod
     def load_gbc_index(cls, config: SystemConfig):
         """
         Loads the GBC index from the specified path.

@@ -34,6 +34,31 @@ import time
 #     ],
 # )
 
+def _build_via_remote_api(tree: DocumentTree, cfg: SystemConfig) -> Graph:
+    """Build knowledge graph by calling remote KG service API."""
+    import requests
+
+    url = f"{cfg.graph.kg_service_url.rstrip('/')}/build_kg"
+    tree_json = tree.to_json_summary()
+    payload = {
+        "tree": tree_json,
+        "config": {
+            "refine_type": cfg.graph.refine_type,
+            "extractor_type": cfg.graph.extractor_type,
+            "image_description_force": cfg.graph.image_description_force,
+            "max_gleaning": cfg.graph.max_gleaning,
+        },
+    }
+    log.info(f"Calling remote KG service at {url}...")
+    resp = requests.post(url, json=payload, timeout=3600)
+    resp.raise_for_status()
+    data = resp.json()
+
+    graph_index = Graph.load_from_json(data, save_path=cfg.save_path)
+    os.makedirs(cfg.save_path, exist_ok=True)
+    graph_index.save_graph()
+    log.info("Knowledge graph built via remote API and saved locally.")
+    return graph_index
 
 def build_knowledge_graph(tree: DocumentTree, cfg: SystemConfig):
     """
@@ -43,6 +68,9 @@ def build_knowledge_graph(tree: DocumentTree, cfg: SystemConfig):
     :param graph_config: GraphConfig object containing configuration for the graph.
     :return: A tuple containing the KGExtractor and KGRefiner instances.
     """
+    if cfg.graph.use_remote_kg_service and cfg.graph.kg_service_url:
+        return _build_via_remote_api(tree, cfg)
+
     llm = LLM(cfg.llm)
     vlm = VLM(cfg.vlm) if cfg.graph.image_description_force else None
 
@@ -84,6 +112,8 @@ def build_knowledge_graph(tree: DocumentTree, cfg: SystemConfig):
         batch_sibling_nodes = []
         for node in tree.nodes:
             # for node in tree.nodes[:30]:
+            if node is None:
+                continue
             if node == tree.root_node:
                 # Skip the root node since it doesn't have any other information
                 continue
@@ -117,6 +147,8 @@ def build_knowledge_graph(tree: DocumentTree, cfg: SystemConfig):
         kg_extract_res.sort(key=lambda x: x.get("node_idx", -1))
     else:
         for node in tree.nodes[:30]:
+            if node is None:
+                continue
             # Extract entities and relationships from the node
             if node == tree.root_node:
                 # Skip the root node since it doesn't have any other information

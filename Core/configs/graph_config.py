@@ -14,6 +14,10 @@ class GraphConfig:
 
     # KG refinement
     refine_type: str = "advanced"  # Options: "basic", "advanced"
+    
+    # Remote KG service (when True, delegate to external API)
+    use_remote_kg_service: bool = False
+    kg_service_url: str = "http://localhost:8080"
 
     embedding_config: EmbeddingConfig = field(default_factory=EmbeddingConfig)
     reranker_config: RerankerConfig = field(default_factory=RerankerConfig)

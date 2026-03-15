@@ -43,6 +43,8 @@ graph:
   image_description_force: True
   max_gleaning: 0
   refine_type: "advanced"
+  use_remote_kg_service: false
+  kg_service_url: "http://localhost:8080"
   embedding_config:
     model_name: TODO
     backend: openai

@@ -354,7 +354,8 @@ class Graph:
         graph_instance.tree2kg = defaultdict(
             set, {int(k): set(v) for k, v in loaded_data["tree2kg"].items()}
         )
-
+        graph_instance.variant = loaded_data.get("variant")
+        
         log.info(f"Graph data successfully loaded from: {load_path}")
         log.info(
             f"Graph contains {len(graph_instance.kg.nodes)} nodes and {len(graph_instance.kg.edges)} edges."

@@ -56,12 +56,7 @@ def construct_GBC_index(cfg: SystemConfig, tree_only: bool = False):
     kg_start_time = time.time()
     graph_index = build_knowledge_graph(tree_index, cfg)
 
-    # The 'kg_extraction' stage is recorded inside build_knowledge_graph
-    gbc_index = GBC(config=cfg, graph_index=graph_index, TreeIndex=tree_index)
-    gbc_index.save_gbc_index()
-
-    # rebuild vdb
-    gbc_index.rebuild_vdb()
+    gbc_index = GBC.build_gbc_index(graph_index, cfg, tree_index)
 
     kg_duration = time.time() - kg_start_time
     log.info(f"Knowledge graph constructed and saved in {kg_duration:.2f} seconds.")
