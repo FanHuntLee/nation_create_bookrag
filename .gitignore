@@ -203,3 +203,21 @@ test/
 /Scripts/cfg/m3docVQA.yaml
 /Scripts/cfg/MMLongBench.yaml
 /Scripts/cfg/Qasper.yaml
+
+# Data and output directories (datasets and intermediate results)
+/TL3588_data_and_output/
+/OK3588_data_and_output/
+/test1data/
+/md_test/
+/pptx/
+/somdata-vl/
+
+# Large generated files
+*.sqlite3
+*.db
+*.chroma.sqlite3
+
+# Intermediate result files
+*_output/
+output/
+results/

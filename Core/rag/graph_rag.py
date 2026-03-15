@@ -15,7 +15,7 @@ from Core.prompts.gbc_prompt import (
     QUESTION_ENTITY_TYPES,
 )
 from Core.Index.Graph import Entity
-from Core.utils.table_utils import table2text
+from Core.utils.table_utils import table2text, create_hierarchical_headers
 from Core.utils.utils import TextProcessor
 
 from Core.rag.gbc_utils import enhance_graph_with_semantic_links
@@ -254,7 +254,35 @@ class GraphRAG(BaseRAG):
                     f"Image: A relevant image is provided at the path: {image_path}\n"
                 )
             elif node_type == NodeType.TABLE:
-                node_data["content"] = table2text(node_data)
+                # Use pre-computed grid if available
+                if node_data.get("table_grid"):
+                    grid = node_data.get("table_grid")
+                    header_rows = node_data.get("table_header_rows", 0)
+                    
+                    output_parts = []
+                    caption = node_data.get("caption")
+                    if caption:
+                        output_parts.append(f"Caption: {caption}")
+                    
+                    column_headers = create_hierarchical_headers(grid, header_rows)
+                    header_str = "This table contains the following columns:\n"
+                    for col in column_headers:
+                        header_str += f" - {col}\n"
+                    output_parts.append(header_str)
+                    
+                    row_strings = [
+                        " | ".join(cell.strip() if cell else "" for cell in row) for row in grid
+                    ]
+                    output_parts.append("Table Body:\n" + "\n".join(row_strings))
+                    
+                    footnote = node_data.get("footnote")
+                    if footnote:
+                        output_parts.append(f"Footnote: {footnote}")
+                    
+                    node_data["content"] = "\n".join(output_parts)
+                else:
+                    # Fallback to table2text if grid not available
+                    node_data["content"] = table2text(node_data)
                 context_text += f"Table: {node_data['content']}\n"
             else:
                 context_text += f"Text: {node_data['content']}\n"

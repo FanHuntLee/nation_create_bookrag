@@ -1,5 +1,5 @@
 from Core.Index.Tree import DocumentTree
-from Core.pipelines.tree_node_builder import create_node_by_type
+from Core.pipelines.tree_node_builder import create_node_by_type, enrich_image_nodes_with_summary
 from Core.pipelines.outline_extractor import extract_pdf_outline_in_chunks
 from Core.pipelines.pdf_refiner import pdf_info_refiner
 from Core.provider.extract_pdf_info import parse_doc, merge_middle_content
@@ -157,6 +157,10 @@ def build_tree_from_pdf(cfg: SystemConfig, reforce: bool = False) -> DocumentTre
         token_tracker = TokenTracker.get_instance()
         summary_cost = token_tracker.record_stage("tree_node_summary")
         log.info(f"Tree node summary generation cost: {summary_cost}")
+        
+        # Enrich IMAGE nodes with summary information
+        tree_index = enrich_image_nodes_with_summary(tree_index)
+        log.info("IMAGE nodes enriched with summary information")
 
     # save
     tree_index.save_to_file()

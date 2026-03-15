@@ -27,7 +27,6 @@ from Core.rag.gbc_retrieval import Retriever
 from Core.rag.gbc_utils import (
     GBCRAGContext,
     SubStep,
-    filter_tree_nodes,
 )
 
 
@@ -518,49 +517,6 @@ class GBCRAG(BaseRAG):
             )
             context.final_answer = final_answer
 
-        elif query_analysis.query_type == "global":
-            # Create a step for the global operation
-            current_step = SubStep(
-                sub_query=query_analysis.original_query, sub_number=1
-            )
-
-            # 1. Filter the tree nodes based on the plan's filters
-            filtered_nodes: List[TreeNode] = filter_tree_nodes(
-                self.gbc_index.TreeIndex, query_analysis.filters
-            )
-            current_step.retrieval_nodes = filtered_nodes
-
-            filter_nodes_ids = [node.index_id for node in filtered_nodes]
-            tree_data = self.gbc_index.TreeIndex.get_nodes_data(filter_nodes_ids)
-            self._process_retrieved_nodes(tree_data, current_step)
-            log.info(f"Global filter resulted in {len(filtered_nodes)} nodes.")
-
-            operation = query_analysis.operation.upper()
-
-            # 2. Perform the specified operation
-            if operation == "COUNT":
-                # Direct calculation, no LLM call needed for the final step
-                count_result = len(filtered_nodes)
-                # You can format this into a more natural sentence if desired
-                final_answer = (
-                    f"Based on my analysis of the document, I found {count_result} items"
-                    f" that answer the question: '{query_analysis.original_query}'"
-                )
-
-                current_step.partial_answers = [
-                    {"source": "Direct Count", "content": final_answer}
-                ]
-            else:  # For LIST, SUMMARIZE, ANALYZE
-                # Call the dedicated global answer agent method
-                final_answer, partials = self.answer.answer_global_question(
-                    original_query=query_analysis.original_query,
-                    operation=operation,
-                    filtered_nodes=current_step.retrieval_nodes,
-                )
-                current_step.partial_answers = partials
-
-            context.iterations.append(current_step)
-            context.final_answer = final_answer
         else:
             log.warning(f"Unknown query type: {query_analysis.query_type}")
             context.final_answer = "I'm sorry, I cannot process this query."

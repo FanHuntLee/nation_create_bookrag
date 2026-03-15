@@ -5,7 +5,7 @@ from Core.provider.llm import LLM
 
 # Step 1 Output Model
 class QueryTypeResult(BaseModel):
-    query_type: Literal["simple", "complex", "global"]
+    query_type: Literal["simple", "complex"]
 
 
 # Step 2 'complex' Output Model
@@ -40,7 +40,7 @@ class GlobalResult(BaseModel):
 
 # Final combined result model (for returning to the user)
 class PlanResult(BaseModel):
-    query_type: Literal["simple", "complex", "global"]
+    query_type: Literal["simple", "complex"]
     original_query: str
     sub_questions: Optional[List[SubQuestion]] = None
     filters: Optional[List[Filter]] = None  # 原scope字段已改为filters
@@ -48,14 +48,9 @@ class PlanResult(BaseModel):
 
     @model_validator(mode="after")
     def check_fields_for_type(self):
-        # ... (校验逻辑更新以包含 operation)
         if self.query_type == "complex" and not self.sub_questions:
             raise ValueError(
                 "For 'complex' query_type, 'sub_questions' must be provided."
-            )
-        if self.query_type == "global" and (not self.filters or not self.operation):
-            raise ValueError(
-                "For 'global' query_type, 'filters' and 'operation' must be provided."
             )
         if self.query_type == "simple" and (
             self.sub_questions or self.filters or self.operation
@@ -79,9 +74,8 @@ class TaskPlanner:
 
     def _get_classification_prompt(self, query: str) -> str:
         # Prompt for Step 1: Classification Only
-        # 强调了 "simple" 和 "global" 的区别
         return f"""
-You are an expert query analyzer. Your *only* task is to classify the user's question into one of three categories: "simple", "complex", or "global". Respond only with the specified JSON object.
+You are an expert query analyzer. Your *only* task is to classify the user's question into one of two categories: "simple" or "complex". Respond only with the specified JSON object.
 
 Category Definitions:
 1.  **simple**: The question can be fully answered by retrieving information from a **SINGLE, contiguous location** in the document (e.g., one specific paragraph, one complete table, or one figure).
@@ -93,10 +87,6 @@ Category Definitions:
     - It often contains a **nested or indirect constraint** that requires a preliminary step to resolve before the main question can be answered.
     - The key is that **no single location contains all the necessary information** to answer the original query in one go.
     - Example: "What is the color of the personality vector in the soft-labled personality embedding matrix that with the highest Receptiviti score for User A2GBIFL43U1LKJ?" -> This is COMPLEX because it requires two **separate retrieval actions**: 1) A retrieval to find the vector with the 'highest score', and 2) a separate retrieval to find the 'color' associated with that vector.
-
-3.  **global**: The question requires an **aggregation operation** (e.g., counting, listing, summarizing) over a set of items that are identified by a **clear structural filter**. The available filters are by layout type (such as `table`, `image`, `section`) or by a document range (such as `page` or `section`). This operation must be performed across all items that match the specified filter(s).
-    - Example: "How many tables are in the document?" -> This is GLOBAL because the process is to **filter** for all items of type 'table' across the document, and then **aggregate** by counting them.
-    - Example: "Summarize the discussion about 'data augmentation' in the 'Methodology' section." -> This is GLOBAL because the process is to first apply a **structural filter** (retrieve all content from the 'Methodology' section), and then perform an **aggregation** (summarize that content) with a focus on 'data augmentation'.
 
 User Query: "{query}"
 """
@@ -198,7 +188,7 @@ Assistant:
 
     def _classify_query_type(
         self, query: str
-    ) -> Literal["simple", "complex", "global"]:
+    ) -> Literal["simple", "complex"]:
         prompt = self._get_classification_prompt(query)
         result = self.llm.get_json_completion(prompt, schema=QueryTypeResult)
         return result.query_type
@@ -223,13 +213,4 @@ Assistant:
             sub_questions = self._process_complex_query(query)
             return PlanResult(
                 query_type=query_type, original_query=query, sub_questions=sub_questions
-            )
-
-        elif query_type == "global":
-            global_result = self._process_global_query(query)
-            return PlanResult(
-                query_type=query_type,
-                original_query=query,
-                filters=global_result.filters,
-                operation=global_result.operation,
             )

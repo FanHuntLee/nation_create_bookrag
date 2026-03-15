@@ -59,7 +59,13 @@ class MetaInfo(BaseModel):
 
     # table info
     table_body: str | None = Field(
-        description="the body content of the table", default=None
+        description="the body content of the table (HTML)", default=None
+    )
+    table_grid: List[List[str]] | None = Field(
+        description="the table grid (2D array) converted from HTML", default=None
+    )
+    table_header_rows: int | None = Field(
+        description="the number of header rows in the table", default=None
     )
 
     # text info, TreeNodes of Any type have the content
@@ -330,6 +336,8 @@ class DocumentTree:
                 node_data["table_body"] = node.meta_info.table_body
                 node_data["caption"] = node.meta_info.caption
                 node_data["footnote"] = node.meta_info.footnote
+                node_data["table_grid"] = node.meta_info.table_grid
+                node_data["table_header_rows"] = node.meta_info.table_header_rows
 
             nodes_data.append(node_data)
         return nodes_data
