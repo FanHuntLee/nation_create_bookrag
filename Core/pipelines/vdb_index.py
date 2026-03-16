@@ -374,6 +374,124 @@ def compute_mm_embedding_question(cfg: SystemConfig, group: pd.DataFrame):
     log.info(f"All question metadata saved to: {question_metadata_filepath}")
 
 
+def extract_title_summaries_from_tree_json(tree_json_path: str) -> Tuple[List[str], List[dict]]:
+    """
+    从 tree.json 中提取所有 NodeType.TITLE 节点的 summary 及元数据。
+
+    返回:
+        summaries: List[str] — 每个 TITLE 节点的 summary 文本
+        metadatas: List[dict] — 对应元数据，包含 file_name（文档标识）和 node_index_id
+    """
+    with open(tree_json_path, "r", encoding="utf-8") as f:
+        tree_data = json.load(f)
+
+    nodes = tree_data.get("nodes", [])
+
+    # 从 root 节点获取文件名
+    root_file_name = None
+    for node in nodes:
+        if node.get("type") == "root":
+            meta = node.get("meta_info", {})
+            root_file_name = meta.get("file_name") or meta.get("file_path")
+            if root_file_name:
+                root_file_name = Path(root_file_name).stem
+            break
+
+    summaries = []
+    metadatas = []
+    for node in nodes:
+        node_type = node.get("type", "")
+        # tree.json 中 type 字段可能为 "NodeType.TITLE" 或 "title"
+        if node_type not in ("NodeType.TITLE", "title"):
+            continue
+
+        summary = node.get("summary", "").strip()
+        if not summary:
+            continue
+
+        meta_info = node.get("meta_info", {})
+        content = meta_info.get("content", "") or ""
+
+        summaries.append(summary)
+        metadatas.append({
+            "file_name": root_file_name or "",
+            "node_index_id": node.get("index_id", -1),
+            "title_content": content,
+        })
+
+    return summaries, metadatas
+
+
+def build_title_summary_vdb_from_json(
+    tree_json_paths: List[str],
+    vdb_dir: str,
+    collection_name: str,
+    embedding_cfg,
+    force_rebuild: bool = False,
+) -> VectorStore:
+    """
+    读取多个 tree.json，对所有 NodeType.TITLE 节点的 summary 进行向量化，
+    并存入同一个 ChromaDB 持久化向量库。
+
+    每条记录的 metadata 包含：
+        - file_name: 该节点所属文档的文件名（不含扩展名），可用于文档级检索
+        - node_index_id: 节点在树中的 index_id
+        - title_content: 节点的原始标题文本
+
+    Args:
+        tree_json_paths: 所有待索引的 tree.json 文件路径列表
+        vdb_dir: ChromaDB 持久化目录
+        collection_name: ChromaDB collection 名称
+        embedding_cfg: EmbeddingConfig 实例
+        force_rebuild: 若为 True 且目录已存在，则删除后重建
+
+    Returns:
+        构建完成的 VectorStore 实例
+    """
+    if force_rebuild and os.path.exists(vdb_dir):
+        import shutil
+        shutil.rmtree(vdb_dir)
+        log.info(f"Removed existing VDB dir for rebuild: {vdb_dir}")
+
+    os.makedirs(vdb_dir, exist_ok=True)
+
+    embedder = TextEmbeddingProvider(
+        model_name=embedding_cfg.model_name,
+        device=embedding_cfg.device,
+        backend=embedding_cfg.backend,
+        api_base=embedding_cfg.api_base,
+        max_length=embedding_cfg.max_length,
+    )
+
+    vdb = VectorStore(
+        embedding_model=embedder,
+        db_path=vdb_dir,
+        collection_name=collection_name,
+    )
+
+    total_added = 0
+    for tree_json_path in tree_json_paths:
+        if not os.path.isfile(tree_json_path):
+            log.warning(f"tree.json not found, skipped: {tree_json_path}")
+            continue
+
+        summaries, metadatas = extract_title_summaries_from_tree_json(tree_json_path)
+        if not summaries:
+            log.warning(f"No TITLE summaries found in: {tree_json_path}")
+            continue
+
+        log.info(
+            f"Adding {len(summaries)} title summaries from "
+            f"'{metadatas[0].get('file_name', tree_json_path)}' to VDB..."
+        )
+        vdb.add_texts(texts=summaries, metadatas=metadatas)
+        total_added += len(summaries)
+
+    log.info(f"Title summary VDB built. Total entries added: {total_added}")
+    embedder.close()
+    return vdb
+
+
 if __name__ == "__main__":
     # tmp_tree_path = f"{save_path}/sftree.pkl"
     # tree_index = DocumentTree.load_from_file(tmp_tree_path)

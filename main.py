@@ -14,6 +14,7 @@ from Core.construct_index import (
     construct_vdb,
     compute_mm_reranker,
     rebuild_graph_vdb,
+    build_multi_doc_title_summary_vdb,
 )
 from Core.inference import inference
 from Core.provider.TokenTracker import TokenTracker
@@ -106,14 +107,16 @@ def create_args():
         "--stage",
         type=str,
         default="all",
-        choices=["tree", "graph", "vdb", "all", "mm_reranker", "rebuild_graph_vdb"],
+        choices=["tree", "graph", "vdb", "all", "mm_reranker", "rebuild_graph_vdb", "title_summary_vdb"],
         help="Specify which stage of the indexing pipeline to run: "
         "'tree' - Build and save the document tree only. "
         "'graph' - Build and save the knowledge graph (requires a tree). "
         "'vdb' - Build and save the vector database (requires a tree). "
-        "'all' - Run all stages sequentially."
+        "'all' - Run all stages sequentially. "
         "'mm_reranker' - Build and save the multi-modal reranker (requires a tree). "
-        "'rebuild_graph_vdb' - Rebuild the graph and vector database (requires GBC Index).",
+        "'rebuild_graph_vdb' - Rebuild the graph and vector database (requires GBC Index). "
+        "'title_summary_vdb' - Build a shared cross-document title-summary vector index "
+        "(reads tree.json of each doc_uuid under working_dir, requires --dataset_config).",
     )
 
     return parser.parse_args()
@@ -127,25 +130,22 @@ def build_index(config: SystemConfig, stage: str = "all", data_df: pd.DataFrame 
     # Stage 1: Build the Document Tree
     if stage in ["tree", "all"]:
         log.info("  - STAGE: Building Document Tree...")
-        # This function should build the tree and save it to config.save_path
         construct_GBC_index(config, tree_only=True)
 
     # Stage 2: Build the Knowledge Graph
     if stage in ["graph", "all"]:
         log.info("  - STAGE: Building Knowledge Graph...")
-        # This function should LOAD the pre-existing tree and then build/save the graph
         construct_GBC_index(config)
 
     # Stage 3: Build the Vector Database
     if stage in ["vdb", "all"]:
         log.info("  - STAGE: Building Vector Database...")
-        # This function should LOAD the pre-existing tree and then build/save the VDB
         construct_vdb(config)
 
     if stage == "mm_reranker":
         log.info("  - STAGE: Building MM Reranker Embedding...")
         compute_mm_reranker(config, data_df)
-    
+
     if stage == "rebuild_graph_vdb":
         log.info("  - STAGE: Rebuilding Graph VDB...")
         rebuild_graph_vdb(config)
@@ -262,6 +262,15 @@ def main():
 
     if args.dataset_config:
         dataset_cfg: DatasetConfig = load_dataset_config(args.dataset_config)
+
+        # title_summary_vdb is a cross-document stage; handle it before the per-doc loop
+        if args.command == "index" and args.stage == "title_summary_vdb":
+            log.info("  - STAGE: Building cross-document title-summary VDB...")
+            build_multi_doc_title_summary_vdb(
+                dataset_cfg=dataset_cfg,
+                system_cfg=base_system_cfg,
+            )
+            return
 
         # 1. Load the entire dataset from the JSON file into a pandas DataFrame
         log.info(f"  - Loading dataset from: {dataset_cfg.dataset_path}")
