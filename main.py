@@ -265,6 +265,12 @@ def main():
 
         # title_summary_vdb is a cross-document stage; handle it before the per-doc loop
         if args.command == "index" and args.stage == "title_summary_vdb":
+            import os as _os
+            _log_dir = dataset_cfg.title_vdb_dir or _os.path.join(
+                _os.path.dirname(dataset_cfg.working_dir.rstrip("/")),
+                "title_summary_vdb",
+            )
+            setup_logging(save_path=_log_dir, config_to_log=base_system_cfg)
             log.info("  - STAGE: Building cross-document title-summary VDB...")
             build_multi_doc_title_summary_vdb(
                 dataset_cfg=dataset_cfg,

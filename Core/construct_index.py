@@ -194,7 +194,7 @@ def build_multi_doc_title_summary_vdb(
         tree_json_paths=tree_json_paths,
         vdb_dir=vdb_dir,
         collection_name=dataset_cfg.title_collection_name,
-        embedding_cfg=system_cfg.vdb.embedding_config,
+        embedding_cfg=system_cfg.graph.embedding_config,
         force_rebuild=dataset_cfg.title_vdb_force_rebuild,
     )
     log.info(f"Multi-doc title-summary VDB saved to: {vdb_dir}")
