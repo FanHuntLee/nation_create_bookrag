@@ -15,7 +15,7 @@ from Core.prompts.gbc_prompt import (
     SYNTHESIS_USER_PROMPT,
 )
 from Core.utils.utils import num_tokens, TextProcessor
-from Core.utils.table_utils import table2text, create_hierarchical_headers
+from Core.utils.table_utils import table2text
 from Core.rag.gbc_plan import SubQuestion
 import logging
 
@@ -41,35 +41,6 @@ class AnswerAgent:
             if node_type == NodeType.IMAGE:
                 image_nodes.append(node)
             elif node_type == NodeType.TABLE:
-                # Use pre-computed grid if available
-                if node.get("table_grid"):
-                    grid = node.get("table_grid")
-                    header_rows = node.get("table_header_rows", 0)
-                    
-                    output_parts = []
-                    caption = node.get("caption")
-                    if caption:
-                        output_parts.append(f"Caption: {caption}")
-                    
-                    column_headers = create_hierarchical_headers(grid, header_rows)
-                    header_str = "This table contains the following columns:\n"
-                    for col in column_headers:
-                        header_str += f" - {col}\n"
-                    output_parts.append(header_str)
-                    
-                    row_strings = [
-                        " | ".join(cell.strip() if cell else "" for cell in row) for row in grid
-                    ]
-                    output_parts.append("Table Body:\n" + "\n".join(row_strings))
-                    
-                    footnote = node.get("footnote")
-                    if footnote:
-                        output_parts.append(f"Footnote: {footnote}")
-                    
-                    node["content"] = "\n".join(output_parts)
-                else:
-                    # Fallback to table2text if grid not available
-                    node["content"] = table2text(node)
                 text_nodes.append(node)
             else:
                 text_nodes.append(node)

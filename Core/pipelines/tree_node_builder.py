@@ -1,6 +1,6 @@
 from typing import Optional
 from Core.Index.Tree import TreeNode, NodeType, DocumentTree
-from Core.utils.table_utils import parse_html_table_to_grid, identify_header_rows
+from Core.utils.table_utils import table2text
 import logging
 
 log = logging.getLogger(__name__)
@@ -8,6 +8,12 @@ log = logging.getLogger(__name__)
 
 def create_node_by_type(pdf_content: Optional[str], isTitle: bool) -> TreeNode:
     content_type = pdf_content.get("type", "unknown")
+    
+    # 如果 type 是 "title"，则设置 isTitle = True
+    if content_type == "title":
+        isTitle = True
+        content_type = "text"  # 标题也是文本类型，但需要标记为 TITLE
+    
     if content_type == "text":
         node_meta = {
             "content": pdf_content.get("text", ""),
@@ -51,20 +57,31 @@ def create_node_by_type(pdf_content: Optional[str], isTitle: bool) -> TreeNode:
         caption_str = " ".join(caption) if isinstance(caption, list) else ""
         footnote = pdf_content.get("table_footnote", [])
         footnote_str = " ".join(footnote) if isinstance(footnote, list) else ""
-        
-        # Convert HTML table to grid
         table_body_html = pdf_content.get("table_body", "")
-        table_grid = parse_html_table_to_grid(table_body_html)
-        table_header_rows = identify_header_rows(table_grid) if table_grid else None
+        
+        # Check if this is a pre-formatted table text (from Markdown)
+        table_text_pre = pdf_content.get("text", "")
+        
+        if table_text_pre:
+            # MD 表格：直接使用已格式化的文本
+            table_text = table_text_pre
+        elif table_body_html:
+            # PDF 表格：转换 HTML 为文本
+            table_data = {
+                "caption": caption_str,
+                "table_body": table_body_html,
+                "footnote": footnote_str,
+            }
+            table_text = table2text(table_data)
+        else:
+            table_text = ""
 
         node_meta = {
             "img_path": pdf_content.get("img_path", ""),
             "caption": caption_str,
             "footnote": footnote_str,
-            "content": caption_str + footnote_str,
+            "content": table_text,
             "table_body": table_body_html,
-            "table_grid": table_grid,
-            "table_header_rows": table_header_rows,
             "pdf_id": pdf_content.get("pdf_id", -1),
             "page_idx": pdf_content.get("page_idx", -1),
             "pdf_para_block": pdf_content.get("middle_json", {}),

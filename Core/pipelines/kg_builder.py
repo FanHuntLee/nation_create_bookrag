@@ -50,7 +50,7 @@ def _build_via_remote_api(tree: DocumentTree, cfg: SystemConfig) -> Graph:
         },
     }
     log.info(f"Calling remote KG service at {url}...")
-    resp = requests.post(url, json=payload, timeout=3600)
+    resp = requests.post(url, json=payload, timeout=10800)
     resp.raise_for_status()
     data = resp.json()
 

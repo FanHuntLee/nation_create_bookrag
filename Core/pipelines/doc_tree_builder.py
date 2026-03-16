@@ -60,6 +60,17 @@ def construct_tree_index(
     return tree_index
 
 
+def build_tree_from_pdf_or_markdown(cfg: SystemConfig, reforce: bool = False) -> DocumentTree:
+    """
+    根据文件扩展名选择 PDF 或 MD 处理
+    """
+    if cfg.pdf_path.endswith('.md'):
+        from Core.pipelines.markdown_tree_builder import build_tree_from_markdown
+        return build_tree_from_markdown(cfg)
+    else:
+        return build_tree_from_pdf(cfg, reforce)
+
+
 def build_tree_from_pdf(cfg: SystemConfig, reforce: bool = False) -> DocumentTree:
 
     tree_index_path = DocumentTree.get_save_path(cfg.save_path)

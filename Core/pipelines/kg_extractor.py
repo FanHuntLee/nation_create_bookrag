@@ -32,7 +32,6 @@ from Core.utils.utils import (
 )
 from Core.utils.table_utils import (
     create_hierarchical_headers,
-    identify_header_rows,
     parse_html_table_to_grid,
 )
 
@@ -572,15 +571,10 @@ class LLMExtractor(BaseExtractor):
 
     def _extract_kg_from_table(self, node: TreeNode):
 
-        # Use pre-computed grid from tree stage
-        if node.meta_info.table_grid:
-            grid = node.meta_info.table_grid
-            num_header_rows = node.meta_info.table_header_rows or 0
-        else:
-            # Fallback: convert from HTML if grid not available
-            table_body = node.meta_info.table_body
-            grid = parse_html_table_to_grid(table_body)
-            num_header_rows = identify_header_rows(grid)
+        # Convert from HTML table to grid for entity extraction
+        table_body = node.meta_info.table_body
+        grid = parse_html_table_to_grid(table_body)
+        num_header_rows = 1  # Default to 1 header row
 
         desc_entities = self._extract_kg_table_step1(node, grid, num_header_rows)
         body_entities = self._extract_kg_table_step2(node, grid, num_header_rows)
