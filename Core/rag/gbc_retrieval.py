@@ -5,7 +5,7 @@ import logging
 from Core.provider.embedding import TextEmbeddingProvider, MMRerankerProvider
 from Core.provider.rerank import TextRerankerProvider
 from Core.Index.Tree import TreeNode, NodeType
-from Core.utils.table_utils import table2text, create_hierarchical_headers
+from Core.utils.table_utils import table2text
 from Core.utils.utils import num_tokens, TextProcessor
 from Core.prompts.gbc_prompt import TEXT_RERANKER_PROMPT, MM_RERANKER_INSTRUCTION
 from Core.rag.gbc_utils import (
@@ -50,36 +50,16 @@ class Retriever:
         for node in subtree_nodes:
             node_type = node.type
             if node_type == NodeType.TABLE:
-                # Convert table grid to text
-                if node.meta_info.table_grid:
-                    # Use pre-computed grid
-                    grid = node.meta_info.table_grid
-                    header_rows = node.meta_info.table_header_rows or 0
-                    
-                    output_parts = []
-                    caption = node.meta_info.caption
-                    if caption:
-                        output_parts.append(f"Caption: {caption}")
-                    
-                    column_headers = create_hierarchical_headers(grid, header_rows)
-                    header_str = "This table contains the following columns:\n"
-                    for col in column_headers:
-                        header_str += f" - {col}\n"
-                    output_parts.append(header_str)
-                    
-                    row_strings = [
-                        " | ".join(cell.strip() if cell else "" for cell in row) for row in grid
-                    ]
-                    output_parts.append("Table Body:\n" + "\n".join(row_strings))
-                    
-                    footnote = node.meta_info.footnote
-                    if footnote:
-                        output_parts.append(f"Footnote: {footnote}")
-                    
-                    text = "\n".join(output_parts)
-                else:
-                    # Fallback to table2text if grid not available
-                    text = table2text(node.meta_info.__dict__)
+                # Use the pre-converted content from tree stage
+                text = node.meta_info.content
+                if not text and node.meta_info.table_body:
+                    # Fallback for old tree.json files without content field
+                    table_data = {
+                        "caption": node.meta_info.caption or "",
+                        "table_body": node.meta_info.table_body,
+                        "footnote": node.meta_info.footnote or "",
+                    }
+                    text = table2text(table_data)
             else:
                 text = node.meta_info.content
             if num_tokens(text) > self.reranker.max_length - 1000:
