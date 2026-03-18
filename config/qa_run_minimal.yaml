@@ -1,0 +1,14 @@
+# QA 数据集构建 - 使用 test_minimal 的 LLM 配置
+tree_json: /root/autodl-fs/bookrag/BookRAG/TL3588_data_and_output/somdata/output/som-001/tree.json
+doc_uuid: som-001
+output: /root/autodl-fs/bookrag/BookRAG/TL3588_data_and_output/somdata/qa_dataset.json
+num_samples: 50
+grouping_method: tree
+
+llm:
+  model_name: "deepseek-v3.1"
+  api_base: "https://api.vveai.com/v1"
+  api_key: "sk-Wx1qjLls1Npt36Hr6f83Ad7e0cAb46F7A77278360a6fCc99"
+  temperature: 0.1
+  max_tokens: 8192
+  max_workers: 4
