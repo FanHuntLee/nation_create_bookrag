@@ -50,13 +50,13 @@ def _build_via_remote_api(tree: DocumentTree, cfg: SystemConfig) -> Graph:
         },
     }
     log.info(f"Calling remote KG service at {url}...")
-    resp = requests.post(url, json=payload, timeout=10800)
+    resp = requests.post(url, json=payload, timeout=108000000)
     resp.raise_for_status()
     data = resp.json()
 
     graph_index = Graph.load_from_json(data, save_path=cfg.save_path)
-    os.makedirs(cfg.save_path, exist_ok=True)
-    graph_index.save_graph()
+    # os.makedirs(cfg.save_path, exist_ok=True)
+    # graph_index.save_graph()
     log.info("Knowledge graph built via remote API and saved locally.")
     return graph_index
 

@@ -46,8 +46,8 @@ graph:
   image_description_force: True
   max_gleaning: 0
   refine_type: "advanced"
-  use_remote_kg_service: false
-  kg_service_url: "http://localhost:8080"
+  use_remote_kg_service: true
+  kg_service_url: "http://localhost:28080"
   embedding_config:
     model_name: /root/autodl-fs/models/Qwen3-Embedding-0.6B
     backend: local

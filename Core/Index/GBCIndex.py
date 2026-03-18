@@ -80,9 +80,12 @@ class GBC:
         meta_datas = []
 
         for node in nodes:
-            texts.append(node)
-
+            node_data = self.GraphIndex.kg.nodes[node]
+            if not node_data:
+                log.warning(f"Skipping node with empty attributes: {node!r}")
+                continue
             entity = self.GraphIndex.get_entity_by_node_name(node)
+            texts.append(node)
             tmp_dict = {
                 "entity_name": entity.entity_name,
                 "entity_type": entity.entity_type,

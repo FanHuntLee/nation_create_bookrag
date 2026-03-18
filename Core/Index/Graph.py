@@ -362,6 +362,32 @@ class Graph:
         )
         return graph_instance
 
+    @classmethod
+    def load_from_json(cls, data: dict, save_path: str, variant: str = None) -> "Graph":
+        """Load a Graph instance directly from a JSON-compatible dict (e.g. returned by remote KG service)."""
+        graph_instance = cls(save_path=save_path, variant=variant)
+
+        graph_instance.kg = json_graph.node_link_graph(data["graph"], edges="links")
+
+        for _, node_data in graph_instance.kg.nodes(data=True):
+            if "source_ids" in node_data and isinstance(node_data["source_ids"], list):
+                node_data["source_ids"] = set(node_data["source_ids"])
+
+        for _, _, edge_data in graph_instance.kg.edges(data=True):
+            if "source_ids" in edge_data and isinstance(edge_data["source_ids"], list):
+                edge_data["source_ids"] = set(edge_data["source_ids"])
+
+        graph_instance.tree2kg = defaultdict(
+            set, {int(k): set(v) for k, v in data["tree2kg"].items()}
+        )
+        if variant is None:
+            graph_instance.variant = data.get("variant")
+
+        log.info(
+            f"Graph contains {len(graph_instance.kg.nodes)} nodes and {len(graph_instance.kg.edges)} edges."
+        )
+        return graph_instance
+
 
 if __name__ == "__main__":
     # Example usage
