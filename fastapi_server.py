@@ -12,6 +12,7 @@ FastAPI 服务器：多文档 RAG 检索服务。
 若 title_summary_vdb 未配置或为空，回退到单文档模式（兼容旧行为）。
 """
 
+import json
 import logging
 import os
 from pathlib import Path
@@ -20,6 +21,7 @@ from typing import Dict, List, Optional
 import pandas as pd
 import uvicorn
 from fastapi import FastAPI, HTTPException
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 
 # ── 项目根目录 ────────────────────────────────────────────────────────────────
@@ -27,6 +29,8 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 os.chdir(PROJECT_ROOT)
 import sys
 sys.path.insert(0, str(PROJECT_ROOT))
+
+import argparse
 
 from Core.configs.system_config import load_system_config, SystemConfig
 from Core.configs.dataset_config import load_dataset_config, DatasetConfig
@@ -48,8 +52,19 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 # ── 配置路径（修改这两项即可切换数据集）────────────────────────────────────────
-CONFIG_PATH = PROJECT_ROOT / "config" / "test_minimal.yaml"
-DATASET_CONFIG_PATH = "/root/autodl-fs/bookrag/BookRAG/TL3588_data_and_output/TL3588.yaml"
+DEFAULT_CONFIG_PATH = PROJECT_ROOT / "config" / "test_minimal.yaml"
+DEFAULT_DATASET_CONFIG_PATH = (
+    "/root/autodl-fs/bookrag/BookRAG/TL3588_data_and_output/TL3588.yaml"
+)
+
+# 支持通过命令行或环境变量覆盖（uvicorn 会重新导入模块，需用环境变量传递）
+def _get_config_path() -> Path:
+    return Path(os.environ.get("BOOKRAG_CONFIG_PATH", str(DEFAULT_CONFIG_PATH)))
+
+
+def _get_dataset_config_path() -> str:
+    return os.environ.get("BOOKRAG_DATASET_CONFIG_PATH", str(DEFAULT_DATASET_CONFIG_PATH))
+
 
 # ── Pydantic 请求/响应模型 ────────────────────────────────────────────────────
 
@@ -61,7 +76,7 @@ class RAGRequest(BaseModel):
         description="摘要 VDB 路由阶段召回的 title chunk 数量",
     )
     rerank_topk: int = Field(
-        default=5,
+        default=10,
         ge=1,
         description="对召回的摘要做 Text Reranker 重排后保留的 top-k 数量",
     )
@@ -100,11 +115,13 @@ def _init_globals() -> None:
     if _base_config is not None:
         return  # 已初始化，跳过
 
-    log.info(f"加载系统配置: {CONFIG_PATH}")
-    _base_config = load_system_config(str(CONFIG_PATH))
+    config_path = _get_config_path()
+    dataset_config_path = _get_dataset_config_path()
+    log.info(f"加载系统配置: {config_path}")
+    _base_config = load_system_config(str(config_path))
 
-    log.info(f"加载数据集配置: {DATASET_CONFIG_PATH}")
-    _dataset_cfg = load_dataset_config(str(DATASET_CONFIG_PATH))
+    log.info(f"加载数据集配置: {dataset_config_path}")
+    _dataset_cfg = load_dataset_config(dataset_config_path)
 
     # 1. 从数据集 JSON 构建 doc_uuid -> path 映射
     df = pd.read_json(_dataset_cfg.dataset_path)
@@ -171,22 +188,25 @@ def _init_globals() -> None:
         _title_vdb = None
         return
 
-    # 3. 加载摘要级 Text Reranker（参考 Core gbc_retrieval）
+    # 3. 加载摘要级 Text Reranker（参考 Core kg_refiner / gbc_retrieval）
+    # 优先使用 graph.reranker_config，支持 vLLM 远程调用；否则回退到 rag.strategy_config.reranker_config
     try:
-        reranker_cfg = _base_config.rag.strategy_config.reranker_config
+        reranker_cfg = _base_config.graph.reranker_config
     except AttributeError:
         try:
-            reranker_cfg = _base_config.graph.reranker_config
+            reranker_cfg = _base_config.rag.strategy_config.reranker_config
         except AttributeError:
             reranker_cfg = None
     if reranker_cfg:
-        log.info(f"加载摘要 Reranker: {reranker_cfg.model_name}")
+        backend = getattr(reranker_cfg, "backend", "local")
+        api_base = getattr(reranker_cfg, "api_base", None)
+        log.info(f"加载摘要 Reranker: {reranker_cfg.model_name} (backend={backend})")
         _title_reranker = TextRerankerProvider(
             model_name=reranker_cfg.model_name,
             max_length=getattr(reranker_cfg, "max_length", 4096),
             device=getattr(reranker_cfg, "device", "cuda:0"),
-            backend=getattr(reranker_cfg, "backend", "local"),
-            api_base=getattr(reranker_cfg, "api_base", None),
+            backend=backend,
+            api_base=api_base,
         )
     else:
         log.warning("未找到 reranker 配置，摘要级重排将跳过。")
@@ -213,6 +233,9 @@ def _get_or_load_agent(doc_uuid: str) -> GBCRAG:
         current_config.rag.strategy_config.mm_reranker_config.device = "cuda:0"
 
     dependencies = prepare_rag_dependencies(current_config)
+    # 共享 Reranker：复用摘要级 Reranker，避免每个文档 Agent 重复加载模型，节省显存
+    if _title_reranker is not None:
+        dependencies["reranker"] = _title_reranker
     agent = create_rag_agent(
         strategy_config=current_config.rag.strategy_config,
         llm_config=current_config.llm,
@@ -329,6 +352,19 @@ def _route_docs(
 
 # ── FastAPI 应用 ──────────────────────────────────────────────────────────────
 
+
+class UTF8JSONResponse(JSONResponse):
+    """JSON 响应，中文等非 ASCII 字符不转义为 \\uXXXX，便于阅读。"""
+
+    def render(self, content) -> bytes:
+        return json.dumps(
+            content,
+            ensure_ascii=False,
+            allow_nan=False,
+            indent=2,
+        ).encode("utf-8")
+
+
 app = FastAPI(
     title="BookRAG Multi-Doc API",
     description=(
@@ -336,6 +372,7 @@ app = FastAPI(
         "再对命中文档执行图检索（不调用 LLM 生成答案）。"
     ),
     version="2.0.0",
+    default_response_class=UTF8JSONResponse,
 )
 
 
@@ -411,10 +448,32 @@ async def health():
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--config",
+        type=str,
+        default=str(DEFAULT_CONFIG_PATH),
+        help="系统配置文件路径（test_minimal.yaml 等）",
+    )
+    parser.add_argument(
+        "--dataset_config",
+        type=str,
+        default=str(DEFAULT_DATASET_CONFIG_PATH),
+        help="数据集配置文件路径（TL3588.yaml 等）",
+    )
+    parser.add_argument("--port", type=int, default=6006, help="服务端口")
+    args = parser.parse_args()
+
+    # uvicorn 会重新导入模块，需通过环境变量传递路径，startup_event 中会读取
+    config_path = Path(args.config).resolve()
+    dataset_config_path = str(Path(args.dataset_config).resolve())
+    os.environ["BOOKRAG_CONFIG_PATH"] = str(config_path)
+    os.environ["BOOKRAG_DATASET_CONFIG_PATH"] = dataset_config_path
+
     uvicorn.run(
         "fastapi_server:app",
         host="0.0.0.0",
-        port=6006,
+        port=args.port,
         reload=False,
     )
 
