@@ -14,12 +14,18 @@ pipelines —— QA 数据集构建流水线包
     )
 """
 
-from data_pipelines.build_qa_dataset import run_pipeline, run_pipeline_from_config, PipelineConfig
+from data_pipelines.build_qa_dataset import (
+    run_pipeline,
+    run_pipeline_work_dir,
+    run_pipeline_from_config,
+    PipelineConfig,
+)
 from data_pipelines.chunk_sampler import ChunkSampler, RatioConfig, load_tree_json
 from data_pipelines.qa_generator import QAGenerator
 
 __all__ = [
     "run_pipeline",
+    "run_pipeline_work_dir",
     "run_pipeline_from_config",
     "PipelineConfig",
     "ChunkSampler",

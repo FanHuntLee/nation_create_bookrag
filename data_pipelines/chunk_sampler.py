@@ -7,9 +7,10 @@ QA 数据集构建流水线 —— Chunk 采样模块
 """
 
 import json
+import logging
+import os
 import random
 import re
-import logging
 from dataclasses import dataclass, field
 from typing import List, Dict, Optional, Tuple, Any
 
@@ -629,6 +630,104 @@ class ChunkSampler:
             len(all_groups), len(single_groups), len(multi_groups),
         )
         return all_groups
+
+
+# ──────────────────────────────────────────────
+# 工作目录 & 多 tree.json 发现与规模统计
+# ──────────────────────────────────────────────
+
+def discover_tree_jsons(work_dir: str) -> List[Tuple[str, str]]:
+    """
+    发现工作目录 output 文件夹下的所有 tree.json。
+
+    Args:
+        work_dir: 工作目录根路径（其下应有 output 子目录）
+
+    Returns:
+        [(tree_json 绝对路径, doc_uuid), ...]，doc_uuid 从父目录名推断
+    """
+    output_dir = os.path.join(os.path.abspath(work_dir), "output")
+    if not os.path.isdir(output_dir):
+        log.warning("工作目录下未找到 output 文件夹: %s", output_dir)
+        return []
+
+    results: List[Tuple[str, str]] = []
+    for name in sorted(os.listdir(output_dir)):
+        subdir = os.path.join(output_dir, name)
+        if not os.path.isdir(subdir):
+            continue
+        tree_path = os.path.join(subdir, "tree.json")
+        if os.path.isfile(tree_path):
+            results.append((os.path.abspath(tree_path), name))
+    return results
+
+
+def get_tree_scale(tree_json_path: str) -> int:
+    """
+    获取 tree.json 的采样规模（有效可采样节点数，去重前计数）。
+    用于多文档场景下的相对均匀采样配额分配。
+
+    Returns:
+        有效节点总数（text + table + image + title 的 _is_valid_node 计数）
+    """
+    with open(tree_json_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    nodes: List[dict] = data.get("nodes", [])
+    count = 0
+    for n in nodes:
+        if _is_valid_node(n):
+            count += 1
+    return count
+
+
+def compute_sample_allocation(
+    tree_infos: List[Dict[str, Any]],
+    num_samples: int,
+    min_per_doc: int = 1,
+) -> Dict[str, int]:
+    """
+    根据各 tree.json 规模，按比例分配采样配额，实现相对均匀的采样。
+
+    Args:
+        tree_infos: [{"path": str, "scale": int, "doc_uuid": str}, ...]
+        num_samples: 总目标采样数
+        min_per_doc: 每个文档最少分配样本数（规模为 0 的文档不参与）
+
+    Returns:
+        {tree_path: num_samples, ...}
+    """
+    valid = [t for t in tree_infos if (t.get("scale") or 0) > 0]
+    if not valid:
+        return {}
+    total_scale = sum(t["scale"] for t in valid)
+    if total_scale == 0:
+        return {t["path"]: min_per_doc for t in valid}
+
+    # 按比例分配，保证每个文档至少 min_per_doc
+    allocation: Dict[str, int] = {}
+    remaining = num_samples
+    for t in valid:
+        ratio = t["scale"] / total_scale
+        raw = max(min_per_doc, round(num_samples * ratio))
+        allocation[t["path"]] = raw
+        remaining -= raw
+
+    # 微调：若总和与 num_samples 有偏差，从最大规模的文档增减
+    diff = num_samples - sum(allocation.values())
+    if diff != 0 and valid:
+        sorted_by_scale = sorted(valid, key=lambda x: x["scale"], reverse=True)
+        for t in sorted_by_scale:
+            p = t["path"]
+            if diff > 0:
+                allocation[p] += 1
+                diff -= 1
+            elif diff < 0 and allocation[p] > min_per_doc:
+                allocation[p] -= 1
+                diff += 1
+            if diff == 0:
+                break
+
+    return allocation
 
 
 # ──────────────────────────────────────────────

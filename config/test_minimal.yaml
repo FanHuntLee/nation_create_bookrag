@@ -48,16 +48,28 @@ graph:
   refine_type: "advanced"
   use_remote_kg_service: true
   kg_service_url: "http://localhost:28080"
+  # embedding_config:
+  #   model_name: /root/autodl-fs/models/Qwen3-Embedding-0.6B
+  #   backend: local
+  #   max_length: 30000
+  #   device: "cuda:0"
   embedding_config:
     model_name: /root/autodl-fs/models/Qwen3-Embedding-0.6B
-    backend: local
-    max_length: 30000
+    backend: openai
+    max_length: 8192
     device: "cuda:0"
+    api_base: "http://localhost:8005/v1"
+  # reranker_config:
+  #   model_name: /root/autodl-fs/models/Qwen3-Reranker-0.6B
+  #   max_length: 8192
+  #   device: "cuda:0"
+  #   backend: local
   reranker_config:
-    model_name: /root/autodl-fs/models/Qwen3-Reranker-0.6B
-    max_length: 30000
+    model_name: /root/autodl-fs/models/Qwen3-Reranker-0.6B-seqcls-converted
+    max_length: 8192
     device: "cuda:0"
-    backend: local
+    backend: vllm
+    api_base: "http://localhost:8006/v1"
 
 # --- 向量数据库配置 ---
 vdb:
@@ -79,10 +91,17 @@ rag:
   select_depth: 2
   max_retry: 2
   reranker_config:
-    model_name: /root/autodl-fs/models/Qwen3-Reranker-0.6B
-    max_length: 30000
+    # model_name: /root/autodl-fs/models/Qwen3-Reranker-0.6B
+    model_name: /root/autodl-fs/models/Qwen3-Reranker-0.6B-seqcls-converted
+    max_length: 8192
     device: "cuda:0"
-    backend: local
+    backend: vllm
+    api_base: "http://localhost:8006/v1"
+  # reranker_config:
+  #   model_name: /root/autodl-fs/models/Qwen3-Reranker-0.6B
+  #   max_length: 8192
+  #   device: "cuda:0"
+  #   backend: local
   mm_reranker_config:
     model_name: /root/autodl-fs/models/gme-Qwen2-VL-2B-Instruct
     device: "cuda:0"

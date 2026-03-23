@@ -2,21 +2,26 @@
 QA 数据集构建流水线 —— 主入口
 
 用法示例：
-  # 命令行
+  # 命令行 - 单文档
   python -m data_pipelines.build_qa_dataset \\
       --tree_json /path/to/tree.json \\
       --doc_uuid som-001 \\
       --output /path/to/qa_dataset.json \\
-      --num_samples 50 \\
-      --llm_base_url http://localhost:8003/v1 \\
-      --llm_model Qwen/Qwen3-8B-AWQ
+      --num_samples 50
+
+  # 命令行 - 工作目录模式（output 下所有 tree.json 按规模均匀采样）
+  python -m data_pipelines.build_qa_dataset \\
+      --work_dir /path/to/working_dir \\
+      --output /path/to/qa_dataset.json \\
+      --num_samples 100
 
   # 使用配置文件
   python -m data_pipelines.build_qa_dataset --config /path/to/pipeline_config.yaml
 
   # Python 函数调用
-  from data_pipelines.build_qa_dataset import run_pipeline
+  from data_pipelines.build_qa_dataset import run_pipeline, run_pipeline_work_dir
   run_pipeline(tree_json="...", doc_uuid="som-001", output="...", num_samples=50)
+  run_pipeline_work_dir(work_dir="...", output="...", num_samples=100)
 """
 
 import argparse
@@ -35,7 +40,14 @@ if _ROOT not in sys.path:
 
 from Core.configs.llm_config import LLMConfig
 from Core.provider.llm import OpenAIController
-from data_pipelines.chunk_sampler import ChunkSampler, RatioConfig, load_tree_json
+from data_pipelines.chunk_sampler import (
+    ChunkSampler,
+    RatioConfig,
+    load_tree_json,
+    discover_tree_jsons,
+    get_tree_scale,
+    compute_sample_allocation,
+)
 from data_pipelines.qa_generator import QAGenerator, deduplicate_questions, print_distribution_report
 
 logging.basicConfig(
@@ -54,9 +66,10 @@ class PipelineConfig:
 
     def __init__(
         self,
-        tree_json: str,
-        doc_uuid: str,
-        output: str,
+        tree_json: str = "",
+        doc_uuid: str = "",
+        output: str = "",
+        work_dir: str = "",
         num_samples: int = 50,
         grouping_method: str = "tree",
         llm_model: str = "Qwen/Qwen3-8B-AWQ",
@@ -72,6 +85,7 @@ class PipelineConfig:
         self.tree_json = tree_json
         self.doc_uuid = doc_uuid
         self.output = output
+        self.work_dir = work_dir
         self.num_samples = num_samples
         self.grouping_method = grouping_method
         self.llm_model = llm_model
@@ -91,9 +105,10 @@ class PipelineConfig:
 
         llm_d = d.get("llm", {})
         return cls(
-            tree_json=d["tree_json"],
-            doc_uuid=d["doc_uuid"],
+            tree_json=d.get("tree_json", ""),
+            doc_uuid=d.get("doc_uuid", ""),
             output=d["output"],
+            work_dir=d.get("work_dir", ""),
             num_samples=d.get("num_samples", 50),
             grouping_method=d.get("grouping_method", "tree"),
             llm_model=llm_d.get("model_name", "Qwen/Qwen3-8B-AWQ"),
@@ -203,13 +218,15 @@ def run_pipeline(
         log.info("[Step 5] 执行问题去重 ...")
         samples = deduplicate_questions(samples)
 
-    # Step 6: 保存结果
-    log.info("[Step 6] 保存结果到 %s ...", output)
-    os.makedirs(os.path.dirname(os.path.abspath(output)), exist_ok=True)
-    with open(output, "w", encoding="utf-8") as f:
-        json.dump(samples, f, ensure_ascii=False, indent=2)
-
-    log.info("已保存 %d 条 QA 样本到 %s", len(samples), output)
+    # Step 6: 保存结果（output 为空时跳过，用于 work_dir 模式下子文档不单独保存）
+    if output:
+        log.info("[Step 6] 保存结果到 %s ...", output)
+        out_dir = os.path.dirname(os.path.abspath(output))
+        if out_dir:
+            os.makedirs(out_dir, exist_ok=True)
+        with open(output, "w", encoding="utf-8") as f:
+            json.dump(samples, f, ensure_ascii=False, indent=2)
+        log.info("已保存 %d 条 QA 样本到 %s", len(samples), output)
 
     # Step 7: 输出分布报告
     print_distribution_report(samples)
@@ -220,6 +237,22 @@ def run_pipeline(
 
 def run_pipeline_from_config(config: PipelineConfig) -> List[Dict[str, Any]]:
     """从 PipelineConfig 对象运行流水线。"""
+    if config.work_dir:
+        return run_pipeline_work_dir(
+            work_dir=config.work_dir,
+            output=config.output,
+            num_samples=config.num_samples,
+            grouping_method=config.grouping_method,
+            llm_model=config.llm_model,
+            llm_base_url=config.llm_base_url,
+            llm_api_key=config.llm_api_key,
+            llm_temperature=config.llm_temperature,
+            llm_max_tokens=config.llm_max_tokens,
+            llm_max_workers=config.llm_max_workers,
+            seed=config.seed,
+            ratio=config.ratio_dict,
+            dedup=config.dedup,
+        )
     return run_pipeline(
         tree_json=config.tree_json,
         doc_uuid=config.doc_uuid,
@@ -238,6 +271,93 @@ def run_pipeline_from_config(config: PipelineConfig) -> List[Dict[str, Any]]:
     )
 
 
+def run_pipeline_work_dir(
+    work_dir: str,
+    output: str,
+    num_samples: int = 50,
+    grouping_method: str = "tree",
+    llm_model: str = "Qwen/Qwen3-8B-AWQ",
+    llm_base_url: str = "http://localhost:8003/v1",
+    llm_api_key: str = "openai",
+    llm_temperature: float = 0.7,
+    llm_max_tokens: int = 1024,
+    llm_max_workers: int = 4,
+    seed: int = 42,
+    ratio: Optional[Dict] = None,
+    dedup: bool = True,
+) -> List[Dict[str, Any]]:
+    """
+    从工作目录（work_dir/output 下所有 tree.json）按规模相对均匀采样构建 QA 数据集。
+    """
+    log.info("========== QA 数据集构建流水线（工作目录模式）启动 ==========")
+    log.info("work_dir=%s, num_samples=%d", work_dir, num_samples)
+
+    # Step 1: 发现所有 tree.json
+    tree_list = discover_tree_jsons(work_dir)
+    if not tree_list:
+        log.error("未在工作目录 output 下找到任何 tree.json")
+        return []
+
+    log.info("[Step 1] 发现 %d 个 tree.json", len(tree_list))
+
+    # Step 2: 获取各 tree.json 规模
+    tree_infos: List[Dict[str, Any]] = []
+    for tree_path, doc_uuid in tree_list:
+        scale = get_tree_scale(tree_path)
+        tree_infos.append({"path": tree_path, "scale": scale, "doc_uuid": doc_uuid})
+        log.info("  %s: scale=%d", doc_uuid, scale)
+
+    # Step 3: 按规模分配采样配额
+    allocation = compute_sample_allocation(tree_infos, num_samples)
+    for path, n in allocation.items():
+        doc_uuid = next(t["doc_uuid"] for t in tree_infos if t["path"] == path)
+        log.info("  分配 %s: %d 样本", doc_uuid, n)
+
+    # Step 4: 对每个 tree 运行单文档流水线，合并结果
+    all_samples: List[Dict[str, Any]] = []
+    for tree_path, n_alloc in allocation.items():
+        if n_alloc <= 0:
+            continue
+        doc_uuid = next(t["doc_uuid"] for t in tree_infos if t["path"] == tree_path)
+        log.info("---------- 处理 %s (配额 %d) ----------", doc_uuid, n_alloc)
+        samples = run_pipeline(
+            tree_json=tree_path,
+            doc_uuid=doc_uuid,
+            output="",  # 不单独保存，最后统一输出
+            num_samples=n_alloc,
+            grouping_method=grouping_method,
+            llm_model=llm_model,
+            llm_base_url=llm_base_url,
+            llm_api_key=llm_api_key,
+            llm_temperature=llm_temperature,
+            llm_max_tokens=llm_max_tokens,
+            llm_max_workers=llm_max_workers,
+            seed=seed,
+            ratio=ratio,
+            dedup=False,  # 单文档内不去重，最后统一去重
+        )
+        # run_pipeline 会写入 output，但 output 为空时需修改 run_pipeline
+        all_samples.extend(samples)
+
+    # Step 5: 跨文档去重
+    if dedup and len(all_samples) > 1:
+        log.info("[Step 5] 执行跨文档问题去重 ...")
+        all_samples = deduplicate_questions(all_samples)
+
+    # Step 6: 保存合并结果
+    log.info("[Step 6] 保存合并结果到 %s ...", output)
+    out_dir = os.path.dirname(os.path.abspath(output))
+    if out_dir:
+        os.makedirs(out_dir, exist_ok=True)
+    with open(output, "w", encoding="utf-8") as f:
+        json.dump(all_samples, f, ensure_ascii=False, indent=2)
+
+    log.info("已保存 %d 条 QA 样本到 %s", len(all_samples), output)
+    print_distribution_report(all_samples)
+    log.info("========== 流水线完成 ==========")
+    return all_samples
+
+
 # ──────────────────────────────────────────────
 # CLI 入口
 # ──────────────────────────────────────────────
@@ -253,8 +373,13 @@ def _parse_args():
         default=None,
         help="YAML 配置文件路径（指定后其余参数均可省略）",
     )
-    parser.add_argument("--tree_json", type=str, help="tree.json 文件路径")
-    parser.add_argument("--doc_uuid", type=str, default="unknown", help="文档 UUID（如 som-001）")
+    parser.add_argument("--tree_json", type=str, help="tree.json 文件路径（与 work_dir 二选一）")
+    parser.add_argument("--doc_uuid", type=str, default="unknown", help="文档 UUID（如 som-001），单 tree 模式使用")
+    parser.add_argument(
+        "--work_dir",
+        type=str,
+        help="工作目录：处理 output 下所有 tree.json，按规模相对均匀采样（与 tree_json 二选一）",
+    )
     parser.add_argument("--output", type=str, help="输出的 QA 数据集 JSON 路径")
     parser.add_argument("--num_samples", type=int, default=50, help="目标样本数量")
     parser.add_argument(
@@ -291,24 +416,43 @@ def main():
     if args.config:
         config = PipelineConfig.from_yaml(args.config)
     else:
-        if not args.tree_json or not args.output:
-            print("错误：必须指定 --tree_json 和 --output，或使用 --config 指定配置文件")
+        if not args.output:
+            print("错误：必须指定 --output")
             sys.exit(1)
-        config = PipelineConfig(
-            tree_json=args.tree_json,
-            doc_uuid=args.doc_uuid,
-            output=args.output,
-            num_samples=args.num_samples,
-            grouping_method=args.grouping_method,
-            llm_model=args.llm_model,
-            llm_base_url=args.llm_base_url,
-            llm_api_key=args.llm_api_key,
-            llm_temperature=args.llm_temperature,
-            llm_max_tokens=args.llm_max_tokens,
-            llm_max_workers=args.llm_max_workers,
-            seed=args.seed,
-            dedup=not args.no_dedup,
-        )
+        if args.work_dir:
+            config = PipelineConfig(
+                work_dir=args.work_dir,
+                output=args.output,
+                num_samples=args.num_samples,
+                grouping_method=args.grouping_method,
+                llm_model=args.llm_model,
+                llm_base_url=args.llm_base_url,
+                llm_api_key=args.llm_api_key,
+                llm_temperature=args.llm_temperature,
+                llm_max_tokens=args.llm_max_tokens,
+                llm_max_workers=args.llm_max_workers,
+                seed=args.seed,
+                dedup=not args.no_dedup,
+            )
+        elif args.tree_json:
+            config = PipelineConfig(
+                tree_json=args.tree_json,
+                doc_uuid=args.doc_uuid,
+                output=args.output,
+                num_samples=args.num_samples,
+                grouping_method=args.grouping_method,
+                llm_model=args.llm_model,
+                llm_base_url=args.llm_base_url,
+                llm_api_key=args.llm_api_key,
+                llm_temperature=args.llm_temperature,
+                llm_max_tokens=args.llm_max_tokens,
+                llm_max_workers=args.llm_max_workers,
+                seed=args.seed,
+                dedup=not args.no_dedup,
+            )
+        else:
+            print("错误：必须指定 --tree_json 或 --work_dir，或使用 --config 指定配置文件")
+            sys.exit(1)
 
     run_pipeline_from_config(config)
 
